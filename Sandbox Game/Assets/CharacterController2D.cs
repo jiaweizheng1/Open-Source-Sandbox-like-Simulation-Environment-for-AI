@@ -16,6 +16,8 @@ public class CharacterController2D : MonoBehaviour
     {
         rigidbody2d = GetComponent<Rigidbody2D>();
     }
+    public Transform interactor;
+    
 
     void Update()
     {
@@ -31,7 +33,22 @@ public class CharacterController2D : MonoBehaviour
             animator.SetFloat("lasthorizontal", motionvector.x);
             animator.SetFloat("lastvertical", motionvector.y);
         }
-
+        if(motionvector.x > 0)
+        {
+            interactor.localRotation = Quaternion.Euler(0, 0, 90);
+        }
+        if(motionvector.x < 0)
+        {
+            interactor.localRotation = Quaternion.Euler(0, 0, -90);
+        }
+        if(motionvector.y > 0)
+        {
+            interactor.localRotation = Quaternion.Euler(0, 0, 180);
+        }
+        if(motionvector.y < 0)
+        {
+            interactor.localRotation = Quaternion.Euler(0, 0, 0);
+        }
     }
 
     void FixedUpdate()

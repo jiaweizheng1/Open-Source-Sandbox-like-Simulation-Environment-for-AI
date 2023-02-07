@@ -5,19 +5,17 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody2D))]
 public class CharacterController2D : MonoBehaviour
 {
-    public float collisionOffset = 0.05f;
+    //motion
     public Rigidbody2D rigidbody2d;
     public float movespeed;
     public Vector2 motionvector;
     public Animator animator;
-    public ContactFilter2D movementFilter;
-    List<RaycastHit2D> castCollisions = new List<RaycastHit2D>();
-    void Start()
-    {
-        rigidbody2d = GetComponent<Rigidbody2D>();
-    }
     public Transform interactor;
-    
+
+    //collision
+    public ContactFilter2D movementFilter;
+    public float collisionOffset = 0.05f;
+    List<RaycastHit2D> castCollisions = new List<RaycastHit2D>();
 
     void Update()
     {
@@ -28,25 +26,20 @@ public class CharacterController2D : MonoBehaviour
         animator.SetFloat("vertical", motionvector.y);
         animator.SetFloat("speed", motionvector.sqrMagnitude);
 
-        if(motionvector.magnitude > 0)
-        {
+        if(motionvector.magnitude > 0){
             animator.SetFloat("lasthorizontal", motionvector.x);
             animator.SetFloat("lastvertical", motionvector.y);
         }
-        if(motionvector.x > 0)
-        {
+        if(motionvector.x > 0){
             interactor.localRotation = Quaternion.Euler(0, 0, 90);
         }
-        if(motionvector.x < 0)
-        {
+        if(motionvector.x < 0){
             interactor.localRotation = Quaternion.Euler(0, 0, -90);
         }
-        if(motionvector.y > 0)
-        {
+        if(motionvector.y > 0){
             interactor.localRotation = Quaternion.Euler(0, 0, 180);
         }
-        if(motionvector.y < 0)
-        {
+        if(motionvector.y < 0){
             interactor.localRotation = Quaternion.Euler(0, 0, 0);
         }
     }
@@ -62,9 +55,10 @@ public class CharacterController2D : MonoBehaviour
                 }
             }
         }
-        Move();
     }
-    private bool TryMove(Vector2 direction){
+
+    private bool TryMove(Vector2 direction)
+    {
             int count = rigidbody2d.Cast(
                 motionvector,
                 movementFilter,
@@ -78,6 +72,7 @@ public class CharacterController2D : MonoBehaviour
                 return false;
             }
     }
+
     private void Move()
     {
         rigidbody2d.MovePosition(rigidbody2d.position + motionvector * movespeed * Time.deltaTime);

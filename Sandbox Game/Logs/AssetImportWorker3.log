@@ -753,3 +753,495 @@ AssetImportParameters requested are different than current active one (requested
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001974 seconds.
+Begin MonoManager ReloadAssembly
+Thread 0x16fa1f000 may have been prematurely finalized
+Symbol file LoadedFromMemory doesn't match image /Users/a./ecs193_git/Open-Source-Minecraft-like-Simulation-Environment-for-AI/Sandbox Game/Library/PackageCache/com.unity.visualscripting@1.8.0/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image /Users/a./ecs193_git/Open-Source-Minecraft-like-Simulation-Environment-for-AI/Sandbox Game/Library/PackageCache/com.unity.visualscripting@1.8.0/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.45 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.554 seconds
+Domain Reload Profiling:
+	ReloadAssembly (555ms)
+		BeginReloadAssembly (91ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (44ms)
+		EndReloadAssembly (412ms)
+			LoadAssemblies (32ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (136ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (29ms)
+			SetupLoadedEditorAssemblies (189ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (38ms)
+				ProcessInitializeOnLoadAttributes (125ms)
+				ProcessInitializeOnLoadMethodAttributes (19ms)
+				AfterProcessingInitializeOnLoad (1ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (3ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.09 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4210 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 26 unused Assets / (92.6 KB). Loaded Objects now: 4841.
+Memory consumption went from 166.2 MB to 166.1 MB.
+Total: 2.433333 ms (FindLiveObjects: 0.125500 ms CreateObjectMapping: 0.062084 ms MarkObjects: 2.208583 ms  DeleteObjects: 0.036708 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002125 seconds.
+Begin MonoManager ReloadAssembly
+Thread 0x16fa1f000 may have been prematurely finalized
+Symbol file LoadedFromMemory doesn't match image /Users/a./ecs193_git/Open-Source-Minecraft-like-Simulation-Environment-for-AI/Sandbox Game/Library/PackageCache/com.unity.visualscripting@1.8.0/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image /Users/a./ecs193_git/Open-Source-Minecraft-like-Simulation-Environment-for-AI/Sandbox Game/Library/PackageCache/com.unity.visualscripting@1.8.0/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.42 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.519 seconds
+Domain Reload Profiling:
+	ReloadAssembly (519ms)
+		BeginReloadAssembly (74ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (33ms)
+		EndReloadAssembly (394ms)
+			LoadAssemblies (29ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (131ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (28ms)
+			SetupLoadedEditorAssemblies (178ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (36ms)
+				ProcessInitializeOnLoadAttributes (119ms)
+				ProcessInitializeOnLoadMethodAttributes (17ms)
+				AfterProcessingInitializeOnLoad (1ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (3ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.96 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4210 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 26 unused Assets / (92.6 KB). Loaded Objects now: 4856.
+Memory consumption went from 166.2 MB to 166.1 MB.
+Total: 2.415583 ms (FindLiveObjects: 0.126666 ms CreateObjectMapping: 0.058125 ms MarkObjects: 2.196250 ms  DeleteObjects: 0.034250 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002060 seconds.
+Begin MonoManager ReloadAssembly
+Thread 0x16fa1f000 may have been prematurely finalized
+Symbol file LoadedFromMemory doesn't match image /Users/a./ecs193_git/Open-Source-Minecraft-like-Simulation-Environment-for-AI/Sandbox Game/Library/PackageCache/com.unity.visualscripting@1.8.0/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image /Users/a./ecs193_git/Open-Source-Minecraft-like-Simulation-Environment-for-AI/Sandbox Game/Library/PackageCache/com.unity.visualscripting@1.8.0/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.46 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.530 seconds
+Domain Reload Profiling:
+	ReloadAssembly (531ms)
+		BeginReloadAssembly (74ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (33ms)
+		EndReloadAssembly (405ms)
+			LoadAssemblies (31ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (134ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (28ms)
+			SetupLoadedEditorAssemblies (184ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (37ms)
+				ProcessInitializeOnLoadAttributes (123ms)
+				ProcessInitializeOnLoadMethodAttributes (17ms)
+				AfterProcessingInitializeOnLoad (1ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (3ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.03 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4210 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 26 unused Assets / (93.5 KB). Loaded Objects now: 4871.
+Memory consumption went from 166.2 MB to 166.1 MB.
+Total: 2.511958 ms (FindLiveObjects: 0.132375 ms CreateObjectMapping: 0.063375 ms MarkObjects: 2.291333 ms  DeleteObjects: 0.024375 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 5563.072914 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/sliced_object/fences_1.asset
+  artifactKey: Guid(af359319ff21b4ce88f9ee29e800529e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/sliced_object/fences_1.asset using Guid(af359319ff21b4ce88f9ee29e800529e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '49504db89f131aba281f9ebab48609c4') in 0.030625 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/sliced_object/fences_3.asset
+  artifactKey: Guid(e134548893556413e9b16262c4c410f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/sliced_object/fences_3.asset using Guid(e134548893556413e9b16262c4c410f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ffacd28e0c25f4e21215658c025ea65') in 0.004338 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/sliced_object/plains_5.asset
+  artifactKey: Guid(bb0408f8e35a841139ea1c81b0ec1630) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/sliced_object/plains_5.asset using Guid(bb0408f8e35a841139ea1c81b0ec1630) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f89ac1fd7a5d851842062b972ad25806') in 0.008304 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000049 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/sliced_object/fences_13.asset
+  artifactKey: Guid(0dc920f99ee14429f981132c8882becd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/sliced_object/fences_13.asset using Guid(0dc920f99ee14429f981132c8882becd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ab767160e7753872d6735543db7a299f') in 0.004267 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/sliced_object/fences_8.asset
+  artifactKey: Guid(3da3fff3ed1204f75b4bae65733b3f50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/sliced_object/fences_8.asset using Guid(3da3fff3ed1204f75b4bae65733b3f50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed54117317c46e1e8cf3917a6e1d0ccf') in 0.003572 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/sliced_object/plains_3.asset
+  artifactKey: Guid(15dcdd7344f7946228f9975c66d3e23f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/sliced_object/plains_3.asset using Guid(15dcdd7344f7946228f9975c66d3e23f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b46d186151596b7d32e734df24485ca') in 0.002625 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/sliced_object/plains_8.asset
+  artifactKey: Guid(5375f1a9d2d89495a9d98bef54891682) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/sliced_object/plains_8.asset using Guid(5375f1a9d2d89495a9d98bef54891682) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f44e7ccef4c954ddb1514597e969e68') in 0.002967 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/sliced_object/plains_0.asset
+  artifactKey: Guid(899130ad4df3a40d983281f33ed8fbdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/sliced_object/plains_0.asset using Guid(899130ad4df3a40d983281f33ed8fbdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bad0314ff0c3eb80d2cb7f4ae536ef9a') in 0.002426 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/sliced_object/plains_26.asset
+  artifactKey: Guid(3bdd93def36a94aceb797be15fd4ba6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/sliced_object/plains_26.asset using Guid(3bdd93def36a94aceb797be15fd4ba6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bde286fbddaab028c0aaf058657b1ecc') in 0.002627 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/sliced_object/plains_28.asset
+  artifactKey: Guid(7a57dac20f4da463ab2bd674ae08e954) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/sliced_object/plains_28.asset using Guid(7a57dac20f4da463ab2bd674ae08e954) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4f7c376f709857902fd9f7db3c98595e') in 0.002303 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/sliced_object/plains_2.asset
+  artifactKey: Guid(43d67f0ce66cf4b148d8aa374c5f8b56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/sliced_object/plains_2.asset using Guid(43d67f0ce66cf4b148d8aa374c5f8b56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b6f73eebfc16b0f527fe58e04edaf8ee') in 0.002643 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/sliced_object/plains_20.asset
+  artifactKey: Guid(28814b67268a04d97ae87595b038012f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/sliced_object/plains_20.asset using Guid(28814b67268a04d97ae87595b038012f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5b4ac7d6052f131c0a8d372cf7dd4f38') in 0.002695 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/sliced_object/fences_2.asset
+  artifactKey: Guid(8ecc8fc8738e74551ac597ed80703c71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/sliced_object/fences_2.asset using Guid(8ecc8fc8738e74551ac597ed80703c71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '34441fea40f1eb97b020cbf39367c780') in 0.003789 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/sliced_object/fences_4.asset
+  artifactKey: Guid(52ce38a87db6342a2ab41eb9b899f076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/sliced_object/fences_4.asset using Guid(52ce38a87db6342a2ab41eb9b899f076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '28dd88d17044834a0b9f1cc06b3fe79d') in 0.003202 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/sliced_object/plains_14.asset
+  artifactKey: Guid(d24147738471e4a0cb1982666aa4dde4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/sliced_object/plains_14.asset using Guid(d24147738471e4a0cb1982666aa4dde4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1a91b6af1b32a4563b9fc3f4300a6345') in 0.002450 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/sliced_object/fences_5.asset
+  artifactKey: Guid(efb99823535b04440a03491b77b75923) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/sliced_object/fences_5.asset using Guid(efb99823535b04440a03491b77b75923) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8604a0f9d3909844d1cfae2d2cebb7a9') in 0.002799 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/sliced_object/plains_22.asset
+  artifactKey: Guid(48b74cf4c3755456f963236b8599293d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/sliced_object/plains_22.asset using Guid(48b74cf4c3755456f963236b8599293d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de5e89b5d3ee9af11a7e1b721169ec3d') in 0.003273 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/sliced_object/plains_18.asset
+  artifactKey: Guid(f537530cc328445fca9b6060e5bff3f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/sliced_object/plains_18.asset using Guid(f537530cc328445fca9b6060e5bff3f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f37de74dc1ed42d614f646b0daaefac5') in 0.002641 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/sliced_object/plains_13.asset
+  artifactKey: Guid(cd659be18d7a44021bab98315c5ead62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/sliced_object/plains_13.asset using Guid(cd659be18d7a44021bab98315c5ead62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '694c749ffe6a2493e8b7a957082d4186') in 0.002641 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/sliced_object/fences_6.asset
+  artifactKey: Guid(fe93b0611bb514d59947317869957e2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/sliced_object/fences_6.asset using Guid(fe93b0611bb514d59947317869957e2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '789450d1c92544a8bcdee056b59c3216') in 0.003588 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/sliced_object/plains_27.asset
+  artifactKey: Guid(463aae99d711e452d94f0b011d1e2020) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/sliced_object/plains_27.asset using Guid(463aae99d711e452d94f0b011d1e2020) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3782684185e22575dcb9174737021851') in 0.002588 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/sliced_object/fences_12.asset
+  artifactKey: Guid(51c5cb52b39f74b6b97c6ec2224a2b64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/sliced_object/fences_12.asset using Guid(51c5cb52b39f74b6b97c6ec2224a2b64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '59331fb3f6c2f357ca673f3a93bec868') in 0.003104 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/sliced_object/plains_7.asset
+  artifactKey: Guid(6d4cea1e812914bdb91eb9ae1793fef8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/sliced_object/plains_7.asset using Guid(6d4cea1e812914bdb91eb9ae1793fef8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '24e4e2f9066bd01e7fa415c7cc0d0aca') in 0.002249 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/sliced_object/plains_21.asset
+  artifactKey: Guid(a69b31e59a96849b0baa1f4fc030f832) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/sliced_object/plains_21.asset using Guid(a69b31e59a96849b0baa1f4fc030f832) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc2220311bc53e754f7b8d9e8b93bbfb') in 0.002511 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/sliced_object/plains_15.asset
+  artifactKey: Guid(07c03f85069954326a9bc921a2c3e8e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/sliced_object/plains_15.asset using Guid(07c03f85069954326a9bc921a2c3e8e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2dd3879c14d13cf2d94737b791126d3f') in 0.002547 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.427931 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/carpet_1.asset
+  artifactKey: Guid(f33da0ab5cbd44488886c6c7f64d66a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/carpet_1.asset using Guid(f33da0ab5cbd44488886c6c7f64d66a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '45950074f5691c68ce839631d168af33') in 0.004977 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/carpet_26.asset
+  artifactKey: Guid(e2a3148e73cb747db8a317ba2ce170e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/carpet_26.asset using Guid(e2a3148e73cb747db8a317ba2ce170e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '22da42c8996b50f14b07fd094587e86a') in 0.003306 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000089 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/carpet_17.asset
+  artifactKey: Guid(d6bab9e05c6144b459fb42566c4e4dec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/carpet_17.asset using Guid(d6bab9e05c6144b459fb42566c4e4dec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '22e59f10410c598015533cc36b182fec') in 0.003543 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/carpet_38.asset
+  artifactKey: Guid(4ab9352a0c5fb46558c2346c102c364b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/carpet_38.asset using Guid(4ab9352a0c5fb46558c2346c102c364b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7eacd44ce8e7bc157523d6ecc0483ba9') in 0.002681 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/carpet_42.asset
+  artifactKey: Guid(881e56207dde94f54b655c7e7599d001) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/carpet_42.asset using Guid(881e56207dde94f54b655c7e7599d001) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f7e41cd77d125a601e4b094d584b6f1') in 0.003113 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/carpet_15.asset
+  artifactKey: Guid(1376ba33547254c0f989386093edf349) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/carpet_15.asset using Guid(1376ba33547254c0f989386093edf349) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '98c5a935e273949c40aff6e00a806599') in 0.002608 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/carpet_34.asset
+  artifactKey: Guid(e1f5d910df29b490e92bc3f05d3eef41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/carpet_34.asset using Guid(e1f5d910df29b490e92bc3f05d3eef41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '383243126d947966981fd4605730361a') in 0.002941 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/carpet_8.asset
+  artifactKey: Guid(b317bd9b0a0964c7583b35f303c00202) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/carpet_8.asset using Guid(b317bd9b0a0964c7583b35f303c00202) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a7637ab4a0eddd0b90febadfa33ea04') in 0.005833 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000047 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/carpet_47.asset
+  artifactKey: Guid(0153ed053e8de4de28e40641258c2371) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/carpet_47.asset using Guid(0153ed053e8de4de28e40641258c2371) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '57e01d81394c3ef4e78b8e5274957456') in 0.003421 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/carpet_10.asset
+  artifactKey: Guid(48458a133ba71481592cb28552634115) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/carpet_10.asset using Guid(48458a133ba71481592cb28552634115) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '49d145286ec2515e792fcb6ebcabba88') in 0.002711 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/carpet_20.asset
+  artifactKey: Guid(1809ad80183154597a36d94747ad8ff2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/carpet_20.asset using Guid(1809ad80183154597a36d94747ad8ff2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '28cf33a64aba2f574b67f1ba6054da8e') in 0.003161 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/carpet_29.asset
+  artifactKey: Guid(f7a98346b9b1a4e39a9d19da331d3796) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/carpet_29.asset using Guid(f7a98346b9b1a4e39a9d19da331d3796) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fee288fac6481f8dc732063ef513b4e3') in 0.002702 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/carpet_43.asset
+  artifactKey: Guid(a1fee2cdb2cbe46a38ab122ba4e8dcca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/carpet_43.asset using Guid(a1fee2cdb2cbe46a38ab122ba4e8dcca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '67868e620e8f6f8324b28c945895bd4e') in 0.003109 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/carpet_5.asset
+  artifactKey: Guid(638d6588fdd3747e5bfa71c4e577eb3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/carpet_5.asset using Guid(638d6588fdd3747e5bfa71c4e577eb3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'adc0cbb67ef4b346f0585095f4ba9e7e') in 0.002727 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/carpet_22.asset
+  artifactKey: Guid(0a9669c399ef34515a9e7827c191be60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/carpet_22.asset using Guid(0a9669c399ef34515a9e7827c191be60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4b36eeb3e4e2a9651b79669525bc7e41') in 0.002772 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/carpet_41.asset
+  artifactKey: Guid(cb21aad3b1e8d4f788a0963bfe6c5a2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/carpet_41.asset using Guid(cb21aad3b1e8d4f788a0963bfe6c5a2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c7ed2cb6e888d71bc98ce961bf48b4d3') in 0.002753 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/carpet_40.asset
+  artifactKey: Guid(e39da363544a34d95ba1a07acb73c676) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/carpet_40.asset using Guid(e39da363544a34d95ba1a07acb73c676) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d7980d24d78505b7d3e0e2f4e981cae') in 0.003232 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/carpet_12.asset
+  artifactKey: Guid(3c8c711385ff44ace86ffab06de67f38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/carpet_12.asset using Guid(3c8c711385ff44ace86ffab06de67f38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4b97298a28e2d4bfacc5148b653ff1f8') in 0.002540 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/carpet_35.asset
+  artifactKey: Guid(1978361d8c0ea4950a7eda93c8d53aa2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/carpet_35.asset using Guid(1978361d8c0ea4950a7eda93c8d53aa2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '383595c2ee5dbb89a2962c67b1ed3014') in 0.002927 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/carpet_39.asset
+  artifactKey: Guid(0bfb961c3f18e430baec3607e86ac8c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/carpet_39.asset using Guid(0bfb961c3f18e430baec3607e86ac8c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a2ea5d7894abd04efa00abd7c1badde') in 0.002550 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/carpet_9.asset
+  artifactKey: Guid(bec364bb201fc4a2dae8f6c42b73db1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/carpet_9.asset using Guid(bec364bb201fc4a2dae8f6c42b73db1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd828683cac1b2e92d3e6cba0a4e78a69') in 0.003204 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/carpet_3.asset
+  artifactKey: Guid(52ae7287b999c4206ae953a7a2c74450) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/carpet_3.asset using Guid(52ae7287b999c4206ae953a7a2c74450) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aea14681924050c032823ac34e5d452b') in 0.003621 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/carpet_28.asset
+  artifactKey: Guid(e6029c0efd48a4955bbbb5d3d0285649) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/carpet_28.asset using Guid(e6029c0efd48a4955bbbb5d3d0285649) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf02968e5076f5c2d3c9bbd5319a3832') in 0.002588 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/carpet_25.asset
+  artifactKey: Guid(55b90713bb33e4638ab8b80c375634a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/carpet_25.asset using Guid(55b90713bb33e4638ab8b80c375634a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9369d0501f01e1e82e29f1b1df225ce5') in 0.002219 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.259419 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/objects/chest_02.png
+  artifactKey: Guid(23ee54e228ebe490fa01b9259fca0195) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/objects/chest_02.png using Guid(23ee54e228ebe490fa01b9259fca0195) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c3f589e9d07ac464910e3acc98dae44e') in 0.017354 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/objects/rock_in_water_05.png
+  artifactKey: Guid(f95a2bda35395448796059e5d1cb119f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/objects/rock_in_water_05.png using Guid(f95a2bda35395448796059e5d1cb119f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa5ea64cf7c30b6a80c79c5f052494e2') in 0.005181 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/objects/rock_in_water_01-sheet.png
+  artifactKey: Guid(b9ea89f56f6984a589af091c1664ba1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/objects/rock_in_water_01-sheet.png using Guid(b9ea89f56f6984a589af091c1664ba1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c44b1adcdf21c35d996404b06182d17b') in 0.004253 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/objects/rock_in_water_01.png
+  artifactKey: Guid(fa0c179d8330340d5adc5ecf68ace88b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/objects/rock_in_water_01.png using Guid(fa0c179d8330340d5adc5ecf68ace88b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc0fc876b621cec260118faf500d2bc7') in 0.004198 seconds 
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting

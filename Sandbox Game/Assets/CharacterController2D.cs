@@ -5,27 +5,25 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody2D))]
 public class CharacterController2D : MonoBehaviour
 {
-    Rigidbody2D rigidbody2d;
-    [SerializeField] float speed = 2f;
-    Vector2 motionVector;
-    Animator animator;
+    public Rigidbody2D rigidbody2d;
+    public float movespeed;
+    public Vector2 motionvector;
+    public Animator animator;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        rigidbody2d = GetComponent<Rigidbody2D>();
-        animator = GetComponent<Animator>();
-    }
-
-    // Update is called once per frame
     void Update()
     {
-        motionVector = new Vector2(
-            Input.GetAxisRaw("Horizontal"),
-            Input.GetAxisRaw("Vertical")
-            );
-        animator.SetFloat("horizontal", Input.GetAxisRaw("Horizontal"));
-        animator.SetFloat("vertical", Input.GetAxisRaw("Vertical"));
+        motionvector.x = Input.GetAxisRaw("Horizontal");
+        motionvector.y = Input.GetAxisRaw("Vertical");
+
+        animator.SetFloat("horizontal", motionvector.x);
+        animator.SetFloat("vertical", motionvector.y);
+        animator.SetFloat("speed", motionvector.sqrMagnitude);
+
+        if(motionvector.magnitude > 0)
+        {
+            animator.SetFloat("lasthorizontal", motionvector.x);
+            animator.SetFloat("lastvertical", motionvector.y);
+        }
 
     }
 
@@ -36,6 +34,6 @@ public class CharacterController2D : MonoBehaviour
 
     private void Move()
     {
-        rigidbody2d.velocity = motionVector * speed;
+        rigidbody2d.MovePosition(rigidbody2d.position + motionvector * movespeed * Time.deltaTime);
     }
 }

@@ -5,10 +5,17 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody2D))]
 public class CharacterController2D : MonoBehaviour
 {
+    public float collisionOffset = 0.05f;
     public Rigidbody2D rigidbody2d;
     public float movespeed;
     public Vector2 motionvector;
     public Animator animator;
+    public ContactFilter2D movementFilter;
+    List<RaycastHit2D> castCollisions = new List<RaycastHit2D>();
+    void Start()
+    {
+        rigidbody2d = GetComponent<Rigidbody2D>();
+    }
 
     void Update()
     {
@@ -29,9 +36,31 @@ public class CharacterController2D : MonoBehaviour
 
     void FixedUpdate()
     {
+        if(motionvector != Vector2.zero){
+            bool success = TryMove(motionvector);
+            if(!success){
+                success = TryMove(new Vector2(motionvector.x,0));
+                if(!success){
+                    success = TryMove(new Vector2(0,motionvector.y));
+                }
+            }
+        }
         Move();
     }
-
+    private bool TryMove(Vector2 direction){
+            int count = rigidbody2d.Cast(
+                motionvector,
+                movementFilter,
+                castCollisions,
+                movespeed * Time.fixedDeltaTime + collisionOffset);
+            if(count == 0){
+                Move();
+                return true;
+            }
+            else{
+                return false;
+            }
+    }
     private void Move()
     {
         rigidbody2d.MovePosition(rigidbody2d.position + motionvector * movespeed * Time.deltaTime);

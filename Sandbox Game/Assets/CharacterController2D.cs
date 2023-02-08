@@ -42,6 +42,7 @@ public class CharacterController2D : MonoBehaviour
         if(motionvector.y < 0){
             interactor.localRotation = Quaternion.Euler(0, 0, 0);
         }
+        
     }
 
     void FixedUpdate()

@@ -1,0 +1,1215 @@
+Unity Editor version:    2021.3.17f1 (3e8111cac19d)
+Branch:                  2021.3/release
+Build type:              Release
+Batch mode:              YES
+macOS version:           Version 13.0 (Build 22A8380)
+Darwin version:          22.1.0
+Architecture:            arm64
+Running under Rosetta:   NO
+Available memory:        16384 MB
+Using pre-set license
+Pro License: YES
+
+COMMAND LINE ARGUMENTS:
+/Applications/Unity/Hub/Editor/2021.3.17f1/Unity.app/Contents/MacOS/Unity
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker10
+-projectPath
+/Users/a./ecs193_git/Open-Source-Minecraft-like-Simulation-Environment-for-AI/Sandbox Game
+-logFile
+Logs/AssetImportWorker10.log
+-srvPort
+58411
+Successfully changed project path to: /Users/a./ecs193_git/Open-Source-Minecraft-like-Simulation-Environment-for-AI/Sandbox Game
+/Users/a./ecs193_git/Open-Source-Minecraft-like-Simulation-Environment-for-AI/Sandbox Game
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [8407295232] Host "[IP] 168.150.100.175 [Port] 0 [Flags] 2 [Guid] 2189984672 [EditorId] 2189984672 [Version] 1048832 [Id] OSXEditor(0,campus-100-175.ucdavis.edu) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [8407295232] Host "[IP] 168.150.100.175 [Port] 0 [Flags] 2 [Guid] 2189984672 [EditorId] 2189984672 [Version] 1048832 [Id] OSXEditor(0,campus-100-175.ucdavis.edu) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+Refreshing native plugins compatible for Editor in 86.69 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.3.17f1 (3e8111cac19d)
+[Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/2021.3.17f1/Unity.app/Contents/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path /Users/a./ecs193_git/Open-Source-Minecraft-like-Simulation-Environment-for-AI/Sandbox Game/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+ preferred device: Apple M2 Pro (high power)
+Metal devices available: 1
+0: Apple M2 Pro (high power)
+Using device Apple M2 Pro (high power)
+Initializing Metal device caps: Apple M2 Pro
+Initialize mono
+Mono path[0] = '/Applications/Unity/Hub/Editor/2021.3.17f1/Unity.app/Contents/Managed'
+Mono path[1] = '/Applications/Unity/Hub/Editor/2021.3.17f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityjit-macos'
+Mono config path = '/Applications/Unity/Hub/Editor/2021.3.17f1/Unity.app/Contents/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56747
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: /Applications/Unity/Hub/Editor/2021.3.17f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
+Registered in 0.001303 seconds.
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 87.66 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.479 seconds
+Domain Reload Profiling:
+	ReloadAssembly (480ms)
+		BeginReloadAssembly (88ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (320ms)
+			LoadAssemblies (88ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (68ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (21ms)
+			SetupLoadedEditorAssemblies (202ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (88ms)
+				BeforeProcessingInitializeOnLoad (1ms)
+				ProcessInitializeOnLoadAttributes (85ms)
+				ProcessInitializeOnLoadMethodAttributes (25ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.007355 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image /Users/a./ecs193_git/Open-Source-Minecraft-like-Simulation-Environment-for-AI/Sandbox Game/Library/PackageCache/com.unity.visualscripting@1.8.0/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image /Users/a./ecs193_git/Open-Source-Minecraft-like-Simulation-Environment-for-AI/Sandbox Game/Library/PackageCache/com.unity.visualscripting@1.8.0/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 76.41 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.723 seconds
+Domain Reload Profiling:
+	ReloadAssembly (723ms)
+		BeginReloadAssembly (49ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (13ms)
+		EndReloadAssembly (605ms)
+			LoadAssemblies (56ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (152ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (37ms)
+			SetupLoadedEditorAssemblies (328ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (2ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (76ms)
+				BeforeProcessingInitializeOnLoad (56ms)
+				ProcessInitializeOnLoadAttributes (168ms)
+				ProcessInitializeOnLoadMethodAttributes (25ms)
+				AfterProcessingInitializeOnLoad (1ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (2ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launching external process: /Applications/Unity/Hub/Editor/2021.3.17f1/Unity.app/Contents/Tools/UnityShaderCompiler
+Launched and connected shader compiler UnityShaderCompiler after 0.04 seconds
+Refreshing native plugins compatible for Editor in 0.57 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4221 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 51 unused Assets / (369.2 KB). Loaded Objects now: 4677.
+Memory consumption went from 153.0 MB to 152.6 MB.
+Total: 2.486000 ms (FindLiveObjects: 0.121334 ms CreateObjectMapping: 0.056375 ms MarkObjects: 2.255375 ms  DeleteObjects: 0.052583 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 156853.755578 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_243.asset
+  artifactKey: Guid(2fc544118a7b54f5fbc59fffc42bc6f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_243.asset using Guid(2fc544118a7b54f5fbc59fffc42bc6f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fd6ab216e409a873fb5b355a1b2c6804') in 0.073024 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_265.asset
+  artifactKey: Guid(99367edd2cd3244b08457690fd06f794) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_265.asset using Guid(99367edd2cd3244b08457690fd06f794) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aaa57288c4d1f070398bd4b131fa77c7') in 0.004207 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_269.asset
+  artifactKey: Guid(5df1448a7c5424d5a97e1e513d10b841) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_269.asset using Guid(5df1448a7c5424d5a97e1e513d10b841) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b3ae5648fbfd349c621c30a355a3c5e7') in 0.003460 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.341638 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_276.asset
+  artifactKey: Guid(f45fce42bda2d41b08e2f01410088c0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_276.asset using Guid(f45fce42bda2d41b08e2f01410088c0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '76eb6f283725e2900425ca1fa2d4053b') in 0.004416 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_278.asset
+  artifactKey: Guid(910f0c0f29ff649c695547a03ab6d9aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_278.asset using Guid(910f0c0f29ff649c695547a03ab6d9aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f1813a0ecfa754c1f67759867401b150') in 0.003567 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_282.asset
+  artifactKey: Guid(2c3583ca957dc42efba6b2bbfbd96205) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_282.asset using Guid(2c3583ca957dc42efba6b2bbfbd96205) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f09c31cbff2f9a8d4b3120d13f2f51c1') in 0.003097 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.013948 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_287.asset
+  artifactKey: Guid(ca154bf887f614a65a70346ed05618d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_287.asset using Guid(ca154bf887f614a65a70346ed05618d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '17c37fcc80e7f61d37523df5b7267ec9') in 0.003488 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_289.asset
+  artifactKey: Guid(27f51eae5065044b7ac15f92a6b0a68d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_289.asset using Guid(27f51eae5065044b7ac15f92a6b0a68d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e9deea6a89611e7f8341f2b665e6d98') in 0.003886 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_294.asset
+  artifactKey: Guid(b74ec36c1cc0d42058d83791b0c25394) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_294.asset using Guid(b74ec36c1cc0d42058d83791b0c25394) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7bb4edd2cbea0a35739c97453c2330a1') in 0.002864 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000358 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_297.asset
+  artifactKey: Guid(32993f90c201040ab9d1396b47f70bdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_297.asset using Guid(32993f90c201040ab9d1396b47f70bdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '507a3bcc27541023e1fed51c4229b1e7') in 0.002961 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_302.asset
+  artifactKey: Guid(a12d17f743e9d481bbf285411f4a87db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_302.asset using Guid(a12d17f743e9d481bbf285411f4a87db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8e570efb0f0e2f8bfa2e6b3e60c25fca') in 0.002851 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_307.asset
+  artifactKey: Guid(67a39d5ebb369444a831c5ba82056b65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_307.asset using Guid(67a39d5ebb369444a831c5ba82056b65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a132a1ed8837866faa7dc6d6e7f91fa') in 0.003130 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_305.asset
+  artifactKey: Guid(ffd59066894934cfb878f8bf4f5a06a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_305.asset using Guid(ffd59066894934cfb878f8bf4f5a06a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '62d96d672e9199fb54ea1ed8dd9b04e1') in 0.002791 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_309.asset
+  artifactKey: Guid(9ebb30b7ad12d4d2286e2d8d7e16590d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_309.asset using Guid(9ebb30b7ad12d4d2286e2d8d7e16590d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b9d5e38cc122c8e0634345f91863cdbe') in 0.002964 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_311.asset
+  artifactKey: Guid(82561d9d1eb9d431bb659ba91f7e7c7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_311.asset using Guid(82561d9d1eb9d431bb659ba91f7e7c7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e94c5c1e24d97b823c89979bc0b9212') in 0.002951 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_316.asset
+  artifactKey: Guid(3f6c63b7f7fe8426bbdff7f9ee2f373b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_316.asset using Guid(3f6c63b7f7fe8426bbdff7f9ee2f373b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3f74365ad229673378b33f2e3cfd2d8d') in 0.002853 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_313.asset
+  artifactKey: Guid(da6a57bfd870642aca3268f862eb20fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_313.asset using Guid(da6a57bfd870642aca3268f862eb20fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ccf232d32382cffde95bd3364ac94d24') in 0.002942 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_320.asset
+  artifactKey: Guid(89f3bc29f3e6946119f227d11ebed0a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_320.asset using Guid(89f3bc29f3e6946119f227d11ebed0a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a68d2bbf6c20262bcebaf8b7b08e6d63') in 0.003310 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_325.asset
+  artifactKey: Guid(3e1b6209c39854aa9bc8a6038b154069) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_325.asset using Guid(3e1b6209c39854aa9bc8a6038b154069) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad090b537f85530f2502c6922c3f7156') in 0.002793 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_326.asset
+  artifactKey: Guid(091064a08e422426fb1aa87cc7a5c04d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_326.asset using Guid(091064a08e422426fb1aa87cc7a5c04d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3d01e163d717b89513b47fb181c71bba') in 0.002987 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_323.asset
+  artifactKey: Guid(f0e26e5c1a2534b86a55f9cd11da7495) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_323.asset using Guid(f0e26e5c1a2534b86a55f9cd11da7495) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '881ef51765058b80cbcefe51112d250a') in 0.003101 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000252 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_331.asset
+  artifactKey: Guid(32b53db1a1a0441f2a1ab18a7caa0b94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_331.asset using Guid(32b53db1a1a0441f2a1ab18a7caa0b94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f20f7e8f7bf8104517744ef644a8ebd2') in 0.002907 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_336.asset
+  artifactKey: Guid(c1b167479581c4917b3f0a8a25a84384) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_336.asset using Guid(c1b167479581c4917b3f0a8a25a84384) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'afc622698c4af0677789cbffacfd8d65') in 0.003281 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_348.asset
+  artifactKey: Guid(1d219c4e390864142a1fa1242a7e1766) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_348.asset using Guid(1d219c4e390864142a1fa1242a7e1766) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c2460fe879de0caee425e70cb4597b2') in 0.003540 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_351.asset
+  artifactKey: Guid(0badaa7970b874388864d60eb9263a02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_351.asset using Guid(0badaa7970b874388864d60eb9263a02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7840dfd70086847eb34098ff54e6834f') in 0.003547 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_349.asset
+  artifactKey: Guid(7d0f671f74f624819b37680037e602a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_349.asset using Guid(7d0f671f74f624819b37680037e602a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2d6fd1a315ced6fa077f95635d2d75b1') in 0.003076 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_338.asset
+  artifactKey: Guid(1bc7d8f8910a84f4aa9e8d3a9eb71eb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_338.asset using Guid(1bc7d8f8910a84f4aa9e8d3a9eb71eb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf927eb9527244370c7c1f29fcf485ab') in 0.003058 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_368.asset
+  artifactKey: Guid(ec4acc53c929641488302a75871efc38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_368.asset using Guid(ec4acc53c929641488302a75871efc38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '87555bf9a9a16fd2af585c181072d0c9') in 0.003844 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_355.asset
+  artifactKey: Guid(5cba1b21010ab4695b25886425fab9b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_355.asset using Guid(5cba1b21010ab4695b25886425fab9b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '586ac608aed1111126aaf84a3516b566') in 0.003068 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_376.asset
+  artifactKey: Guid(75a5f42937eda4f6eb832296cd09e3b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_376.asset using Guid(75a5f42937eda4f6eb832296cd09e3b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b687871a5ab2e89aaaa80345df828d46') in 0.003102 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_382.asset
+  artifactKey: Guid(95662361048b54ebc9a7801d92914dff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_382.asset using Guid(95662361048b54ebc9a7801d92914dff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1a864c3fe1fbf2a264cc0ae003b2a0dd') in 0.003367 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_392.asset
+  artifactKey: Guid(5525f9f3933924f70b690b5d88e58661) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_392.asset using Guid(5525f9f3933924f70b690b5d88e58661) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb24d1d5d8234932cbcaa8603c796d69') in 0.003287 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_390.asset
+  artifactKey: Guid(bbecd1035d5da471a9c6890a89a89121) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_390.asset using Guid(bbecd1035d5da471a9c6890a89a89121) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '621aa71544b5a809e659be8860da312e') in 0.002967 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_334.asset
+  artifactKey: Guid(828bb9e95dcb641c38688bea545a3730) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_334.asset using Guid(828bb9e95dcb641c38688bea545a3730) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '492c47bcbdef98ed8803d52f2f3ed6dc') in 0.003250 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_343.asset
+  artifactKey: Guid(28db7313622ca4961a8009b6d7172973) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_343.asset using Guid(28db7313622ca4961a8009b6d7172973) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b6122d0d9966af5beeadcab7c935b0e3') in 0.003125 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_386.asset
+  artifactKey: Guid(70b85fb6326694560b57d6f897680a9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_386.asset using Guid(70b85fb6326694560b57d6f897680a9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1040dce4095a17073fe6dddb1172ab22') in 0.003133 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_403.asset
+  artifactKey: Guid(c6f16b8f5cb104163b97bea26ee8f8be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_403.asset using Guid(c6f16b8f5cb104163b97bea26ee8f8be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c98353825cbcc63d5ff4d0d3910ef27e') in 0.003122 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_405.asset
+  artifactKey: Guid(73604266eb71e4135bc1409b737a134a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_405.asset using Guid(73604266eb71e4135bc1409b737a134a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '21276234ed28799b1613f53f11bff2d8') in 0.003175 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_402.asset
+  artifactKey: Guid(9053d8ea0d4e6492f9e4a94415f4d927) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_402.asset using Guid(9053d8ea0d4e6492f9e4a94415f4d927) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f62060bedfe78c606a0e8be3d0a82a6') in 0.003353 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_379.asset
+  artifactKey: Guid(057a39ae5eef84313a0ecbd86367f567) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_379.asset using Guid(057a39ae5eef84313a0ecbd86367f567) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '22bd63329c63ccd6236a97013d84b61b') in 0.003232 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_381.asset
+  artifactKey: Guid(9ce1d6f5e85364a18b6617dd2c294b7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_381.asset using Guid(9ce1d6f5e85364a18b6617dd2c294b7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '174b89c0883527b68ab0fe9607aa197c') in 0.003141 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_374.asset
+  artifactKey: Guid(1781c301fec90417fa9e32bea8cef242) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_374.asset using Guid(1781c301fec90417fa9e32bea8cef242) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '567364fd2b62392c78c14f19a5a0c857') in 0.003039 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_347.asset
+  artifactKey: Guid(9054d3d959b984974a811be82910431e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_347.asset using Guid(9054d3d959b984974a811be82910431e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3bfeeb37beb23e856b0fc1753fb0c361') in 0.002931 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_356.asset
+  artifactKey: Guid(895805b02f3994850af6d79baf08c5d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_356.asset using Guid(895805b02f3994850af6d79baf08c5d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f2f64933e46052f9addb9ded26f55ca') in 0.003265 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_361.asset
+  artifactKey: Guid(edc6774cb9c3c47b49d4a2475c389d6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_361.asset using Guid(edc6774cb9c3c47b49d4a2475c389d6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e33aa3509332ed1ae2b538b828b5d62') in 0.002894 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_365.asset
+  artifactKey: Guid(032e4fb4105c44933bdb7fcd674de290) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_365.asset using Guid(032e4fb4105c44933bdb7fcd674de290) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd656a09593a2fcb8a0896c67d6352251') in 0.003044 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.236059 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_408.asset
+  artifactKey: Guid(4987d7be0ed6b41b0acd7b30b2345042) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_408.asset using Guid(4987d7be0ed6b41b0acd7b30b2345042) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fd28d63735fffef4989f5a75ecdba1d3') in 0.004723 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_425.asset
+  artifactKey: Guid(7c104430f48964d2dbbd4ca5bf020ad7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_425.asset using Guid(7c104430f48964d2dbbd4ca5bf020ad7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd864d8cbfef61f2572b1c5bb8e698e5c') in 0.003574 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_411.asset
+  artifactKey: Guid(6952ff4946fcb4a6c829f79f4ca0acec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_411.asset using Guid(6952ff4946fcb4a6c829f79f4ca0acec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2fdc078f046373008fb4c087325a0b0b') in 0.003367 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_419.asset
+  artifactKey: Guid(c6850675d48d9435bb662ca3c9e33f26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_419.asset using Guid(c6850675d48d9435bb662ca3c9e33f26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'abf5e2b59c74135a970349379deaf778') in 0.003043 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_439.asset
+  artifactKey: Guid(803a0b6c612e946a3b42e51f3b6b3716) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_439.asset using Guid(803a0b6c612e946a3b42e51f3b6b3716) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4effde17ebd457dce4f86fc628f4e027') in 0.003324 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_436.asset
+  artifactKey: Guid(75f63bff540ae4eab8229d82ada16957) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_436.asset using Guid(75f63bff540ae4eab8229d82ada16957) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '137022f01f9fcf4936d4e4052b0b1900') in 0.003107 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_431.asset
+  artifactKey: Guid(1c4ca90dbc188497caa9dc30b1c10bf5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_431.asset using Guid(1c4ca90dbc188497caa9dc30b1c10bf5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c0b2d15a9f073c4fb3f868916581ec4') in 0.003242 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_450.asset
+  artifactKey: Guid(131d6bc9333c1477d8bf150663bcf3f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_450.asset using Guid(131d6bc9333c1477d8bf150663bcf3f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '988386ddea5a553d90a7ddee45337406') in 0.003118 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_442.asset
+  artifactKey: Guid(31fa30f9a99244784862a159f02ea0cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_442.asset using Guid(31fa30f9a99244784862a159f02ea0cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b4cef2d14922b51f0d741d7d17313369') in 0.003313 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_447.asset
+  artifactKey: Guid(3fc84dad48f074ba4bf4d53123dc246a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_447.asset using Guid(3fc84dad48f074ba4bf4d53123dc246a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e191c72bd42af01e8fe6275a3a2c776') in 0.003216 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_454.asset
+  artifactKey: Guid(795f681d88f8441018bacbbbb9773457) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_454.asset using Guid(795f681d88f8441018bacbbbb9773457) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e72a2fbd145295c0ee3a83afa4e0fd9') in 0.003175 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_453.asset
+  artifactKey: Guid(39c890ed649c342dc99c2b984ee9a207) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_453.asset using Guid(39c890ed649c342dc99c2b984ee9a207) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42b973c8d615401c25df3ab6956269b3') in 0.002891 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_415.asset
+  artifactKey: Guid(71bc0febac64140a7b1b20adc2724ef0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_415.asset using Guid(71bc0febac64140a7b1b20adc2724ef0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42a0c34013d4a4267aa39443765a5e46') in 0.003295 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_472.asset
+  artifactKey: Guid(8abe680b4718f484c9f14f281e469a65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_472.asset using Guid(8abe680b4718f484c9f14f281e469a65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7585221bfcb6b040ffdfa0fd40a65574') in 0.003137 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_471.asset
+  artifactKey: Guid(de557f539ce5e44f6a07ab4a725a561c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_471.asset using Guid(de557f539ce5e44f6a07ab4a725a561c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '91e8b019e0cefdbbf0cbd0e3c31360fa') in 0.003465 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_461.asset
+  artifactKey: Guid(e237b37ccbda947dfa65d8a909d464c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_461.asset using Guid(e237b37ccbda947dfa65d8a909d464c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7128762ed8174632d280398fc271ec58') in 0.003161 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_424.asset
+  artifactKey: Guid(f9588d57cd19643aaa0415d3b50e4825) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_424.asset using Guid(f9588d57cd19643aaa0415d3b50e4825) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '82d6a015f63f89be82ba2c60fa3df507') in 0.003042 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_476.asset
+  artifactKey: Guid(da98a163905824f2ab55b3a60d5d9bc9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_476.asset using Guid(da98a163905824f2ab55b3a60d5d9bc9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4da52f15d0250d19632ddd6da843bc80') in 0.002786 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_481.asset
+  artifactKey: Guid(d92bf26b8c0404a0f88ac01a6e94e137) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_481.asset using Guid(d92bf26b8c0404a0f88ac01a6e94e137) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '238110b5988b9e5825841a26794ad7e2') in 0.002982 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_465.asset
+  artifactKey: Guid(5621bbd011f1d455bba3e32e662c1744) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_465.asset using Guid(5621bbd011f1d455bba3e32e662c1744) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '35af5f102465514b99b41b5e5c174c26') in 0.003097 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000051 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_479.asset
+  artifactKey: Guid(57e6e9ddeced9452ba49b07e5b260f67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_479.asset using Guid(57e6e9ddeced9452ba49b07e5b260f67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d695b2e7f209018a1fdd967e4239318') in 0.003340 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_446.asset
+  artifactKey: Guid(40a4df67c94eb4246a62b95d379846e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_446.asset using Guid(40a4df67c94eb4246a62b95d379846e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'faad3684a7a655c78adddcd6e2aad699') in 0.003024 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_460.asset
+  artifactKey: Guid(083300e7ffa7546acacf81b284f1f3cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_460.asset using Guid(083300e7ffa7546acacf81b284f1f3cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '46d7ee7604d95c9802d716c04596eb5f') in 0.003266 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_459.asset
+  artifactKey: Guid(0def8e8ae770644daadc41a1915b690b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_459.asset using Guid(0def8e8ae770644daadc41a1915b690b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '198ad0be9105a29363ca5e124603badb') in 0.003290 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_426.asset
+  artifactKey: Guid(ed4706ac5195e4eaea5a07e5b2ac9af0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_426.asset using Guid(ed4706ac5195e4eaea5a07e5b2ac9af0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ccc3bce476c5694768aff255c03e94a9') in 0.003199 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.965268 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_485.asset
+  artifactKey: Guid(f13569735d3864158be079aa5828ca46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_485.asset using Guid(f13569735d3864158be079aa5828ca46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '144de355e11eeb3314a0edb7915ac96e') in 0.004090 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_489.asset
+  artifactKey: Guid(8c816ff78a2214abb827d16374ed766c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_489.asset using Guid(8c816ff78a2214abb827d16374ed766c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b8a4f8b04e0298f4821d77c74c0beecf') in 0.003558 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_487.asset
+  artifactKey: Guid(2ab471768cf71440dadbba00c4fecfec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_487.asset using Guid(2ab471768cf71440dadbba00c4fecfec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1df757d0daa073375cae7442d71762a5') in 0.003264 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_493.asset
+  artifactKey: Guid(e39cdb7248dbb4859920866c4975b481) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_493.asset using Guid(e39cdb7248dbb4859920866c4975b481) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '905595624b98630d82c742bcfbe949ac') in 0.003422 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_501.asset
+  artifactKey: Guid(75c181456eb394599afcbfd741c6bae9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_501.asset using Guid(75c181456eb394599afcbfd741c6bae9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9395939dec200c6e97a95f201817a82e') in 0.003299 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_500.asset
+  artifactKey: Guid(b64455e5767224170a31aae5c7f6ad58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_500.asset using Guid(b64455e5767224170a31aae5c7f6ad58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5343fd01b5033c317a6e311f99ba2dd8') in 0.003300 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_506.asset
+  artifactKey: Guid(b2b7db2e31fff4130b427ab7b8582c27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_506.asset using Guid(b2b7db2e31fff4130b427ab7b8582c27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dff84fd145c801535602624e0a739114') in 0.003121 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_520.asset
+  artifactKey: Guid(8dec5dcf66c964ef384d10e34959a631) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_520.asset using Guid(8dec5dcf66c964ef384d10e34959a631) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4327c185ae1624876f55aabf80bec6bf') in 0.003018 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_530.asset
+  artifactKey: Guid(0f2b88d3e8b82424b83814b536887f76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_530.asset using Guid(0f2b88d3e8b82424b83814b536887f76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4fa5828a5d023785aa8f3b05e70b64c5') in 0.003167 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_505.asset
+  artifactKey: Guid(82e4d7dbd338049d0a4bb568e4fcbfad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_505.asset using Guid(82e4d7dbd338049d0a4bb568e4fcbfad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e7809400eb04333540f15d2dd7c86ab') in 0.003276 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_540.asset
+  artifactKey: Guid(95626defaff4f4bd698738dda883017f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_540.asset using Guid(95626defaff4f4bd698738dda883017f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'edf4114658d07ea313e057e07f815254') in 0.003555 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_555.asset
+  artifactKey: Guid(c6d8a6dad89c746c095d6954410c74f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_555.asset using Guid(c6d8a6dad89c746c095d6954410c74f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2cec9a56bd306ba2c34084b986ce983d') in 0.003790 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_545.asset
+  artifactKey: Guid(0703027fb0d624408be97c62632f5248) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_545.asset using Guid(0703027fb0d624408be97c62632f5248) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a82aec9be9ebd22d88ea98dde3d7dc7c') in 0.003174 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_529.asset
+  artifactKey: Guid(40e189400724c4df38f4bbd1adfb4b05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_529.asset using Guid(40e189400724c4df38f4bbd1adfb4b05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '63c1fa0c8a9903e79e2c7343839018cf') in 0.003189 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_499.asset
+  artifactKey: Guid(44d48c918637e47ca99c3b7ba1544d44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_499.asset using Guid(44d48c918637e47ca99c3b7ba1544d44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7bb4049348637c83ce9371b915569bc9') in 0.003251 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_563.asset
+  artifactKey: Guid(3d979251cb70749d6b4d2ea3e2f3c2e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_563.asset using Guid(3d979251cb70749d6b4d2ea3e2f3c2e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1905d8b8907c316dc6cc80c1e670c5a2') in 0.002940 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_561.asset
+  artifactKey: Guid(48580725325924ad793c94894e311ef1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_561.asset using Guid(48580725325924ad793c94894e311ef1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f15687c3cee36e05c66620b4dc2b4656') in 0.003440 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_580.asset
+  artifactKey: Guid(c79a0e60a20b348588233656f71fbaa1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_580.asset using Guid(c79a0e60a20b348588233656f71fbaa1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '99374a3d9ff9f5faab58943ce1a3fa01') in 0.003206 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_592.asset
+  artifactKey: Guid(924aefc567a584b6ca58cfa295252625) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_592.asset using Guid(924aefc567a584b6ca58cfa295252625) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '664fa0e3ebf0854867a6c2f1e3243682') in 0.002987 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_607.asset
+  artifactKey: Guid(472cfb1ee7db94f15ba947607cbaa1dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_607.asset using Guid(472cfb1ee7db94f15ba947607cbaa1dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '02fbbfefdd7b6f381b7f439f513adba4') in 0.003224 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_609.asset
+  artifactKey: Guid(b43d9a57180414bea80ae1d919a7f835) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_609.asset using Guid(b43d9a57180414bea80ae1d919a7f835) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4134240ef054d2d133fbb6f0b6a876c0') in 0.003837 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_600.asset
+  artifactKey: Guid(fd35815f5a45e425eb6e2cfdf4d45c00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_600.asset using Guid(fd35815f5a45e425eb6e2cfdf4d45c00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '777a07388ce600c478cdd3b2d0c732c5') in 0.003385 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_589.asset
+  artifactKey: Guid(ae4e8739226e8461bbba59bf56ba7dd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_589.asset using Guid(ae4e8739226e8461bbba59bf56ba7dd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '163486efb7f50687dadcadb9641fc51f') in 0.003094 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_615.asset
+  artifactKey: Guid(3df106b7b545b49d39f9538b0c808919) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_615.asset using Guid(3df106b7b545b49d39f9538b0c808919) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a64b8dbce779a839819a0e50ae39a9fd') in 0.003044 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_610.asset
+  artifactKey: Guid(daa2acbbfb6fb430e806ab54074110a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_610.asset using Guid(daa2acbbfb6fb430e806ab54074110a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ba415a6e29bdb151aaddf6b69e78ed4') in 0.003068 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_616.asset
+  artifactKey: Guid(14e77fb7df4b9406685450c9797b4714) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_616.asset using Guid(14e77fb7df4b9406685450c9797b4714) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9420cef080e767948137a3d793ba7426') in 0.003227 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_633.asset
+  artifactKey: Guid(017d5dfb2a1404d73ba99e0938db06ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_633.asset using Guid(017d5dfb2a1404d73ba99e0938db06ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6eeabc5053587add6440972bc94a2b94') in 0.003493 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_645.asset
+  artifactKey: Guid(84f7bfbf70a904e4a9934af70dda180d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_645.asset using Guid(84f7bfbf70a904e4a9934af70dda180d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e594f43dfa9433a2c1a4b6b40c520d55') in 0.003523 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_655.asset
+  artifactKey: Guid(5a3efaf287e78462faa0eac7db279936) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_655.asset using Guid(5a3efaf287e78462faa0eac7db279936) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5cc4f8d90968a4707c052e2931e50835') in 0.002843 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_657.asset
+  artifactKey: Guid(b432c15b0c432456d8dc75864e23db35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_657.asset using Guid(b432c15b0c432456d8dc75864e23db35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '590c8bae823abf26582c9410a05a53e5') in 0.003033 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_650.asset
+  artifactKey: Guid(b8f73a2623f4a47c29bb18c99aca449f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_650.asset using Guid(b8f73a2623f4a47c29bb18c99aca449f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '16b427abde7da87899493a2157cc8e8f') in 0.002947 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_677.asset
+  artifactKey: Guid(bac75ff0877df4bb4877396324eb2ad3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_677.asset using Guid(bac75ff0877df4bb4877396324eb2ad3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4bf25ed18e3a41db684432c9f87599a0') in 0.003291 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000050 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_680.asset
+  artifactKey: Guid(a3c920e14748341a7a503158e8e3d116) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_680.asset using Guid(a3c920e14748341a7a503158e8e3d116) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5273768ba18d35b81c9d49c8c353842e') in 0.002841 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_671.asset
+  artifactKey: Guid(8cdbed81758f841a185552093df5ee35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_671.asset using Guid(8cdbed81758f841a185552093df5ee35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '324da44eaebca21f97e77c66714661c2') in 0.002785 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_691.asset
+  artifactKey: Guid(3dd611e19bcf34a298229ed73fa3b9af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_691.asset using Guid(3dd611e19bcf34a298229ed73fa3b9af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8277ad273b19fc10bbdaa98e28dd7214') in 0.003501 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_519.asset
+  artifactKey: Guid(3cae5fd01b61949d78ea0cd63e4d8ad0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_519.asset using Guid(3cae5fd01b61949d78ea0cd63e4d8ad0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '64f5591f6d3163bad97cca76b24bb3a3') in 0.002977 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_549.asset
+  artifactKey: Guid(dcb2c6b39abd0462db0b5f06ba4372eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_549.asset using Guid(dcb2c6b39abd0462db0b5f06ba4372eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee5d6a4f366f399f990ca6323b34fddc') in 0.003533 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_648.asset
+  artifactKey: Guid(8936d3da1b31d45288e866607a2af9c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_648.asset using Guid(8936d3da1b31d45288e866607a2af9c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd88a45a91adb3d5ce3abfa16026f6d8') in 0.002988 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_659.asset
+  artifactKey: Guid(ca9dcd2359c37427089355a79a4c8f04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_659.asset using Guid(ca9dcd2359c37427089355a79a4c8f04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '489a467a667238bbe88c5939cf21bc77') in 0.003009 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_537.asset
+  artifactKey: Guid(a8e8f723405c74fdbb941618e3ba3a82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_537.asset using Guid(a8e8f723405c74fdbb941618e3ba3a82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f25cf090cbfd9cf25a0dbb7a2b33c32') in 0.003181 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_544.asset
+  artifactKey: Guid(da28c7c81c7b14a64a949eb625817c5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_544.asset using Guid(da28c7c81c7b14a64a949eb625817c5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ba99b813f35332cb1007ae25ac521ab') in 0.003436 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_605.asset
+  artifactKey: Guid(635a8938895bb413ba981f3e7a7cea73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_605.asset using Guid(635a8938895bb413ba981f3e7a7cea73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c85b50c384e34e2d847c3621ba8aa7b') in 0.003711 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_628.asset
+  artifactKey: Guid(99fb3dd7c28af4143a464c8ca4dca4f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_628.asset using Guid(99fb3dd7c28af4143a464c8ca4dca4f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f53e54b5d2c269d5bc49de43ec111eb8') in 0.003159 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_643.asset
+  artifactKey: Guid(0cea8cb84a834402ab338df6cb699503) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_643.asset using Guid(0cea8cb84a834402ab338df6cb699503) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d1773fcb888077c8b0f70ca6626ba64') in 0.003356 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_669.asset
+  artifactKey: Guid(33a1a1512f95d4ce18b061fdbd041af8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_669.asset using Guid(33a1a1512f95d4ce18b061fdbd041af8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '44e27e232270779ef9e5c6ef584fbe1d') in 0.003296 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_623.asset
+  artifactKey: Guid(04ea61384e91543b9a45740cc22d9e38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_623.asset using Guid(04ea61384e91543b9a45740cc22d9e38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '75efe32500d65350f92b36bc64c6cec4') in 0.003129 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_590.asset
+  artifactKey: Guid(22d8fa7777835438f96ef876ed24936c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_590.asset using Guid(22d8fa7777835438f96ef876ed24936c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7656867e2a1984df171f1a5745309de7') in 0.002688 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_528.asset
+  artifactKey: Guid(1f063387dca5f4336a12bba5ad1fc522) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_528.asset using Guid(1f063387dca5f4336a12bba5ad1fc522) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef9cffc611dc4df2fc7568630de46d29') in 0.003422 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_510.asset
+  artifactKey: Guid(7d2df4188a5cd4a41b67044017d74724) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_510.asset using Guid(7d2df4188a5cd4a41b67044017d74724) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ab28b06ebb977fbd65c187a07bdb94a') in 0.003395 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_557.asset
+  artifactKey: Guid(6f5edd43002194121a2022a6efb83be0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_557.asset using Guid(6f5edd43002194121a2022a6efb83be0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '236859812ecf159b9db4d89b75bf6dc5') in 0.003832 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_532.asset
+  artifactKey: Guid(869ad5fced90c4fe6a65bf1b1f5d4732) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_532.asset using Guid(869ad5fced90c4fe6a65bf1b1f5d4732) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '572b7603fd5c8d8c88f77ac2dcef9541') in 0.003188 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_662.asset
+  artifactKey: Guid(50cadb4ecd2cc443f90a575ff8527d40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_662.asset using Guid(50cadb4ecd2cc443f90a575ff8527d40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1b6355aaf4dd5bde647061bf59648394') in 0.003382 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000049 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_674.asset
+  artifactKey: Guid(1b249e1a5f8dc469387ce553c4ddbde8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_674.asset using Guid(1b249e1a5f8dc469387ce553c4ddbde8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd017f35bb75c05160c2f132653bfaf1f') in 0.003510 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_679.asset
+  artifactKey: Guid(dc29bc4da0ff14a1b8e2a9e4f4c861cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_679.asset using Guid(dc29bc4da0ff14a1b8e2a9e4f4c861cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3d511c1099ea93b1abe757a9b31433f6') in 0.002978 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_642.asset
+  artifactKey: Guid(a1fb4ab3f1a0b42fcaba292fd7f28411) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_642.asset using Guid(a1fb4ab3f1a0b42fcaba292fd7f28411) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c800960352d56fe3903b746767015c8a') in 0.002806 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_591.asset
+  artifactKey: Guid(0de6cdbd3f28d4e5f8a2c5e01f880946) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_591.asset using Guid(0de6cdbd3f28d4e5f8a2c5e01f880946) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba8d4e490eae9b421c33adb262725d78') in 0.003119 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_619.asset
+  artifactKey: Guid(5a8a8312635f04ca5aa34d31b037fadc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_619.asset using Guid(5a8a8312635f04ca5aa34d31b037fadc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7bafb6138e118d0819b68ba87fc7387b') in 0.003704 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_583.asset
+  artifactKey: Guid(c285ff0a7ca164018a94184bf9d65992) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_583.asset using Guid(c285ff0a7ca164018a94184bf9d65992) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b328bdaf2c606e48568961cf0917756') in 0.003328 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_568.asset
+  artifactKey: Guid(dc38926a0d4e74bd294fcb5868bb5018) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_568.asset using Guid(dc38926a0d4e74bd294fcb5868bb5018) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '05a54f3c6fdbc80f303951c16cecc4f2') in 0.003517 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_538.asset
+  artifactKey: Guid(16fdea010ff2d4b04bda93eda56d77cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_538.asset using Guid(16fdea010ff2d4b04bda93eda56d77cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c0a2c1e339fed1a99d83fb9fb5d9e9b') in 0.003347 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_599.asset
+  artifactKey: Guid(2ea85b252c7ae4d9bbaec944a4dc61a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_599.asset using Guid(2ea85b252c7ae4d9bbaec944a4dc61a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb9ab4085c96ecd07117a0eb6fbcf83d') in 0.003673 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_602.asset
+  artifactKey: Guid(e1ce6c31d6979480cb300d08b95f8869) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_602.asset using Guid(e1ce6c31d6979480cb300d08b95f8869) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a92e98765daceec061d41eff350e2ff1') in 0.003171 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_498.asset
+  artifactKey: Guid(3f1fa56594df44cf99155a36afad174a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_498.asset using Guid(3f1fa56594df44cf99155a36afad174a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd6a6f56ac87f9f98f3ae7b031fef5a90') in 0.003338 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_678.asset
+  artifactKey: Guid(8aa61b31e6e8d4504892d8ff9fa3a088) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_678.asset using Guid(8aa61b31e6e8d4504892d8ff9fa3a088) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '16efe808d730b926e5d9a68966643fdb') in 0.003387 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_596.asset
+  artifactKey: Guid(a13a47f1d41f24391a743eeaa12586b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_596.asset using Guid(a13a47f1d41f24391a743eeaa12586b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ccca4de6a92e8fffaa945e6d62f5440f') in 0.002782 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_577.asset
+  artifactKey: Guid(fe4edbec7794e4c339c554ccb7d26285) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_577.asset using Guid(fe4edbec7794e4c339c554ccb7d26285) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a4739b3f706c9f384214dc5c2afb04f') in 0.002898 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_574.asset
+  artifactKey: Guid(4b3bb33fd65144e78a74195a98ffef61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_574.asset using Guid(4b3bb33fd65144e78a74195a98ffef61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c2009d3a732e451066a1131aabcb9517') in 0.003559 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_630.asset
+  artifactKey: Guid(e49b909965547405f97dd62b562508b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_630.asset using Guid(e49b909965547405f97dd62b562508b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '189d8e6d71bc742990c6ded22a2d7ab3') in 0.003662 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_649.asset
+  artifactKey: Guid(cd250f5e7a75b48fda5324c1b099cffd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_649.asset using Guid(cd250f5e7a75b48fda5324c1b099cffd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '27a4675a5e779296efe0801092cc934b') in 0.003154 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.506338 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_694.asset
+  artifactKey: Guid(b6504b241d07f4276bbfefdc49ab580e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_694.asset using Guid(b6504b241d07f4276bbfefdc49ab580e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed93abe6f48eac220a0851f0beb69d7a') in 0.005601 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_702.asset
+  artifactKey: Guid(bb2915c9823274629b78ab3fdda88a85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_702.asset using Guid(bb2915c9823274629b78ab3fdda88a85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'af4a2f3d790be4cce1358a91b289fe38') in 0.003086 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_696.asset
+  artifactKey: Guid(c1f7f04558402442cb8961ce66d0655d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_696.asset using Guid(c1f7f04558402442cb8961ce66d0655d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5320bb8b2c3f4488b76c1833a5a02e86') in 0.003287 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_701.asset
+  artifactKey: Guid(38289e402840e443f8a35599a8e31b17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_701.asset using Guid(38289e402840e443f8a35599a8e31b17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e21603f8570330f37bdeed59b0341beb') in 0.002819 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.002377 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_705.asset
+  artifactKey: Guid(ae801ba7a956a4164a3d10737d6897e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_705.asset using Guid(ae801ba7a956a4164a3d10737d6897e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c175cf7364b9f91a8ea50ecdabd32f34') in 0.002805 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_712.asset
+  artifactKey: Guid(abfe1cb11b39a40c3a54abf44136bc72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_712.asset using Guid(abfe1cb11b39a40c3a54abf44136bc72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '49b35eaa433ae4ee8cd4240eab0c035d') in 0.002895 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_714.asset
+  artifactKey: Guid(cee19fc53554e40ba96c98b123fbea12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_714.asset using Guid(cee19fc53554e40ba96c98b123fbea12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7778391e8f9579a048352c4f75c749b3') in 0.003146 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_710.asset
+  artifactKey: Guid(121fca9adf1f44d808411152f5b7b5e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_710.asset using Guid(121fca9adf1f44d808411152f5b7b5e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '089b24d2c789e5c5477114eace7c977b') in 0.003356 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_723.asset
+  artifactKey: Guid(965c91e2bc34e45d98e0a08b2aa37998) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_723.asset using Guid(965c91e2bc34e45d98e0a08b2aa37998) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1720e0e5d365d3f2ae996750cb0ebe94') in 0.003123 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_725.asset
+  artifactKey: Guid(aa33a9e4be22c40daabf8df567846e01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_725.asset using Guid(aa33a9e4be22c40daabf8df567846e01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '627cf47b36578515bfc800926d765acc') in 0.003065 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_720.asset
+  artifactKey: Guid(9eee81b18ed6245e2ba03517088cd974) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_720.asset using Guid(9eee81b18ed6245e2ba03517088cd974) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9cebdedc639b21db6af9137f8429f58c') in 0.003536 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.032247 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_727.asset
+  artifactKey: Guid(7cfcfdb2ef1204d35addd4102edc87a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_727.asset using Guid(7cfcfdb2ef1204d35addd4102edc87a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2494af865a8e48aff3765a262bc90ee2') in 0.003455 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_734.asset
+  artifactKey: Guid(2ddb42d1d74a74384bb1f3743217bbf0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_734.asset using Guid(2ddb42d1d74a74384bb1f3743217bbf0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '49c4375b7eea0ac4b974265fbd183294') in 0.002834 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_732.asset
+  artifactKey: Guid(dd110d09900d9408da884de87358c821) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_732.asset using Guid(dd110d09900d9408da884de87358c821) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '775a6c2665b433ba608814e731332819') in 0.003384 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_730.asset
+  artifactKey: Guid(d4b7cbc4f8293400ca50ceb11077ba40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/sliced_floor/roguelikeSheet_transparent_730.asset using Guid(d4b7cbc4f8293400ca50ceb11077ba40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '41ce50cd454da87546dc188c482b1e44') in 0.003221 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001937 seconds.
+Begin MonoManager ReloadAssembly
+Thread 0x2a06a3000 may have been prematurely finalized
+Symbol file LoadedFromMemory doesn't match image /Users/a./ecs193_git/Open-Source-Minecraft-like-Simulation-Environment-for-AI/Sandbox Game/Library/PackageCache/com.unity.visualscripting@1.8.0/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image /Users/a./ecs193_git/Open-Source-Minecraft-like-Simulation-Environment-for-AI/Sandbox Game/Library/PackageCache/com.unity.visualscripting@1.8.0/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.59 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.587 seconds
+Domain Reload Profiling:
+	ReloadAssembly (587ms)
+		BeginReloadAssembly (76ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (32ms)
+		EndReloadAssembly (455ms)
+			LoadAssemblies (34ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (152ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (32ms)
+			SetupLoadedEditorAssemblies (206ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (42ms)
+				ProcessInitializeOnLoadAttributes (136ms)
+				ProcessInitializeOnLoadMethodAttributes (20ms)
+				AfterProcessingInitializeOnLoad (1ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (3ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.21 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4210 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 26 unused Assets / (92.7 KB). Loaded Objects now: 4695.
+Memory consumption went from 155.8 MB to 155.7 MB.
+Total: 2.727917 ms (FindLiveObjects: 0.149542 ms CreateObjectMapping: 0.072125 ms MarkObjects: 2.468791 ms  DeleteObjects: 0.036958 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002069 seconds.
+Begin MonoManager ReloadAssembly
+Thread 0x2a1fa3000 may have been prematurely finalized
+Symbol file LoadedFromMemory doesn't match image /Users/a./ecs193_git/Open-Source-Minecraft-like-Simulation-Environment-for-AI/Sandbox Game/Library/PackageCache/com.unity.visualscripting@1.8.0/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image /Users/a./ecs193_git/Open-Source-Minecraft-like-Simulation-Environment-for-AI/Sandbox Game/Library/PackageCache/com.unity.visualscripting@1.8.0/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.56 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.517 seconds
+Domain Reload Profiling:
+	ReloadAssembly (518ms)
+		BeginReloadAssembly (66ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (28ms)
+		EndReloadAssembly (401ms)
+			LoadAssemblies (26ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (131ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (28ms)
+			SetupLoadedEditorAssemblies (184ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (37ms)
+				ProcessInitializeOnLoadAttributes (122ms)
+				ProcessInitializeOnLoadMethodAttributes (19ms)
+				AfterProcessingInitializeOnLoad (1ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (3ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.19 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4210 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 26 unused Assets / (92.6 KB). Loaded Objects now: 4710.
+Memory consumption went from 155.8 MB to 155.7 MB.
+Total: 2.569459 ms (FindLiveObjects: 0.148292 ms CreateObjectMapping: 0.066791 ms MarkObjects: 2.321917 ms  DeleteObjects: 0.032000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file

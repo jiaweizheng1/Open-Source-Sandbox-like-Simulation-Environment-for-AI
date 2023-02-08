@@ -1,0 +1,557 @@
+Using pre-set license
+Built from '2021.3/staging' branch; Version is '2021.3.18f1 (3129e69bc0c7) revision 3221990'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 11  (10.0.22000) 64bit Core' Language: 'en' Physical Memory: 16216 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+E:\Game Design\Unity Project\2021.3.18f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker2
+-projectPath
+E:/UCD/2023_Winter/ECS193A/Project/Open-Source-Minecraft-like-Simulation-Environment-for-AI/Sandbox Game
+-logFile
+Logs/AssetImportWorker2.log
+-srvPort
+58434
+Successfully changed project path to: E:/UCD/2023_Winter/ECS193A/Project/Open-Source-Minecraft-like-Simulation-Environment-for-AI/Sandbox Game
+E:/UCD/2023_Winter/ECS193A/Project/Open-Source-Minecraft-like-Simulation-Environment-for-AI/Sandbox Game
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [9952] Host "[IP] 168.150.97.76 [Port] 0 [Flags] 2 [Guid] 2247289141 [EditorId] 2247289141 [Version] 1048832 [Id] WindowsEditor(7,Vincent-Laptop) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [9952] Host "[IP] 168.150.97.76 [Port] 0 [Flags] 2 [Guid] 2247289141 [EditorId] 2247289141 [Version] 1048832 [Id] WindowsEditor(7,Vincent-Laptop) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+Refreshing native plugins compatible for Editor in 85.15 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.3.18f1 (3129e69bc0c7)
+[Subsystems] Discovering subsystems at path E:/Game Design/Unity Project/2021.3.18f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path E:/UCD/2023_Winter/ECS193A/Project/Open-Source-Minecraft-like-Simulation-Environment-for-AI/Sandbox Game/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 2070 (ID=0x1f14)
+    Vendor:   NVIDIA
+    VRAM:     8019 MB
+    Driver:   31.0.15.2824
+Initialize mono
+Mono path[0] = 'E:/Game Design/Unity Project/2021.3.18f1/Editor/Data/Managed'
+Mono path[1] = 'E:/Game Design/Unity Project/2021.3.18f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'E:/Game Design/Unity Project/2021.3.18f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56076
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: E:/Game Design/Unity Project/2021.3.18f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.003053 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 92.61 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.641 seconds
+Domain Reload Profiling:
+	ReloadAssembly (641ms)
+		BeginReloadAssembly (73ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (470ms)
+			LoadAssemblies (71ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (104ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (27ms)
+			SetupLoadedEditorAssemblies (287ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (8ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (93ms)
+				BeforeProcessingInitializeOnLoad (1ms)
+				ProcessInitializeOnLoadAttributes (136ms)
+				ProcessInitializeOnLoadMethodAttributes (48ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.006310 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image E:\UCD\2023_Winter\ECS193A\Project\Open-Source-Minecraft-like-Simulation-Environment-for-AI\Sandbox Game\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image E:\UCD\2023_Winter\ECS193A\Project\Open-Source-Minecraft-like-Simulation-Environment-for-AI\Sandbox Game\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 81.08 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.111 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1112ms)
+		BeginReloadAssembly (117ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (7ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (18ms)
+		EndReloadAssembly (888ms)
+			LoadAssemblies (104ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (278ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (56ms)
+			SetupLoadedEditorAssemblies (420ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (3ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (81ms)
+				BeforeProcessingInitializeOnLoad (80ms)
+				ProcessInitializeOnLoadAttributes (218ms)
+				ProcessInitializeOnLoadMethodAttributes (32ms)
+				AfterProcessingInitializeOnLoad (5ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Refreshing native plugins compatible for Editor in 0.79 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3893 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 48 unused Assets / (128.9 KB). Loaded Objects now: 4351.
+Memory consumption went from 153.8 MB to 153.7 MB.
+Total: 3.532000 ms (FindLiveObjects: 0.309400 ms CreateObjectMapping: 0.240000 ms MarkObjects: 2.889400 ms  DeleteObjects: 0.092300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 5394.388147 seconds.
+  path: Assets/Sprout Lands - Sprites - Basic pack/Tilesets
+  artifactKey: Guid(2a6141a8f7a8eb84590808b33904bd71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprout Lands - Sprites - Basic pack/Tilesets using Guid(2a6141a8f7a8eb84590808b33904bd71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1cdb0fbb923ae6f14531c59642440212') in 0.018990 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/Sprout Lands - Sprites - Basic pack/Tilesets/Wooden House.png
+  artifactKey: Guid(a26c14800ffb920409854416d04656da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprout Lands - Sprites - Basic pack/Tilesets/Wooden House.png using Guid(a26c14800ffb920409854416d04656da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b2bfe83d729895593c11c46143a6a6dd') in 0.126096 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.190269 seconds.
+  path: Assets/Sprout Lands - Sprites - Basic pack/Objects
+  artifactKey: Guid(1d143e9c7124bc64e8c8a7052d21c566) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprout Lands - Sprites - Basic pack/Objects using Guid(1d143e9c7124bc64e8c8a7052d21c566) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f581314a7c380f674347dd2ae8a0c28') in 0.008478 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Sprout Lands - Sprites - Basic pack/Objects/Basic Grass Biom things 1.png
+  artifactKey: Guid(f69ddc2807b884447afc03aefe320853) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprout Lands - Sprites - Basic pack/Objects/Basic Grass Biom things 1.png using Guid(f69ddc2807b884447afc03aefe320853) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '35938e5f44916c63d7420886e0c0251f') in 0.032294 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000067 seconds.
+  path: Assets/Sprout Lands - Sprites - Basic pack/Objects/Wood Bridge.png
+  artifactKey: Guid(9d61be613ddc1bc49bc1aad5ff43d832) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprout Lands - Sprites - Basic pack/Objects/Wood Bridge.png using Guid(9d61be613ddc1bc49bc1aad5ff43d832) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '83b376b78122165e490d49f966c407c8') in 0.028310 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 23.696377 seconds.
+  path: Assets/Scenes/Scene.unity
+  artifactKey: Guid(1d9e03deac1ddb34b8cf34672a9dff20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Scene.unity using Guid(1d9e03deac1ddb34b8cf34672a9dff20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'debe3048c8f9f8518055041f7816f346') in 0.005961 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 112.697149 seconds.
+  path: Assets/farming-pack-free_version/sprite/farm_character_hoe.png
+  artifactKey: Guid(c52c7f7135fe50144b401179c4be39be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/farming-pack-free_version/sprite/farm_character_hoe.png using Guid(c52c7f7135fe50144b401179c4be39be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a94d8782f2dea8cb70c99a1b04d4c112') in 0.036194 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/farming-pack-free_version/sprite/farm_character_walk_frame16x20.png
+  artifactKey: Guid(2cf4c4a84833aa54babe006db05bcf84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/farming-pack-free_version/sprite/farm_character_walk_frame16x20.png using Guid(2cf4c4a84833aa54babe006db05bcf84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0a7f8f85060e82655970a93d9dc9d17d') in 0.026227 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/farming-pack-free_version/sprite/farm_character_watering.png
+  artifactKey: Guid(de46d681030871b4f87d79d410da12df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/farming-pack-free_version/sprite/farm_character_watering.png using Guid(de46d681030871b4f87d79d410da12df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cef93f1dae1cd7e7ed36ea694daeeb69') in 0.030646 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/farming-pack-free_version/sprite/farm_character_walk_frame32x32.png
+  artifactKey: Guid(972179ca9a69c4946933afb3321ca09f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/farming-pack-free_version/sprite/farm_character_walk_frame32x32.png using Guid(972179ca9a69c4946933afb3321ca09f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '82d36801b856e1ec328e3f67874b4f71') in 0.021796 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/farming-pack-free_version/sprite/free_icons2.png
+  artifactKey: Guid(fd0873b8d37104048b9082adca980880) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/farming-pack-free_version/sprite/free_icons2.png using Guid(fd0873b8d37104048b9082adca980880) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8dfa6557d37be824119ca73f8251892d') in 0.016368 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/farming-pack-free_version/sprite/kart.png
+  artifactKey: Guid(0679daae3cea3294e96ba824995abfa6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/farming-pack-free_version/sprite/kart.png using Guid(0679daae3cea3294e96ba824995abfa6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4caca408c543b675cd9bc344e5b95d33') in 0.034515 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/farming-pack-free_version/sprite/free_farm_plants1.png
+  artifactKey: Guid(0f1d0de60a6173a4eab6ac50a6253272) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/farming-pack-free_version/sprite/free_farm_plants1.png using Guid(0f1d0de60a6173a4eab6ac50a6253272) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '915b2ad320abcc5a292ce98e6164f99a') in 0.021506 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/farming-pack-free_version/sprite/free_chests.png
+  artifactKey: Guid(2f7b8485d149541468100dae2c528ffd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/farming-pack-free_version/sprite/free_chests.png using Guid(2f7b8485d149541468100dae2c528ffd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '315b5a3d3bcc1cb381e2fd2d9f53b9d9') in 0.017346 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/farming-pack-free_version/sprite/free_campfire.png
+  artifactKey: Guid(f0f7d7fec48d7564eb8e51b77e69e418) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/farming-pack-free_version/sprite/free_campfire.png using Guid(f0f7d7fec48d7564eb8e51b77e69e418) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b5413af709d4d087271c573802e1f191') in 0.017678 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/farming-pack-free_version/sprite/free_coin.png
+  artifactKey: Guid(7b5a44e68d25baa458a36b420e859f2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/farming-pack-free_version/sprite/free_coin.png using Guid(7b5a44e68d25baa458a36b420e859f2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed2114550d63444ef2ce1f98bfa67dc8') in 0.014605 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/farming-pack-free_version/sprite/free_icons1.png
+  artifactKey: Guid(58826712eb37d3b43bf236ac46cb3133) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/farming-pack-free_version/sprite/free_icons1.png using Guid(58826712eb37d3b43bf236ac46cb3133) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd10cc2a72ee12f0bb3cef7cbdbc4a608') in 0.013572 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.001432 seconds.
+  path: Assets/farming-pack-free_version/rpgmaker/MV
+  artifactKey: Guid(a1b37bcbd07bd504e8c53cbe1c0ae6f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/farming-pack-free_version/rpgmaker/MV using Guid(a1b37bcbd07bd504e8c53cbe1c0ae6f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9432d8e8436197d553fe7072b57de3cb') in 0.006931 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.298978 seconds.
+  path: Assets/farming-pack-free_version/rpgmaker/MV/tilesets
+  artifactKey: Guid(d68f6816249f9e747b669005d5684ecd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/farming-pack-free_version/rpgmaker/MV/tilesets using Guid(d68f6816249f9e747b669005d5684ecd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b96ca1bb864c2fa5736558c31006428c') in 0.006459 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/farming-pack-free_version/rpgmaker/MV/tilesets/_srw_farming_A1.png
+  artifactKey: Guid(1bbeb1a2c8563f746b967c8c2ec34494) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/farming-pack-free_version/rpgmaker/MV/tilesets/_srw_farming_A1.png using Guid(1bbeb1a2c8563f746b967c8c2ec34494) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '669bc54774d152befd70006fa27a0990') in 0.055796 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/farming-pack-free_version/rpgmaker/MV/tilesets/_srw_tileset_1.png
+  artifactKey: Guid(7a24317bf920bea4694cd4f099c62e5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/farming-pack-free_version/rpgmaker/MV/tilesets/_srw_tileset_1.png using Guid(7a24317bf920bea4694cd4f099c62e5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3cdd6e47168ce5685dcbd5d69eb42fd0') in 0.077950 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 58.811095 seconds.
+  path: Assets/farming-pack-free_version/rpgmaker/MV/tilesets/_srw_farming_A2.png
+  artifactKey: Guid(984d007b3bd53f24eac293f49a9bfdbe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/farming-pack-free_version/rpgmaker/MV/tilesets/_srw_farming_A2.png using Guid(984d007b3bd53f24eac293f49a9bfdbe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4deaa5252f91918289a2839c00c8232a') in 0.011358 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 61.848706 seconds.
+  path: Assets/farming-pack-free_version/rpgmaker/MV/tilesets/_srw_farming_A2.png
+  artifactKey: Guid(984d007b3bd53f24eac293f49a9bfdbe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/farming-pack-free_version/rpgmaker/MV/tilesets/_srw_farming_A2.png using Guid(984d007b3bd53f24eac293f49a9bfdbe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a44051f57aa01a11a97767e11f89ed5') in 1.479569 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 54.790920 seconds.
+  path: Assets/farming-pack-free_version/rpgmaker/MV/characters/!_srw_free_doors1.png
+  artifactKey: Guid(2a8c3615a32e6ef48950e744cd16aab4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/farming-pack-free_version/rpgmaker/MV/characters/!_srw_free_doors1.png using Guid(2a8c3615a32e6ef48950e744cd16aab4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9490fbb9de0380597985e208d1b013d2') in 0.045326 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000072 seconds.
+  path: Assets/farming-pack-free_version/rpgmaker/MV/characters/_srw_free_chests.png
+  artifactKey: Guid(f994bffc468a4944bbdd8ba3bd27d880) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/farming-pack-free_version/rpgmaker/MV/characters/_srw_free_chests.png using Guid(f994bffc468a4944bbdd8ba3bd27d880) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '087a0219419ba72d34bfe494dfdb9b60') in 0.069524 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/farming-pack-free_version/rpgmaker/MV/characters/_srw_free_farm_character_walk_frame32x32.png
+  artifactKey: Guid(fd0d10f27cf69ee41867a512c688bbb0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/farming-pack-free_version/rpgmaker/MV/characters/_srw_free_farm_character_walk_frame32x32.png using Guid(fd0d10f27cf69ee41867a512c688bbb0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c65c7b26cc888723cbea2e4f381aa31') in 0.070498 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/farming-pack-free_version/rpgmaker/MV/characters/$_srw_free_icons2.png
+  artifactKey: Guid(aa29e0412069e8342a26932d9ddec300) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/farming-pack-free_version/rpgmaker/MV/characters/$_srw_free_icons2.png using Guid(aa29e0412069e8342a26932d9ddec300) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a48b9a812766721cdaa2c7fcdcf2ab1b') in 0.018185 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/farming-pack-free_version/rpgmaker/MV/characters/_srw_sickle.png
+  artifactKey: Guid(311bf2f68bce41f48abcaf89aee3332d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/farming-pack-free_version/rpgmaker/MV/characters/_srw_sickle.png using Guid(311bf2f68bce41f48abcaf89aee3332d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '99b1bbeaeb542415d4208d5adccf4874') in 0.168085 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/farming-pack-free_version/rpgmaker/MV/characters/_srw_farm_character_walk_frame16x20.png
+  artifactKey: Guid(b77ba2e23dd9abc47a6b79c561903012) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/farming-pack-free_version/rpgmaker/MV/characters/_srw_farm_character_walk_frame16x20.png using Guid(b77ba2e23dd9abc47a6b79c561903012) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5aadec8b63be4606e73f1616ff811c4c') in 0.042227 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/farming-pack-free_version/rpgmaker/MV/characters/_srw_free_farm_plants2.png
+  artifactKey: Guid(35520fb0325576a4780e85da8392ca63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/farming-pack-free_version/rpgmaker/MV/characters/_srw_free_farm_plants2.png using Guid(35520fb0325576a4780e85da8392ca63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f0edc76fa82bdb47139d005e79317679') in 0.020928 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/farming-pack-free_version/rpgmaker/MV/characters/_srw_farm_character_walk_frame32x32.png
+  artifactKey: Guid(5aad31a431d44f54ab7243d3d2fd0e58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/farming-pack-free_version/rpgmaker/MV/characters/_srw_farm_character_walk_frame32x32.png using Guid(5aad31a431d44f54ab7243d3d2fd0e58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3334dc86bc22800dd7ddfbfe470e4fd2') in 0.062523 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/farming-pack-free_version/rpgmaker/MV/characters/_srw_farm_plants2.png
+  artifactKey: Guid(da91f4f9cc391c24e9dc96bdc33edf98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/farming-pack-free_version/rpgmaker/MV/characters/_srw_farm_plants2.png using Guid(da91f4f9cc391c24e9dc96bdc33edf98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd6e4be51e6145b0fdec3070c428046d6') in 0.029732 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/farming-pack-free_version/rpgmaker/MV/characters/_srw_free_farm_character_shovel.png
+  artifactKey: Guid(45400862d21d4de4191bd48f8119e08c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/farming-pack-free_version/rpgmaker/MV/characters/_srw_free_farm_character_shovel.png using Guid(45400862d21d4de4191bd48f8119e08c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a1c1a9bde29dc5629b0a356a141bb6f8') in 0.049453 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/farming-pack-free_version/rpgmaker/MV/characters/_srw_free_farm_character_walk_frame16x20.png
+  artifactKey: Guid(03b417837cc78ce4399a3098a35e6e8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/farming-pack-free_version/rpgmaker/MV/characters/_srw_free_farm_character_walk_frame16x20.png using Guid(03b417837cc78ce4399a3098a35e6e8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '21d645873eef0fc8633a9a4a01961bd6') in 0.024064 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 33.955283 seconds.
+  path: Assets/farming-pack-free_version/rpgmaker/MZ/characters/$_srw_free_campfire.png
+  artifactKey: Guid(4f76a333b2fb52d4db3c1935969dc7b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/farming-pack-free_version/rpgmaker/MZ/characters/$_srw_free_campfire.png using Guid(4f76a333b2fb52d4db3c1935969dc7b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '058e1ca39fe2b3f468da815a4ac5c194') in 0.022082 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/farming-pack-free_version/rpgmaker/MZ/characters/_srw_free_chests.png
+  artifactKey: Guid(a63ce0b6d7f9bde4f89ae067144e6481) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/farming-pack-free_version/rpgmaker/MZ/characters/_srw_free_chests.png using Guid(a63ce0b6d7f9bde4f89ae067144e6481) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '60767d75e64a3c33f611ce5e01cab2e1') in 0.040468 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/farming-pack-free_version/rpgmaker/MZ/characters/_srw_free_farm_character_walk_frame16x20.png
+  artifactKey: Guid(32f26e76c5b4d564f829fd9a4bc99e22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/farming-pack-free_version/rpgmaker/MZ/characters/_srw_free_farm_character_walk_frame16x20.png using Guid(32f26e76c5b4d564f829fd9a4bc99e22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e9aa8b8049b3176f4aa416c4c1cd5473') in 0.024997 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/farming-pack-free_version/rpgmaker/MZ/characters/_srw_kart.png
+  artifactKey: Guid(0af4cf82fabaed44391997bd925ab75f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/farming-pack-free_version/rpgmaker/MZ/characters/_srw_kart.png using Guid(0af4cf82fabaed44391997bd925ab75f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3358f801fad4cfab5aec99825dfa40d6') in 0.103296 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/farming-pack-free_version/rpgmaker/MZ/characters/_srw_free_farm_character_walk_frame32x32.png
+  artifactKey: Guid(679bf945535d25449839213e41fd1a51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/farming-pack-free_version/rpgmaker/MZ/characters/_srw_free_farm_character_walk_frame32x32.png using Guid(679bf945535d25449839213e41fd1a51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '815e22bbf7319a25246518f04c4d45b9') in 0.046016 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/farming-pack-free_version/rpgmaker/MZ/characters/_srw_farm_plants1.png
+  artifactKey: Guid(a9b069cf5663f06479c7e1237a15a099) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/farming-pack-free_version/rpgmaker/MZ/characters/_srw_farm_plants1.png using Guid(a9b069cf5663f06479c7e1237a15a099) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec84dd1234bc1d097fcbdd61cb7006ce') in 0.052568 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/farming-pack-free_version/rpgmaker/MZ/characters/_srw_farm_plants2.png
+  artifactKey: Guid(24150086b3995e7459973d9e4f431761) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/farming-pack-free_version/rpgmaker/MZ/characters/_srw_farm_plants2.png using Guid(24150086b3995e7459973d9e4f431761) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2d49f6f5ea6aaeb454e0dde7cf9945ec') in 0.025940 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/farming-pack-free_version/rpgmaker/MZ/characters/_srw_farm_character_shovel.png
+  artifactKey: Guid(6ac1301aa8374e844a3e6451e947b900) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/farming-pack-free_version/rpgmaker/MZ/characters/_srw_farm_character_shovel.png using Guid(6ac1301aa8374e844a3e6451e947b900) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3cf18704bacaad5189d75776c8170ddc') in 0.063886 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.731348 seconds.
+  path: Assets/farming-pack-free_version/rpgmaker/MZ/tilesets/_srw_farming_A2.png
+  artifactKey: Guid(791e1d9c84e5e6a4fb4349bf8c69466b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/farming-pack-free_version/rpgmaker/MZ/tilesets/_srw_farming_A2.png using Guid(791e1d9c84e5e6a4fb4349bf8c69466b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '707c38d545d26b3bf2da7347494f5231') in 0.041262 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/farming-pack-free_version/rpgmaker/MZ/tilesets/_srw_tileset_1.png
+  artifactKey: Guid(74e3924d4396a6349ba4ab0051e01454) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/farming-pack-free_version/rpgmaker/MZ/tilesets/_srw_tileset_1.png using Guid(74e3924d4396a6349ba4ab0051e01454) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '737aed543e58d989ac40add986555ae0') in 0.050984 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.021767 seconds.
+  path: Assets/farming-pack-free_version/rpgmaker/VXace/characters/$_srw_free_campfire.png
+  artifactKey: Guid(2dcbf77cc6303e649837109d848d4c3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/farming-pack-free_version/rpgmaker/VXace/characters/$_srw_free_campfire.png using Guid(2dcbf77cc6303e649837109d848d4c3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '240c8e9e0071f5935413a159331d1d0d') in 0.023694 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/farming-pack-free_version/rpgmaker/VXace/characters/$_srw_free_icons1.png
+  artifactKey: Guid(3181f074369f13445907194c51989263) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/farming-pack-free_version/rpgmaker/VXace/characters/$_srw_free_icons1.png using Guid(3181f074369f13445907194c51989263) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '74f60546a7cee08fb274184e41cdd5ab') in 0.022027 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/farming-pack-free_version/rpgmaker/VXace/characters/_srw_kart.png
+  artifactKey: Guid(cdd4c839c9dcfb947a7f15bccc3ff7b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/farming-pack-free_version/rpgmaker/VXace/characters/_srw_kart.png using Guid(cdd4c839c9dcfb947a7f15bccc3ff7b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '996f64398e3771efb3e73c8d622395b1') in 0.051153 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/farming-pack-free_version/rpgmaker/VXace/characters/_srw_sickle.png
+  artifactKey: Guid(f26398fd3be668c47a7f361096964800) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/farming-pack-free_version/rpgmaker/VXace/characters/_srw_sickle.png using Guid(f26398fd3be668c47a7f361096964800) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4abf6a1e0bb482fd26d37d78fd9a0574') in 0.065822 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/farming-pack-free_version/rpgmaker/VXace/characters/_srw_farm_plants1.png
+  artifactKey: Guid(726914a2237c09e40896e2753c753d32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/farming-pack-free_version/rpgmaker/VXace/characters/_srw_farm_plants1.png using Guid(726914a2237c09e40896e2753c753d32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '26b878857b5fef3debe18bef857f7d01') in 0.052901 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/farming-pack-free_version/rpgmaker/VXace/characters/_srw_free_farm_character_walk_frame32x32.png
+  artifactKey: Guid(62103d67b316ff34d9aa8c84df519554) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/farming-pack-free_version/rpgmaker/VXace/characters/_srw_free_farm_character_walk_frame32x32.png using Guid(62103d67b316ff34d9aa8c84df519554) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f551976db5565c21907d39dee5643b9b') in 0.038596 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.799384 seconds.
+  path: Assets/farming-pack-free_version/rpgmaker/VXace/tilesets/_srw_farming_A2.png
+  artifactKey: Guid(d0f92cdbc5cbe954984b5b3cb9fc6037) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/farming-pack-free_version/rpgmaker/VXace/tilesets/_srw_farming_A2.png using Guid(d0f92cdbc5cbe954984b5b3cb9fc6037) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'adebd2c0cce0182627e36a6be7a21b44') in 0.036748 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 34.989937 seconds.
+  path: Assets/farming-pack-free_version/godot_autotiles/free_anim_autotile_2.png
+  artifactKey: Guid(72bbe7b90dd784c45913d50003fd6ac6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/farming-pack-free_version/godot_autotiles/free_anim_autotile_2.png using Guid(72bbe7b90dd784c45913d50003fd6ac6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '07c858b5586e756f1cff53b3deb3acdb') in 0.020468 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/farming-pack-free_version/godot_autotiles/ground_autotile_10.png
+  artifactKey: Guid(98b1f3da015e00545b38abefed6d99a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/farming-pack-free_version/godot_autotiles/ground_autotile_10.png using Guid(98b1f3da015e00545b38abefed6d99a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c3214508526e6335ff68616b674fc30') in 0.021829 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/farming-pack-free_version/godot_autotiles/free_ground_autotile_21.png
+  artifactKey: Guid(7edd8ef6d538e5443a7a352ba63fe3a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/farming-pack-free_version/godot_autotiles/free_ground_autotile_21.png using Guid(7edd8ef6d538e5443a7a352ba63fe3a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f736118df7047c67580ada4c1240c996') in 0.019502 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000057 seconds.
+  path: Assets/farming-pack-free_version/godot_autotiles/ground_autotile_3.png
+  artifactKey: Guid(b3639d9aed7cacd46ba00601a570a169) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/farming-pack-free_version/godot_autotiles/ground_autotile_3.png using Guid(b3639d9aed7cacd46ba00601a570a169) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '542ce8291127fa8488338af3d0e599c3') in 0.018713 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/farming-pack-free_version/godot_autotiles/ground_autotile_8.png
+  artifactKey: Guid(09c6edb81b833cf4588e3c4076318b77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/farming-pack-free_version/godot_autotiles/ground_autotile_8.png using Guid(09c6edb81b833cf4588e3c4076318b77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fce5a89bf96cb059ecdabe5e5daced58') in 0.018757 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/farming-pack-free_version/godot_autotiles/ground_autotile_19.png
+  artifactKey: Guid(d366009fcf478b44cbdf8b098ae0d6dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/farming-pack-free_version/godot_autotiles/ground_autotile_19.png using Guid(d366009fcf478b44cbdf8b098ae0d6dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b578e9b3724cb33dbc117b58f46a98d') in 0.023450 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/farming-pack-free_version/godot_autotiles/ground_autotile_15.png
+  artifactKey: Guid(e6c44a947c5d7f045b82f5e3571ee583) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/farming-pack-free_version/godot_autotiles/ground_autotile_15.png using Guid(e6c44a947c5d7f045b82f5e3571ee583) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '550cd3fa179fbe2f4968bedffedf785c') in 0.020665 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/farming-pack-free_version/godot_autotiles/ground_autotile_23.png
+  artifactKey: Guid(deb72966e1f12c546a345503c905e560) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/farming-pack-free_version/godot_autotiles/ground_autotile_23.png using Guid(deb72966e1f12c546a345503c905e560) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bebb1d58d43fa9b36185675582056598') in 0.016199 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/farming-pack-free_version/godot_autotiles/ground_autotile_32.png
+  artifactKey: Guid(5a04d83cb67e1734ead834c6d11b3d4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/farming-pack-free_version/godot_autotiles/ground_autotile_32.png using Guid(5a04d83cb67e1734ead834c6d11b3d4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b08395567e7e37f1f069742fa5d9bb5d') in 0.017990 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 339.970192 seconds.
+  path: Assets/Sprites/Sprout Lands - Sprites - Basic pack/Objects/Basic Plants_1.asset
+  artifactKey: Guid(9d12f1eaeb8c1c146a4425605681bb8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Sprout Lands - Sprites - Basic pack/Objects/Basic Plants_1.asset using Guid(9d12f1eaeb8c1c146a4425605681bb8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6923c781d2fecb46decd777aa5369d3b') in 0.070358 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Sprites/Sprout Lands - Sprites - Basic pack/Objects/Basic Plants_7.asset
+  artifactKey: Guid(122e708ed6e006444b452fe62017a7f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Sprout Lands - Sprites - Basic pack/Objects/Basic Plants_7.asset using Guid(122e708ed6e006444b452fe62017a7f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '77fc9835b13ef23d6d69ddeab00278ce') in 0.017430 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000065 seconds.
+  path: Assets/Sprites/Sprout Lands - Sprites - Basic pack/Objects/Basic Plants_9.asset
+  artifactKey: Guid(e00d4073efe872049b432f2c46dda632) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Sprout Lands - Sprites - Basic pack/Objects/Basic Plants_9.asset using Guid(e00d4073efe872049b432f2c46dda632) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd86f85abc5c3044c15daa6e13c13baa3') in 0.017026 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/Sprites/Sprout Lands - Sprites - Basic pack/Objects/Basic Plants_5.asset
+  artifactKey: Guid(43b4a7b851edb544384b6b64bc31878e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Sprout Lands - Sprites - Basic pack/Objects/Basic Plants_5.asset using Guid(43b4a7b851edb544384b6b64bc31878e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'edf1bf9af5ac0666e328d8019cdf1dbb') in 0.016542 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000053 seconds.
+  path: Assets/Sprites/Sprout Lands - Sprites - Basic pack/Objects/Basic Plants_3.asset
+  artifactKey: Guid(fcdca719c7bcadc4dadfbf91cd4478ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Sprout Lands - Sprites - Basic pack/Objects/Basic Plants_3.asset using Guid(fcdca719c7bcadc4dadfbf91cd4478ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '775fa17a322b31d3d9fd1ba0cb7d8448') in 0.013911 seconds 
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0

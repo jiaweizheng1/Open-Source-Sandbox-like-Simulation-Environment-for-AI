@@ -2,16 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Map_measurement : MonoBehaviour
+public class wheat_initialize : MonoBehaviour
 {
-    public GameObject lt;
-    public GameObject ld;
-    public GameObject rt;
-    public GameObject rd;
+    public bool activate;
     // Start is called before the first frame update
     void Start()
     {
-        
+        gameObject.SetActive(activate);
     }
 
     // Update is called once per frame
@@ -19,5 +16,4 @@ public class Map_measurement : MonoBehaviour
     {
         
     }
-    
 }

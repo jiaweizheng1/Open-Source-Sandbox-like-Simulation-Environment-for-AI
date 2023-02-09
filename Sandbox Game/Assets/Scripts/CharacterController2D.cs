@@ -41,6 +41,7 @@ public class CharacterController2D : MonoBehaviour
         {
             interactor.localRotation = Quaternion.Euler(0, 0, 0);
         }
+        
     }
 
     void FixedUpdate()

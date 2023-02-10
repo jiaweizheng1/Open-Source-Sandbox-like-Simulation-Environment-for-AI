@@ -24,8 +24,7 @@ public class HomeDoorScript : MonoBehaviour
         {
             if(Input.GetKeyDown(InteractKey))
             {
-                Debug.Log("Interaction Started");
-                animator.SetBool("trigger", true);
+                animator.SetTrigger("Trigger");   
             }
         }
     }
@@ -35,7 +34,6 @@ public class HomeDoorScript : MonoBehaviour
         if(collision.gameObject.CompareTag("Player"))
         {
             InRange = true;
-            Debug.Log("Player Close");
         }
     }
 
@@ -44,7 +42,6 @@ public class HomeDoorScript : MonoBehaviour
         if(collision.gameObject.CompareTag("Player"))
         {
             InRange = false;
-            Debug.Log("Player Not Close");
         }
     }
 }

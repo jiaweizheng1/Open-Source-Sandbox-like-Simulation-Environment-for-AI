@@ -12,10 +12,10 @@ public class CharacterController2D : MonoBehaviour
     public Transform interactor;
     [SerializeField] private UI_inventory uiInventory;
     private Inventory inventory;
-    // void Awake(){
-    //     inventory = new Inventory();
-    //     uiInventory.SetInventory(inventory);
-    // }
+    void Awake(){
+        inventory = new Inventory();
+        uiInventory.SetInventory(inventory);
+    }
     void Update()
     {
         motionvector.x = Input.GetAxisRaw("Horizontal");

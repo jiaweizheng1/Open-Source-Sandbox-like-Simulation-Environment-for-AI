@@ -23,8 +23,11 @@ public class UI_inventory : MonoBehaviour
         float itemSlotCellSize = 30f;
         foreach (Item item in inventory.GetItemList()){
             RectTransform itemSlotRectTransform = Instantiate(itemSlotTemplate,itemSlotContainer).GetComponent<RectTransform>();
-            itemSlotRectTransform.anchoredPosition= new Vector2(x*itemSlotCellSize,y*itemSlotCellSize);
             Image image = itemSlotRectTransform.Find("image").GetComponent<Image>();
+
+            itemSlotRectTransform.gameObject.SetActive(true);
+            itemSlotRectTransform.anchoredPosition= new Vector2(x*itemSlotCellSize,y*itemSlotCellSize);
+
             image.sprite = item.GetSprite();
             x++;
             if (x>4){

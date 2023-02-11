@@ -6,7 +6,7 @@ public class Item
 {
     public enum ItemType{
         Seed,
-        Too,
+        Tool,
     }
 
     public ItemType itemType;

@@ -1,0 +1,316 @@
+Unity Editor version:    2021.3.18f1 (3129e69bc0c7)
+Branch:                  2021.3/staging
+Build type:              Release
+Batch mode:              YES
+macOS version:           Version 13.0 (Build 22A8380)
+Darwin version:          22.1.0
+Architecture:            arm64
+Running under Rosetta:   NO
+Available memory:        16384 MB
+Using pre-set license
+Pro License: YES
+
+COMMAND LINE ARGUMENTS:
+/Applications/Unity/Hub/Editor/2021.3.18f1/Unity.app/Contents/MacOS/Unity
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker5
+-projectPath
+/Users/a./ecs193_git/Open-Source-Minecraft-like-Simulation-Environment-for-AI/Sandbox Game
+-logFile
+Logs/AssetImportWorker5.log
+-srvPort
+49754
+Successfully changed project path to: /Users/a./ecs193_git/Open-Source-Minecraft-like-Simulation-Environment-for-AI/Sandbox Game
+/Users/a./ecs193_git/Open-Source-Minecraft-like-Simulation-Environment-for-AI/Sandbox Game
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [8699045120] Host "[IP] 10.0.0.121 [Port] 0 [Flags] 2 [Guid] 641282860 [EditorId] 641282860 [Version] 1048832 [Id] OSXEditor(0,MacBook-Pro-3.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [8699045120] Host "[IP] 10.0.0.121 [Port] 0 [Flags] 2 [Guid] 641282860 [EditorId] 641282860 [Version] 1048832 [Id] OSXEditor(0,MacBook-Pro-3.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+Setting a NavMeshArea cost less than one can give unexpected results.
+Refreshing native plugins compatible for Editor in 93.79 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.3.18f1 (3129e69bc0c7)
+[Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/2021.3.18f1/Unity.app/Contents/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path /Users/a./ecs193_git/Open-Source-Minecraft-like-Simulation-Environment-for-AI/Sandbox Game/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+ preferred device: Apple M2 Pro (high power)
+Metal devices available: 1
+0: Apple M2 Pro (high power)
+Using device Apple M2 Pro (high power)
+Initializing Metal device caps: Apple M2 Pro
+Initialize mono
+Mono path[0] = '/Applications/Unity/Hub/Editor/2021.3.18f1/Unity.app/Contents/Managed'
+Mono path[1] = '/Applications/Unity/Hub/Editor/2021.3.18f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityjit-macos'
+Mono config path = '/Applications/Unity/Hub/Editor/2021.3.18f1/Unity.app/Contents/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56659
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: /Applications/Unity/Hub/Editor/2021.3.18f1/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: /Applications/Unity/Hub/Editor/2021.3.18f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
+Registered in 0.002064 seconds.
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 81.07 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.398 seconds
+Domain Reload Profiling:
+	ReloadAssembly (399ms)
+		BeginReloadAssembly (47ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (0ms)
+		EndReloadAssembly (284ms)
+			LoadAssemblies (48ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (63ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (17ms)
+			SetupLoadedEditorAssemblies (179ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (3ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (81ms)
+				BeforeProcessingInitializeOnLoad (1ms)
+				ProcessInitializeOnLoadAttributes (72ms)
+				ProcessInitializeOnLoadMethodAttributes (21ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.006000 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image /Users/a./ecs193_git/Open-Source-Minecraft-like-Simulation-Environment-for-AI/Sandbox Game/Library/PackageCache/com.unity.visualscripting@1.8.0/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image /Users/a./ecs193_git/Open-Source-Minecraft-like-Simulation-Environment-for-AI/Sandbox Game/Library/PackageCache/com.unity.visualscripting@1.8.0/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 87.92 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.686 seconds
+Domain Reload Profiling:
+	ReloadAssembly (687ms)
+		BeginReloadAssembly (54ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (16ms)
+		EndReloadAssembly (569ms)
+			LoadAssemblies (51ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (142ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (42ms)
+			SetupLoadedEditorAssemblies (303ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (2ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (88ms)
+				BeforeProcessingInitializeOnLoad (50ms)
+				ProcessInitializeOnLoadAttributes (143ms)
+				ProcessInitializeOnLoadMethodAttributes (19ms)
+				AfterProcessingInitializeOnLoad (1ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (2ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Setting a NavMeshArea cost less than one can give unexpected results.
+Launching external process: /Applications/Unity/Hub/Editor/2021.3.18f1/Unity.app/Contents/Tools/UnityShaderCompiler
+Launched and connected shader compiler UnityShaderCompiler after 0.16 seconds
+Refreshing native plugins compatible for Editor in 0.68 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3928 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 48 unused Assets / (113.2 KB). Loaded Objects now: 4388.
+Memory consumption went from 144.5 MB to 144.4 MB.
+Total: 2.316458 ms (FindLiveObjects: 0.097208 ms CreateObjectMapping: 0.054125 ms MarkObjects: 2.111209 ms  DeleteObjects: 0.053666 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 77354.395407 seconds.
+  path: Assets/Sprites/farming-pack-free_version/rpgmaker/MV/characters/_srw_free_farm_plants1.png
+  artifactKey: Guid(c5701e1c8c025db4b930f93e29b4d99c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/farming-pack-free_version/rpgmaker/MV/characters/_srw_free_farm_plants1.png using Guid(c5701e1c8c025db4b930f93e29b4d99c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b0a2a76e72611f279301c19e55274b51') in 0.156550 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/Sprites/farming-pack-free_version/godot_autotiles/anim_autotile_0.png
+  artifactKey: Guid(f09b45b71961df2438df0fd5d841b804) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/farming-pack-free_version/godot_autotiles/anim_autotile_0.png using Guid(f09b45b71961df2438df0fd5d841b804) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '57ba24ca7da4968a6ae43e920ef2da79') in 0.007616 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/Sprites/farming-pack-free_version/rpgmaker/MZ/characters/_srw_kart.png
+  artifactKey: Guid(0af4cf82fabaed44391997bd925ab75f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/farming-pack-free_version/rpgmaker/MZ/characters/_srw_kart.png using Guid(0af4cf82fabaed44391997bd925ab75f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad01c2bd0e30a1360a0394064df75d77') in 0.055023 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Sprites/farming-pack-free_version/rpgmaker/VXace/characters/_srw_sickle.png
+  artifactKey: Guid(f26398fd3be668c47a7f361096964800) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/farming-pack-free_version/rpgmaker/VXace/characters/_srw_sickle.png using Guid(f26398fd3be668c47a7f361096964800) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a6ea1bad77e4bfb154a17bbaadae73d8') in 0.034081 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000052 seconds.
+  path: Assets/Sprites/farming-pack-free_version/rpgmaker/VXace/tilesets/_srw_tileset_0.png
+  artifactKey: Guid(17b14cff9c78d7e48be2a6f370d6e032) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/farming-pack-free_version/rpgmaker/VXace/tilesets/_srw_tileset_0.png using Guid(17b14cff9c78d7e48be2a6f370d6e032) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '274b8075500404b987ff4a3501be3816') in 0.014434 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Sprites/farming-pack-free_version/rpgmaker/VXace/tilesets/_srw_tileset_1.png
+  artifactKey: Guid(8af7371ce6d544c40932e47a48963dbd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/farming-pack-free_version/rpgmaker/VXace/tilesets/_srw_tileset_1.png using Guid(8af7371ce6d544c40932e47a48963dbd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec4de1a97609c0f866c008f9c9eedae1') in 0.019999 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Sprites/farming-pack-free_version/rpgmaker/MV/characters/_srw_kart.png
+  artifactKey: Guid(70505656a473df4439fa7314e7bbca81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/farming-pack-free_version/rpgmaker/MV/characters/_srw_kart.png using Guid(70505656a473df4439fa7314e7bbca81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '80b7a4bf15758bccb1ec8e7dc213ae45') in 0.050920 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/Sprites/farming-pack-free_version/rpgmaker/MV/tilesets/_srw_tileset_0.png
+  artifactKey: Guid(e7ba30b894dde354cbc6775b4505ff64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/farming-pack-free_version/rpgmaker/MV/tilesets/_srw_tileset_0.png using Guid(e7ba30b894dde354cbc6775b4505ff64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cada403f665773368cb5e3041122f15f') in 0.026070 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Sprites/Sprout Lands - Sprites - Basic pack/Characters/Basic Charakter Actions.png
+  artifactKey: Guid(f3a2ea8de4d5fc449a3d091596aa995f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Sprout Lands - Sprites - Basic pack/Characters/Basic Charakter Actions.png using Guid(f3a2ea8de4d5fc449a3d091596aa995f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a0a47f026aa1661e629c9e2a34dd2f9') in 0.031482 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Sprites/farming-pack-free_version/rpgmaker/MZ/tilesets/_srw_tileset_0.png
+  artifactKey: Guid(3d33a3c96948960449068c442427e1c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/farming-pack-free_version/rpgmaker/MZ/tilesets/_srw_tileset_0.png using Guid(3d33a3c96948960449068c442427e1c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e5a2cc71eed72ee82da93e6535a83ad') in 0.023993 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/Sprites/Zelda-Like Sprites/objects.png
+  artifactKey: Guid(a6942697711b5cc4bbfcafcc731cb809) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Zelda-Like Sprites/objects.png using Guid(a6942697711b5cc4bbfcafcc731cb809) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5de2f72ed4eb73a9e98e008d43752596') in 0.121400 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/Sprites/Sprout Lands - Sprites - Basic pack/Tilesets/Wooden House.png
+  artifactKey: Guid(a26c14800ffb920409854416d04656da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Sprout Lands - Sprites - Basic pack/Tilesets/Wooden House.png using Guid(a26c14800ffb920409854416d04656da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc28a63cd59e45da0d61758d5d5a2844') in 0.005316 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Sprites/farming-pack-free_version/rpgmaker/VXace/characters/_srw_kart.png
+  artifactKey: Guid(cdd4c839c9dcfb947a7f15bccc3ff7b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/farming-pack-free_version/rpgmaker/VXace/characters/_srw_kart.png using Guid(cdd4c839c9dcfb947a7f15bccc3ff7b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '105014ab16df06985c6eeccd1e23a73d') in 0.029457 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000047 seconds.
+  path: Assets/Sprites/farming-pack-free_version/rpgmaker/MV/tilesets/_srw_tileset_1.png
+  artifactKey: Guid(7a24317bf920bea4694cd4f099c62e5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/farming-pack-free_version/rpgmaker/MV/tilesets/_srw_tileset_1.png using Guid(7a24317bf920bea4694cd4f099c62e5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '536f6c35069aa54c3bcc941aa0d6cec5') in 0.036730 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Sprites/farming-pack-free_version/rpgmaker/MZ/characters/_srw_free_farm_plants2.png
+  artifactKey: Guid(86af1fd119fddc14e9a69773e521a2e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/farming-pack-free_version/rpgmaker/MZ/characters/_srw_free_farm_plants2.png using Guid(86af1fd119fddc14e9a69773e521a2e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '64a6c8ea2020b6d27f2c9ace045b8872') in 0.010814 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Sprites/farming-pack-free_version/rpgmaker/VXace/characters/_srw_free_farm_plants1.png
+  artifactKey: Guid(dbe28589b5dd10f47b6f3af6d26d48c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/farming-pack-free_version/rpgmaker/VXace/characters/_srw_free_farm_plants1.png using Guid(dbe28589b5dd10f47b6f3af6d26d48c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6accb0ece08a89315a45a1ad4f415850') in 0.011211 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Sprites/farming-pack-free_version/rpgmaker/VXace/characters/_srw_free_farm_plants2.png
+  artifactKey: Guid(064a2d4cb0818da449b795d1b352e3ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/farming-pack-free_version/rpgmaker/VXace/characters/_srw_free_farm_plants2.png using Guid(064a2d4cb0818da449b795d1b352e3ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ccf97cab22cc13dc03c17942dd9b776d') in 0.009248 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Sprites/farming-pack-free_version/rpgmaker/MZ/tilesets/_srw_tileset_1.png
+  artifactKey: Guid(74e3924d4396a6349ba4ab0051e01454) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/farming-pack-free_version/rpgmaker/MZ/tilesets/_srw_tileset_1.png using Guid(74e3924d4396a6349ba4ab0051e01454) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '488496c6b3772b27dc6188cad1d141cf') in 0.033778 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Sprites/farming-pack-free_version/rpgmaker/MV/characters/_srw_sickle.png
+  artifactKey: Guid(311bf2f68bce41f48abcaf89aee3332d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/farming-pack-free_version/rpgmaker/MV/characters/_srw_sickle.png using Guid(311bf2f68bce41f48abcaf89aee3332d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c17080cfb41d4b59be377a841105337') in 0.077148 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Sprites/Sprout Lands - Sprites - Basic pack/Objects/Simple Milk and grass item.png
+  artifactKey: Guid(879fc9f0b890f3b4782c20f3de8a216f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Sprout Lands - Sprites - Basic pack/Objects/Simple Milk and grass item.png using Guid(879fc9f0b890f3b4782c20f3de8a216f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '53a4ff720991827baaafde1c334c8330') in 0.003692 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Sprites/Sprout Lands - Sprites - Basic pack/Objects/Wood Bridge.png
+  artifactKey: Guid(9d61be613ddc1bc49bc1aad5ff43d832) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Sprout Lands - Sprites - Basic pack/Objects/Wood Bridge.png using Guid(9d61be613ddc1bc49bc1aad5ff43d832) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '162d54edc08bf43066b192b5817a3f53') in 0.004629 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Sprites/farming-pack-free_version/rpgmaker/MZ/characters/_srw_sickle.png
+  artifactKey: Guid(7fa476f5de7ce1249b9bd400ba9507e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/farming-pack-free_version/rpgmaker/MZ/characters/_srw_sickle.png using Guid(7fa476f5de7ce1249b9bd400ba9507e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd089a989fa023053141207676f61dafc') in 0.068199 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Sprites/farming-pack-free_version/rpgmaker/MV/characters/_srw_free_farm_plants2.png
+  artifactKey: Guid(35520fb0325576a4780e85da8392ca63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/farming-pack-free_version/rpgmaker/MV/characters/_srw_free_farm_plants2.png using Guid(35520fb0325576a4780e85da8392ca63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e1cb328c2e544957b5ac06b9081e6c10') in 0.010627 seconds 
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting

@@ -1,0 +1,1689 @@
+Unity Editor version:    2021.3.18f1 (3129e69bc0c7)
+Branch:                  2021.3/staging
+Build type:              Release
+Batch mode:              YES
+macOS version:           Version 13.0 (Build 22A8380)
+Darwin version:          22.1.0
+Architecture:            arm64
+Running under Rosetta:   NO
+Available memory:        16384 MB
+Using pre-set license
+Pro License: YES
+
+COMMAND LINE ARGUMENTS:
+/Applications/Unity/Hub/Editor/2021.3.18f1/Unity.app/Contents/MacOS/Unity
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+/Users/a./ecs193_git/Open-Source-Minecraft-like-Simulation-Environment-for-AI/Sandbox Game
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+62855
+Successfully changed project path to: /Users/a./ecs193_git/Open-Source-Minecraft-like-Simulation-Environment-for-AI/Sandbox Game
+/Users/a./ecs193_git/Open-Source-Minecraft-like-Simulation-Environment-for-AI/Sandbox Game
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [8699045120] Host "[IP] 10.0.0.121 [Port] 0 [Flags] 2 [Guid] 1092976464 [EditorId] 1092976464 [Version] 1048832 [Id] OSXEditor(0,MacBook-Pro-3.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [8699045120] Host "[IP] 10.0.0.121 [Port] 0 [Flags] 2 [Guid] 1092976464 [EditorId] 1092976464 [Version] 1048832 [Id] OSXEditor(0,MacBook-Pro-3.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+Setting a NavMeshArea cost less than one can give unexpected results.
+Refreshing native plugins compatible for Editor in 77.85 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.3.18f1 (3129e69bc0c7)
+[Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/2021.3.18f1/Unity.app/Contents/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path /Users/a./ecs193_git/Open-Source-Minecraft-like-Simulation-Environment-for-AI/Sandbox Game/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+ preferred device: Apple M2 Pro (high power)
+Metal devices available: 1
+0: Apple M2 Pro (high power)
+Using device Apple M2 Pro (high power)
+Initializing Metal device caps: Apple M2 Pro
+Initialize mono
+Mono path[0] = '/Applications/Unity/Hub/Editor/2021.3.18f1/Unity.app/Contents/Managed'
+Mono path[1] = '/Applications/Unity/Hub/Editor/2021.3.18f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityjit-macos'
+Mono config path = '/Applications/Unity/Hub/Editor/2021.3.18f1/Unity.app/Contents/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56793
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: /Applications/Unity/Hub/Editor/2021.3.18f1/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: /Applications/Unity/Hub/Editor/2021.3.18f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
+Registered in 0.000913 seconds.
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 77.49 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.377 seconds
+Domain Reload Profiling:
+	ReloadAssembly (377ms)
+		BeginReloadAssembly (27ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (0ms)
+		EndReloadAssembly (288ms)
+			LoadAssemblies (27ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (65ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (19ms)
+			SetupLoadedEditorAssemblies (178ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (78ms)
+				BeforeProcessingInitializeOnLoad (1ms)
+				ProcessInitializeOnLoadAttributes (74ms)
+				ProcessInitializeOnLoadMethodAttributes (23ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.002018 seconds.
+Required property 'name' not set (Assets/pathfinding/NavMeshPlus-master/NavMeshComponents/Editor/NavMeshComponentsEditor.asmdef)
+Required property 'name' not set (Assets/pathfinding/NavMeshPlus-master/NavMeshComponents/Scripts/NavMeshComponents.asmdef)
+Required property 'name' not set (Assets/pathfinding/NavMeshPlus-master/NavMeshComponents/Editor/NavMeshComponentsEditor.asmdef)
+Required property 'name' not set (Assets/pathfinding/NavMeshPlus-master/NavMeshComponents/Scripts/NavMeshComponents.asmdef)
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image /Users/a./ecs193_git/Open-Source-Minecraft-like-Simulation-Environment-for-AI/Sandbox Game/Library/PackageCache/com.unity.visualscripting@1.8.0/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image /Users/a./ecs193_git/Open-Source-Minecraft-like-Simulation-Environment-for-AI/Sandbox Game/Library/PackageCache/com.unity.visualscripting@1.8.0/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 76.18 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Required property 'name' not set (Assets/pathfinding/NavMeshPlus-master/NavMeshComponents/Editor/NavMeshComponentsEditor.asmdef)
+Required property 'name' not set (Assets/pathfinding/NavMeshPlus-master/NavMeshComponents/Scripts/NavMeshComponents.asmdef)
+Mono: successfully reloaded assembly
+- Completed reload, in  0.668 seconds
+Domain Reload Profiling:
+	ReloadAssembly (668ms)
+		BeginReloadAssembly (50ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (15ms)
+		EndReloadAssembly (555ms)
+			LoadAssemblies (29ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (138ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (37ms)
+			SetupLoadedEditorAssemblies (322ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (2ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (76ms)
+				BeforeProcessingInitializeOnLoad (66ms)
+				ProcessInitializeOnLoadAttributes (157ms)
+				ProcessInitializeOnLoadMethodAttributes (18ms)
+				AfterProcessingInitializeOnLoad (2ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (2ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Setting a NavMeshArea cost less than one can give unexpected results.
+Launching external process: /Applications/Unity/Hub/Editor/2021.3.18f1/Unity.app/Contents/Tools/UnityShaderCompiler
+Launched and connected shader compiler UnityShaderCompiler after 0.04 seconds
+Refreshing native plugins compatible for Editor in 0.73 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3925 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 48 unused Assets / (113.4 KB). Loaded Objects now: 4402.
+Memory consumption went from 156.8 MB to 156.7 MB.
+Total: 2.621250 ms (FindLiveObjects: 0.136958 ms CreateObjectMapping: 0.072875 ms MarkObjects: 2.340333 ms  DeleteObjects: 0.070541 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 86517.379188 seconds.
+  path: Assets/Scenes/Scene.unity
+  artifactKey: Guid(d0a928222e5fe49449072cb58d031fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Scene.unity using Guid(d0a928222e5fe49449072cb58d031fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000843 seconds  code(4) message(Build asset version error: assets/scenes/scene.unity in SourceAssetDB has modification time of '2023-02-11T03:13:14Z' while content on disk has modification time of '2023-02-11T03:14:16Z')
+  ERROR: Build asset version error: assets/scenes/scene.unity in SourceAssetDB has modification time of '2023-02-11T03:13:14Z' while content on disk has modification time of '2023-02-11T03:14:16Z'
+========================================================================
+Received Prepare
+Setting a NavMeshArea cost less than one can give unexpected results.
+Registering precompiled user dll's ...
+Registered in 0.002139 seconds.
+Required property 'name' not set (Assets/pathfinding/NavMeshPlus-master/NavMeshComponents/Editor/NavMeshComponentsEditor.asmdef)
+Required property 'name' not set (Assets/pathfinding/NavMeshPlus-master/NavMeshComponents/Scripts/NavMeshComponents.asmdef)
+Required property 'name' not set (Assets/pathfinding/NavMeshPlus-master/NavMeshComponents/Editor/NavMeshComponentsEditor.asmdef)
+Required property 'name' not set (Assets/pathfinding/NavMeshPlus-master/NavMeshComponents/Scripts/NavMeshComponents.asmdef)
+Begin MonoManager ReloadAssembly
+Thread 0x296787000 may have been prematurely finalized
+Symbol file LoadedFromMemory doesn't match image /Users/a./ecs193_git/Open-Source-Minecraft-like-Simulation-Environment-for-AI/Sandbox Game/Library/PackageCache/com.unity.visualscripting@1.8.0/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image /Users/a./ecs193_git/Open-Source-Minecraft-like-Simulation-Environment-for-AI/Sandbox Game/Library/PackageCache/com.unity.visualscripting@1.8.0/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.77 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Required property 'name' not set (Assets/pathfinding/NavMeshPlus-master/NavMeshComponents/Editor/NavMeshComponentsEditor.asmdef)
+Required property 'name' not set (Assets/pathfinding/NavMeshPlus-master/NavMeshComponents/Scripts/NavMeshComponents.asmdef)
+Mono: successfully reloaded assembly
+- Completed reload, in  0.515 seconds
+Domain Reload Profiling:
+	ReloadAssembly (515ms)
+		BeginReloadAssembly (69ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (28ms)
+		EndReloadAssembly (394ms)
+			LoadAssemblies (30ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (127ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (27ms)
+			SetupLoadedEditorAssemblies (183ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (48ms)
+				ProcessInitializeOnLoadAttributes (113ms)
+				ProcessInitializeOnLoadMethodAttributes (15ms)
+				AfterProcessingInitializeOnLoad (1ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (3ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.74 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3919 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 25 unused Assets / (92.5 KB). Loaded Objects now: 4422.
+Memory consumption went from 155.8 MB to 155.7 MB.
+Total: 2.172750 ms (FindLiveObjects: 0.122750 ms CreateObjectMapping: 0.059458 ms MarkObjects: 1.970208 ms  DeleteObjects: 0.020000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Setting a NavMeshArea cost less than one can give unexpected results.
+Registering precompiled user dll's ...
+Registered in 0.001724 seconds.
+Required property 'name' not set (Assets/pathfinding/NavMeshPlus-master/NavMeshComponents/Editor/NavMeshComponentsEditor.asmdef)
+Required property 'name' not set (Assets/pathfinding/NavMeshPlus-master/NavMeshComponents/Scripts/NavMeshComponents.asmdef)
+Required property 'name' not set (Assets/pathfinding/NavMeshPlus-master/NavMeshComponents/Editor/NavMeshComponentsEditor.asmdef)
+Required property 'name' not set (Assets/pathfinding/NavMeshPlus-master/NavMeshComponents/Scripts/NavMeshComponents.asmdef)
+Begin MonoManager ReloadAssembly
+Thread 0x28a2e3000 may have been prematurely finalized
+Symbol file LoadedFromMemory doesn't match image /Users/a./ecs193_git/Open-Source-Minecraft-like-Simulation-Environment-for-AI/Sandbox Game/Library/PackageCache/com.unity.visualscripting@1.8.0/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image /Users/a./ecs193_git/Open-Source-Minecraft-like-Simulation-Environment-for-AI/Sandbox Game/Library/PackageCache/com.unity.visualscripting@1.8.0/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.67 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Required property 'name' not set (Assets/pathfinding/NavMeshPlus-master/NavMeshComponents/Editor/NavMeshComponentsEditor.asmdef)
+Required property 'name' not set (Assets/pathfinding/NavMeshPlus-master/NavMeshComponents/Scripts/NavMeshComponents.asmdef)
+Mono: successfully reloaded assembly
+- Completed reload, in  0.559 seconds
+Domain Reload Profiling:
+	ReloadAssembly (560ms)
+		BeginReloadAssembly (68ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (26ms)
+		EndReloadAssembly (438ms)
+			LoadAssemblies (30ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (142ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (32ms)
+			SetupLoadedEditorAssemblies (203ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (53ms)
+				ProcessInitializeOnLoadAttributes (126ms)
+				ProcessInitializeOnLoadMethodAttributes (18ms)
+				AfterProcessingInitializeOnLoad (1ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (3ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.11 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3919 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 23 unused Assets / (92.6 KB). Loaded Objects now: 4437.
+Memory consumption went from 155.8 MB to 155.7 MB.
+Total: 2.424208 ms (FindLiveObjects: 0.125584 ms CreateObjectMapping: 0.055708 ms MarkObjects: 2.220083 ms  DeleteObjects: 0.022167 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Setting a NavMeshArea cost less than one can give unexpected results.
+Registering precompiled user dll's ...
+Registered in 0.001708 seconds.
+Required property 'name' not set (Assets/pathfinding/NavMeshPlus-master/NavMeshComponents/Editor/NavMeshComponentsEditor.asmdef)
+Required property 'name' not set (Assets/pathfinding/NavMeshPlus-master/NavMeshComponents/Scripts/NavMeshComponents.asmdef)
+Required property 'name' not set (Assets/pathfinding/NavMeshPlus-master/NavMeshComponents/Editor/NavMeshComponentsEditor.asmdef)
+Required property 'name' not set (Assets/pathfinding/NavMeshPlus-master/NavMeshComponents/Scripts/NavMeshComponents.asmdef)
+Begin MonoManager ReloadAssembly
+Thread 0x28cbc7000 may have been prematurely finalized
+Symbol file LoadedFromMemory doesn't match image /Users/a./ecs193_git/Open-Source-Minecraft-like-Simulation-Environment-for-AI/Sandbox Game/Library/PackageCache/com.unity.visualscripting@1.8.0/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image /Users/a./ecs193_git/Open-Source-Minecraft-like-Simulation-Environment-for-AI/Sandbox Game/Library/PackageCache/com.unity.visualscripting@1.8.0/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.74 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Required property 'name' not set (Assets/pathfinding/NavMeshPlus-master/NavMeshComponents/Editor/NavMeshComponentsEditor.asmdef)
+Required property 'name' not set (Assets/pathfinding/NavMeshPlus-master/NavMeshComponents/Scripts/NavMeshComponents.asmdef)
+Mono: successfully reloaded assembly
+- Completed reload, in  0.540 seconds
+Domain Reload Profiling:
+	ReloadAssembly (541ms)
+		BeginReloadAssembly (72ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (28ms)
+		EndReloadAssembly (412ms)
+			LoadAssemblies (32ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (139ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (29ms)
+			SetupLoadedEditorAssemblies (185ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (48ms)
+				ProcessInitializeOnLoadAttributes (114ms)
+				ProcessInitializeOnLoadMethodAttributes (16ms)
+				AfterProcessingInitializeOnLoad (1ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (3ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.18 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3919 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 23 unused Assets / (92.6 KB). Loaded Objects now: 4452.
+Memory consumption went from 155.8 MB to 155.7 MB.
+Total: 2.385333 ms (FindLiveObjects: 0.137875 ms CreateObjectMapping: 0.056583 ms MarkObjects: 2.168000 ms  DeleteObjects: 0.022375 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Setting a NavMeshArea cost less than one can give unexpected results.
+Registering precompiled user dll's ...
+Registered in 0.002562 seconds.
+Required property 'name' not set (Assets/pathfinding/NavMeshPlus-master/NavMeshComponents/Editor/NavMeshComponentsEditor.asmdef)
+Required property 'name' not set (Assets/pathfinding/NavMeshPlus-master/NavMeshComponents/Scripts/NavMeshComponents.asmdef)
+Required property 'name' not set (Assets/pathfinding/NavMeshPlus-master/NavMeshComponents/Editor/NavMeshComponentsEditor.asmdef)
+Required property 'name' not set (Assets/pathfinding/NavMeshPlus-master/NavMeshComponents/Scripts/NavMeshComponents.asmdef)
+Begin MonoManager ReloadAssembly
+Thread 0x16f5d3000 may have been prematurely finalized
+Symbol file LoadedFromMemory doesn't match image /Users/a./ecs193_git/Open-Source-Minecraft-like-Simulation-Environment-for-AI/Sandbox Game/Library/PackageCache/com.unity.visualscripting@1.8.0/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image /Users/a./ecs193_git/Open-Source-Minecraft-like-Simulation-Environment-for-AI/Sandbox Game/Library/PackageCache/com.unity.visualscripting@1.8.0/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.64 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Required property 'name' not set (Assets/pathfinding/NavMeshPlus-master/NavMeshComponents/Editor/NavMeshComponentsEditor.asmdef)
+Required property 'name' not set (Assets/pathfinding/NavMeshPlus-master/NavMeshComponents/Scripts/NavMeshComponents.asmdef)
+Mono: successfully reloaded assembly
+- Completed reload, in  0.502 seconds
+Domain Reload Profiling:
+	ReloadAssembly (503ms)
+		BeginReloadAssembly (63ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (25ms)
+		EndReloadAssembly (390ms)
+			LoadAssemblies (25ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (127ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (28ms)
+			SetupLoadedEditorAssemblies (182ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (46ms)
+				ProcessInitializeOnLoadAttributes (113ms)
+				ProcessInitializeOnLoadMethodAttributes (15ms)
+				AfterProcessingInitializeOnLoad (2ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (3ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.13 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3919 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 23 unused Assets / (92.5 KB). Loaded Objects now: 4467.
+Memory consumption went from 155.9 MB to 155.8 MB.
+Total: 2.489334 ms (FindLiveObjects: 0.129458 ms CreateObjectMapping: 0.059583 ms MarkObjects: 2.278542 ms  DeleteObjects: 0.021250 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Setting a NavMeshArea cost less than one can give unexpected results.
+Registering precompiled user dll's ...
+Registered in 0.001669 seconds.
+Required property 'name' not set (Assets/pathfinding/NavMeshPlus-master/NavMeshComponents/Editor/NavMeshComponentsEditor.asmdef)
+Required property 'name' not set (Assets/pathfinding/NavMeshPlus-master/NavMeshComponents/Scripts/NavMeshComponents.asmdef)
+Required property 'name' not set (Assets/pathfinding/NavMeshPlus-master/NavMeshComponents/Editor/NavMeshComponentsEditor.asmdef)
+Required property 'name' not set (Assets/pathfinding/NavMeshPlus-master/NavMeshComponents/Scripts/NavMeshComponents.asmdef)
+Begin MonoManager ReloadAssembly
+Thread 0x16f5d3000 may have been prematurely finalized
+Symbol file LoadedFromMemory doesn't match image /Users/a./ecs193_git/Open-Source-Minecraft-like-Simulation-Environment-for-AI/Sandbox Game/Library/PackageCache/com.unity.visualscripting@1.8.0/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image /Users/a./ecs193_git/Open-Source-Minecraft-like-Simulation-Environment-for-AI/Sandbox Game/Library/PackageCache/com.unity.visualscripting@1.8.0/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.67 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Required property 'name' not set (Assets/pathfinding/NavMeshPlus-master/NavMeshComponents/Editor/NavMeshComponentsEditor.asmdef)
+Required property 'name' not set (Assets/pathfinding/NavMeshPlus-master/NavMeshComponents/Scripts/NavMeshComponents.asmdef)
+Mono: successfully reloaded assembly
+- Completed reload, in  0.553 seconds
+Domain Reload Profiling:
+	ReloadAssembly (553ms)
+		BeginReloadAssembly (66ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (28ms)
+		EndReloadAssembly (436ms)
+			LoadAssemblies (27ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (143ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (32ms)
+			SetupLoadedEditorAssemblies (200ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (52ms)
+				ProcessInitializeOnLoadAttributes (124ms)
+				ProcessInitializeOnLoadMethodAttributes (16ms)
+				AfterProcessingInitializeOnLoad (2ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (3ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.14 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3919 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 23 unused Assets / (92.5 KB). Loaded Objects now: 4482.
+Memory consumption went from 155.9 MB to 155.8 MB.
+Total: 2.357667 ms (FindLiveObjects: 0.122583 ms CreateObjectMapping: 0.053542 ms MarkObjects: 2.162000 ms  DeleteObjects: 0.019375 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Setting a NavMeshArea cost less than one can give unexpected results.
+Registering precompiled user dll's ...
+Registered in 0.001830 seconds.
+Required property 'name' not set (Assets/pathfinding/NavMeshPlus-master/NavMeshComponents/Editor/NavMeshComponentsEditor.asmdef)
+Required property 'name' not set (Assets/pathfinding/NavMeshPlus-master/NavMeshComponents/Scripts/NavMeshComponents.asmdef)
+Required property 'name' not set (Assets/pathfinding/NavMeshPlus-master/NavMeshComponents/Editor/NavMeshComponentsEditor.asmdef)
+Required property 'name' not set (Assets/pathfinding/NavMeshPlus-master/NavMeshComponents/Scripts/NavMeshComponents.asmdef)
+Begin MonoManager ReloadAssembly
+Thread 0x16f5d3000 may have been prematurely finalized
+Symbol file LoadedFromMemory doesn't match image /Users/a./ecs193_git/Open-Source-Minecraft-like-Simulation-Environment-for-AI/Sandbox Game/Library/PackageCache/com.unity.visualscripting@1.8.0/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image /Users/a./ecs193_git/Open-Source-Minecraft-like-Simulation-Environment-for-AI/Sandbox Game/Library/PackageCache/com.unity.visualscripting@1.8.0/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.75 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Required property 'name' not set (Assets/pathfinding/NavMeshPlus-master/NavMeshComponents/Editor/NavMeshComponentsEditor.asmdef)
+Required property 'name' not set (Assets/pathfinding/NavMeshPlus-master/NavMeshComponents/Scripts/NavMeshComponents.asmdef)
+Mono: successfully reloaded assembly
+- Completed reload, in  0.558 seconds
+Domain Reload Profiling:
+	ReloadAssembly (559ms)
+		BeginReloadAssembly (70ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (28ms)
+		EndReloadAssembly (432ms)
+			LoadAssemblies (31ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (135ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (31ms)
+			SetupLoadedEditorAssemblies (204ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (53ms)
+				ProcessInitializeOnLoadAttributes (126ms)
+				ProcessInitializeOnLoadMethodAttributes (17ms)
+				AfterProcessingInitializeOnLoad (1ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (3ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.18 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3919 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 23 unused Assets / (92.6 KB). Loaded Objects now: 4497.
+Memory consumption went from 155.9 MB to 155.8 MB.
+Total: 2.348333 ms (FindLiveObjects: 0.130833 ms CreateObjectMapping: 0.057500 ms MarkObjects: 2.136917 ms  DeleteObjects: 0.022791 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Setting a NavMeshArea cost less than one can give unexpected results.
+Registering precompiled user dll's ...
+Registered in 0.001918 seconds.
+Required property 'name' not set (Assets/pathfinding/NavMeshPlus-master/NavMeshComponents/Editor/NavMeshComponentsEditor.asmdef)
+Required property 'name' not set (Assets/pathfinding/NavMeshPlus-master/NavMeshComponents/Scripts/NavMeshComponents.asmdef)
+Required property 'name' not set (Assets/pathfinding/NavMeshPlus-master/NavMeshComponents/Editor/NavMeshComponentsEditor.asmdef)
+Required property 'name' not set (Assets/pathfinding/NavMeshPlus-master/NavMeshComponents/Scripts/NavMeshComponents.asmdef)
+Begin MonoManager ReloadAssembly
+Thread 0x16f5d3000 may have been prematurely finalized
+Symbol file LoadedFromMemory doesn't match image /Users/a./ecs193_git/Open-Source-Minecraft-like-Simulation-Environment-for-AI/Sandbox Game/Library/PackageCache/com.unity.visualscripting@1.8.0/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image /Users/a./ecs193_git/Open-Source-Minecraft-like-Simulation-Environment-for-AI/Sandbox Game/Library/PackageCache/com.unity.visualscripting@1.8.0/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.73 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Required property 'name' not set (Assets/pathfinding/NavMeshPlus-master/NavMeshComponents/Editor/NavMeshComponentsEditor.asmdef)
+Required property 'name' not set (Assets/pathfinding/NavMeshPlus-master/NavMeshComponents/Scripts/NavMeshComponents.asmdef)
+Mono: successfully reloaded assembly
+- Completed reload, in  0.557 seconds
+Domain Reload Profiling:
+	ReloadAssembly (558ms)
+		BeginReloadAssembly (69ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (28ms)
+		EndReloadAssembly (432ms)
+			LoadAssemblies (31ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (141ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (31ms)
+			SetupLoadedEditorAssemblies (197ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (52ms)
+				ProcessInitializeOnLoadAttributes (122ms)
+				ProcessInitializeOnLoadMethodAttributes (15ms)
+				AfterProcessingInitializeOnLoad (2ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (3ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.20 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3919 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 23 unused Assets / (92.6 KB). Loaded Objects now: 4512.
+Memory consumption went from 155.9 MB to 155.8 MB.
+Total: 2.366084 ms (FindLiveObjects: 0.143625 ms CreateObjectMapping: 0.052375 ms MarkObjects: 2.149375 ms  DeleteObjects: 0.020500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Setting a NavMeshArea cost less than one can give unexpected results.
+Registering precompiled user dll's ...
+Registered in 0.001848 seconds.
+Required property 'name' not set (Assets/pathfinding/NavMeshPlus-master/NavMeshComponents/Editor/NavMeshComponentsEditor.asmdef)
+Required property 'name' not set (Assets/pathfinding/NavMeshPlus-master/NavMeshComponents/Scripts/NavMeshComponents.asmdef)
+Required property 'name' not set (Assets/pathfinding/NavMeshPlus-master/NavMeshComponents/Editor/NavMeshComponentsEditor.asmdef)
+Required property 'name' not set (Assets/pathfinding/NavMeshPlus-master/NavMeshComponents/Scripts/NavMeshComponents.asmdef)
+Begin MonoManager ReloadAssembly
+Thread 0x16f5d3000 may have been prematurely finalized
+Symbol file LoadedFromMemory doesn't match image /Users/a./ecs193_git/Open-Source-Minecraft-like-Simulation-Environment-for-AI/Sandbox Game/Library/PackageCache/com.unity.visualscripting@1.8.0/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image /Users/a./ecs193_git/Open-Source-Minecraft-like-Simulation-Environment-for-AI/Sandbox Game/Library/PackageCache/com.unity.visualscripting@1.8.0/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.69 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Required property 'name' not set (Assets/pathfinding/NavMeshPlus-master/NavMeshComponents/Editor/NavMeshComponentsEditor.asmdef)
+Required property 'name' not set (Assets/pathfinding/NavMeshPlus-master/NavMeshComponents/Scripts/NavMeshComponents.asmdef)
+Mono: successfully reloaded assembly
+- Completed reload, in  0.515 seconds
+Domain Reload Profiling:
+	ReloadAssembly (515ms)
+		BeginReloadAssembly (69ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (28ms)
+		EndReloadAssembly (395ms)
+			LoadAssemblies (29ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (129ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (29ms)
+			SetupLoadedEditorAssemblies (182ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (48ms)
+				ProcessInitializeOnLoadAttributes (112ms)
+				ProcessInitializeOnLoadMethodAttributes (16ms)
+				AfterProcessingInitializeOnLoad (1ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (3ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.30 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3919 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 23 unused Assets / (92.5 KB). Loaded Objects now: 4527.
+Memory consumption went from 155.9 MB to 155.8 MB.
+Total: 2.416209 ms (FindLiveObjects: 0.115333 ms CreateObjectMapping: 0.057459 ms MarkObjects: 2.221292 ms  DeleteObjects: 0.021792 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Setting a NavMeshArea cost less than one can give unexpected results.
+Registering precompiled user dll's ...
+Registered in 0.001693 seconds.
+Required property 'name' not set (Assets/pathfinding/NavMeshPlus-master/NavMeshComponents/Editor/NavMeshComponentsEditor.asmdef)
+Required property 'name' not set (Assets/pathfinding/NavMeshPlus-master/NavMeshComponents/Scripts/NavMeshComponents.asmdef)
+Required property 'name' not set (Assets/pathfinding/NavMeshPlus-master/NavMeshComponents/Editor/NavMeshComponentsEditor.asmdef)
+Required property 'name' not set (Assets/pathfinding/NavMeshPlus-master/NavMeshComponents/Scripts/NavMeshComponents.asmdef)
+Begin MonoManager ReloadAssembly
+Thread 0x16f5d3000 may have been prematurely finalized
+Symbol file LoadedFromMemory doesn't match image /Users/a./ecs193_git/Open-Source-Minecraft-like-Simulation-Environment-for-AI/Sandbox Game/Library/PackageCache/com.unity.visualscripting@1.8.0/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image /Users/a./ecs193_git/Open-Source-Minecraft-like-Simulation-Environment-for-AI/Sandbox Game/Library/PackageCache/com.unity.visualscripting@1.8.0/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.67 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Required property 'name' not set (Assets/pathfinding/NavMeshPlus-master/NavMeshComponents/Editor/NavMeshComponentsEditor.asmdef)
+Required property 'name' not set (Assets/pathfinding/NavMeshPlus-master/NavMeshComponents/Scripts/NavMeshComponents.asmdef)
+Mono: successfully reloaded assembly
+- Completed reload, in  0.550 seconds
+Domain Reload Profiling:
+	ReloadAssembly (550ms)
+		BeginReloadAssembly (69ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (29ms)
+		EndReloadAssembly (427ms)
+			LoadAssemblies (29ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (138ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (31ms)
+			SetupLoadedEditorAssemblies (195ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (51ms)
+				ProcessInitializeOnLoadAttributes (122ms)
+				ProcessInitializeOnLoadMethodAttributes (16ms)
+				AfterProcessingInitializeOnLoad (1ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (3ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.15 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3919 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 23 unused Assets / (92.5 KB). Loaded Objects now: 4542.
+Memory consumption went from 155.9 MB to 155.9 MB.
+Total: 2.353334 ms (FindLiveObjects: 0.123709 ms CreateObjectMapping: 0.061250 ms MarkObjects: 2.143791 ms  DeleteObjects: 0.024125 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Setting a NavMeshArea cost less than one can give unexpected results.
+Registering precompiled user dll's ...
+Registered in 0.001692 seconds.
+Required property 'name' not set (Assets/pathfinding/NavMeshPlus-master/NavMeshComponents/Editor/NavMeshComponentsEditor.asmdef)
+Required property 'name' not set (Assets/pathfinding/NavMeshPlus-master/NavMeshComponents/Scripts/NavMeshComponents.asmdef)
+Required property 'name' not set (Assets/pathfinding/NavMeshPlus-master/NavMeshComponents/Editor/NavMeshComponentsEditor.asmdef)
+Required property 'name' not set (Assets/pathfinding/NavMeshPlus-master/NavMeshComponents/Scripts/NavMeshComponents.asmdef)
+Begin MonoManager ReloadAssembly
+Thread 0x16f57b000 may have been prematurely finalized
+Symbol file LoadedFromMemory doesn't match image /Users/a./ecs193_git/Open-Source-Minecraft-like-Simulation-Environment-for-AI/Sandbox Game/Library/PackageCache/com.unity.visualscripting@1.8.0/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image /Users/a./ecs193_git/Open-Source-Minecraft-like-Simulation-Environment-for-AI/Sandbox Game/Library/PackageCache/com.unity.visualscripting@1.8.0/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.73 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Required property 'name' not set (Assets/pathfinding/NavMeshPlus-master/NavMeshComponents/Editor/NavMeshComponentsEditor.asmdef)
+Required property 'name' not set (Assets/pathfinding/NavMeshPlus-master/NavMeshComponents/Scripts/NavMeshComponents.asmdef)
+Mono: successfully reloaded assembly
+- Completed reload, in  0.565 seconds
+Domain Reload Profiling:
+	ReloadAssembly (565ms)
+		BeginReloadAssembly (69ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (29ms)
+		EndReloadAssembly (441ms)
+			LoadAssemblies (29ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (140ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (32ms)
+			SetupLoadedEditorAssemblies (207ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (52ms)
+				ProcessInitializeOnLoadAttributes (130ms)
+				ProcessInitializeOnLoadMethodAttributes (18ms)
+				AfterProcessingInitializeOnLoad (1ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (3ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.18 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3919 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 23 unused Assets / (92.6 KB). Loaded Objects now: 4557.
+Memory consumption went from 156.0 MB to 155.9 MB.
+Total: 2.498084 ms (FindLiveObjects: 0.143209 ms CreateObjectMapping: 0.068334 ms MarkObjects: 2.261375 ms  DeleteObjects: 0.024708 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Setting a NavMeshArea cost less than one can give unexpected results.
+Registering precompiled user dll's ...
+Registered in 0.001770 seconds.
+Required property 'name' not set (Assets/pathfinding/NavMeshPlus-master/NavMeshComponents/Editor/NavMeshComponentsEditor.asmdef)
+Required property 'name' not set (Assets/pathfinding/NavMeshPlus-master/NavMeshComponents/Scripts/NavMeshComponents.asmdef)
+Required property 'name' not set (Assets/pathfinding/NavMeshPlus-master/NavMeshComponents/Editor/NavMeshComponentsEditor.asmdef)
+Required property 'name' not set (Assets/pathfinding/NavMeshPlus-master/NavMeshComponents/Scripts/NavMeshComponents.asmdef)
+Begin MonoManager ReloadAssembly
+Thread 0x16f57b000 may have been prematurely finalized
+Symbol file LoadedFromMemory doesn't match image /Users/a./ecs193_git/Open-Source-Minecraft-like-Simulation-Environment-for-AI/Sandbox Game/Library/PackageCache/com.unity.visualscripting@1.8.0/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image /Users/a./ecs193_git/Open-Source-Minecraft-like-Simulation-Environment-for-AI/Sandbox Game/Library/PackageCache/com.unity.visualscripting@1.8.0/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.73 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Required property 'name' not set (Assets/pathfinding/NavMeshPlus-master/NavMeshComponents/Editor/NavMeshComponentsEditor.asmdef)
+Required property 'name' not set (Assets/pathfinding/NavMeshPlus-master/NavMeshComponents/Scripts/NavMeshComponents.asmdef)
+Mono: successfully reloaded assembly
+- Completed reload, in  0.541 seconds
+Domain Reload Profiling:
+	ReloadAssembly (541ms)
+		BeginReloadAssembly (66ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (28ms)
+		EndReloadAssembly (424ms)
+			LoadAssemblies (26ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (139ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (31ms)
+			SetupLoadedEditorAssemblies (197ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (51ms)
+				ProcessInitializeOnLoadAttributes (123ms)
+				ProcessInitializeOnLoadMethodAttributes (16ms)
+				AfterProcessingInitializeOnLoad (1ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (3ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.20 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3919 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 23 unused Assets / (92.5 KB). Loaded Objects now: 4572.
+Memory consumption went from 156.0 MB to 155.9 MB.
+Total: 2.273125 ms (FindLiveObjects: 0.144125 ms CreateObjectMapping: 0.059875 ms MarkObjects: 2.045334 ms  DeleteObjects: 0.023417 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Setting a NavMeshArea cost less than one can give unexpected results.
+Registering precompiled user dll's ...
+Registered in 0.001674 seconds.
+Required property 'name' not set (Assets/pathfinding/NavMeshPlus-master/NavMeshComponents/Editor/NavMeshComponentsEditor.asmdef)
+Required property 'name' not set (Assets/pathfinding/NavMeshPlus-master/NavMeshComponents/Scripts/NavMeshComponents.asmdef)
+Required property 'name' not set (Assets/pathfinding/NavMeshPlus-master/NavMeshComponents/Editor/NavMeshComponentsEditor.asmdef)
+Required property 'name' not set (Assets/pathfinding/NavMeshPlus-master/NavMeshComponents/Scripts/NavMeshComponents.asmdef)
+Begin MonoManager ReloadAssembly
+Thread 0x16f57b000 may have been prematurely finalized
+Symbol file LoadedFromMemory doesn't match image /Users/a./ecs193_git/Open-Source-Minecraft-like-Simulation-Environment-for-AI/Sandbox Game/Library/PackageCache/com.unity.visualscripting@1.8.0/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image /Users/a./ecs193_git/Open-Source-Minecraft-like-Simulation-Environment-for-AI/Sandbox Game/Library/PackageCache/com.unity.visualscripting@1.8.0/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.72 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Required property 'name' not set (Assets/pathfinding/NavMeshPlus-master/NavMeshComponents/Editor/NavMeshComponentsEditor.asmdef)
+Required property 'name' not set (Assets/pathfinding/NavMeshPlus-master/NavMeshComponents/Scripts/NavMeshComponents.asmdef)
+Mono: successfully reloaded assembly
+- Completed reload, in  0.541 seconds
+Domain Reload Profiling:
+	ReloadAssembly (541ms)
+		BeginReloadAssembly (69ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (29ms)
+		EndReloadAssembly (416ms)
+			LoadAssemblies (29ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (138ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (30ms)
+			SetupLoadedEditorAssemblies (187ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (50ms)
+				ProcessInitializeOnLoadAttributes (114ms)
+				ProcessInitializeOnLoadMethodAttributes (16ms)
+				AfterProcessingInitializeOnLoad (1ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (4ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.12 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3919 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 23 unused Assets / (92.5 KB). Loaded Objects now: 4587.
+Memory consumption went from 156.0 MB to 155.9 MB.
+Total: 2.544875 ms (FindLiveObjects: 0.137750 ms CreateObjectMapping: 0.057959 ms MarkObjects: 2.322666 ms  DeleteObjects: 0.026292 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Setting a NavMeshArea cost less than one can give unexpected results.
+Registering precompiled user dll's ...
+Registered in 0.001869 seconds.
+Required property 'name' not set (Assets/pathfinding/NavMeshPlus-master/NavMeshComponents/Editor/NavMeshComponentsEditor.asmdef)
+Required property 'name' not set (Assets/pathfinding/NavMeshPlus-master/NavMeshComponents/Scripts/NavMeshComponents.asmdef)
+Required property 'name' not set (Assets/pathfinding/NavMeshPlus-master/NavMeshComponents/Editor/NavMeshComponentsEditor.asmdef)
+Required property 'name' not set (Assets/pathfinding/NavMeshPlus-master/NavMeshComponents/Scripts/NavMeshComponents.asmdef)
+Begin MonoManager ReloadAssembly
+Thread 0x16f57b000 may have been prematurely finalized
+Symbol file LoadedFromMemory doesn't match image /Users/a./ecs193_git/Open-Source-Minecraft-like-Simulation-Environment-for-AI/Sandbox Game/Library/PackageCache/com.unity.visualscripting@1.8.0/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image /Users/a./ecs193_git/Open-Source-Minecraft-like-Simulation-Environment-for-AI/Sandbox Game/Library/PackageCache/com.unity.visualscripting@1.8.0/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.69 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Required property 'name' not set (Assets/pathfinding/NavMeshPlus-master/NavMeshComponents/Editor/NavMeshComponentsEditor.asmdef)
+Required property 'name' not set (Assets/pathfinding/NavMeshPlus-master/NavMeshComponents/Scripts/NavMeshComponents.asmdef)
+Mono: successfully reloaded assembly
+- Completed reload, in  0.528 seconds
+Domain Reload Profiling:
+	ReloadAssembly (529ms)
+		BeginReloadAssembly (66ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (28ms)
+		EndReloadAssembly (413ms)
+			LoadAssemblies (28ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (134ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (29ms)
+			SetupLoadedEditorAssemblies (191ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (49ms)
+				ProcessInitializeOnLoadAttributes (119ms)
+				ProcessInitializeOnLoadMethodAttributes (17ms)
+				AfterProcessingInitializeOnLoad (1ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (3ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 2.50 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3919 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 23 unused Assets / (92.5 KB). Loaded Objects now: 4602.
+Memory consumption went from 156.0 MB to 155.9 MB.
+Total: 2.356708 ms (FindLiveObjects: 0.127208 ms CreateObjectMapping: 0.065750 ms MarkObjects: 2.139875 ms  DeleteObjects: 0.023583 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 950.755513 seconds.
+  path: Assets/Sprites/AnimatorControllers/HomeDoor.controller
+  artifactKey: Guid(41ce71a9aa7484243b2a74936805b0fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/AnimatorControllers/HomeDoor.controller using Guid(41ce71a9aa7484243b2a74936805b0fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '451f1068678281d37126bf5ef7c0c0e8') in 0.691342 seconds 
+========================================================================
+Received Prepare
+Setting a NavMeshArea cost less than one can give unexpected results.
+Registering precompiled user dll's ...
+Registered in 0.001658 seconds.
+Required property 'name' not set (Assets/pathfinding/NavMeshPlus-master/NavMeshComponents/Editor/NavMeshComponentsEditor.asmdef)
+Required property 'name' not set (Assets/pathfinding/NavMeshPlus-master/NavMeshComponents/Scripts/NavMeshComponents.asmdef)
+Required property 'name' not set (Assets/pathfinding/NavMeshPlus-master/NavMeshComponents/Editor/NavMeshComponentsEditor.asmdef)
+Required property 'name' not set (Assets/pathfinding/NavMeshPlus-master/NavMeshComponents/Scripts/NavMeshComponents.asmdef)
+Begin MonoManager ReloadAssembly
+Thread 0x16f57b000 may have been prematurely finalized
+Symbol file LoadedFromMemory doesn't match image /Users/a./ecs193_git/Open-Source-Minecraft-like-Simulation-Environment-for-AI/Sandbox Game/Library/PackageCache/com.unity.visualscripting@1.8.0/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image /Users/a./ecs193_git/Open-Source-Minecraft-like-Simulation-Environment-for-AI/Sandbox Game/Library/PackageCache/com.unity.visualscripting@1.8.0/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.62 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Required property 'name' not set (Assets/pathfinding/NavMeshPlus-master/NavMeshComponents/Editor/NavMeshComponentsEditor.asmdef)
+Required property 'name' not set (Assets/pathfinding/NavMeshPlus-master/NavMeshComponents/Scripts/NavMeshComponents.asmdef)
+Mono: successfully reloaded assembly
+- Completed reload, in  0.551 seconds
+Domain Reload Profiling:
+	ReloadAssembly (551ms)
+		BeginReloadAssembly (78ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (33ms)
+		EndReloadAssembly (416ms)
+			LoadAssemblies (35ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (146ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (31ms)
+			SetupLoadedEditorAssemblies (177ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (46ms)
+				ProcessInitializeOnLoadAttributes (110ms)
+				ProcessInitializeOnLoadMethodAttributes (14ms)
+				AfterProcessingInitializeOnLoad (1ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (3ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.26 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3919 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 23 unused Assets / (92.6 KB). Loaded Objects now: 4618.
+Memory consumption went from 160.2 MB to 160.1 MB.
+Total: 2.355667 ms (FindLiveObjects: 0.141208 ms CreateObjectMapping: 0.058958 ms MarkObjects: 2.129000 ms  DeleteObjects: 0.026000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Setting a NavMeshArea cost less than one can give unexpected results.
+Registering precompiled user dll's ...
+Registered in 0.001797 seconds.
+Required property 'name' not set (Assets/pathfinding/NavMeshPlus-master/NavMeshComponents/Editor/NavMeshComponentsEditor.asmdef)
+Required property 'name' not set (Assets/pathfinding/NavMeshPlus-master/NavMeshComponents/Scripts/NavMeshComponents.asmdef)
+Required property 'name' not set (Assets/pathfinding/NavMeshPlus-master/NavMeshComponents/Editor/NavMeshComponentsEditor.asmdef)
+Required property 'name' not set (Assets/pathfinding/NavMeshPlus-master/NavMeshComponents/Scripts/NavMeshComponents.asmdef)
+Begin MonoManager ReloadAssembly
+Thread 0x16f57b000 may have been prematurely finalized
+Symbol file LoadedFromMemory doesn't match image /Users/a./ecs193_git/Open-Source-Minecraft-like-Simulation-Environment-for-AI/Sandbox Game/Library/PackageCache/com.unity.visualscripting@1.8.0/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image /Users/a./ecs193_git/Open-Source-Minecraft-like-Simulation-Environment-for-AI/Sandbox Game/Library/PackageCache/com.unity.visualscripting@1.8.0/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.73 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Required property 'name' not set (Assets/pathfinding/NavMeshPlus-master/NavMeshComponents/Editor/NavMeshComponentsEditor.asmdef)
+Required property 'name' not set (Assets/pathfinding/NavMeshPlus-master/NavMeshComponents/Scripts/NavMeshComponents.asmdef)
+Mono: successfully reloaded assembly
+- Completed reload, in  0.560 seconds
+Domain Reload Profiling:
+	ReloadAssembly (560ms)
+		BeginReloadAssembly (74ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (33ms)
+		EndReloadAssembly (431ms)
+			LoadAssemblies (28ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (140ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (31ms)
+			SetupLoadedEditorAssemblies (200ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (51ms)
+				ProcessInitializeOnLoadAttributes (124ms)
+				ProcessInitializeOnLoadMethodAttributes (17ms)
+				AfterProcessingInitializeOnLoad (1ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (3ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.25 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3919 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 23 unused Assets / (92.6 KB). Loaded Objects now: 4633.
+Memory consumption went from 160.2 MB to 160.1 MB.
+Total: 2.394708 ms (FindLiveObjects: 0.130000 ms CreateObjectMapping: 0.063084 ms MarkObjects: 2.177416 ms  DeleteObjects: 0.023833 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Setting a NavMeshArea cost less than one can give unexpected results.
+Registering precompiled user dll's ...
+Registered in 0.001849 seconds.
+Required property 'name' not set (Assets/pathfinding/NavMeshPlus-master/NavMeshComponents/Editor/NavMeshComponentsEditor.asmdef)
+Required property 'name' not set (Assets/pathfinding/NavMeshPlus-master/NavMeshComponents/Scripts/NavMeshComponents.asmdef)
+Required property 'name' not set (Assets/pathfinding/NavMeshPlus-master/NavMeshComponents/Editor/NavMeshComponentsEditor.asmdef)
+Required property 'name' not set (Assets/pathfinding/NavMeshPlus-master/NavMeshComponents/Scripts/NavMeshComponents.asmdef)
+Begin MonoManager ReloadAssembly
+Thread 0x16f57b000 may have been prematurely finalized
+Symbol file LoadedFromMemory doesn't match image /Users/a./ecs193_git/Open-Source-Minecraft-like-Simulation-Environment-for-AI/Sandbox Game/Library/PackageCache/com.unity.visualscripting@1.8.0/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image /Users/a./ecs193_git/Open-Source-Minecraft-like-Simulation-Environment-for-AI/Sandbox Game/Library/PackageCache/com.unity.visualscripting@1.8.0/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.68 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Required property 'name' not set (Assets/pathfinding/NavMeshPlus-master/NavMeshComponents/Editor/NavMeshComponentsEditor.asmdef)
+Required property 'name' not set (Assets/pathfinding/NavMeshPlus-master/NavMeshComponents/Scripts/NavMeshComponents.asmdef)
+Mono: successfully reloaded assembly
+- Completed reload, in  0.539 seconds
+Domain Reload Profiling:
+	ReloadAssembly (540ms)
+		BeginReloadAssembly (72ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (30ms)
+		EndReloadAssembly (411ms)
+			LoadAssemblies (31ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (137ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (29ms)
+			SetupLoadedEditorAssemblies (187ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (49ms)
+				ProcessInitializeOnLoadAttributes (117ms)
+				ProcessInitializeOnLoadMethodAttributes (14ms)
+				AfterProcessingInitializeOnLoad (2ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (3ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.75 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3919 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 23 unused Assets / (92.5 KB). Loaded Objects now: 4648.
+Memory consumption went from 160.2 MB to 160.1 MB.
+Total: 2.126334 ms (FindLiveObjects: 0.130125 ms CreateObjectMapping: 0.063792 ms MarkObjects: 1.911958 ms  DeleteObjects: 0.020084 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Setting a NavMeshArea cost less than one can give unexpected results.
+Registering precompiled user dll's ...
+Registered in 0.001896 seconds.
+Required property 'name' not set (Assets/pathfinding/NavMeshPlus-master/NavMeshComponents/Editor/NavMeshComponentsEditor.asmdef)
+Required property 'name' not set (Assets/pathfinding/NavMeshPlus-master/NavMeshComponents/Scripts/NavMeshComponents.asmdef)
+Required property 'name' not set (Assets/pathfinding/NavMeshPlus-master/NavMeshComponents/Editor/NavMeshComponentsEditor.asmdef)
+Required property 'name' not set (Assets/pathfinding/NavMeshPlus-master/NavMeshComponents/Scripts/NavMeshComponents.asmdef)
+Begin MonoManager ReloadAssembly
+Thread 0x16f57b000 may have been prematurely finalized
+Symbol file LoadedFromMemory doesn't match image /Users/a./ecs193_git/Open-Source-Minecraft-like-Simulation-Environment-for-AI/Sandbox Game/Library/PackageCache/com.unity.visualscripting@1.8.0/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image /Users/a./ecs193_git/Open-Source-Minecraft-like-Simulation-Environment-for-AI/Sandbox Game/Library/PackageCache/com.unity.visualscripting@1.8.0/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.74 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Required property 'name' not set (Assets/pathfinding/NavMeshPlus-master/NavMeshComponents/Editor/NavMeshComponentsEditor.asmdef)
+Required property 'name' not set (Assets/pathfinding/NavMeshPlus-master/NavMeshComponents/Scripts/NavMeshComponents.asmdef)
+Mono: successfully reloaded assembly
+- Completed reload, in  0.540 seconds
+Domain Reload Profiling:
+	ReloadAssembly (541ms)
+		BeginReloadAssembly (66ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (28ms)
+		EndReloadAssembly (423ms)
+			LoadAssemblies (26ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (135ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (31ms)
+			SetupLoadedEditorAssemblies (197ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (53ms)
+				ProcessInitializeOnLoadAttributes (119ms)
+				ProcessInitializeOnLoadMethodAttributes (17ms)
+				AfterProcessingInitializeOnLoad (1ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (3ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.16 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3919 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 23 unused Assets / (92.5 KB). Loaded Objects now: 4663.
+Memory consumption went from 160.2 MB to 160.1 MB.
+Total: 2.363042 ms (FindLiveObjects: 0.151000 ms CreateObjectMapping: 0.058959 ms MarkObjects: 2.126291 ms  DeleteObjects: 0.026500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Setting a NavMeshArea cost less than one can give unexpected results.
+Registering precompiled user dll's ...
+Registered in 0.001773 seconds.
+Required property 'name' not set (Assets/pathfinding/NavMeshPlus-master/NavMeshComponents/Editor/NavMeshComponentsEditor.asmdef)
+Required property 'name' not set (Assets/pathfinding/NavMeshPlus-master/NavMeshComponents/Scripts/NavMeshComponents.asmdef)
+Required property 'name' not set (Assets/pathfinding/NavMeshPlus-master/NavMeshComponents/Editor/NavMeshComponentsEditor.asmdef)
+Required property 'name' not set (Assets/pathfinding/NavMeshPlus-master/NavMeshComponents/Scripts/NavMeshComponents.asmdef)
+Begin MonoManager ReloadAssembly
+Thread 0x16f57b000 may have been prematurely finalized
+Symbol file LoadedFromMemory doesn't match image /Users/a./ecs193_git/Open-Source-Minecraft-like-Simulation-Environment-for-AI/Sandbox Game/Library/PackageCache/com.unity.visualscripting@1.8.0/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image /Users/a./ecs193_git/Open-Source-Minecraft-like-Simulation-Environment-for-AI/Sandbox Game/Library/PackageCache/com.unity.visualscripting@1.8.0/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.87 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Required property 'name' not set (Assets/pathfinding/NavMeshPlus-master/NavMeshComponents/Editor/NavMeshComponentsEditor.asmdef)
+Required property 'name' not set (Assets/pathfinding/NavMeshPlus-master/NavMeshComponents/Scripts/NavMeshComponents.asmdef)
+Mono: successfully reloaded assembly
+- Completed reload, in  0.528 seconds
+Domain Reload Profiling:
+	ReloadAssembly (528ms)
+		BeginReloadAssembly (68ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (28ms)
+		EndReloadAssembly (407ms)
+			LoadAssemblies (27ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (132ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (30ms)
+			SetupLoadedEditorAssemblies (188ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (49ms)
+				ProcessInitializeOnLoadAttributes (115ms)
+				ProcessInitializeOnLoadMethodAttributes (16ms)
+				AfterProcessingInitializeOnLoad (1ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (3ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.23 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3919 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 23 unused Assets / (92.5 KB). Loaded Objects now: 4678.
+Memory consumption went from 160.2 MB to 160.1 MB.
+Total: 2.262208 ms (FindLiveObjects: 0.133792 ms CreateObjectMapping: 0.056125 ms MarkObjects: 2.045834 ms  DeleteObjects: 0.025875 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Setting a NavMeshArea cost less than one can give unexpected results.
+Registering precompiled user dll's ...
+Registered in 0.001812 seconds.
+Required property 'name' not set (Assets/pathfinding/NavMeshPlus-master/NavMeshComponents/Editor/NavMeshComponentsEditor.asmdef)
+Required property 'name' not set (Assets/pathfinding/NavMeshPlus-master/NavMeshComponents/Scripts/NavMeshComponents.asmdef)
+Required property 'name' not set (Assets/pathfinding/NavMeshPlus-master/NavMeshComponents/Editor/NavMeshComponentsEditor.asmdef)
+Required property 'name' not set (Assets/pathfinding/NavMeshPlus-master/NavMeshComponents/Scripts/NavMeshComponents.asmdef)
+Begin MonoManager ReloadAssembly
+Thread 0x16f57b000 may have been prematurely finalized
+Symbol file LoadedFromMemory doesn't match image /Users/a./ecs193_git/Open-Source-Minecraft-like-Simulation-Environment-for-AI/Sandbox Game/Library/PackageCache/com.unity.visualscripting@1.8.0/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image /Users/a./ecs193_git/Open-Source-Minecraft-like-Simulation-Environment-for-AI/Sandbox Game/Library/PackageCache/com.unity.visualscripting@1.8.0/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.71 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Required property 'name' not set (Assets/pathfinding/NavMeshPlus-master/NavMeshComponents/Editor/NavMeshComponentsEditor.asmdef)
+Required property 'name' not set (Assets/pathfinding/NavMeshPlus-master/NavMeshComponents/Scripts/NavMeshComponents.asmdef)
+Mono: successfully reloaded assembly
+- Completed reload, in  0.554 seconds
+Domain Reload Profiling:
+	ReloadAssembly (554ms)
+		BeginReloadAssembly (71ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (30ms)
+		EndReloadAssembly (426ms)
+			LoadAssemblies (31ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (140ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (30ms)
+			SetupLoadedEditorAssemblies (194ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (53ms)
+				ProcessInitializeOnLoadAttributes (119ms)
+				ProcessInitializeOnLoadMethodAttributes (16ms)
+				AfterProcessingInitializeOnLoad (1ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (3ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.27 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3919 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 23 unused Assets / (92.7 KB). Loaded Objects now: 4693.
+Memory consumption went from 160.2 MB to 160.2 MB.
+Total: 2.310375 ms (FindLiveObjects: 0.130041 ms CreateObjectMapping: 0.059250 ms MarkObjects: 2.098542 ms  DeleteObjects: 0.022000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Setting a NavMeshArea cost less than one can give unexpected results.
+Registering precompiled user dll's ...
+Registered in 0.001829 seconds.
+Required property 'name' not set (Assets/pathfinding/NavMeshPlus-master/NavMeshComponents/Editor/NavMeshComponentsEditor.asmdef)
+Required property 'name' not set (Assets/pathfinding/NavMeshPlus-master/NavMeshComponents/Scripts/NavMeshComponents.asmdef)
+Required property 'name' not set (Assets/pathfinding/NavMeshPlus-master/NavMeshComponents/Editor/NavMeshComponentsEditor.asmdef)
+Required property 'name' not set (Assets/pathfinding/NavMeshPlus-master/NavMeshComponents/Scripts/NavMeshComponents.asmdef)
+Begin MonoManager ReloadAssembly
+Thread 0x16f57b000 may have been prematurely finalized
+Symbol file LoadedFromMemory doesn't match image /Users/a./ecs193_git/Open-Source-Minecraft-like-Simulation-Environment-for-AI/Sandbox Game/Library/PackageCache/com.unity.visualscripting@1.8.0/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image /Users/a./ecs193_git/Open-Source-Minecraft-like-Simulation-Environment-for-AI/Sandbox Game/Library/PackageCache/com.unity.visualscripting@1.8.0/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.69 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Required property 'name' not set (Assets/pathfinding/NavMeshPlus-master/NavMeshComponents/Editor/NavMeshComponentsEditor.asmdef)
+Required property 'name' not set (Assets/pathfinding/NavMeshPlus-master/NavMeshComponents/Scripts/NavMeshComponents.asmdef)
+Mono: successfully reloaded assembly
+- Completed reload, in  0.564 seconds
+Domain Reload Profiling:
+	ReloadAssembly (565ms)
+		BeginReloadAssembly (75ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (30ms)
+		EndReloadAssembly (434ms)
+			LoadAssemblies (31ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (140ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (32ms)
+			SetupLoadedEditorAssemblies (202ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (53ms)
+				ProcessInitializeOnLoadAttributes (125ms)
+				ProcessInitializeOnLoadMethodAttributes (17ms)
+				AfterProcessingInitializeOnLoad (1ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (3ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.18 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3919 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 23 unused Assets / (92.5 KB). Loaded Objects now: 4708.
+Memory consumption went from 160.3 MB to 160.2 MB.
+Total: 2.469208 ms (FindLiveObjects: 0.168167 ms CreateObjectMapping: 0.068166 ms MarkObjects: 2.211292 ms  DeleteObjects: 0.021125 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Setting a NavMeshArea cost less than one can give unexpected results.
+Registering precompiled user dll's ...
+Registered in 0.001679 seconds.
+Required property 'name' not set (Assets/pathfinding/NavMeshPlus-master/NavMeshComponents/Editor/NavMeshComponentsEditor.asmdef)
+Required property 'name' not set (Assets/pathfinding/NavMeshPlus-master/NavMeshComponents/Scripts/NavMeshComponents.asmdef)
+Required property 'name' not set (Assets/pathfinding/NavMeshPlus-master/NavMeshComponents/Editor/NavMeshComponentsEditor.asmdef)
+Required property 'name' not set (Assets/pathfinding/NavMeshPlus-master/NavMeshComponents/Scripts/NavMeshComponents.asmdef)
+Begin MonoManager ReloadAssembly
+Thread 0x16f57b000 may have been prematurely finalized
+Symbol file LoadedFromMemory doesn't match image /Users/a./ecs193_git/Open-Source-Minecraft-like-Simulation-Environment-for-AI/Sandbox Game/Library/PackageCache/com.unity.visualscripting@1.8.0/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image /Users/a./ecs193_git/Open-Source-Minecraft-like-Simulation-Environment-for-AI/Sandbox Game/Library/PackageCache/com.unity.visualscripting@1.8.0/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.76 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Required property 'name' not set (Assets/pathfinding/NavMeshPlus-master/NavMeshComponents/Editor/NavMeshComponentsEditor.asmdef)
+Required property 'name' not set (Assets/pathfinding/NavMeshPlus-master/NavMeshComponents/Scripts/NavMeshComponents.asmdef)
+Mono: successfully reloaded assembly
+- Completed reload, in  0.578 seconds
+Domain Reload Profiling:
+	ReloadAssembly (578ms)
+		BeginReloadAssembly (78ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (36ms)
+		EndReloadAssembly (445ms)
+			LoadAssemblies (29ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (137ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (32ms)
+			SetupLoadedEditorAssemblies (212ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (54ms)
+				ProcessInitializeOnLoadAttributes (135ms)
+				ProcessInitializeOnLoadMethodAttributes (17ms)
+				AfterProcessingInitializeOnLoad (1ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (3ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.20 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3919 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 23 unused Assets / (92.6 KB). Loaded Objects now: 4723.
+Memory consumption went from 160.3 MB to 160.2 MB.
+Total: 2.715458 ms (FindLiveObjects: 0.144417 ms CreateObjectMapping: 0.059708 ms MarkObjects: 2.478083 ms  DeleteObjects: 0.032792 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Setting a NavMeshArea cost less than one can give unexpected results.
+Registering precompiled user dll's ...
+Registered in 0.001708 seconds.
+Required property 'name' not set (Assets/pathfinding/NavMeshPlus-master/NavMeshComponents/Editor/NavMeshComponentsEditor.asmdef)
+Required property 'name' not set (Assets/pathfinding/NavMeshPlus-master/NavMeshComponents/Scripts/NavMeshComponents.asmdef)
+Required property 'name' not set (Assets/pathfinding/NavMeshPlus-master/NavMeshComponents/Editor/NavMeshComponentsEditor.asmdef)
+Required property 'name' not set (Assets/pathfinding/NavMeshPlus-master/NavMeshComponents/Scripts/NavMeshComponents.asmdef)
+Begin MonoManager ReloadAssembly
+Thread 0x16f57b000 may have been prematurely finalized
+Symbol file LoadedFromMemory doesn't match image /Users/a./ecs193_git/Open-Source-Minecraft-like-Simulation-Environment-for-AI/Sandbox Game/Library/PackageCache/com.unity.visualscripting@1.8.0/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image /Users/a./ecs193_git/Open-Source-Minecraft-like-Simulation-Environment-for-AI/Sandbox Game/Library/PackageCache/com.unity.visualscripting@1.8.0/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.70 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Required property 'name' not set (Assets/pathfinding/NavMeshPlus-master/NavMeshComponents/Editor/NavMeshComponentsEditor.asmdef)
+Required property 'name' not set (Assets/pathfinding/NavMeshPlus-master/NavMeshComponents/Scripts/NavMeshComponents.asmdef)
+Mono: successfully reloaded assembly
+- Completed reload, in  0.525 seconds
+Domain Reload Profiling:
+	ReloadAssembly (526ms)
+		BeginReloadAssembly (71ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (29ms)
+		EndReloadAssembly (398ms)
+			LoadAssemblies (29ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (131ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (28ms)
+			SetupLoadedEditorAssemblies (185ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (49ms)
+				ProcessInitializeOnLoadAttributes (113ms)
+				ProcessInitializeOnLoadMethodAttributes (16ms)
+				AfterProcessingInitializeOnLoad (1ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (3ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.14 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3919 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 23 unused Assets / (92.5 KB). Loaded Objects now: 4738.
+Memory consumption went from 160.3 MB to 160.2 MB.
+Total: 2.167042 ms (FindLiveObjects: 0.123167 ms CreateObjectMapping: 0.058583 ms MarkObjects: 1.960833 ms  DeleteObjects: 0.024125 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Setting a NavMeshArea cost less than one can give unexpected results.
+Registering precompiled user dll's ...
+Registered in 0.001727 seconds.
+Required property 'name' not set (Assets/pathfinding/NavMeshPlus-master/NavMeshComponents/Editor/NavMeshComponentsEditor.asmdef)
+Required property 'name' not set (Assets/pathfinding/NavMeshPlus-master/NavMeshComponents/Scripts/NavMeshComponents.asmdef)
+Required property 'name' not set (Assets/pathfinding/NavMeshPlus-master/NavMeshComponents/Editor/NavMeshComponentsEditor.asmdef)
+Required property 'name' not set (Assets/pathfinding/NavMeshPlus-master/NavMeshComponents/Scripts/NavMeshComponents.asmdef)
+Begin MonoManager ReloadAssembly
+Thread 0x16f57b000 may have been prematurely finalized
+Symbol file LoadedFromMemory doesn't match image /Users/a./ecs193_git/Open-Source-Minecraft-like-Simulation-Environment-for-AI/Sandbox Game/Library/PackageCache/com.unity.visualscripting@1.8.0/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image /Users/a./ecs193_git/Open-Source-Minecraft-like-Simulation-Environment-for-AI/Sandbox Game/Library/PackageCache/com.unity.visualscripting@1.8.0/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.69 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Required property 'name' not set (Assets/pathfinding/NavMeshPlus-master/NavMeshComponents/Editor/NavMeshComponentsEditor.asmdef)
+Required property 'name' not set (Assets/pathfinding/NavMeshPlus-master/NavMeshComponents/Scripts/NavMeshComponents.asmdef)
+Mono: successfully reloaded assembly
+- Completed reload, in  0.553 seconds
+Domain Reload Profiling:
+	ReloadAssembly (554ms)
+		BeginReloadAssembly (66ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (27ms)
+		EndReloadAssembly (437ms)
+			LoadAssemblies (28ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (142ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (32ms)
+			SetupLoadedEditorAssemblies (201ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (53ms)
+				ProcessInitializeOnLoadAttributes (125ms)
+				ProcessInitializeOnLoadMethodAttributes (16ms)
+				AfterProcessingInitializeOnLoad (1ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (3ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.14 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3919 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 23 unused Assets / (92.6 KB). Loaded Objects now: 4753.
+Memory consumption went from 160.3 MB to 160.2 MB.
+Total: 2.326542 ms (FindLiveObjects: 0.142458 ms CreateObjectMapping: 0.058250 ms MarkObjects: 2.104375 ms  DeleteObjects: 0.021334 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 

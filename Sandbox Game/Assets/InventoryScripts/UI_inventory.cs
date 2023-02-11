@@ -24,7 +24,7 @@ public class UI_inventory : MonoBehaviour
         foreach (Item item in inventory.GetItemList()){
             RectTransform itemSlotRectTransform = Instantiate(itemSlotTemplate,itemSlotContainer).GetComponent<RectTransform>();
             itemSlotRectTransform.anchoredPosition= new Vector2(x*itemSlotCellSize,y*itemSlotCellSize);
-            Image image = itemSlotRectTransform.Find("Image").GetComponent<Image>();
+            Image image = itemSlotRectTransform.Find("image").GetComponent<Image>();
             image.sprite = item.GetSprite();
             x++;
             if (x>4){

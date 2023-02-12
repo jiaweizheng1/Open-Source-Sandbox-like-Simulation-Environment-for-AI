@@ -1,0 +1,333 @@
+Using pre-set license
+Built from '2021.3/staging' branch; Version is '2021.3.18f1 (3129e69bc0c7) revision 3221990'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19044) 64bit Core' Language: 'en' Physical Memory: 16333 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2021.3.18f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker3
+-projectPath
+C:/Users/jiawe/OneDrive/Documents/GitHub/Open-Source-Minecraft-like-Simulation-Environment-for-AI/Environment
+-logFile
+Logs/AssetImportWorker3.log
+-srvPort
+4436
+Successfully changed project path to: C:/Users/jiawe/OneDrive/Documents/GitHub/Open-Source-Minecraft-like-Simulation-Environment-for-AI/Environment
+C:/Users/jiawe/OneDrive/Documents/GitHub/Open-Source-Minecraft-like-Simulation-Environment-for-AI/Environment
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [1256] Host "[IP] 10.0.0.67 [Port] 0 [Flags] 2 [Guid] 4065157069 [EditorId] 4065157069 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-TAGDHKG) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [1256] Host "[IP] 10.0.0.67 [Port] 0 [Flags] 2 [Guid] 4065157069 [EditorId] 4065157069 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-TAGDHKG) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+Refreshing native plugins compatible for Editor in 92.59 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.3.18f1 (3129e69bc0c7)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.18f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/jiawe/OneDrive/Documents/GitHub/Open-Source-Minecraft-like-Simulation-Environment-for-AI/Environment/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 2070 SUPER (ID=0x1e84)
+    Vendor:   NVIDIA
+    VRAM:     8003 MB
+    Driver:   31.0.15.2824
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.18f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.18f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.18f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56516
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.18f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.009774 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 80.62 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.655 seconds
+Domain Reload Profiling:
+	ReloadAssembly (656ms)
+		BeginReloadAssembly (84ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (448ms)
+			LoadAssemblies (80ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (117ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (27ms)
+			SetupLoadedEditorAssemblies (249ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (9ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (81ms)
+				BeforeProcessingInitializeOnLoad (1ms)
+				ProcessInitializeOnLoadAttributes (120ms)
+				ProcessInitializeOnLoadMethodAttributes (38ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.005739 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\jiawe\OneDrive\Documents\GitHub\Open-Source-Minecraft-like-Simulation-Environment-for-AI\Environment\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\jiawe\OneDrive\Documents\GitHub\Open-Source-Minecraft-like-Simulation-Environment-for-AI\Environment\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 76.78 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.006 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1007ms)
+		BeginReloadAssembly (98ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (17ms)
+		EndReloadAssembly (801ms)
+			LoadAssemblies (70ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (226ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (42ms)
+			SetupLoadedEditorAssemblies (428ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (77ms)
+				BeforeProcessingInitializeOnLoad (81ms)
+				ProcessInitializeOnLoadAttributes (244ms)
+				ProcessInitializeOnLoadMethodAttributes (13ms)
+				AfterProcessingInitializeOnLoad (9ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Refreshing native plugins compatible for Editor in 0.69 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3235 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 44 unused Assets / (1.5 MB). Loaded Objects now: 3712.
+Memory consumption went from 134.9 MB to 133.4 MB.
+Total: 3.129000 ms (FindLiveObjects: 0.339700 ms CreateObjectMapping: 0.089900 ms MarkObjects: 2.355900 ms  DeleteObjects: 0.342500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 21929.479731 seconds.
+  path: Assets/Ultimate Stylized Nature - May 2022/OBJ/BirchTree_2.obj
+  artifactKey: Guid(2e2e3b52101e58140add74f99c5bd5d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ultimate Stylized Nature - May 2022/OBJ/BirchTree_2.obj using Guid(2e2e3b52101e58140add74f99c5bd5d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eaa227d8f930f6aff11c061cd0110f75') in 0.152787 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Ultimate Stylized Nature - May 2022/OBJ/Bush_Flowers.obj
+  artifactKey: Guid(72640c011fa748c47b5a063b76885c73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ultimate Stylized Nature - May 2022/OBJ/Bush_Flowers.obj using Guid(72640c011fa748c47b5a063b76885c73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b873f8bc3d860e13ed8045862667f4b') in 0.024233 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Ultimate Stylized Nature - May 2022/OBJ/BirchTree_4.obj
+  artifactKey: Guid(fad3d837748070949aa6031316c101d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ultimate Stylized Nature - May 2022/OBJ/BirchTree_4.obj using Guid(fad3d837748070949aa6031316c101d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '98d6e8c5eccf2fca47a81ef75c8ba226') in 0.024827 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/Ultimate Stylized Nature - May 2022/OBJ/Flower_3_Clump.obj
+  artifactKey: Guid(9444b53bcb25b7c48a0bddc91cebd641) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ultimate Stylized Nature - May 2022/OBJ/Flower_3_Clump.obj using Guid(9444b53bcb25b7c48a0bddc91cebd641) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f04894f44ee8016be0ebddb0dfdbdcc') in 0.019135 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Ultimate Stylized Nature - May 2022/OBJ/MapleTree_4.obj
+  artifactKey: Guid(052f5234be997a741bae62e64e421940) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ultimate Stylized Nature - May 2022/OBJ/MapleTree_4.obj using Guid(052f5234be997a741bae62e64e421940) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f23ac2b1a82fa09877a89183888a319') in 0.024840 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Ultimate Stylized Nature - May 2022/OBJ/NormalTree_4.obj
+  artifactKey: Guid(fa9863643a18c044f8fbed99efd507b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ultimate Stylized Nature - May 2022/OBJ/NormalTree_4.obj using Guid(fa9863643a18c044f8fbed99efd507b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e9e068f78645ba8239c2f38edc24237') in 0.024624 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Ultimate Stylized Nature - May 2022/OBJ/Flower_2.obj
+  artifactKey: Guid(4f95654838586bc44a1a421157e42989) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ultimate Stylized Nature - May 2022/OBJ/Flower_2.obj using Guid(4f95654838586bc44a1a421157e42989) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d9cf2bc28e6a6c70b4fba07085b1abd') in 0.021280 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Ultimate Stylized Nature - May 2022/OBJ/DeadTree_8.obj
+  artifactKey: Guid(0ff255c166e53af40bff692ced4ba3d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ultimate Stylized Nature - May 2022/OBJ/DeadTree_8.obj using Guid(0ff255c166e53af40bff692ced4ba3d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb1a9c3f78fda381c697767dd2a97723') in 0.020307 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Ultimate Stylized Nature - May 2022/OBJ/NormalTree_5.obj
+  artifactKey: Guid(fce85d14fc38e9940ae1a67fc02aed5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ultimate Stylized Nature - May 2022/OBJ/NormalTree_5.obj using Guid(fce85d14fc38e9940ae1a67fc02aed5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3743682e828cf25dda4acf46e8a1ad35') in 0.024940 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Ultimate Stylized Nature - May 2022/OBJ/Flower_1_Clump.obj
+  artifactKey: Guid(1063c997fe80fef4aaf94342647a5e7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ultimate Stylized Nature - May 2022/OBJ/Flower_1_Clump.obj using Guid(1063c997fe80fef4aaf94342647a5e7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e70a2241856e7a3045ad2f32966e258c') in 0.021430 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Ultimate Stylized Nature - May 2022/OBJ/DeadTree_3.obj
+  artifactKey: Guid(ed496ce9a378b0e42ae8e32aaa3a0390) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ultimate Stylized Nature - May 2022/OBJ/DeadTree_3.obj using Guid(ed496ce9a378b0e42ae8e32aaa3a0390) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '662983f41d1cd3a33c6d24c4f7090439') in 0.021829 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Ultimate Stylized Nature - May 2022/OBJ/MapleTree_1.obj
+  artifactKey: Guid(5eb99bc875703d742b5a84fb692413be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ultimate Stylized Nature - May 2022/OBJ/MapleTree_1.obj using Guid(5eb99bc875703d742b5a84fb692413be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '90feaba325ed6327e1a841ae672a2749') in 0.030286 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Ultimate Stylized Nature - May 2022/OBJ/Grass_Large.obj
+  artifactKey: Guid(a2b3443935fb47f478ab008864d64d18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ultimate Stylized Nature - May 2022/OBJ/Grass_Large.obj using Guid(a2b3443935fb47f478ab008864d64d18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '308779be39925a345df76bb14509d59f') in 0.022043 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Ultimate Stylized Nature - May 2022/OBJ/PalmTree_2.obj
+  artifactKey: Guid(52bea23472da0f74fa9d282b634ae07c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ultimate Stylized Nature - May 2022/OBJ/PalmTree_2.obj using Guid(52bea23472da0f74fa9d282b634ae07c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd527d8e0fa5e1217375a3d795add45cd') in 0.023932 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Ultimate Stylized Nature - May 2022/OBJ/Bush_Large.obj
+  artifactKey: Guid(5d3dd630055f3cc47a2b56560ff0ea69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ultimate Stylized Nature - May 2022/OBJ/Bush_Large.obj using Guid(5d3dd630055f3cc47a2b56560ff0ea69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eed9cd9c406aae93f73577e2bfc15250') in 0.020298 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Ultimate Stylized Nature - May 2022/OBJ/NormalTree_1.obj
+  artifactKey: Guid(eb880718a588bd342920f653336b017a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ultimate Stylized Nature - May 2022/OBJ/NormalTree_1.obj using Guid(eb880718a588bd342920f653336b017a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '07fc88828886dfbe348d354b0543a73b') in 0.025652 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Ultimate Stylized Nature - May 2022/OBJ/MapleTree_3.obj
+  artifactKey: Guid(674b570b43956754c9fbe35f9a250874) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ultimate Stylized Nature - May 2022/OBJ/MapleTree_3.obj using Guid(674b570b43956754c9fbe35f9a250874) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd63271f284f3f005eb7d0ceec410d768') in 0.024889 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Ultimate Stylized Nature - May 2022/OBJ/Flower_2_Clump.obj
+  artifactKey: Guid(f8768631ffe823149ac016535776de33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ultimate Stylized Nature - May 2022/OBJ/Flower_2_Clump.obj using Guid(f8768631ffe823149ac016535776de33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a66931c23371668bb4a595da61eac26c') in 0.020606 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Ultimate Stylized Nature - May 2022/OBJ/DeadTree_1.obj
+  artifactKey: Guid(fb16d6d379becf7409d9e21909eacba0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ultimate Stylized Nature - May 2022/OBJ/DeadTree_1.obj using Guid(fb16d6d379becf7409d9e21909eacba0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dcd80dc96653c3e042a0bbe6fca699f6') in 0.019859 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005431 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\jiawe\OneDrive\Documents\GitHub\Open-Source-Minecraft-like-Simulation-Environment-for-AI\Environment\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\jiawe\OneDrive\Documents\GitHub\Open-Source-Minecraft-like-Simulation-Environment-for-AI\Environment\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.56 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.140 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1141ms)
+		BeginReloadAssembly (155ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (49ms)
+		EndReloadAssembly (883ms)
+			LoadAssemblies (94ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (312ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (44ms)
+			SetupLoadedEditorAssemblies (399ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (12ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (77ms)
+				ProcessInitializeOnLoadAttributes (278ms)
+				ProcessInitializeOnLoadMethodAttributes (18ms)
+				AfterProcessingInitializeOnLoad (13ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 2.40 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3193 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 27 unused Assets / (1.5 MB). Loaded Objects now: 3759.
+Memory consumption went from 135.8 MB to 134.3 MB.
+Total: 3.526300 ms (FindLiveObjects: 0.350100 ms CreateObjectMapping: 0.083500 ms MarkObjects: 2.745400 ms  DeleteObjects: 0.346100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 

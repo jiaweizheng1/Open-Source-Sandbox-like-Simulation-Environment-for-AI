@@ -15,7 +15,7 @@ C:/Users/jiawe/OneDrive/Documents/GitHub/Open-Source-Minecraft-like-Simulation-E
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-1098
+1425
 Successfully changed project path to: C:/Users/jiawe/OneDrive/Documents/GitHub/Open-Source-Minecraft-like-Simulation-Environment-for-AI/Environment
 C:/Users/jiawe/OneDrive/Documents/GitHub/Open-Source-Minecraft-like-Simulation-Environment-for-AI/Environment
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -47,11 +47,11 @@ C:/Users/jiawe/OneDrive/Documents/GitHub/Open-Source-Minecraft-like-Simulation-E
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [1100] Host "[IP] 10.0.0.67 [Port] 0 [Flags] 2 [Guid] 2473205166 [EditorId] 2473205166 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-TAGDHKG) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [1912] Host "[IP] 10.0.0.67 [Port] 0 [Flags] 2 [Guid] 1920969180 [EditorId] 1920969180 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-TAGDHKG) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [1100] Host "[IP] 10.0.0.67 [Port] 0 [Flags] 2 [Guid] 2473205166 [EditorId] 2473205166 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-TAGDHKG) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [1912] Host "[IP] 10.0.0.67 [Port] 0 [Flags] 2 [Guid] 1920969180 [EditorId] 1920969180 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-TAGDHKG) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
-Refreshing native plugins compatible for Editor in 83.04 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 92.16 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.18f1 (3129e69bc0c7)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.18f1/Editor/Data/Resources/UnitySubsystems
@@ -67,75 +67,75 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.18f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.18f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.18f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56848
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56004
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.18f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.009471 seconds.
+Registered in 0.010276 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 81.20 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 92.31 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.591 seconds
+- Completed reload, in  0.679 seconds
 Domain Reload Profiling:
-	ReloadAssembly (591ms)
-		BeginReloadAssembly (71ms)
+	ReloadAssembly (680ms)
+		BeginReloadAssembly (75ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (408ms)
-			LoadAssemblies (68ms)
+		EndReloadAssembly (491ms)
+			LoadAssemblies (72ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (89ms)
+			SetupTypeCache (112ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (23ms)
-			SetupLoadedEditorAssemblies (250ms)
+			RebuildScriptCaches (28ms)
+			SetupLoadedEditorAssemblies (292ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (7ms)
+				InitializePlatformSupportModulesInManaged (8ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (81ms)
+				RefreshPlugins (92ms)
 				BeforeProcessingInitializeOnLoad (1ms)
-				ProcessInitializeOnLoadAttributes (121ms)
-				ProcessInitializeOnLoadMethodAttributes (38ms)
+				ProcessInitializeOnLoadAttributes (138ms)
+				ProcessInitializeOnLoadMethodAttributes (52ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.007006 seconds.
+Registered in 0.006677 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\jiawe\OneDrive\Documents\GitHub\Open-Source-Minecraft-like-Simulation-Environment-for-AI\Environment\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\jiawe\OneDrive\Documents\GitHub\Open-Source-Minecraft-like-Simulation-Environment-for-AI\Environment\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 82.03 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 93.28 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.078 seconds
+- Completed reload, in  1.207 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1079ms)
-		BeginReloadAssembly (103ms)
+	ReloadAssembly (1208ms)
+		BeginReloadAssembly (119ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (5ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (18ms)
-		EndReloadAssembly (866ms)
-			LoadAssemblies (75ms)
+			CreateAndSetChildDomain (23ms)
+		EndReloadAssembly (961ms)
+			LoadAssemblies (85ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (231ms)
+			SetupTypeCache (269ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (48ms)
-			SetupLoadedEditorAssemblies (469ms)
+			RebuildScriptCaches (56ms)
+			SetupLoadedEditorAssemblies (504ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (5ms)
+				InitializePlatformSupportModulesInManaged (7ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (82ms)
-				BeforeProcessingInitializeOnLoad (100ms)
-				ProcessInitializeOnLoadAttributes (254ms)
-				ProcessInitializeOnLoadMethodAttributes (18ms)
+				RefreshPlugins (93ms)
+				BeforeProcessingInitializeOnLoad (96ms)
+				ProcessInitializeOnLoadAttributes (282ms)
+				ProcessInitializeOnLoadMethodAttributes (15ms)
 				AfterProcessingInitializeOnLoad (10ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
@@ -144,292 +144,12 @@ Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
-Refreshing native plugins compatible for Editor in 0.70 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 0.92 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3369 Unused Serialized files (Serialized files now loaded: 0)
 Unloading 117 unused Assets / (6.9 MB). Loaded Objects now: 3773.
 Memory consumption went from 144.5 MB to 137.6 MB.
-Total: 5.325800 ms (FindLiveObjects: 0.400900 ms CreateObjectMapping: 0.084900 ms MarkObjects: 2.636800 ms  DeleteObjects: 2.202100 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.006206 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\jiawe\OneDrive\Documents\GitHub\Open-Source-Minecraft-like-Simulation-Environment-for-AI\Environment\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\jiawe\OneDrive\Documents\GitHub\Open-Source-Minecraft-like-Simulation-Environment-for-AI\Environment\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.09 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.054 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1055ms)
-		BeginReloadAssembly (127ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (5ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (32ms)
-		EndReloadAssembly (828ms)
-			LoadAssemblies (85ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (258ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (43ms)
-			SetupLoadedEditorAssemblies (395ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (12ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (77ms)
-				ProcessInitializeOnLoadAttributes (276ms)
-				ProcessInitializeOnLoadMethodAttributes (17ms)
-				AfterProcessingInitializeOnLoad (10ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (6ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 2.07 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3361 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 100 unused Assets / (6.8 MB). Loaded Objects now: 3776.
-Memory consumption went from 144.1 MB to 137.2 MB.
-Total: 5.424100 ms (FindLiveObjects: 0.389700 ms CreateObjectMapping: 0.097500 ms MarkObjects: 2.673600 ms  DeleteObjects: 2.262200 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.006445 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\jiawe\OneDrive\Documents\GitHub\Open-Source-Minecraft-like-Simulation-Environment-for-AI\Environment\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\jiawe\OneDrive\Documents\GitHub\Open-Source-Minecraft-like-Simulation-Environment-for-AI\Environment\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.67 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.031 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1031ms)
-		BeginReloadAssembly (137ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (5ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (34ms)
-		EndReloadAssembly (796ms)
-			LoadAssemblies (89ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (255ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (41ms)
-			SetupLoadedEditorAssemblies (376ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (13ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (78ms)
-				ProcessInitializeOnLoadAttributes (258ms)
-				ProcessInitializeOnLoadMethodAttributes (16ms)
-				AfterProcessingInitializeOnLoad (10ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (7ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 2.60 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3361 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 100 unused Assets / (6.8 MB). Loaded Objects now: 3779.
-Memory consumption went from 144.1 MB to 137.2 MB.
-Total: 5.397600 ms (FindLiveObjects: 0.332300 ms CreateObjectMapping: 0.101500 ms MarkObjects: 2.855700 ms  DeleteObjects: 2.107100 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.005828 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\jiawe\OneDrive\Documents\GitHub\Open-Source-Minecraft-like-Simulation-Environment-for-AI\Environment\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\jiawe\OneDrive\Documents\GitHub\Open-Source-Minecraft-like-Simulation-Environment-for-AI\Environment\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.05 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.048 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1048ms)
-		BeginReloadAssembly (128ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (5ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (32ms)
-		EndReloadAssembly (822ms)
-			LoadAssemblies (86ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (264ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (45ms)
-			SetupLoadedEditorAssemblies (377ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (13ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (76ms)
-				ProcessInitializeOnLoadAttributes (261ms)
-				ProcessInitializeOnLoadMethodAttributes (16ms)
-				AfterProcessingInitializeOnLoad (10ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (7ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 2.07 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3361 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 100 unused Assets / (6.8 MB). Loaded Objects now: 3782.
-Memory consumption went from 144.1 MB to 137.3 MB.
-Total: 5.417000 ms (FindLiveObjects: 0.331900 ms CreateObjectMapping: 0.082100 ms MarkObjects: 2.313500 ms  DeleteObjects: 2.688000 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.008110 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\jiawe\OneDrive\Documents\GitHub\Open-Source-Minecraft-like-Simulation-Environment-for-AI\Environment\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\jiawe\OneDrive\Documents\GitHub\Open-Source-Minecraft-like-Simulation-Environment-for-AI\Environment\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.78 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.233 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1234ms)
-		BeginReloadAssembly (147ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (7ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (38ms)
-		EndReloadAssembly (980ms)
-			LoadAssemblies (98ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (371ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (46ms)
-			SetupLoadedEditorAssemblies (423ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (15ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (86ms)
-				ProcessInitializeOnLoadAttributes (291ms)
-				ProcessInitializeOnLoadMethodAttributes (16ms)
-				AfterProcessingInitializeOnLoad (13ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (6ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1.93 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3361 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 100 unused Assets / (6.8 MB). Loaded Objects now: 3785.
-Memory consumption went from 144.1 MB to 137.2 MB.
-Total: 5.348100 ms (FindLiveObjects: 0.325000 ms CreateObjectMapping: 0.082600 ms MarkObjects: 2.629600 ms  DeleteObjects: 2.309400 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.006111 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\jiawe\OneDrive\Documents\GitHub\Open-Source-Minecraft-like-Simulation-Environment-for-AI\Environment\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\jiawe\OneDrive\Documents\GitHub\Open-Source-Minecraft-like-Simulation-Environment-for-AI\Environment\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.59 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.011 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1011ms)
-		BeginReloadAssembly (122ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (5ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (31ms)
-		EndReloadAssembly (791ms)
-			LoadAssemblies (80ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (233ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (46ms)
-			SetupLoadedEditorAssemblies (391ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (12ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (83ms)
-				ProcessInitializeOnLoadAttributes (268ms)
-				ProcessInitializeOnLoadMethodAttributes (16ms)
-				AfterProcessingInitializeOnLoad (10ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (8ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 2.56 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3361 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 100 unused Assets / (6.8 MB). Loaded Objects now: 3788.
-Memory consumption went from 144.0 MB to 137.2 MB.
-Total: 5.197400 ms (FindLiveObjects: 0.348100 ms CreateObjectMapping: 0.084900 ms MarkObjects: 2.446800 ms  DeleteObjects: 2.316700 ms)
+Total: 5.963600 ms (FindLiveObjects: 0.420300 ms CreateObjectMapping: 0.088200 ms MarkObjects: 2.531800 ms  DeleteObjects: 2.921900 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -443,7 +163,345 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 13217.336528 seconds.
-  path: Assets/ImportedAssets/Animated Robot - Oct 2018/OBJ
-  artifactKey: Guid(a6b4ee5f6e70d114fa8bb7049ef00633) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ImportedAssets/Animated Robot - Oct 2018/OBJ using Guid(a6b4ee5f6e70d114fa8bb7049ef00633) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '682680416c0ef36469f1841dab9336e2') in 0.012581 seconds 
+  Time since last request: 13860.790993 seconds.
+  path: Assets/ImportedAssets/SimpleNaturePack/Models/Rock_02.fbx
+  artifactKey: Guid(3a775dc2c1a334b45a5667a56fe92c23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/SimpleNaturePack/Models/Rock_02.fbx using Guid(3a775dc2c1a334b45a5667a56fe92c23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f752d2ce5d1106f8b1a2ac2fa820ffe1') in 0.144918 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/ImportedAssets/SimpleNaturePack/Models/Rock_03.fbx
+  artifactKey: Guid(14125b656fb71fd4d9d65bfe344107ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/SimpleNaturePack/Models/Rock_03.fbx using Guid(14125b656fb71fd4d9d65bfe344107ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '47d788fe2e69c57fd138a6f93f32958e') in 0.023437 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/ImportedAssets/SimpleNaturePack/Models/Tree_04.fbx
+  artifactKey: Guid(83e8d2542718a2e49a73d71c3a5fc685) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/SimpleNaturePack/Models/Tree_04.fbx using Guid(83e8d2542718a2e49a73d71c3a5fc685) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a9680441a269a52a747fdd825eca6333') in 0.033456 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/ImportedAssets/SimpleNaturePack/Models/Rock_05.fbx
+  artifactKey: Guid(fa2e670bb3648a84b9df8d16da25b85e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/SimpleNaturePack/Models/Rock_05.fbx using Guid(fa2e670bb3648a84b9df8d16da25b85e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da330847384621694231203993dc844f') in 0.047674 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/ImportedAssets/SimpleNaturePack/Materials/SimpleNaturePack_BG.mat
+  artifactKey: Guid(886ecf0ee44718246aa083d8aad49b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/SimpleNaturePack/Materials/SimpleNaturePack_BG.mat using Guid(886ecf0ee44718246aa083d8aad49b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '255c4dfd3f81221af1a2f59fc5c681a2') in 0.109298 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/ImportedAssets/SimpleNaturePack/Models/Tree_05.fbx
+  artifactKey: Guid(603970f97e50c56488ec3c5a6febd940) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/SimpleNaturePack/Models/Tree_05.fbx using Guid(603970f97e50c56488ec3c5a6febd940) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '39fd55f695c021ed880a7c5ee2969c96') in 0.020425 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/ImportedAssets/SimpleNaturePack/Models/Tree_03.fbx
+  artifactKey: Guid(69f0af3a0a6c73b4ab4b89eb82cdc488) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/SimpleNaturePack/Models/Tree_03.fbx using Guid(69f0af3a0a6c73b4ab4b89eb82cdc488) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'edde6485b12435403aa881d4c6b30596') in 0.019482 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/ImportedAssets/SimpleNaturePack/Models/Stump_01.fbx
+  artifactKey: Guid(768be665aba8b4e4aae7a973ae9616cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/SimpleNaturePack/Models/Stump_01.fbx using Guid(768be665aba8b4e4aae7a973ae9616cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b289c4200f9a9e49eadce8939f9840b8') in 0.018222 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/ImportedAssets/SimpleNaturePack/Models/Grass_02.fbx
+  artifactKey: Guid(638dc165572d2a84081d13ce1afb4d52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/SimpleNaturePack/Models/Grass_02.fbx using Guid(638dc165572d2a84081d13ce1afb4d52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '37bd20935ccd9c34abe96b55e0f44754') in 0.018678 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/ImportedAssets/SimpleNaturePack/Models/Ground_01.fbx
+  artifactKey: Guid(d4ad967689295ba4eaf8baeaebc8721b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/SimpleNaturePack/Models/Ground_01.fbx using Guid(d4ad967689295ba4eaf8baeaebc8721b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a4e1bf47423bda033f4d84737b528683') in 0.018322 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000066 seconds.
+  path: Assets/ImportedAssets/SimpleNaturePack/Models/Flowers_01.fbx
+  artifactKey: Guid(b5a80b3e2a089b841b155d7c7f461e7c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/SimpleNaturePack/Models/Flowers_01.fbx using Guid(b5a80b3e2a089b841b155d7c7f461e7c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da0c2415ce3ee40ca3eb76bc2b109340') in 0.017791 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/ImportedAssets/SimpleNaturePack/Models/Branch_01.fbx
+  artifactKey: Guid(5528351815fd4c04abf537f22c7e18f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/SimpleNaturePack/Models/Branch_01.fbx using Guid(5528351815fd4c04abf537f22c7e18f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '065ab5c5e0a106c4201ccb32d4074c40') in 0.020731 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 23.769558 seconds.
+  path: Assets/ImportedAssets/Nature Crops Pack - Jan 2020/FBX/Apple_2.fbx
+  artifactKey: Guid(97a4c6e9384f6ff4db06c4076c771e4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Nature Crops Pack - Jan 2020/FBX/Apple_2.fbx using Guid(97a4c6e9384f6ff4db06c4076c771e4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '14baad6d9896cb71828a4e46d997f18a') in 0.025720 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/ImportedAssets/Nature Crops Pack - Jan 2020/FBX/Grass_2.fbx
+  artifactKey: Guid(f5561b7873e3ce34aaa52dcb727a21f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Nature Crops Pack - Jan 2020/FBX/Grass_2.fbx using Guid(f5561b7873e3ce34aaa52dcb727a21f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '04866365a5ee14db09c2a45efc96b8b9') in 0.018733 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/ImportedAssets/Nature Crops Pack - Jan 2020/FBX/BushBerries_Harvested.fbx
+  artifactKey: Guid(23c1fe5f1be28cf4b971bff2f219fca1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Nature Crops Pack - Jan 2020/FBX/BushBerries_Harvested.fbx using Guid(23c1fe5f1be28cf4b971bff2f219fca1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c496cbbefa43a7a0583953e6429b307') in 0.022586 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/ImportedAssets/Nature Crops Pack - Jan 2020/FBX/Lettuce_3.fbx
+  artifactKey: Guid(d0fa2396b541a85479e00286f2586c74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Nature Crops Pack - Jan 2020/FBX/Lettuce_3.fbx using Guid(d0fa2396b541a85479e00286f2586c74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a2ab9e0d6e3c1c23d7c070b83a7718c') in 0.021849 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/ImportedAssets/Nature Crops Pack - Jan 2020/FBX/Orange_1.fbx
+  artifactKey: Guid(60ad99999a98a1048b92ef109f2bdcca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Nature Crops Pack - Jan 2020/FBX/Orange_1.fbx using Guid(60ad99999a98a1048b92ef109f2bdcca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b5c23cf126919c31b3bbbed2ce1a059d') in 0.021756 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/ImportedAssets/Nature Crops Pack - Jan 2020/FBX/Pumpkin_1.fbx
+  artifactKey: Guid(c26c25e541d2a544fa6807df6359e8cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Nature Crops Pack - Jan 2020/FBX/Pumpkin_1.fbx using Guid(c26c25e541d2a544fa6807df6359e8cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a04e5bdcec398068c3eca1d11aad1c0') in 0.022363 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/ImportedAssets/Nature Crops Pack - Jan 2020/FBX/Cactus_Harvested.fbx
+  artifactKey: Guid(6f5b5cd2358cbd14b82f50d08d7c6996) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Nature Crops Pack - Jan 2020/FBX/Cactus_Harvested.fbx using Guid(6f5b5cd2358cbd14b82f50d08d7c6996) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '51eabdb1acf16d4943f04ca1466eef92') in 0.026809 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/ImportedAssets/Nature Crops Pack - Jan 2020/FBX/Flowers_Harvested.fbx
+  artifactKey: Guid(e4841fb2b6d821c4ab964214f32329da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Nature Crops Pack - Jan 2020/FBX/Flowers_Harvested.fbx using Guid(e4841fb2b6d821c4ab964214f32329da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f65b4f5bb6e92e8689a5da2bd3f8d2ff') in 0.021321 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/ImportedAssets/Nature Crops Pack - Jan 2020/FBX/Rice_4.fbx
+  artifactKey: Guid(b32613a28456292469266c527a9b83b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Nature Crops Pack - Jan 2020/FBX/Rice_4.fbx using Guid(b32613a28456292469266c527a9b83b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e9128ad6516fe8a7890479c5eb524bfb') in 0.026311 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/ImportedAssets/Nature Crops Pack - Jan 2020/FBX/Cactus_2.fbx
+  artifactKey: Guid(7f69a4ee9856c514d9e613a7c1b589b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Nature Crops Pack - Jan 2020/FBX/Cactus_2.fbx using Guid(7f69a4ee9856c514d9e613a7c1b589b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '69d77696855728268d05e3fcf30f4739') in 0.029186 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/ImportedAssets/Nature Crops Pack - Jan 2020/FBX/Mushroom_3.fbx
+  artifactKey: Guid(b895e1efc90aec444af476d17bf7a524) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Nature Crops Pack - Jan 2020/FBX/Mushroom_3.fbx using Guid(b895e1efc90aec444af476d17bf7a524) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df57a7bd9ae6cbbe1181c19104eaacdd') in 0.027777 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/ImportedAssets/Nature Crops Pack - Jan 2020/FBX/Flowers_Crop.fbx
+  artifactKey: Guid(ab6e1104318809144a267be53a13f0e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Nature Crops Pack - Jan 2020/FBX/Flowers_Crop.fbx using Guid(ab6e1104318809144a267be53a13f0e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d51a64a665afc89f9d7727f4a5ebd59') in 0.024780 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/ImportedAssets/Nature Crops Pack - Jan 2020/FBX/Rice_Crop.fbx
+  artifactKey: Guid(86f60a5e85ed18d4d9f680d025bf69d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Nature Crops Pack - Jan 2020/FBX/Rice_Crop.fbx using Guid(86f60a5e85ed18d4d9f680d025bf69d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '417dc718d228ea77c65cc309e0165c77') in 0.029472 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/ImportedAssets/Nature Crops Pack - Jan 2020/FBX/Cactus_3.fbx
+  artifactKey: Guid(0854f9f59127d3a46a40902079d22691) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Nature Crops Pack - Jan 2020/FBX/Cactus_3.fbx using Guid(0854f9f59127d3a46a40902079d22691) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '022327e27cc39e9745118471737a5a67') in 0.026111 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/ImportedAssets/Nature Crops Pack - Jan 2020/FBX/Bamboo_Crop.fbx
+  artifactKey: Guid(5a785b72760ca714c89d2045dc6d0b2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Nature Crops Pack - Jan 2020/FBX/Bamboo_Crop.fbx using Guid(5a785b72760ca714c89d2045dc6d0b2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cdf8d09082599865bbb15ec25511b122') in 0.025506 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/ImportedAssets/Nature Crops Pack - Jan 2020/FBX/Corn_Crop.fbx
+  artifactKey: Guid(ed8f20656d76d3a468d3e756e1d48ed3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Nature Crops Pack - Jan 2020/FBX/Corn_Crop.fbx using Guid(ed8f20656d76d3a468d3e756e1d48ed3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2af26d63b34c1e8a9641b63be5505f16') in 0.027155 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/ImportedAssets/Nature Crops Pack - Jan 2020/FBX/Carrot_Crop.fbx
+  artifactKey: Guid(fd1bf978a0396bf4ab32bff3c09fe996) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Nature Crops Pack - Jan 2020/FBX/Carrot_Crop.fbx using Guid(fd1bf978a0396bf4ab32bff3c09fe996) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5fbad1ba8732b883049726f69773d8df') in 0.028898 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/ImportedAssets/Nature Crops Pack - Jan 2020/FBX/Rice_1.fbx
+  artifactKey: Guid(acf14a18c861f8b4ba80b27f7d1b9df6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Nature Crops Pack - Jan 2020/FBX/Rice_1.fbx using Guid(acf14a18c861f8b4ba80b27f7d1b9df6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '256612fe79b7241ea4e05bd4353c14e9') in 0.021168 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/ImportedAssets/Nature Crops Pack - Jan 2020/FBX/Lettuce_1.fbx
+  artifactKey: Guid(a29a69d923287d2489b27c82ccc56353) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Nature Crops Pack - Jan 2020/FBX/Lettuce_1.fbx using Guid(a29a69d923287d2489b27c82ccc56353) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e82ee02693ee398bb585692af23bfc6c') in 0.020769 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/ImportedAssets/Nature Crops Pack - Jan 2020/FBX/Pumpkin_4.fbx
+  artifactKey: Guid(f42b15df7d8836d49a41e7469cc6baf7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Nature Crops Pack - Jan 2020/FBX/Pumpkin_4.fbx using Guid(f42b15df7d8836d49a41e7469cc6baf7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '431614846dbbb6c5c1a5b2e326f69447') in 0.029567 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/ImportedAssets/Nature Crops Pack - Jan 2020/FBX/PalmTree_Crop.fbx
+  artifactKey: Guid(997576720b9cd094daf601ef8542f7be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Nature Crops Pack - Jan 2020/FBX/PalmTree_Crop.fbx using Guid(997576720b9cd094daf601ef8542f7be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '01b78e6878f9d8769d2d92f0f36a5363') in 0.022341 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/ImportedAssets/Nature Crops Pack - Jan 2020/FBX/Mushroom_1.fbx
+  artifactKey: Guid(0a8388e102b8cec4bb51847c06992680) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Nature Crops Pack - Jan 2020/FBX/Mushroom_1.fbx using Guid(0a8388e102b8cec4bb51847c06992680) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3afb6c5dfefdecbf6e0da7ca31d6aa47') in 0.033654 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/ImportedAssets/Nature Crops Pack - Jan 2020/FBX/Apple_Harvested.fbx
+  artifactKey: Guid(a34c6223667218d4abcdff2c4ff3e4f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Nature Crops Pack - Jan 2020/FBX/Apple_Harvested.fbx using Guid(a34c6223667218d4abcdff2c4ff3e4f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b471f17b55a63a37bf92dca0d2f0ad9') in 0.033054 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/ImportedAssets/Nature Crops Pack - Jan 2020/FBX/BushBerries_1.fbx
+  artifactKey: Guid(7a3789bb2a57e9b42a5013aae9eadb84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Nature Crops Pack - Jan 2020/FBX/BushBerries_1.fbx using Guid(7a3789bb2a57e9b42a5013aae9eadb84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a784ade8816a34b1a35d45ccd98e50d0') in 0.024323 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/ImportedAssets/Nature Crops Pack - Jan 2020/FBX/Apple_4.fbx
+  artifactKey: Guid(a082bd87045179045807ba73a372423b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Nature Crops Pack - Jan 2020/FBX/Apple_4.fbx using Guid(a082bd87045179045807ba73a372423b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f21cb2908bdda1d62b8123fe5f75dca') in 0.035857 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/ImportedAssets/Nature Crops Pack - Jan 2020/FBX/Orange_3.fbx
+  artifactKey: Guid(d079e4d5b780f3e4b8d9a96cb58ada70) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Nature Crops Pack - Jan 2020/FBX/Orange_3.fbx using Guid(d079e4d5b780f3e4b8d9a96cb58ada70) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1278b794e1469ee2629f261732d77d5b') in 0.026255 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000052 seconds.
+  path: Assets/ImportedAssets/Nature Crops Pack - Jan 2020/FBX/Corn_4.fbx
+  artifactKey: Guid(18b909b4dfc199d4285fee1ffd76e6a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Nature Crops Pack - Jan 2020/FBX/Corn_4.fbx using Guid(18b909b4dfc199d4285fee1ffd76e6a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '13bbe21a128fd12f2e2a1f98829ad795') in 0.030823 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/ImportedAssets/Nature Crops Pack - Jan 2020/FBX/Pumpkin_Crop.fbx
+  artifactKey: Guid(632afb86cb4a95449881126dd09175aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Nature Crops Pack - Jan 2020/FBX/Pumpkin_Crop.fbx using Guid(632afb86cb4a95449881126dd09175aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5af5ea54635d5b08675bcc32c8567df4') in 0.024483 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/ImportedAssets/Nature Crops Pack - Jan 2020/FBX/Carrot_2.fbx
+  artifactKey: Guid(2eacfabd66e3d9243bd4a08e71e242aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Nature Crops Pack - Jan 2020/FBX/Carrot_2.fbx using Guid(2eacfabd66e3d9243bd4a08e71e242aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '102310470fbd52360ec70a29d3b7616c') in 0.027476 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/ImportedAssets/Nature Crops Pack - Jan 2020/FBX/Orange_Crop.fbx
+  artifactKey: Guid(6365040a6eb7a724d8d62aeb6378186d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Nature Crops Pack - Jan 2020/FBX/Orange_Crop.fbx using Guid(6365040a6eb7a724d8d62aeb6378186d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '81c651e95e685607cda042f8a909cefb') in 0.020096 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 16.512135 seconds.
+  path: Assets/ImportedAssets/Nature Crops Pack - Jan 2020/FBX/Tomato_3.fbx
+  artifactKey: Guid(8f26a5ae6cf6be846872d762d18c4463) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Nature Crops Pack - Jan 2020/FBX/Tomato_3.fbx using Guid(8f26a5ae6cf6be846872d762d18c4463) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '300123078a36b1156136af7303e504ab') in 0.025660 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/ImportedAssets/Nature Crops Pack - Jan 2020/FBX/Watermelon_Crop.fbx
+  artifactKey: Guid(b11251132660aee48a2af54fe01e8a89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Nature Crops Pack - Jan 2020/FBX/Watermelon_Crop.fbx using Guid(b11251132660aee48a2af54fe01e8a89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b0ebce8a1f14876db43b701a76d281a7') in 0.062639 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/ImportedAssets/Nature Crops Pack - Jan 2020/FBX/Tomato_Crop.fbx
+  artifactKey: Guid(0fbec8a6969929043a07139575edf93c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Nature Crops Pack - Jan 2020/FBX/Tomato_Crop.fbx using Guid(0fbec8a6969929043a07139575edf93c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '730c5fde0586aa79dbd468b7889f62b6') in 0.070942 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/ImportedAssets/Nature Crops Pack - Jan 2020/FBX/Wheat_Crop.fbx
+  artifactKey: Guid(f013b3009d06015429d2e347ed432e66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Nature Crops Pack - Jan 2020/FBX/Wheat_Crop.fbx using Guid(f013b3009d06015429d2e347ed432e66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5739d2c6f0d4279e8f21136f297efcaa') in 0.086031 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/ImportedAssets/Nature Crops Pack - Jan 2020/FBX/Watermelon_2.fbx
+  artifactKey: Guid(f9d47b6cf1899c747bbbdb84a7af118e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Nature Crops Pack - Jan 2020/FBX/Watermelon_2.fbx using Guid(f9d47b6cf1899c747bbbdb84a7af118e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '56111de3f8db2f0d4b2e41725b573507') in 0.027196 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/ImportedAssets/Nature Crops Pack - Jan 2020/FBX/Wheat_2.fbx
+  artifactKey: Guid(c4d64ae31ddb9e549bece20487c446c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Nature Crops Pack - Jan 2020/FBX/Wheat_2.fbx using Guid(c4d64ae31ddb9e549bece20487c446c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1fd6df5c8140cffc8afb8705c752d02a') in 0.019502 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006480 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\jiawe\OneDrive\Documents\GitHub\Open-Source-Minecraft-like-Simulation-Environment-for-AI\Environment\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\jiawe\OneDrive\Documents\GitHub\Open-Source-Minecraft-like-Simulation-Environment-for-AI\Environment\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.02 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.145 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1146ms)
+		BeginReloadAssembly (142ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (38ms)
+		EndReloadAssembly (899ms)
+			LoadAssemblies (95ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (298ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (47ms)
+			SetupLoadedEditorAssemblies (413ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (15ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (78ms)
+				ProcessInitializeOnLoadAttributes (289ms)
+				ProcessInitializeOnLoadMethodAttributes (20ms)
+				AfterProcessingInitializeOnLoad (10ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 2.27 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3361 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 100 unused Assets / (6.8 MB). Loaded Objects now: 3821.
+Memory consumption went from 149.0 MB to 142.2 MB.
+Total: 8.361400 ms (FindLiveObjects: 0.355500 ms CreateObjectMapping: 0.093400 ms MarkObjects: 3.788900 ms  DeleteObjects: 4.121800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 

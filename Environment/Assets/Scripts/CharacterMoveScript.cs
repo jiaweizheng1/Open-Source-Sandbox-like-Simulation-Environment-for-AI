@@ -14,7 +14,12 @@ public class CharacterMoveScript : MonoBehaviour
     public float gravitymulti = 3f;
     private float velocity;
     public Animator animator;
-
+    [SerializeField] private UI_inventory uiInventory;
+    private Inventory inventory;
+    void Awake(){
+        inventory = new Inventory();
+        uiInventory.SetInventory(inventory);
+    }
     // Update is called once per frame
     void Update()
     {

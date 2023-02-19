@@ -1,35 +1,59 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Unity.MLAgents;
+using Unity.MLAgents.Actuators;
+using Unity.MLAgents.Sensors;
 
-public class CharacterMoveScript : MonoBehaviour
+public class CharacterMoveScript : Agent
 {
+    //false if AI, true if Player
+    public bool manualtesting;
     public Transform parentinteractionpoint;
     private Transform interactionpoint;
-    private bool inrange;
     public Animator animator;
     public CharacterController controller;
     private Vector2 input;
     private Vector3 direction;
+    private bool inrange;
     public float speed;
     private float turnsmoothtime = 0.05f;
     private float turnsmoothvelocity = 1f;
     private float gravity = -9.81f;
     private float gravitymulti = 3f;
     private float velocity;
+    private int action;
 
     void Start()
     {
-        // initially, stay at current place(which is itself)
+        //initially, stay at current place(which is itself)
         interactionpoint = controller.transform;
     }
 
+    public override void OnEpisodeBegin()
+    {
+        transform.position = new Vector3(150, 1.4f, 20);
+    }
+
+    public override void CollectObservations(VectorSensor sensor)
+    {
+        //sensor.AddObservation(transform.position);
+        //Add all the important observations like HP, food, thirst, inventory
+    }
+
+    public override void OnActionReceived(ActionBuffers actions)
+    {
+        if(!manualtesting)
+        {
+            action = actions.DiscreteActions[0];
+        }
+    }
+    
     private void OnTriggerEnter(Collider collision)
     {
         if(collision.gameObject.CompareTag("Interactable"))
         {
             inrange = true;
-            Debug.Log("player in range");
         }
     }
 
@@ -38,38 +62,61 @@ public class CharacterMoveScript : MonoBehaviour
         if(collision.gameObject.CompareTag("Interactable"))
         {
             inrange = false;
-            Debug.Log("player not in range");
         }
     }
 
     // Update is called once per frame
     void Update()
     {
-        // input.x = Input.GetAxisRaw("Horizontal");
-        // input.y = Input.GetAxisRaw("Vertical");
-        if(inrange && Input.inputString == "e")
+        if(manualtesting)
         {
-            animator.SetBool("harvesting", true);
-        }
-
-        if(Input.anyKeyDown)
-        {
+            Debug.Log(Input.inputString);
+            if(Input.inputString == "0")
+            {
+                action = 0;
+            }
             if(Input.inputString == "1")
             {
-                interactionpoint = parentinteractionpoint.GetChild(0);
+                action = 1;
             }
             if(Input.inputString == "2")
             {
-                interactionpoint = parentinteractionpoint.GetChild(1);
+                action = 2;
             }
             if(Input.inputString == "3")
             {
-                interactionpoint = parentinteractionpoint.GetChild(2);
+                action = 3;
             }
             if(Input.inputString == "4")
             {
-                interactionpoint = parentinteractionpoint.GetChild(3);
+                action = 4;
             }
+        }
+
+        if(action == 0)
+        {
+            interactionpoint = parentinteractionpoint.GetChild(0);
+            AddReward(-1f); 
+        }
+        if(action == 1)
+        {
+            interactionpoint = parentinteractionpoint.GetChild(1);
+            AddReward(-1f); 
+        }
+        if(action == 2)
+        {
+            interactionpoint = parentinteractionpoint.GetChild(2);
+            AddReward(-1f); 
+        }
+        if(action == 3)
+        {
+            interactionpoint = parentinteractionpoint.GetChild(3);     
+            AddReward(-1f); 
+        }
+        if(inrange && action == 4)
+        {
+            animator.SetBool("harvesting", true);
+            AddReward(1f);  
         }
 
         if(Vector3.Distance(interactionpoint.transform.position, controller.transform.position) > 0.9)

@@ -26,7 +26,7 @@ public class CharacterMoveScript : Agent
     {
         //initially, stay at current place(which is itself)
         target = transform;
-        transform.position = new Vector3(150, 1.4f, 20);
+        transform.position = new Vector3(150, 1, 20);
         log = 0;
         food = 0;
         droplet = 0;

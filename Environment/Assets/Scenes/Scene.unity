@@ -468,7 +468,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 341918f0eaea4ec45b5147ca28029b25, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.4
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 341918f0eaea4ec45b5147ca28029b25, type: 3}
       propertyPath: m_LocalPosition.z
@@ -631,7 +631,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -9.700012, y: -87}
+  m_AnchoredPosition: {x: -9.699951, y: -87}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &183672696
@@ -1162,7 +1162,7 @@ TerrainCollider:
   m_Material: {fileID: 0}
   m_Enabled: 1
   m_TerrainData: {fileID: 15600000, guid: 10ef1f5fabb54ee40a314c0b8659f5dd, type: 2}
-  m_EnableTreeColliders: 1
+  m_EnableTreeColliders: 0
 --- !u!218 &345596993
 Terrain:
   m_ObjectHideFlags: 0
@@ -5213,7 +5213,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -50.399963, y: -58.899994}
+  m_AnchoredPosition: {x: -50.399902, y: -58.899994}
   m_SizeDelta: {x: 30, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1863592535

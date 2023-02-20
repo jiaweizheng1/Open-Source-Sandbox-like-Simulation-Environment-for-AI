@@ -11,12 +11,6 @@ public class CharacterMoveScript : Agent
     public float speed;
     public Transform trees, farm, pool, rocks;
     public Animator animator;
-    [SerializeField] private UI_inventory uiInventory;
-    private Inventory inventory;
-    void Awake(){
-        inventory = new Inventory();
-        uiInventory.SetInventory(inventory);
-    }
     public CharacterController controller;
     public TMP_Text log_t, food_t, droplet_t, iron_t;
 
@@ -68,6 +62,18 @@ public class CharacterMoveScript : Agent
         animator.SetBool("harvesting", false);
         busy = false;
     }
+
+    IEnumerator Consumefood()
+    {
+        busy = true;
+        animator.SetBool("harvesting", true);
+        yield return new WaitForSeconds(2);
+        food--;
+        food_t.text = "x" + food;
+        animator.SetBool("harvesting", false);
+        busy = false;
+    }
+
 
     IEnumerator Collectdroplets()
     {
@@ -126,6 +132,16 @@ public class CharacterMoveScript : Agent
                 }
             }
             if(vetcaction.DiscreteActions[0] == 3)
+            {
+                if(needtomove(rocks))
+                {
+                }
+                else
+                {
+                    StartCoroutine(Mine());
+                }
+            }
+            if(vetcaction.DiscreteActions[0] == 4)
             {
                 if(needtomove(rocks))
                 {
@@ -197,6 +213,7 @@ public class CharacterMoveScript : Agent
             }
         }
         animator.SetFloat("speed", input.sqrMagnitude);
+
     }
 
     private void ApplyGravity()

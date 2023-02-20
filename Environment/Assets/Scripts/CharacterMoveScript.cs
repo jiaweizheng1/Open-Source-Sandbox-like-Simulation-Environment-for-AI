@@ -1,140 +1,196 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro; 
 using Unity.MLAgents;
 using Unity.MLAgents.Actuators;
 using Unity.MLAgents.Sensors;
 
 public class CharacterMoveScript : Agent
 {
-    //false if AI, true if Player
-    public bool manualtesting;
-    public Transform parentinteractionpoint;
-    private Transform interactionpoint;
+    public float speed;
+    public Transform trees, farm, pool, rocks;
     public Animator animator;
     public CharacterController controller;
+    public TMP_Text log_t, food_t, droplet_t, iron_t;
+
+    private int log, food, droplet, iron;
+    private Transform target;
+    private bool moving, busy;
     private Vector2 input;
     private Vector3 direction;
-    private bool inrange;
-    public float speed;
-    private float turnsmoothtime = 0.05f;
-    private float turnsmoothvelocity = 1f;
-    private float gravity = -9.81f;
-    private float gravitymulti = 3f;
-    private float velocity;
-    private int action;
-
-    void Start()
-    {
-        //initially, stay at current place(which is itself)
-        interactionpoint = controller.transform;
-    }
+    private float turnsmoothtime = 0.05f, turnsmoothvelocity = 1f;
+    private float gravity = -9.81f, gravitymulti = 3f, velocity;
 
     public override void OnEpisodeBegin()
     {
+        //initially, stay at current place(which is itself)
+        target = transform;
         transform.position = new Vector3(150, 1.4f, 20);
+        log = 0;
+        food = 0;
+        droplet = 0;
+        iron = 0;
+        moving = false;
+        busy = false;
     }
 
     public override void CollectObservations(VectorSensor sensor)
     {
-        //sensor.AddObservation(transform.position);
-        //Add all the important observations like HP, food, thirst, inventory
+        sensor.AddObservation(controller.transform.position);
+        //Add all the important observations like HP, food, thirst, inventory items
     }
 
-    public override void OnActionReceived(ActionBuffers actions)
+    IEnumerator Log()
     {
-        if(!manualtesting)
-        {
-            action = actions.DiscreteActions[0];
-        }
+        busy = true;
+        animator.SetBool("harvesting", true);
+        yield return new WaitForSeconds(2);
+        log++;
+        log_t.text = "x" + log;
+        animator.SetBool("harvesting", false);
+        busy = false;
     }
-    
-    private void OnTriggerEnter(Collider collision)
+
+    IEnumerator Gatherfood()
     {
-        if(collision.gameObject.CompareTag("Interactable"))
+        busy = true;
+        animator.SetBool("harvesting", true);
+        yield return new WaitForSeconds(2);
+        food++;
+        food_t.text = "x" + food;
+        animator.SetBool("harvesting", false);
+        busy = false;
+    }
+
+    IEnumerator Collectdroplets()
+    {
+        busy = true;
+        animator.SetBool("harvesting", true);
+        yield return new WaitForSeconds(2);
+        droplet++;
+        droplet_t.text = "x" + droplet;
+        animator.SetBool("harvesting", false);
+        busy = false;
+    }
+
+    IEnumerator Mine()
+    {
+        busy = true;
+        animator.SetBool("harvesting", true);
+        yield return new WaitForSeconds(2);
+        iron++;
+        iron_t.text = "x" + iron;
+        animator.SetBool("harvesting", false);
+        busy = false;
+    }
+
+    public override void OnActionReceived(ActionBuffers vetcaction)
+    {
+        if(!busy)
         {
-            inrange = true;
+            if(vetcaction.DiscreteActions[0] == 0)
+            {
+                if(needtomove(trees))
+                {
+                }
+                else
+                {
+                    StartCoroutine(Log());
+                }
+            }
+            if(vetcaction.DiscreteActions[0] == 1)
+            {
+                if(needtomove(farm))
+                { 
+                }
+                else
+                {
+                    StartCoroutine(Gatherfood());
+                }
+            }
+            if(vetcaction.DiscreteActions[0] == 2)
+            {
+                if(needtomove(pool))
+                { 
+                }
+                else
+                {
+                    StartCoroutine(Collectdroplets());
+                }
+            }
+            if(vetcaction.DiscreteActions[0] == 3)
+            {
+                if(needtomove(rocks))
+                {
+                }
+                else
+                {
+                    StartCoroutine(Mine());
+                }
+            }
         }
     }
 
-    private void OnTriggerExit(Collider collision)
+    public override void Heuristic(in ActionBuffers actionsout)
     {
-        if(collision.gameObject.CompareTag("Interactable"))
+        ActionSegment<int> discreteactions = actionsout.DiscreteActions;
+        if(Input.GetKey(KeyCode.Q))
         {
-            inrange = false;
+            discreteactions[0] = 0;
+        }
+        else if(Input.GetKey(KeyCode.W))
+        {
+            discreteactions[0] = 1;
+        }
+        else if(Input.GetKey(KeyCode.E))
+        {
+            discreteactions[0] = 2;
+        }
+        else if(Input.GetKey(KeyCode.R))
+        {
+            discreteactions[0] = 3;
+        }
+        else
+        {
+            discreteactions[0] = -1; //else, invalid input
+        }
+    }
+
+    public bool needtomove(Transform targetlocation)
+    {
+        if(Vector3.Distance(targetlocation.transform.position, controller.transform.position) > 0.9)
+        {
+            target = targetlocation;
+            moving = true;
+            return true;
+        }
+        {
+            return false;
         }
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(manualtesting)
+        if(moving && !busy)
         {
-            Debug.Log(Input.inputString);
-            if(Input.inputString == "0")
+            if(Vector3.Distance(target.transform.position, controller.transform.position) > 0.9)
             {
-                action = 0;
+                input = new Vector2(target.transform.position.x - controller.transform.position.x, target.transform.position.z - controller.transform.position.z);
+                input.Normalize();
+                direction = new Vector3(input.x, 0, input.y);
+                ApplyGravity();
+                ApplyRotation();
+                ApplyMovement();
             }
-            if(Input.inputString == "1")
+            else
             {
-                action = 1;
-            }
-            if(Input.inputString == "2")
-            {
-                action = 2;
-            }
-            if(Input.inputString == "3")
-            {
-                action = 3;
-            }
-            if(Input.inputString == "4")
-            {
-                action = 4;
+                input = new Vector2(0, 0);
+                moving = false;
             }
         }
-
-        if(action == 0)
-        {
-            interactionpoint = parentinteractionpoint.GetChild(0);
-            AddReward(-1f); 
-        }
-        if(action == 1)
-        {
-            interactionpoint = parentinteractionpoint.GetChild(1);
-            AddReward(-1f); 
-        }
-        if(action == 2)
-        {
-            interactionpoint = parentinteractionpoint.GetChild(2);
-            AddReward(-1f); 
-        }
-        if(action == 3)
-        {
-            interactionpoint = parentinteractionpoint.GetChild(3);     
-            AddReward(-1f); 
-        }
-        if(inrange && action == 4)
-        {
-            animator.SetBool("harvesting", true);
-            AddReward(1f);  
-        }
-
-        if(Vector3.Distance(interactionpoint.transform.position, controller.transform.position) > 0.9)
-        {
-            animator.SetBool("harvesting", false);
-            input = new Vector2(interactionpoint.transform.position.x - controller.transform.position.x, interactionpoint.transform.position.z - controller.transform.position.z);
-        }
-        else
-        {
-            input = new Vector2(0, 0);
-        }
-        input.Normalize();
         animator.SetFloat("speed", input.sqrMagnitude);
-        direction = new Vector3(input.x, 0, input.y);
-        
-        ApplyGravity();
-        ApplyRotation();
-        ApplyMovement();
     }
 
     private void ApplyGravity()
@@ -147,14 +203,12 @@ public class CharacterMoveScript : Agent
         {
             velocity += gravity * gravitymulti * Time.deltaTime;
         }
-
         direction.y = velocity;
     }
 
     private void ApplyRotation()
     {
         if(input.sqrMagnitude == 0) return;
-
         float targetAngle = Mathf.Atan2(direction.x, direction.z) * Mathf.Rad2Deg;
         float angle = Mathf.SmoothDampAngle(transform.eulerAngles.y, targetAngle, ref turnsmoothvelocity, turnsmoothtime);
         transform.rotation = Quaternion.Euler(0, angle, 0);

@@ -85,6 +85,16 @@ public class CharacterMoveScript : Agent
         animator.SetBool("harvesting", false);
         busy = false;
     }
+    IEnumerator Consumedroplets()
+    {
+        busy = true;
+        animator.SetBool("harvesting", true);
+        yield return new WaitForSeconds(2);
+        droplet--;
+        droplet_t.text = "x" + droplet;
+        animator.SetBool("harvesting", false);
+        busy = false;
+    }
 
     IEnumerator Mine()
     {
@@ -143,8 +153,15 @@ public class CharacterMoveScript : Agent
             }
             if(vetcaction.DiscreteActions[0] == 4)
             {
+                if(food>0){
+                    StartCoroutine(Consumefood());
+                }
+                
+            }
+            if(vetcaction.DiscreteActions[0] == 5)
+            {
 
-                StartCoroutine(Consumefood());
+                StartCoroutine(Consumedroplets());
                 
             }
         }

@@ -143,13 +143,9 @@ public class CharacterMoveScript : Agent
             }
             if(vetcaction.DiscreteActions[0] == 4)
             {
-                if(needtomove(rocks))
-                {
-                }
-                else
-                {
-                    StartCoroutine(Mine());
-                }
+
+                StartCoroutine(Consumefood());
+                
             }
         }
     }
@@ -173,6 +169,11 @@ public class CharacterMoveScript : Agent
         {
             discreteactions[0] = 3;
         }
+        else if(Input.GetKey(KeyCode.T))
+        {
+            discreteactions[0] = 4;
+        }
+        
         else
         {
             discreteactions[0] = -1; //else, invalid input

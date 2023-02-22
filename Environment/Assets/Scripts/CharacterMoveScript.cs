@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using TMPro; 
 using Unity.MLAgents;
 using Unity.MLAgents.Actuators;
@@ -21,7 +22,18 @@ public class CharacterMoveScript : Agent
     private Vector3 direction;
     private float turnsmoothtime = 0.05f, turnsmoothvelocity = 1f;
     private float gravity = -9.81f, gravitymulti = 3f, velocity;
-
+    [Header("Player Health")]
+    public float MaxHealth = 100f;
+    public float Health = 0f;
+    public Slider HealthSlider;
+    [Header("Player Hunger")]
+    public float MaxHunger = 100f;
+    public float Hunger = 0f;
+    public Slider HungerSlider;
+    [Header("Player Thirst")]
+    public float MaxThirst = 100f;
+    public float Thirst = 0f;
+    public Slider ThirstSlider;
     public override void OnEpisodeBegin()
     {
         //initially, stay at current place(which is itself)
@@ -33,6 +45,9 @@ public class CharacterMoveScript : Agent
         iron = 0;
         moving = false;
         busy = false;
+        Health = MaxHealth;
+        Hunger = MaxHunger;
+        Thirst = MaxThirst;
     }
 
     public override void CollectObservations(VectorSensor sensor)
@@ -71,12 +86,48 @@ public class CharacterMoveScript : Agent
         busy = false;
     }
 
+    IEnumerator Consumefood()
+    {
+        busy = true;
+        animator.SetBool("harvesting", true);
+        yield return new WaitForSeconds(2);
+        food--;
+        if(Hunger + 20 > MaxHunger){
+            Hunger=MaxHunger;
+        }
+        else{
+            Hunger += 20;
+        }
+
+        food_t.text = "x" + food;
+        animator.SetBool("harvesting", false);
+        busy = false;
+    }
+
+
     IEnumerator Collectdroplets()
     {
         busy = true;
         animator.SetBool("harvesting", true);
         yield return new WaitForSeconds(2);
         droplet++;
+        
+        droplet_t.text = "x" + droplet;
+        animator.SetBool("harvesting", false);
+        busy = false;
+    }
+    IEnumerator Consumedroplets()
+    {
+        busy = true;
+        animator.SetBool("harvesting", true);
+        yield return new WaitForSeconds(2);
+        droplet--;
+        if(Thirst + 20 > MaxThirst){
+            Thirst=MaxThirst;
+        }
+        else{
+            Thirst += 20;
+        }
         droplet_t.text = "x" + droplet;
         animator.SetBool("harvesting", false);
         busy = false;
@@ -137,6 +188,20 @@ public class CharacterMoveScript : Agent
                     StartCoroutine(Mine());
                 }
             }
+            if(vetcaction.DiscreteActions[0] == 4)
+            {
+                if(food>0){
+                    StartCoroutine(Consumefood());
+                }
+                
+            }
+            if(vetcaction.DiscreteActions[0] == 5)
+            {
+                if(droplet>0){
+                    StartCoroutine(Consumedroplets());
+                }
+                
+            }
         }
     }
 
@@ -158,6 +223,14 @@ public class CharacterMoveScript : Agent
         else if(Input.GetKey(KeyCode.R))
         {
             discreteactions[0] = 3;
+        }
+        else if(Input.GetKey(KeyCode.T))
+        {
+            discreteactions[0] = 4;
+        }
+        else if(Input.GetKey(KeyCode.Y))
+        {
+            discreteactions[0] = 5;
         }
         else
         {
@@ -199,6 +272,19 @@ public class CharacterMoveScript : Agent
             }
         }
         animator.SetFloat("speed", input.sqrMagnitude);
+
+        Hunger = Hunger - 2* Time.deltaTime;
+        Thirst = Thirst- 2* Time.deltaTime;
+        HealthSlider.value = Health / MaxHealth;
+        HungerSlider.value = Hunger / MaxHunger;
+        ThirstSlider.value = Thirst / MaxThirst;
+        if(HungerSlider.value == 0){
+            Health = Health - 2* Time.deltaTime;
+        }
+        if(ThirstSlider.value == 0){
+            Health = Health - 2* Time.deltaTime;
+        }
+
     }
 
     private void ApplyGravity()

@@ -38,6 +38,14 @@ public class CharacterMoveScript : Agent
     public override void CollectObservations(VectorSensor sensor)
     {
         sensor.AddObservation(controller.transform.position);
+        sensor.AddObservation(trees);
+        sensor.AddObservation(farm);
+        sensor.AddObservation(pool);
+        sensor.AddObservation(rocks);
+        sensor.AddObservation(log);
+        sensor.AddObservation(food);
+        sensor.AddObservation(droplet);
+        sensor.AddObservation(iron);
         //Add all the important observations like HP, food, thirst, inventory items
     }
 
@@ -87,7 +95,7 @@ public class CharacterMoveScript : Agent
 
     public override void OnActionReceived(ActionBuffers vetcaction)
     {
-        if(!busy)
+        if(!moving && !busy)
         {
             if(vetcaction.DiscreteActions[0] == 0)
             {

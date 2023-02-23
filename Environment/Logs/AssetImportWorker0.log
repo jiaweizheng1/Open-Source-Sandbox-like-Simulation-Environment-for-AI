@@ -15,7 +15,7 @@ C:/Users/jiawe/OneDrive/Documents/GitHub/Open-Source-Minecraft-like-Simulation-E
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-2485
+2739
 Successfully changed project path to: C:/Users/jiawe/OneDrive/Documents/GitHub/Open-Source-Minecraft-like-Simulation-Environment-for-AI/Environment
 C:/Users/jiawe/OneDrive/Documents/GitHub/Open-Source-Minecraft-like-Simulation-Environment-for-AI/Environment
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -47,11 +47,11 @@ C:/Users/jiawe/OneDrive/Documents/GitHub/Open-Source-Minecraft-like-Simulation-E
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [9500] Host "[IP] 10.0.0.67 [Port] 0 [Flags] 2 [Guid] 3447703860 [EditorId] 3447703860 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-TAGDHKG) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [12880] Host "[IP] 10.0.0.67 [Port] 0 [Flags] 2 [Guid] 80053197 [EditorId] 80053197 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-TAGDHKG) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [9500] Host "[IP] 10.0.0.67 [Port] 0 [Flags] 2 [Guid] 3447703860 [EditorId] 3447703860 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-TAGDHKG) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [12880] Host "[IP] 10.0.0.67 [Port] 0 [Flags] 2 [Guid] 80053197 [EditorId] 80053197 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-TAGDHKG) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
-Refreshing native plugins compatible for Editor in 110.06 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 102.51 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.18f1 (3129e69bc0c7)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.18f1/Editor/Data/Resources/UnitySubsystems
@@ -67,89 +67,89 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.18f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.18f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.18f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56308
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56476
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.18f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.007946 seconds.
+Registered in 0.008903 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 99.12 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 93.96 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.625 seconds
+- Completed reload, in  0.629 seconds
 Domain Reload Profiling:
-	ReloadAssembly (626ms)
-		BeginReloadAssembly (72ms)
+	ReloadAssembly (630ms)
+		BeginReloadAssembly (76ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (437ms)
-			LoadAssemblies (70ms)
+		EndReloadAssembly (442ms)
+			LoadAssemblies (73ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (92ms)
+			SetupTypeCache (102ms)
 			ReleaseScriptCaches (0ms)
 			RebuildScriptCaches (23ms)
-			SetupLoadedEditorAssemblies (273ms)
+			SetupLoadedEditorAssemblies (263ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (7ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (99ms)
+				RefreshPlugins (94ms)
 				BeforeProcessingInitializeOnLoad (1ms)
-				ProcessInitializeOnLoadAttributes (125ms)
-				ProcessInitializeOnLoadMethodAttributes (40ms)
+				ProcessInitializeOnLoadAttributes (121ms)
+				ProcessInitializeOnLoadMethodAttributes (39ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.013614 seconds.
+Registered in 0.011331 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\jiawe\OneDrive\Documents\GitHub\Open-Source-Minecraft-like-Simulation-Environment-for-AI\Environment\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\jiawe\OneDrive\Documents\GitHub\Open-Source-Minecraft-like-Simulation-Environment-for-AI\Environment\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 97.37 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 97.40 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.210 seconds
+- Completed reload, in  1.144 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1211ms)
-		BeginReloadAssembly (100ms)
+	ReloadAssembly (1145ms)
+		BeginReloadAssembly (108ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (5ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (19ms)
-		EndReloadAssembly (983ms)
-			LoadAssemblies (93ms)
+			CreateAndSetChildDomain (21ms)
+		EndReloadAssembly (922ms)
+			LoadAssemblies (86ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (279ms)
+			SetupTypeCache (251ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (48ms)
-			SetupLoadedEditorAssemblies (517ms)
+			RebuildScriptCaches (47ms)
+			SetupLoadedEditorAssemblies (500ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (5ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (97ms)
-				BeforeProcessingInitializeOnLoad (108ms)
-				ProcessInitializeOnLoadAttributes (281ms)
+				BeforeProcessingInitializeOnLoad (101ms)
+				ProcessInitializeOnLoadAttributes (269ms)
 				ProcessInitializeOnLoadMethodAttributes (14ms)
 				AfterProcessingInitializeOnLoad (12ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (6ms)
+			AwakeInstancesAfterBackupRestoration (7ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
-Refreshing native plugins compatible for Editor in 1.06 ms, found 4 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Refreshing native plugins compatible for Editor in 0.97 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 4062 Unused Serialized files (Serialized files now loaded: 0)
 Unloading 143 unused Assets / (26.7 MB). Loaded Objects now: 4457.
 Memory consumption went from 225.9 MB to 199.2 MB.
-Total: 8.915200 ms (FindLiveObjects: 0.462000 ms CreateObjectMapping: 0.113800 ms MarkObjects: 2.452600 ms  DeleteObjects: 5.885800 ms)
+Total: 11.493600 ms (FindLiveObjects: 0.517300 ms CreateObjectMapping: 0.112700 ms MarkObjects: 2.573800 ms  DeleteObjects: 8.288600 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -163,181 +163,73 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 4396.730189 seconds.
-  path: Assets/ImportedAssets/Cainos/Pixel Art Icon Pack - RPG
-  artifactKey: Guid(156af2f354d93f441a2f6f24839c9394) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ImportedAssets/Cainos/Pixel Art Icon Pack - RPG using Guid(156af2f354d93f441a2f6f24839c9394) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '65c198b4f6dd0c3ab91545e365ccd72f') in 0.020755 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.551082 seconds.
-  path: Assets/ImportedAssets/Cainos/Pixel Art Icon Pack - RPG/Material
-  artifactKey: Guid(ac6725e78ae254f4f8fa9f2900d99ba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ImportedAssets/Cainos/Pixel Art Icon Pack - RPG/Material using Guid(ac6725e78ae254f4f8fa9f2900d99ba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd6a744db2c401018d9093b475c856a08') in 0.006614 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.723918 seconds.
-  path: Assets/ImportedAssets/Cainos/Pixel Art Icon Pack - RPG/Material/MT Sprite Outline Dark.mat
-  artifactKey: Guid(9ef09833dc2c3404d88335dc4ee33fd4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ImportedAssets/Cainos/Pixel Art Icon Pack - RPG/Material/MT Sprite Outline Dark.mat using Guid(9ef09833dc2c3404d88335dc4ee33fd4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c911225f1a3e9fb166789476e8bd0a16') in 0.127844 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/ImportedAssets/Cainos/Pixel Art Icon Pack - RPG/Material/MT Sprite Outline Yellow.mat
-  artifactKey: Guid(edc31919a4a0caa4eafbbd6eb17dfc39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ImportedAssets/Cainos/Pixel Art Icon Pack - RPG/Material/MT Sprite Outline Yellow.mat using Guid(edc31919a4a0caa4eafbbd6eb17dfc39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1caf4a4aa673a477c598b7a337122cb0') in 0.011606 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 7.767185 seconds.
-  path: Assets/ImportedAssets/Cainos/Pixel Art Icon Pack - RPG/Texture/Food/Beer.png
-  artifactKey: Guid(d0c05b9125ed56349a5385e1a77547b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ImportedAssets/Cainos/Pixel Art Icon Pack - RPG/Texture/Food/Beer.png using Guid(d0c05b9125ed56349a5385e1a77547b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e5e15963666364150d5e295612bbe0e') in 0.053050 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/ImportedAssets/Cainos/Pixel Art Icon Pack - RPG/Texture/Food/Meat.png
-  artifactKey: Guid(14e62563269c11443b9c936be93b95f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ImportedAssets/Cainos/Pixel Art Icon Pack - RPG/Texture/Food/Meat.png using Guid(14e62563269c11443b9c936be93b95f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ecac0a5516e4e072dd6bfb2a16855034') in 0.040029 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/ImportedAssets/Cainos/Pixel Art Icon Pack - RPG/Texture/Food/Wine.png
-  artifactKey: Guid(ea55e0ae186d59d41a0b270559045dd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ImportedAssets/Cainos/Pixel Art Icon Pack - RPG/Texture/Food/Wine.png using Guid(ea55e0ae186d59d41a0b270559045dd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ccbd0a9978cad8fb6ee73f078010d48') in 0.035365 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/ImportedAssets/Cainos/Pixel Art Icon Pack - RPG/Texture/Food/Fish Steak.png
-  artifactKey: Guid(adf92f5459022124193e381473dbcce6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ImportedAssets/Cainos/Pixel Art Icon Pack - RPG/Texture/Food/Fish Steak.png using Guid(adf92f5459022124193e381473dbcce6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5458d896e30204a5791d5c6d15daba1e') in 0.023529 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/ImportedAssets/Cainos/Pixel Art Icon Pack - RPG/Texture/Food/Mushroom.png
-  artifactKey: Guid(966ff550585ec504896a28b55fd7281c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ImportedAssets/Cainos/Pixel Art Icon Pack - RPG/Texture/Food/Mushroom.png using Guid(966ff550585ec504896a28b55fd7281c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ff95ddebb18d5c09715201456f297811') in 0.057977 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 17.998970 seconds.
-  path: Assets/ImportedAssets/Cainos/Pixel Art Icon Pack - RPG/Texture/Ore & Gem/Copper Ingot.png
-  artifactKey: Guid(b579a157263b8ae4d8dfeebb072e44f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ImportedAssets/Cainos/Pixel Art Icon Pack - RPG/Texture/Ore & Gem/Copper Ingot.png using Guid(b579a157263b8ae4d8dfeebb072e44f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dda6786a6a30e456ac00a4ca5b78ac63') in 0.063810 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/ImportedAssets/Cainos/Pixel Art Icon Pack - RPG/Texture/Ore & Gem/Emerald.png
-  artifactKey: Guid(1fe19ffae1abab0479d7d9716bcbbb9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ImportedAssets/Cainos/Pixel Art Icon Pack - RPG/Texture/Ore & Gem/Emerald.png using Guid(1fe19ffae1abab0479d7d9716bcbbb9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '15690d7fb210214d8dd6f1d3190d2c9f') in 0.013426 seconds 
+  Time since last request: 6758.586484 seconds.
+  path: Assets/ImportedAssets/Fantasy Skybox FREE/Scenes/Brush_Flower.png
+  artifactKey: Guid(0d383f0cd0395064eb4b64619b2840f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Fantasy Skybox FREE/Scenes/Brush_Flower.png using Guid(0d383f0cd0395064eb4b64619b2840f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '25d995a4c3f869db296edebdc31ed9d7') in 0.090038 seconds 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000023 seconds.
-  path: Assets/ImportedAssets/Cainos/Pixel Art Icon Pack - RPG/Texture/Ore & Gem/Cut Emerald.png
-  artifactKey: Guid(3281e91e074a48d4eb5d6a1fdd332a36) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ImportedAssets/Cainos/Pixel Art Icon Pack - RPG/Texture/Ore & Gem/Cut Emerald.png using Guid(3281e91e074a48d4eb5d6a1fdd332a36) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f5be2a102f2235ec7c588cceb9f36a41') in 0.013477 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000029 seconds.
-  path: Assets/ImportedAssets/Cainos/Pixel Art Icon Pack - RPG/Texture/Ore & Gem/Pearl.png
-  artifactKey: Guid(2c523fa3ca4e1fc4b9a5713e504e6cce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ImportedAssets/Cainos/Pixel Art Icon Pack - RPG/Texture/Ore & Gem/Pearl.png using Guid(2c523fa3ca4e1fc4b9a5713e504e6cce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '680a1176390a4f35cfc92f3781cb83dc') in 0.012606 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/ImportedAssets/Cainos/Pixel Art Icon Pack - RPG/Texture/Ore & Gem/Diamond.png
-  artifactKey: Guid(3faa68d4e2f05f04786133598667ac36) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ImportedAssets/Cainos/Pixel Art Icon Pack - RPG/Texture/Ore & Gem/Diamond.png using Guid(3faa68d4e2f05f04786133598667ac36) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec2149f1185fb9477a3c59505d40a456') in 0.014069 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.230488 seconds.
-  path: Assets/ImportedAssets/Cainos/Pixel Art Icon Pack - RPG/Texture/Potion/Blue Potion 3.png
-  artifactKey: Guid(ace8a02646afeda4880fc3cb14cad705) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ImportedAssets/Cainos/Pixel Art Icon Pack - RPG/Texture/Potion/Blue Potion 3.png using Guid(ace8a02646afeda4880fc3cb14cad705) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2fb21cb0d08aa64e63ae55162ee5ad44') in 0.015376 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/ImportedAssets/Cainos/Pixel Art Icon Pack - RPG/Texture/Potion/Red Potion 3.png
-  artifactKey: Guid(7b3876a2b72c44540a4bbd5aaba9e506) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ImportedAssets/Cainos/Pixel Art Icon Pack - RPG/Texture/Potion/Red Potion 3.png using Guid(7b3876a2b72c44540a4bbd5aaba9e506) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '433777737efc37b4c7d29e9ebe178bd1') in 0.013660 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/ImportedAssets/Cainos/Pixel Art Icon Pack - RPG/Texture/Potion/Green Potion 3.png
-  artifactKey: Guid(f65023889763c7644b5579f0b019da6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ImportedAssets/Cainos/Pixel Art Icon Pack - RPG/Texture/Potion/Green Potion 3.png using Guid(f65023889763c7644b5579f0b019da6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5ef86bcd05f9c3ede0d54d70a09218cc') in 0.012612 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 26.239059 seconds.
-  path: Assets/ImportedAssets/Cainos/Pixel Art Icon Pack - RPG/Texture/Misc/Book 3.png
-  artifactKey: Guid(6b22156af64babe4f9bff6441c5b942f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ImportedAssets/Cainos/Pixel Art Icon Pack - RPG/Texture/Misc/Book 3.png using Guid(6b22156af64babe4f9bff6441c5b942f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a5064639ab15b7f8ef82dd58e776c93') in 0.059496 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/ImportedAssets/Cainos/Pixel Art Icon Pack - RPG/Texture/Misc/Scroll.png
-  artifactKey: Guid(4b61215c56174cb489119b1357a5b77c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ImportedAssets/Cainos/Pixel Art Icon Pack - RPG/Texture/Misc/Scroll.png using Guid(4b61215c56174cb489119b1357a5b77c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db738e65f702861756cee74067d030dc') in 0.015672 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000020 seconds.
-  path: Assets/ImportedAssets/Cainos/Pixel Art Icon Pack - RPG/Texture/Misc/Envolop.png
-  artifactKey: Guid(745c230e29c9393469cb614114618353) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ImportedAssets/Cainos/Pixel Art Icon Pack - RPG/Texture/Misc/Envolop.png using Guid(745c230e29c9393469cb614114618353) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2529bcbe79ae7e70ad34593e6c905d4f') in 0.014034 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000020 seconds.
-  path: Assets/ImportedAssets/Cainos/Pixel Art Icon Pack - RPG/Texture/Misc/Rune Stone.png
-  artifactKey: Guid(b9a847102a75c8c429a8f749008df6c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ImportedAssets/Cainos/Pixel Art Icon Pack - RPG/Texture/Misc/Rune Stone.png using Guid(b9a847102a75c8c429a8f749008df6c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '67ff3ee56abb2f9b27a4dabb652820bc') in 0.014488 seconds 
+  path: Assets/ImportedAssets/Fantasy Skybox FREE/Scenes/Texture_Grass_Diffuse.png
+  artifactKey: Guid(5e1acf362611957488060eee4178b3f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Fantasy Skybox FREE/Scenes/Texture_Grass_Diffuse.png using Guid(5e1acf362611957488060eee4178b3f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fbaff3076e1202cef5be5c4b63786b4b') in 0.064659 seconds 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000024 seconds.
-  path: Assets/ImportedAssets/Cainos/Pixel Art Icon Pack - RPG/Texture/Misc/Heart.png
-  artifactKey: Guid(87a7c4321fd50514c8e41d6779a071da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ImportedAssets/Cainos/Pixel Art Icon Pack - RPG/Texture/Misc/Heart.png using Guid(87a7c4321fd50514c8e41d6779a071da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '541bdd0c0435a1f6f53f88f8d333d7b7') in 0.014122 seconds 
+  path: Assets/ImportedAssets/Fantasy Skybox FREE/Scenes/TerrainDirt.terrainlayer
+  artifactKey: Guid(d62e27a62f70e074eba77bbd9259e732) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Fantasy Skybox FREE/Scenes/TerrainDirt.terrainlayer using Guid(d62e27a62f70e074eba77bbd9259e732) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f9cf38df84fbfd897c580e749cf9313') in 0.063074 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/ImportedAssets/Fantasy Skybox FREE/Scenes/Texture_Dirt_Diffuse.png
+  artifactKey: Guid(37d1938c74868484ea08b34225eb73b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Fantasy Skybox FREE/Scenes/Texture_Dirt_Diffuse.png using Guid(37d1938c74868484ea08b34225eb73b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e2128f7cf4f591d3d17a8de0f0a4afe') in 0.026150 seconds 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.010903 seconds.
+Registered in 0.011230 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\jiawe\OneDrive\Documents\GitHub\Open-Source-Minecraft-like-Simulation-Environment-for-AI\Environment\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\jiawe\OneDrive\Documents\GitHub\Open-Source-Minecraft-like-Simulation-Environment-for-AI\Environment\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.80 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 0.97 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.015 seconds
+- Completed reload, in  1.000 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1016ms)
-		BeginReloadAssembly (140ms)
+	ReloadAssembly (1000ms)
+		BeginReloadAssembly (142ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (4ms)
+			DisableScriptedObjects (5ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (39ms)
-		EndReloadAssembly (775ms)
+			CreateAndSetChildDomain (38ms)
+		EndReloadAssembly (757ms)
 			LoadAssemblies (88ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (251ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (39ms)
-			SetupLoadedEditorAssemblies (360ms)
+			SetupTypeCache (252ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (35ms)
+			SetupLoadedEditorAssemblies (345ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (11ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (80ms)
-				ProcessInitializeOnLoadAttributes (243ms)
-				ProcessInitializeOnLoadMethodAttributes (15ms)
+				BeforeProcessingInitializeOnLoad (76ms)
+				ProcessInitializeOnLoadAttributes (232ms)
+				ProcessInitializeOnLoadMethodAttributes (14ms)
 				AfterProcessingInitializeOnLoad (10ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (5ms)
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 4.32 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 3.91 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 4025 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 125 unused Assets / (26.7 MB). Loaded Objects now: 4505.
-Memory consumption went from 226.8 MB to 200.1 MB.
-Total: 11.479400 ms (FindLiveObjects: 0.554000 ms CreateObjectMapping: 0.138900 ms MarkObjects: 3.096300 ms  DeleteObjects: 7.688800 ms)
+Unloading 125 unused Assets / (26.7 MB). Loaded Objects now: 4467.
+Memory consumption went from 226.4 MB to 199.7 MB.
+Total: 9.410500 ms (FindLiveObjects: 0.500700 ms CreateObjectMapping: 0.094800 ms MarkObjects: 2.666300 ms  DeleteObjects: 6.146500 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 

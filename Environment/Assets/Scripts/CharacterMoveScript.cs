@@ -6,6 +6,7 @@ using TMPro;
 using Unity.MLAgents;
 using Unity.MLAgents.Actuators;
 using Unity.MLAgents.Sensors;
+using System;
 
 public class CharacterMoveScript : Agent
 {
@@ -22,18 +23,26 @@ public class CharacterMoveScript : Agent
     private Vector3 direction;
     private float turnsmoothtime = 0.05f, turnsmoothvelocity = 1f;
     private float gravity = -9.81f, gravitymulti = 3f, velocity;
+    
     [Header("Player Health")]
-    public float MaxHealth = 100f;
-    public float Health = 0f;
+    private float MaxHealth = 100f;
+    private float Health = 0f;
     public Slider HealthSlider;
     [Header("Player Hunger")]
-    public float MaxHunger = 100f;
-    public float Hunger = 0f;
+    private float MaxHunger = 100f;
+    private float Hunger = 0f;
     public Slider HungerSlider;
     [Header("Player Thirst")]
-    public float MaxThirst = 100f;
-    public float Thirst = 0f;
+    private float MaxThirst = 100f;
+    private float Thirst = 0f;
     public Slider ThirstSlider;
+
+    public Light directionallight;
+    public LightingPreset preset;
+    private DateTime time;
+    public float timemulti;
+    public TMP_Text time_t;
+    
     public override void OnEpisodeBegin()
     {
         //initially, stay at current place(which is itself)
@@ -273,18 +282,30 @@ public class CharacterMoveScript : Agent
         }
         animator.SetFloat("speed", input.sqrMagnitude);
 
+        time = time.AddSeconds(Time.deltaTime * timemulti);
+        UpdateLighting((time.Hour + time.Minute/60f)/24f);
+        time_t.text = time.ToString("HH:mm");
+
         Hunger = Hunger - 2* Time.deltaTime;
-        Thirst = Thirst- 2* Time.deltaTime;
+        Thirst = Thirst - 2* Time.deltaTime;
         HealthSlider.value = Health / MaxHealth;
         HungerSlider.value = Hunger / MaxHunger;
         ThirstSlider.value = Thirst / MaxThirst;
         if(HungerSlider.value == 0){
-            Health = Health - 2* Time.deltaTime;
+            Health = Health - Time.deltaTime;
         }
         if(ThirstSlider.value == 0){
-            Health = Health - 2* Time.deltaTime;
+            Health = Health - Time.deltaTime;
         }
 
+    }
+
+    private void UpdateLighting(float timePercent)
+    {
+        RenderSettings.ambientLight = preset.AmbientColor.Evaluate(timePercent);
+        RenderSettings.fogColor = preset.FogColor.Evaluate(timePercent);
+        directionallight.color = preset.DirectionalColor.Evaluate(timePercent);
+        directionallight.transform.localRotation = Quaternion.Euler(new Vector3((timePercent * 360f) - 90f, 170f, 0));
     }
 
     private void ApplyGravity()

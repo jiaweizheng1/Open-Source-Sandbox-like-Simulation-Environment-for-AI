@@ -38,7 +38,7 @@ public class CharacterMoveScript : Agent
     private float Thirst;
     public Slider ThirstSlider;
 
-    public Light sunlight;
+    public Light directionallight;
     public LightingPreset preset;
     private DateTime time;
     public float timemulti;
@@ -337,8 +337,8 @@ public class CharacterMoveScript : Agent
     {
         RenderSettings.ambientLight = preset.AmbientColor.Evaluate(timePercent);
         RenderSettings.fogColor = preset.FogColor.Evaluate(timePercent);
-        sunlight.color = preset.DirectionalColor.Evaluate(timePercent);
-        sunlight.transform.localRotation = Quaternion.Euler(new Vector3((timePercent * 360f) - 90f, 170f, 0));
+        directionallight.color = preset.DirectionalColor.Evaluate(timePercent);
+        directionallight.transform.localRotation = Quaternion.Euler(new Vector3((timePercent * 360f) - 90f, 170f, 0));
     }
 
     private void ApplyGravity()

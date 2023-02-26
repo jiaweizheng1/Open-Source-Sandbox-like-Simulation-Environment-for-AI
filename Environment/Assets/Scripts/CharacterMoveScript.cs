@@ -24,36 +24,51 @@ public class CharacterMoveScript : Agent
     private float turnsmoothtime = 0.05f, turnsmoothvelocity = 1f;
     private float gravity = -9.81f, gravitymulti = 3f, velocity;
     
+    public float BarSpeedMulti;
     [Header("Player Health")]
     private float MaxHealth = 100f;
-    private float Health = 0f;
+    private float Health;
     public Slider HealthSlider;
     [Header("Player Hunger")]
     private float MaxHunger = 100f;
-    private float Hunger = 0f;
+    private float Hunger;
     public Slider HungerSlider;
     [Header("Player Thirst")]
     private float MaxThirst = 100f;
-    private float Thirst = 0f;
+    private float Thirst;
     public Slider ThirstSlider;
 
-    public Light directionallight;
+    public Light sunlight;
     public LightingPreset preset;
     private DateTime time;
     public float timemulti;
     public TMP_Text time_t;
+    public TMP_Text day_t;
     
     public override void OnEpisodeBegin()
     {
         //initially, stay at current place(which is itself)
-        target = transform;
         transform.position = new Vector3(150, 1, 20);
-        log = 0;
-        food = 0;
-        droplet = 0;
-        iron = 0;
+        target = transform;
+        input = new Vector2(0, 0);
+
+        time = new DateTime();
+
         moving = false;
         busy = false;
+        animator.SetBool("deadge", false);
+        animator.SetBool("harvesting", false);
+        animator.SetFloat("speed", 0);
+
+        log = 0;
+        log_t.text = "x" + log;
+        food = 0;
+        food_t.text = "x" + food;
+        droplet = 0;
+        droplet_t.text = "x" + droplet;
+        iron = 0;
+        iron_t.text = "x" + iron;
+
         Health = MaxHealth;
         Hunger = MaxHunger;
         Thirst = MaxThirst;
@@ -151,6 +166,14 @@ public class CharacterMoveScript : Agent
         iron_t.text = "x" + iron;
         animator.SetBool("harvesting", false);
         busy = false;
+    }
+
+    IEnumerator Die()
+    {
+        busy = true;
+        animator.SetBool("deadge", true);
+        yield return new WaitForSeconds(2);
+        EndEpisode();
     }
 
     public override void OnActionReceived(ActionBuffers vetcaction)
@@ -285,27 +308,37 @@ public class CharacterMoveScript : Agent
         time = time.AddSeconds(Time.deltaTime * timemulti);
         UpdateLighting((time.Hour + time.Minute/60f)/24f);
         time_t.text = time.ToString("HH:mm");
+        day_t.text = (time.Day - 1).ToString();
 
-        Hunger = Hunger - 2* Time.deltaTime;
-        Thirst = Thirst - 2* Time.deltaTime;
         HealthSlider.value = Health / MaxHealth;
         HungerSlider.value = Hunger / MaxHunger;
         ThirstSlider.value = Thirst / MaxThirst;
-        if(HungerSlider.value == 0){
-            Health = Health - Time.deltaTime;
+        if(Hunger > 0)
+        {
+            Hunger = Hunger - BarSpeedMulti * Time.deltaTime;
         }
-        if(ThirstSlider.value == 0){
-            Health = Health - Time.deltaTime;
+        if(Thirst > 0)
+        {
+            Thirst = Thirst - BarSpeedMulti * Time.deltaTime;
         }
-
+        if(Health > 0 && HungerSlider.value == 0){
+            Health = Health - BarSpeedMulti * Time.deltaTime;
+        }
+        if(Health > 0 && ThirstSlider.value == 0){
+            Health = Health - BarSpeedMulti * Time.deltaTime;
+        }
+        if(Health < 0)
+        {
+            StartCoroutine(Die());
+        }
     }
 
     private void UpdateLighting(float timePercent)
     {
         RenderSettings.ambientLight = preset.AmbientColor.Evaluate(timePercent);
         RenderSettings.fogColor = preset.FogColor.Evaluate(timePercent);
-        directionallight.color = preset.DirectionalColor.Evaluate(timePercent);
-        directionallight.transform.localRotation = Quaternion.Euler(new Vector3((timePercent * 360f) - 90f, 170f, 0));
+        sunlight.color = preset.DirectionalColor.Evaluate(timePercent);
+        sunlight.transform.localRotation = Quaternion.Euler(new Vector3((timePercent * 360f) - 90f, 170f, 0));
     }
 
     private void ApplyGravity()

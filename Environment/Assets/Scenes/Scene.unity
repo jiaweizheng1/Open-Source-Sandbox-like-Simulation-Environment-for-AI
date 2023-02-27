@@ -37,7 +37,7 @@ RenderSettings:
   m_ReflectionBounces: 1
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
-  m_Sun: {fileID: 479630234}
+  m_Sun: {fileID: 0}
   m_IndirectSpecularColor: {r: 0.358095, g: 0.7359982, b: 0.9729369, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
@@ -1467,7 +1467,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 479630235}
-  - component: {fileID: 479630234}
+  - component: {fileID: 479630236}
   m_Layer: 0
   m_Name: Light
   m_TagString: Untagged
@@ -1475,7 +1475,22 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!108 &479630234
+--- !u!4 &479630235
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 479630233}
+  m_LocalRotation: {x: 0.057751168, y: -0.7461058, z: -0.66009855, w: -0.065275826}
+  m_LocalPosition: {x: 150, y: 22.5, z: 100}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: -83, y: -190, z: 0}
+--- !u!108 &479630236
 Light:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1486,7 +1501,7 @@ Light:
   serializedVersion: 10
   m_Type: 1
   m_Shape: 0
-  m_Color: {r: 0.03799433, g: 0.03799433, b: 0.03799433, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_Intensity: 1
   m_Range: 10
   m_SpotAngle: 30
@@ -1498,7 +1513,7 @@ Light:
     m_CustomResolution: -1
     m_Strength: 1
     m_Bias: 0.05
-    m_NormalBias: 0.1
+    m_NormalBias: 0.4
     m_NearPlane: 0.2
     m_CullingMatrixOverride:
       e00: 1
@@ -1532,26 +1547,11 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 2.2147463e-28, z: 8.94e-43, w: 2.2147463e-28}
+  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!4 &479630235
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 479630233}
-  m_LocalRotation: {x: 0.057751168, y: -0.7461058, z: -0.66009855, w: -0.065275826}
-  m_LocalPosition: {x: 150, y: 22.5, z: 100}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: -83, y: -190, z: 0}
 --- !u!1001 &482198132
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2336,7 +2336,7 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 0.7075472, g: 0.45711845, b: 0.14351194, a: 1}
-  m_Intensity: 2
+  m_Intensity: 1.5
   m_Range: 20
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -3098,13 +3098,13 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 0.1462264, g: 1, b: 0.8327307, a: 1}
-  m_Intensity: 2
-  m_Range: 5
+  m_Intensity: 1.5
+  m_Range: 20
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 1
+    m_Type: 0
     m_Resolution: 3
     m_CustomResolution: -1
     m_Strength: 1
@@ -3420,13 +3420,13 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 0.14509805, g: 1, b: 0.83137256, a: 1}
-  m_Intensity: 2
+  m_Intensity: 1.5
   m_Range: 20
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 1
+    m_Type: 0
     m_Resolution: 3
     m_CustomResolution: -1
     m_Strength: 1
@@ -5272,7 +5272,7 @@ MonoBehaviour:
   HealthSlider: {fileID: 735313970}
   HungerSlider: {fileID: 1300092183}
   ThirstSlider: {fileID: 1677508124}
-  directionallight: {fileID: 479630234}
+  directionallight: {fileID: 479630236}
   preset: {fileID: 11400000, guid: 90c3c66ae35e3b840be125e2619555e4, type: 2}
   timemulti: 1000
   time_t: {fileID: 1130540956}
@@ -6482,7 +6482,7 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 0.7058824, g: 0.45882353, b: 0.14509805, a: 1}
-  m_Intensity: 2
+  m_Intensity: 1.5
   m_Range: 20
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208

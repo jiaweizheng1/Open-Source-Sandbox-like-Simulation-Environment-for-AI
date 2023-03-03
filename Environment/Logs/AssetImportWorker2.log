@@ -1,0 +1,459 @@
+Using pre-set license
+Built from '2021.3/staging' branch; Version is '2021.3.19f1 (c9714fde33b6) revision 13201743'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19044) 64bit Core' Language: 'en' Physical Memory: 16333 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2021.3.19f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker2
+-projectPath
+C:/Users/jiawe/OneDrive/Documents/GitHub/Open-Source-Minecraft-like-Simulation-Environment-for-AI/Environment
+-logFile
+Logs/AssetImportWorker2.log
+-srvPort
+3862
+Successfully changed project path to: C:/Users/jiawe/OneDrive/Documents/GitHub/Open-Source-Minecraft-like-Simulation-Environment-for-AI/Environment
+C:/Users/jiawe/OneDrive/Documents/GitHub/Open-Source-Minecraft-like-Simulation-Environment-for-AI/Environment
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [2000] Host "[IP] 10.0.0.67 [Port] 0 [Flags] 2 [Guid] 2844421588 [EditorId] 2844421588 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-TAGDHKG) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [2000] Host "[IP] 10.0.0.67 [Port] 0 [Flags] 2 [Guid] 2844421588 [EditorId] 2844421588 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-TAGDHKG) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+Refreshing native plugins compatible for Editor in 106.61 ms, found 6 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.3.19f1 (c9714fde33b6)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.19f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/jiawe/OneDrive/Documents/GitHub/Open-Source-Minecraft-like-Simulation-Environment-for-AI/Environment/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 2070 SUPER (ID=0x1e84)
+    Vendor:   NVIDIA
+    VRAM:     8003 MB
+    Driver:   31.0.15.3118
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.19f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.19f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.19f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56156
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.19f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.009735 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 92.54 ms, found 6 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.639 seconds
+Domain Reload Profiling:
+	ReloadAssembly (640ms)
+		BeginReloadAssembly (74ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (449ms)
+			LoadAssemblies (70ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (101ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (25ms)
+			SetupLoadedEditorAssemblies (274ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (7ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (93ms)
+				BeforeProcessingInitializeOnLoad (1ms)
+				ProcessInitializeOnLoadAttributes (127ms)
+				ProcessInitializeOnLoadMethodAttributes (45ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.013001 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\jiawe\OneDrive\Documents\GitHub\Open-Source-Minecraft-like-Simulation-Environment-for-AI\Environment\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\jiawe\OneDrive\Documents\GitHub\Open-Source-Minecraft-like-Simulation-Environment-for-AI\Environment\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 107.52 ms, found 6 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.487 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1488ms)
+		BeginReloadAssembly (126ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (7ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (22ms)
+		EndReloadAssembly (1230ms)
+			LoadAssemblies (102ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (364ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (74ms)
+			SetupLoadedEditorAssemblies (622ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (108ms)
+				BeforeProcessingInitializeOnLoad (124ms)
+				ProcessInitializeOnLoadAttributes (356ms)
+				ProcessInitializeOnLoadMethodAttributes (18ms)
+				AfterProcessingInitializeOnLoad (9ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (10ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
+Refreshing native plugins compatible for Editor in 1.49 ms, found 6 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4200 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 136 unused Assets / (26.3 MB). Loaded Objects now: 4609.
+Memory consumption went from 305.0 MB to 278.7 MB.
+Total: 12.798300 ms (FindLiveObjects: 0.613200 ms CreateObjectMapping: 0.110800 ms MarkObjects: 2.616000 ms  DeleteObjects: 9.456800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 26109.248360 seconds.
+  path: Assets/ImportedAssets/Survival Pack - Sept 2020/FBX/Trashcan.fbx
+  artifactKey: Guid(7f2b3c40225a2024c937643619794ef3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Survival Pack - Sept 2020/FBX/Trashcan.fbx using Guid(7f2b3c40225a2024c937643619794ef3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5920993de77ccdb81d1d4c6bf10b1b19') in 0.183000 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/ImportedAssets/Survival Pack - Sept 2020/FBX/Torch.fbx
+  artifactKey: Guid(59d70450c48a8c74d9fc5205e20b1aae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Survival Pack - Sept 2020/FBX/Torch.fbx using Guid(59d70450c48a8c74d9fc5205e20b1aae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '09550f2d881bb746127876dddd85bfa5') in 0.033989 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/ImportedAssets/Survival Pack - Sept 2020/Blends/Matchbox.blend
+  artifactKey: Guid(b204810e39006c24783992b8525b2ecd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Survival Pack - Sept 2020/Blends/Matchbox.blend using Guid(b204810e39006c24783992b8525b2ecd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3562c4f6c3f9f81f29937babcf30d8a3') in 0.028842 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 23.698021 seconds.
+  path: Assets/ImportedAssets/Survival Pack - Sept 2020/FBX/Bonfire_Fire.fbx
+  artifactKey: Guid(29fe3bc0b1b10b3419c094d2eaf259b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Survival Pack - Sept 2020/FBX/Bonfire_Fire.fbx using Guid(29fe3bc0b1b10b3419c094d2eaf259b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '666e78f2be799ebff63b04cd321d0bd2') in 0.015057 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/ImportedAssets/Survival Pack - Sept 2020/FBX/Wood.mat
+  artifactKey: Guid(425832f42b7928640ac8cb8b53508805) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Survival Pack - Sept 2020/FBX/Wood.mat using Guid(425832f42b7928640ac8cb8b53508805) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '372861ba903ac4d954ab906d8826ef81') in 0.018274 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 15.971044 seconds.
+  path: Assets/ImportedAssets/Survival Pack - Sept 2020/FBX
+  artifactKey: Guid(796fbd97e95563a46a34cc25e8ffeab3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Survival Pack - Sept 2020/FBX using Guid(796fbd97e95563a46a34cc25e8ffeab3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '46dbc967b732c32ffcd46eef3c1c75bd') in 0.003114 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 26.020824 seconds.
+  path: Assets/ImportedAssets/Survival Pack - Sept 2020/FBX/BoneFire
+  artifactKey: Guid(e77318e11ccdef847a857c8f2d4cedb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Survival Pack - Sept 2020/FBX/BoneFire using Guid(e77318e11ccdef847a857c8f2d4cedb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e15b9128340b5ba4ea9251717bb91b6f') in 0.007840 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 14.415366 seconds.
+  path: Assets/ImportedAssets/Survival Pack - Sept 2020/FBX/BoneFireLit
+  artifactKey: Guid(e77318e11ccdef847a857c8f2d4cedb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Survival Pack - Sept 2020/FBX/BoneFireLit using Guid(e77318e11ccdef847a857c8f2d4cedb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7dd14937987ebd1ee364cefc7d3a8fff') in 0.006574 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.837429 seconds.
+  path: Assets/ImportedAssets/Survival Pack - Sept 2020/FBX/BoneFire
+  artifactKey: Guid(1c59d1d8cf8e87a46822d70b2259f6ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Survival Pack - Sept 2020/FBX/BoneFire using Guid(1c59d1d8cf8e87a46822d70b2259f6ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6dbdddc557fbe2b658fafdbe0f72f99d') in 0.003004 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 12.209556 seconds.
+  path: Assets/ImportedAssets/Survival Pack - Sept 2020/FBX/Bonfire.fbx
+  artifactKey: Guid(30e8c4e89a517804bbc0c84c7ec09d18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Survival Pack - Sept 2020/FBX/Bonfire.fbx using Guid(30e8c4e89a517804bbc0c84c7ec09d18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '39006cb8af44994041859bc0ed8fb534') in 0.030308 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 74.412849 seconds.
+  path: Assets/ImportedAssets/Survival Pack - Sept 2020/FBX/BoneFireLit/Fire.mat
+  artifactKey: Guid(ffb078ce5c828e84a895c378fe953b33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Survival Pack - Sept 2020/FBX/BoneFireLit/Fire.mat using Guid(ffb078ce5c828e84a895c378fe953b33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a179fcae02077230c25e36bbe245806') in 0.015261 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.711058 seconds.
+  path: Assets/ImportedAssets/Survival Pack - Sept 2020/FBX/BoneFireLit/Wood.mat
+  artifactKey: Guid(425832f42b7928640ac8cb8b53508805) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Survival Pack - Sept 2020/FBX/BoneFireLit/Wood.mat using Guid(425832f42b7928640ac8cb8b53508805) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a0588f220591cb607b2a96ae699c1b4') in 0.013383 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.206260 seconds.
+  path: Assets/ImportedAssets/Survival Pack - Sept 2020/FBX/BoneFire/LightWood.mat
+  artifactKey: Guid(12ffba3a0404dc84480a94568605d532) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Survival Pack - Sept 2020/FBX/BoneFire/LightWood.mat using Guid(12ffba3a0404dc84480a94568605d532) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c8e9e726f178e0a19456b45c7c343d7') in 0.012909 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 29.884336 seconds.
+  path: Assets/ImportedAssets/Survival Pack - Sept 2020/FBX/BoneFire/Wood.mat
+  artifactKey: Guid(fbf453b50a74a4b4494c8a1cacc34953) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Survival Pack - Sept 2020/FBX/BoneFire/Wood.mat using Guid(fbf453b50a74a4b4494c8a1cacc34953) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '31284e2fcba5ac5562c48498e4e72c7a') in 0.011094 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 601.259597 seconds.
+  path: Assets/ImportedAssets/Furniture Pack - March 2019/Preview.png
+  artifactKey: Guid(a9267b6a03020474ba3c0e9276c02a07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Furniture Pack - March 2019/Preview.png using Guid(a9267b6a03020474ba3c0e9276c02a07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6fdfd5d45941b18ac0d5312881316f11') in 0.035100 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.458305 seconds.
+  path: Assets/ImportedAssets/Furniture Pack - March 2019/Blends/BedDouble.blend
+  artifactKey: Guid(8ac61c6c127f45648b40208031ef8e59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Furniture Pack - March 2019/Blends/BedDouble.blend using Guid(8ac61c6c127f45648b40208031ef8e59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f8d2bca277117fa63afd145cdba30cc2') in 0.098950 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/ImportedAssets/Furniture Pack - March 2019/Blends/NightStand.blend
+  artifactKey: Guid(6d2b966be242f0d44864ffc8d82929f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Furniture Pack - March 2019/Blends/NightStand.blend using Guid(6d2b966be242f0d44864ffc8d82929f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '350c3b46aa767ed13bd4010ac27b4ff2') in 0.085741 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/ImportedAssets/Furniture Pack - March 2019/Blends/Door2.blend
+  artifactKey: Guid(698aa268a7a1eb54bb680e6d53d9410d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Furniture Pack - March 2019/Blends/Door2.blend using Guid(698aa268a7a1eb54bb680e6d53d9410d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f1bd1f60c3a7da59b45dabf26ba1ec8d') in 0.091511 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/ImportedAssets/Furniture Pack - March 2019/Blends/ShortCloset.blend
+  artifactKey: Guid(0d6476ed1ee3edd43a4e92646805f048) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Furniture Pack - March 2019/Blends/ShortCloset.blend using Guid(0d6476ed1ee3edd43a4e92646805f048) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f72a3d3f698830466fb4cd61b15d870b') in 0.090256 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/ImportedAssets/Furniture Pack - March 2019/Blends/OfficeChair.blend
+  artifactKey: Guid(890bf0a3f0e8255499ca423133a9234a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Furniture Pack - March 2019/Blends/OfficeChair.blend using Guid(890bf0a3f0e8255499ca423133a9234a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c2dd4f62e1156ba4f8a4ae2757d17451') in 0.037954 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/ImportedAssets/Furniture Pack - March 2019/Blends/Bookcase_Books.blend
+  artifactKey: Guid(8acd6debc6fabb54a81731182fe183ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Furniture Pack - March 2019/Blends/Bookcase_Books.blend using Guid(8acd6debc6fabb54a81731182fe183ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c03aaa3d2a6abc294bb36b37c88556ac') in 0.148592 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/ImportedAssets/Furniture Pack - March 2019/Blends/Stool.blend
+  artifactKey: Guid(81ec9c5046518fd4da96841b45d48236) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Furniture Pack - March 2019/Blends/Stool.blend using Guid(81ec9c5046518fd4da96841b45d48236) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0fb1589460a32175bfa0eafd649419f8') in 0.032321 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/ImportedAssets/Furniture Pack - March 2019/Blends/Closet.blend
+  artifactKey: Guid(8c961ff2e3d669342bf6ba219e53ad88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Furniture Pack - March 2019/Blends/Closet.blend using Guid(8c961ff2e3d669342bf6ba219e53ad88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad8247374d454602cbad615c34383178') in 0.058852 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/ImportedAssets/Furniture Pack - March 2019/Blends/Table.blend
+  artifactKey: Guid(191e1920307689146b6829c4ac5f3c89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Furniture Pack - March 2019/Blends/Table.blend using Guid(191e1920307689146b6829c4ac5f3c89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8e9e7630f123a458b5f499553d78e6b3') in 0.031008 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.746445 seconds.
+  path: Assets/ImportedAssets/Furniture Pack - March 2019/FBX/BedDouble.fbx
+  artifactKey: Guid(b94518df39844c346a628b6597080746) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Furniture Pack - March 2019/FBX/BedDouble.fbx using Guid(b94518df39844c346a628b6597080746) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '583c762572025c70c1ac654826fb2dc4') in 0.087411 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/ImportedAssets/Furniture Pack - March 2019/FBX/Sofa3.fbx
+  artifactKey: Guid(4a04e970a1c5ce94ca6e808a1ec75208) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Furniture Pack - March 2019/FBX/Sofa3.fbx using Guid(4a04e970a1c5ce94ca6e808a1ec75208) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '64ec7e275e7e17bc0d4d2a3766ee5449') in 0.050204 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/ImportedAssets/Furniture Pack - March 2019/FBX/Table2.fbx
+  artifactKey: Guid(221608edfaa72c8489accb4be58ef320) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Furniture Pack - March 2019/FBX/Table2.fbx using Guid(221608edfaa72c8489accb4be58ef320) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '60c5a9e8700496e742835700ff3f3212') in 0.096961 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/ImportedAssets/Furniture Pack - March 2019/FBX/Door3.fbx
+  artifactKey: Guid(bce82ba1f2a2c4e40b36c71f6f3b298a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Furniture Pack - March 2019/FBX/Door3.fbx using Guid(bce82ba1f2a2c4e40b36c71f6f3b298a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf0a9b4e342d557f9f1599d7f43ef2e2') in 0.049487 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/ImportedAssets/Furniture Pack - March 2019/FBX/Chair.fbx
+  artifactKey: Guid(33f69f568189dbb4daeb5be11319f57c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Furniture Pack - March 2019/FBX/Chair.fbx using Guid(33f69f568189dbb4daeb5be11319f57c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fba673eea9f03d18269316ab9edf8d03') in 0.027199 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/ImportedAssets/Furniture Pack - March 2019/FBX/Door2.fbx
+  artifactKey: Guid(005f52e2f08b31647afdb47ee7ffa14f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Furniture Pack - March 2019/FBX/Door2.fbx using Guid(005f52e2f08b31647afdb47ee7ffa14f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f421a61df7181f2c0bec827734e839c') in 0.051317 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/ImportedAssets/Furniture Pack - March 2019/FBX/Sofa.fbx
+  artifactKey: Guid(354c14c92179d2d4c9a40c6c9b0af79a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Furniture Pack - March 2019/FBX/Sofa.fbx using Guid(354c14c92179d2d4c9a40c6c9b0af79a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c8c5fee8165de5460f20eacf3bf2f3a') in 0.030406 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/ImportedAssets/Furniture Pack - March 2019/FBX/Bookcase_Books.fbx
+  artifactKey: Guid(ba0358b1f2cce934aa40dafbe547c324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Furniture Pack - March 2019/FBX/Bookcase_Books.fbx using Guid(ba0358b1f2cce934aa40dafbe547c324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a9e6d5f6898103574508097c50fdb49') in 0.087000 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 16.124779 seconds.
+  path: Assets/ImportedAssets/Furniture Pack - March 2019/FBX
+  artifactKey: Guid(765e4f2c0a6a38f4bbd90d6fd8276497) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Furniture Pack - March 2019/FBX using Guid(765e4f2c0a6a38f4bbd90d6fd8276497) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eeeef69052a6107301f1b2fedf6b8a54') in 0.003307 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.629994 seconds.
+  path: Assets/ImportedAssets/Furniture Pack - March 2019/FBX/Desk
+  artifactKey: Guid(60651d1ac44fb8141947c1d6d93a723d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Furniture Pack - March 2019/FBX/Desk using Guid(60651d1ac44fb8141947c1d6d93a723d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4eeed864797971646635735d6dd1d9ce') in 0.002952 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.013061 seconds.
+  path: Assets/ImportedAssets/Furniture Pack - March 2019/FBX/Desk.fbx
+  artifactKey: Guid(a9f0fff7ff4b3604b9a841f8af4ceba0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Furniture Pack - March 2019/FBX/Desk.fbx using Guid(a9f0fff7ff4b3604b9a841f8af4ceba0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d0b3e0058a37d7c2ef853296b45c9dd') in 0.101629 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 220.923376 seconds.
+  path: Assets/ImportedAssets/Furniture Pack - March 2019/FBX/Desk/DarkWood.mat
+  artifactKey: Guid(526b51684dd97db4dba2f3d0c6d56d00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Furniture Pack - March 2019/FBX/Desk/DarkWood.mat using Guid(526b51684dd97db4dba2f3d0c6d56d00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef44f6e5b9032b9c3032416dbd7260a5') in 0.034062 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 128.372461 seconds.
+  path: Assets/ImportedAssets/Survival Pack - Sept 2020/FBX/Bonfire.fbx
+  artifactKey: Guid(30e8c4e89a517804bbc0c84c7ec09d18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Survival Pack - Sept 2020/FBX/Bonfire.fbx using Guid(30e8c4e89a517804bbc0c84c7ec09d18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '78987f160cbf3d08a1b4332afb4b7025') in 0.071177 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 24.815547 seconds.
+  path: Assets/ImportedAssets/Survival Pack - Sept 2020/FBX/BoneFire/Wood.mat
+  artifactKey: Guid(fbf453b50a74a4b4494c8a1cacc34953) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Survival Pack - Sept 2020/FBX/BoneFire/Wood.mat using Guid(fbf453b50a74a4b4494c8a1cacc34953) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fd11ac3800ebfe58e878bfaad8f46836') in 0.013671 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.894437 seconds.
+  path: Assets/ImportedAssets/Survival Pack - Sept 2020/FBX/BoneFireLit/Wood.mat
+  artifactKey: Guid(425832f42b7928640ac8cb8b53508805) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Survival Pack - Sept 2020/FBX/BoneFireLit/Wood.mat using Guid(425832f42b7928640ac8cb8b53508805) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd1fa22a886026142e9eb0d5486428b87') in 0.015301 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.013470 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\jiawe\OneDrive\Documents\GitHub\Open-Source-Minecraft-like-Simulation-Environment-for-AI\Environment\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\jiawe\OneDrive\Documents\GitHub\Open-Source-Minecraft-like-Simulation-Environment-for-AI\Environment\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.08 ms, found 6 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.072 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1072ms)
+		BeginReloadAssembly (138ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (38ms)
+		EndReloadAssembly (829ms)
+			LoadAssemblies (98ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (289ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (40ms)
+			SetupLoadedEditorAssemblies (363ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (12ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (82ms)
+				ProcessInitializeOnLoadAttributes (240ms)
+				ProcessInitializeOnLoadMethodAttributes (14ms)
+				AfterProcessingInitializeOnLoad (14ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 4.28 ms, found 6 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4147 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 119 unused Assets / (26.3 MB). Loaded Objects now: 4659.
+Memory consumption went from 304.5 MB to 278.1 MB.
+Total: 8.584100 ms (FindLiveObjects: 0.371000 ms CreateObjectMapping: 0.097400 ms MarkObjects: 2.471500 ms  DeleteObjects: 5.643000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 528.186346 seconds.
+  path: Assets/ImportedAssets/Ultimate Space Kit - March 2023/Vehicles/FBX/Atlas.mat
+  artifactKey: Guid(2e5114ad309279d45b32169b47c2fae9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Ultimate Space Kit - March 2023/Vehicles/FBX/Atlas.mat using Guid(2e5114ad309279d45b32169b47c2fae9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd93e304361f4012e729131c92da1a743') in 0.087151 seconds 

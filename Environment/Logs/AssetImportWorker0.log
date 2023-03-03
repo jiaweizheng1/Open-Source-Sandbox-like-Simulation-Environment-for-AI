@@ -1,0 +1,551 @@
+Using pre-set license
+Built from '2021.3/staging' branch; Version is '2021.3.19f1 (c9714fde33b6) revision 13201743'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19044) 64bit Core' Language: 'en' Physical Memory: 16333 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2021.3.19f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+C:/Users/jiawe/OneDrive/Documents/GitHub/Open-Source-Minecraft-like-Simulation-Environment-for-AI/Environment
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+3862
+Successfully changed project path to: C:/Users/jiawe/OneDrive/Documents/GitHub/Open-Source-Minecraft-like-Simulation-Environment-for-AI/Environment
+C:/Users/jiawe/OneDrive/Documents/GitHub/Open-Source-Minecraft-like-Simulation-Environment-for-AI/Environment
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [16156] Host "[IP] 10.0.0.67 [Port] 0 [Flags] 2 [Guid] 232209964 [EditorId] 232209964 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-TAGDHKG) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [16156] Host "[IP] 10.0.0.67 [Port] 0 [Flags] 2 [Guid] 232209964 [EditorId] 232209964 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-TAGDHKG) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+Refreshing native plugins compatible for Editor in 95.72 ms, found 6 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.3.19f1 (c9714fde33b6)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.19f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/jiawe/OneDrive/Documents/GitHub/Open-Source-Minecraft-like-Simulation-Environment-for-AI/Environment/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 2070 SUPER (ID=0x1e84)
+    Vendor:   NVIDIA
+    VRAM:     8003 MB
+    Driver:   31.0.15.3118
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.19f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.19f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.19f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56972
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.19f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.007813 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 96.92 ms, found 6 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.645 seconds
+Domain Reload Profiling:
+	ReloadAssembly (645ms)
+		BeginReloadAssembly (69ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (457ms)
+			LoadAssemblies (66ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (101ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (25ms)
+			SetupLoadedEditorAssemblies (278ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (7ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (97ms)
+				BeforeProcessingInitializeOnLoad (1ms)
+				ProcessInitializeOnLoadAttributes (130ms)
+				ProcessInitializeOnLoadMethodAttributes (42ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.011793 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\jiawe\OneDrive\Documents\GitHub\Open-Source-Minecraft-like-Simulation-Environment-for-AI\Environment\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\jiawe\OneDrive\Documents\GitHub\Open-Source-Minecraft-like-Simulation-Environment-for-AI\Environment\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 96.70 ms, found 6 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.273 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1273ms)
+		BeginReloadAssembly (113ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (20ms)
+		EndReloadAssembly (1030ms)
+			LoadAssemblies (94ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (283ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (52ms)
+			SetupLoadedEditorAssemblies (559ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (97ms)
+				BeforeProcessingInitializeOnLoad (120ms)
+				ProcessInitializeOnLoadAttributes (308ms)
+				ProcessInitializeOnLoadMethodAttributes (19ms)
+				AfterProcessingInitializeOnLoad (10ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (7ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Refreshing native plugins compatible for Editor in 1.05 ms, found 6 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4200 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 136 unused Assets / (26.3 MB). Loaded Objects now: 4609.
+Memory consumption went from 305.0 MB to 278.7 MB.
+Total: 9.790400 ms (FindLiveObjects: 0.619500 ms CreateObjectMapping: 0.161000 ms MarkObjects: 2.741600 ms  DeleteObjects: 6.266700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 26107.004884 seconds.
+  path: Assets/ImportedAssets/Survival Pack - Sept 2020/Blends/WaterBottle_2.blend
+  artifactKey: Guid(b21c403a304464044a3f106b800a4fbb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Survival Pack - Sept 2020/Blends/WaterBottle_2.blend using Guid(b21c403a304464044a3f106b800a4fbb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '286a4ece6bf4d0ee7e519b5a4b7d90c5') in 0.152582 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/ImportedAssets/Survival Pack - Sept 2020/Blends/Can_Closed.blend
+  artifactKey: Guid(4677d9e764ab42b4c952ec46330d4bc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Survival Pack - Sept 2020/Blends/Can_Closed.blend using Guid(4677d9e764ab42b4c952ec46330d4bc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ca9d676c5a025d586bb325bc5725044') in 0.027414 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/ImportedAssets/Survival Pack - Sept 2020/Blends/Revolver_3.blend
+  artifactKey: Guid(097c3e2723c8517459ceb5ff15341e39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Survival Pack - Sept 2020/Blends/Revolver_3.blend using Guid(097c3e2723c8517459ceb5ff15341e39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '103421b54bb6acfe7fad7a09e2e17cce') in 0.031216 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/ImportedAssets/Survival Pack - Sept 2020/Blends/Shotgun_ShortStock.blend
+  artifactKey: Guid(d1a1bb730c880c84faa317e901740ee2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Survival Pack - Sept 2020/Blends/Shotgun_ShortStock.blend using Guid(d1a1bb730c880c84faa317e901740ee2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '82530ab7a039412da563ac973ff7d9e3') in 0.031047 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/ImportedAssets/Survival Pack - Sept 2020/Blends/Tent.blend
+  artifactKey: Guid(71f5d8c9458852d4bbb362b2162e07c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Survival Pack - Sept 2020/Blends/Tent.blend using Guid(71f5d8c9458852d4bbb362b2162e07c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c8e552e79e4ee561e257be773843498b') in 0.033843 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/ImportedAssets/Survival Pack - Sept 2020/FBX/Compass_Open.fbx
+  artifactKey: Guid(0979e922951e08b4dbc00cdd9d45ae96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Survival Pack - Sept 2020/FBX/Compass_Open.fbx using Guid(0979e922951e08b4dbc00cdd9d45ae96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd3b56f2e6a4d573961af8184f981fc4e') in 0.043127 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/ImportedAssets/Survival Pack - Sept 2020/Blends/WaterBottle_3.blend
+  artifactKey: Guid(a67e73bd5db2b824981a197a11a613cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Survival Pack - Sept 2020/Blends/WaterBottle_3.blend using Guid(a67e73bd5db2b824981a197a11a613cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6f1d3ff8670e7db50c82d801ee667946') in 0.030735 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/ImportedAssets/Survival Pack - Sept 2020/FBX/Raft_Paddle.fbx
+  artifactKey: Guid(a3c0ed454227ffe42b475f6caff9ceb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Survival Pack - Sept 2020/FBX/Raft_Paddle.fbx using Guid(a3c0ed454227ffe42b475f6caff9ceb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f372ed8e561096895b7699e36e606d00') in 0.025991 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/ImportedAssets/Survival Pack - Sept 2020/FBX/Revolver_1.fbx
+  artifactKey: Guid(8157183608b0aee46bb971d4bcaa78aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Survival Pack - Sept 2020/FBX/Revolver_1.fbx using Guid(8157183608b0aee46bb971d4bcaa78aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8007ff545560ea65f1db26303e586113') in 0.028028 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/ImportedAssets/Survival Pack - Sept 2020/FBX/Bonfire_Fire.fbx
+  artifactKey: Guid(29fe3bc0b1b10b3419c094d2eaf259b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Survival Pack - Sept 2020/FBX/Bonfire_Fire.fbx using Guid(29fe3bc0b1b10b3419c094d2eaf259b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bf184fbe95ed712b078d5147a57c4e82') in 0.034110 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/ImportedAssets/Survival Pack - Sept 2020/Blends/Compass_Open.blend
+  artifactKey: Guid(536c5fd3ddfdaaf4c828f3ec94c3347b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Survival Pack - Sept 2020/Blends/Compass_Open.blend using Guid(536c5fd3ddfdaaf4c828f3ec94c3347b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b759d8e1d0d21e900da0b29cfd422399') in 0.038307 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/ImportedAssets/Survival Pack - Sept 2020/Blends/FirstAidKit_Hard.blend
+  artifactKey: Guid(2399ed11eab905e43b861778de73af54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Survival Pack - Sept 2020/Blends/FirstAidKit_Hard.blend using Guid(2399ed11eab905e43b861778de73af54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c62d7cc4ed4d41a90369956ded5ce865') in 0.037559 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/ImportedAssets/Survival Pack - Sept 2020/Blends/Raft.blend
+  artifactKey: Guid(e12114b8c08caed45b07cc785f95ab27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Survival Pack - Sept 2020/Blends/Raft.blend using Guid(e12114b8c08caed45b07cc785f95ab27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc90bfeab013c5985406bb179acf8625') in 0.031218 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/ImportedAssets/Survival Pack - Sept 2020/Blends/WaterBottle_1.blend
+  artifactKey: Guid(8021daeaa77279f48b14538c960bef41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Survival Pack - Sept 2020/Blends/WaterBottle_1.blend using Guid(8021daeaa77279f48b14538c960bef41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c158a32aa83842b9120fb67f5d0c92e') in 0.026943 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/ImportedAssets/Survival Pack - Sept 2020/Blends/WoodenTorch_Fire.blend
+  artifactKey: Guid(bd57a29e30349ee47b7180de4b9f9934) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Survival Pack - Sept 2020/Blends/WoodenTorch_Fire.blend using Guid(bd57a29e30349ee47b7180de4b9f9934) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1b06428359db45df1f3b4e3dbd82d2de') in 0.036974 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/ImportedAssets/Survival Pack - Sept 2020/FBX/Backpack.fbx
+  artifactKey: Guid(13bd56dd261dba248ab96112e4ba1287) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Survival Pack - Sept 2020/FBX/Backpack.fbx using Guid(13bd56dd261dba248ab96112e4ba1287) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b129964257e0f40fe01491c2227e0f4a') in 0.034055 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/ImportedAssets/Survival Pack - Sept 2020/Blends/BearTrap_Closed.blend
+  artifactKey: Guid(94af85d9e4a6d504aabf3e3614822c77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Survival Pack - Sept 2020/Blends/BearTrap_Closed.blend using Guid(94af85d9e4a6d504aabf3e3614822c77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b1a603004d3dfd386e84ecb6ff3a27d3') in 0.022638 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/ImportedAssets/Survival Pack - Sept 2020/Blends/Shotgun_2.blend
+  artifactKey: Guid(c4d463b277d43934b8f6052e6bce06c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Survival Pack - Sept 2020/Blends/Shotgun_2.blend using Guid(c4d463b277d43934b8f6052e6bce06c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '978b0410094257c8c66774eeeea200bd') in 0.032684 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/ImportedAssets/Survival Pack - Sept 2020/FBX/PropaneTank.fbx
+  artifactKey: Guid(05309733928af0740b66f33775c03c22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Survival Pack - Sept 2020/FBX/PropaneTank.fbx using Guid(05309733928af0740b66f33775c03c22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db9b30b90c7e754eb576ff54e978fe4e') in 0.032543 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/ImportedAssets/Survival Pack - Sept 2020/FBX/Knife.fbx
+  artifactKey: Guid(8a1e9340e7c54ed489cb47c3591b89a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Survival Pack - Sept 2020/FBX/Knife.fbx using Guid(8a1e9340e7c54ed489cb47c3591b89a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a48fbc2d90a80d6bc7edcb6cb1f8adcb') in 0.038735 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/ImportedAssets/Survival Pack - Sept 2020/FBX/Shotgun_2.fbx
+  artifactKey: Guid(2617bdf488419444ba6afa5dc3c5b739) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Survival Pack - Sept 2020/FBX/Shotgun_2.fbx using Guid(2617bdf488419444ba6afa5dc3c5b739) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6356c5f5b303305898a90d623fd0d7a8') in 0.040373 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/ImportedAssets/Survival Pack - Sept 2020/Blends/WoodLog.blend
+  artifactKey: Guid(04cbb33b3ef3f6644999248a5e6de1cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Survival Pack - Sept 2020/Blends/WoodLog.blend using Guid(04cbb33b3ef3f6644999248a5e6de1cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c19773cb617e3c1041b405ecb6690ab') in 0.033392 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/ImportedAssets/Survival Pack - Sept 2020/FBX/Axe_Small.fbx
+  artifactKey: Guid(b200906c4f83042459ff4478afe56211) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Survival Pack - Sept 2020/FBX/Axe_Small.fbx using Guid(b200906c4f83042459ff4478afe56211) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c714bf05abc53aa2f2ba7adbd6b38c33') in 0.032494 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/ImportedAssets/Survival Pack - Sept 2020/FBX/Shotgun_SawedOff.fbx
+  artifactKey: Guid(08c5e94114672784387a976bc3dd10e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Survival Pack - Sept 2020/FBX/Shotgun_SawedOff.fbx using Guid(08c5e94114672784387a976bc3dd10e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '454f6a2cce251d34ec42501a097d7ea0') in 0.047657 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/ImportedAssets/Survival Pack - Sept 2020/Blends/Match_Fire.blend
+  artifactKey: Guid(5dfeeb01ad12b5c42a1bdb241b056028) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Survival Pack - Sept 2020/Blends/Match_Fire.blend using Guid(5dfeeb01ad12b5c42a1bdb241b056028) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d0cdb5537ebb2f7510a9ebedd30e235') in 0.026452 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/ImportedAssets/Survival Pack - Sept 2020/Blends/GasCan.blend
+  artifactKey: Guid(c8b8ae3ab0d884c4ea9bc10dd59bc821) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Survival Pack - Sept 2020/Blends/GasCan.blend using Guid(c8b8ae3ab0d884c4ea9bc10dd59bc821) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '605960a6fd393aaf463ba8636649e192') in 0.036158 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/ImportedAssets/Survival Pack - Sept 2020/FBX/Shotgun_ShortStock.fbx
+  artifactKey: Guid(24a9985533a583840938a4534c60d510) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Survival Pack - Sept 2020/FBX/Shotgun_ShortStock.fbx using Guid(24a9985533a583840938a4534c60d510) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c3ac1817f97b575411142e7b9e83f0be') in 0.038501 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/ImportedAssets/Survival Pack - Sept 2020/Blends/Can_Broken.blend
+  artifactKey: Guid(0ad08bf2fc0ba9143ac58facaf7983e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Survival Pack - Sept 2020/Blends/Can_Broken.blend using Guid(0ad08bf2fc0ba9143ac58facaf7983e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42dfe8f173d4ad527ca4dd45fc8bda0a') in 0.025895 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/ImportedAssets/Survival Pack - Sept 2020/Blends/Trashcan.blend
+  artifactKey: Guid(4a122ad192b4dab408100e505a5cdc3b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Survival Pack - Sept 2020/Blends/Trashcan.blend using Guid(4a122ad192b4dab408100e505a5cdc3b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c10cba1aa7d9e3092743a33113942821') in 0.028018 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/ImportedAssets/Survival Pack - Sept 2020/FBX/Shotgun_1.fbx
+  artifactKey: Guid(d3d94be4f9022d54a84f6e974135e4f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Survival Pack - Sept 2020/FBX/Shotgun_1.fbx using Guid(d3d94be4f9022d54a84f6e974135e4f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e45a8a10dff477722eb7e46ee4e4c03') in 0.037982 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/ImportedAssets/Survival Pack - Sept 2020/Blends/Revolver_1.blend
+  artifactKey: Guid(46ea9fb672ce5a24db51d2af31da66ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Survival Pack - Sept 2020/Blends/Revolver_1.blend using Guid(46ea9fb672ce5a24db51d2af31da66ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d51093e9fe3930652c897db7911df4b') in 0.039562 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/ImportedAssets/Survival Pack - Sept 2020/FBX/Raft.fbx
+  artifactKey: Guid(246a481f49d77e142af7d2948aa5c535) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Survival Pack - Sept 2020/FBX/Raft.fbx using Guid(246a481f49d77e142af7d2948aa5c535) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9fe59482fe0c441a248722f944941b21') in 0.027641 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/ImportedAssets/Survival Pack - Sept 2020/FBX/WoodLog.fbx
+  artifactKey: Guid(a3392adde0d2c634783df4c172353ae2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Survival Pack - Sept 2020/FBX/WoodLog.fbx using Guid(a3392adde0d2c634783df4c172353ae2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de2e1ffe484428c1a683f0356749023a') in 0.026239 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/ImportedAssets/Survival Pack - Sept 2020/FBX/Battery_Small.fbx
+  artifactKey: Guid(9e2d0cc10dc8d3445a7f2f889c5ddc13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Survival Pack - Sept 2020/FBX/Battery_Small.fbx using Guid(9e2d0cc10dc8d3445a7f2f889c5ddc13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f71c3129849acc0ff38ebbb9da3d030') in 0.030065 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/ImportedAssets/Survival Pack - Sept 2020/Blends/Can_Red.blend
+  artifactKey: Guid(8f7a2f9dc3fe91447b5fde18a7a13067) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Survival Pack - Sept 2020/Blends/Can_Red.blend using Guid(8f7a2f9dc3fe91447b5fde18a7a13067) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9767f196e23132daeef91f894504a231') in 0.032274 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/ImportedAssets/Survival Pack - Sept 2020/FBX/Match_Burnt.fbx
+  artifactKey: Guid(ef90841845129bc45a1ea8ffc66e5ef2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Survival Pack - Sept 2020/FBX/Match_Burnt.fbx using Guid(ef90841845129bc45a1ea8ffc66e5ef2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3d6334cce6ea7cd0c0218acee6787b27') in 0.021495 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/ImportedAssets/Survival Pack - Sept 2020/FBX/Bandages.fbx
+  artifactKey: Guid(d57c90547baed43448dea3778178c35b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Survival Pack - Sept 2020/FBX/Bandages.fbx using Guid(d57c90547baed43448dea3778178c35b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5bb657424397cce503b9531070dfc617') in 0.026547 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/ImportedAssets/Survival Pack - Sept 2020/FBX/Phone.fbx
+  artifactKey: Guid(ac756f98a4ba41e46b5e8bf27caf562d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Survival Pack - Sept 2020/FBX/Phone.fbx using Guid(ac756f98a4ba41e46b5e8bf27caf562d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4031768e51d197cdc7126a731ffbdde6') in 0.029918 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/ImportedAssets/Survival Pack - Sept 2020/Blends/Match_Burnt.blend
+  artifactKey: Guid(9f5c440a948e2264ba079c4e7a3f3106) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Survival Pack - Sept 2020/Blends/Match_Burnt.blend using Guid(9f5c440a948e2264ba079c4e7a3f3106) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0803d90b9300bba88ee9f67efcff55b3') in 0.020590 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/ImportedAssets/Survival Pack - Sept 2020/FBX/Battery_Big.fbx
+  artifactKey: Guid(4f30b476fa8e73541ae5f29450741d66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Survival Pack - Sept 2020/FBX/Battery_Big.fbx using Guid(4f30b476fa8e73541ae5f29450741d66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5ae50d6d18fbbd8e3334b6bc98c4d55f') in 0.033596 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/ImportedAssets/Survival Pack - Sept 2020/Blends/Torch.blend
+  artifactKey: Guid(da87fc39c7eaf124e8dd96db6e2e867e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Survival Pack - Sept 2020/Blends/Torch.blend using Guid(da87fc39c7eaf124e8dd96db6e2e867e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d6791bb14c0a63aff290e4a11625c90') in 0.034711 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/ImportedAssets/Survival Pack - Sept 2020/FBX/Revolver_2.fbx
+  artifactKey: Guid(d86e3257cc2ac2b4c8668c8d6c79d5bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Survival Pack - Sept 2020/FBX/Revolver_2.fbx using Guid(d86e3257cc2ac2b4c8668c8d6c79d5bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c24e79b42d445beb3b701fff5750497') in 0.028372 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/ImportedAssets/Survival Pack - Sept 2020/Blends/Compass_Closed.blend
+  artifactKey: Guid(0508b24d4c7a64146bb2da2829a3f4a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Survival Pack - Sept 2020/Blends/Compass_Closed.blend using Guid(0508b24d4c7a64146bb2da2829a3f4a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c1b577414a06f855b6173b302e521ba') in 0.025946 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/ImportedAssets/Survival Pack - Sept 2020/FBX/Bonfire.fbx
+  artifactKey: Guid(30e8c4e89a517804bbc0c84c7ec09d18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Survival Pack - Sept 2020/FBX/Bonfire.fbx using Guid(30e8c4e89a517804bbc0c84c7ec09d18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b4a9a35f9863411f5708433b7b3d45bd') in 0.025548 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/ImportedAssets/Survival Pack - Sept 2020/Blends/Backpack.blend
+  artifactKey: Guid(9c95b31a3bf59564b8a5a44e3bc364e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Survival Pack - Sept 2020/Blends/Backpack.blend using Guid(9c95b31a3bf59564b8a5a44e3bc364e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7cd529c77f10d439eb2c50a8551a45c3') in 0.035637 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/ImportedAssets/Survival Pack - Sept 2020/Blends/Raft_Paddle.blend
+  artifactKey: Guid(0bcbc5dfaefc5d34e976d11b0ccc6373) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Survival Pack - Sept 2020/Blends/Raft_Paddle.blend using Guid(0bcbc5dfaefc5d34e976d11b0ccc6373) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '40c3344620a0bc402ab8c9db50e7a92d') in 0.025634 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000051 seconds.
+  path: Assets/ImportedAssets/Survival Pack - Sept 2020/Blends/Pot.blend
+  artifactKey: Guid(fc1ed71b70fb7cb4b8531dcae8420ac5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Survival Pack - Sept 2020/Blends/Pot.blend using Guid(fc1ed71b70fb7cb4b8531dcae8420ac5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '655dd030a84ff87c01dd0ea0b557a273') in 0.028781 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/ImportedAssets/Survival Pack - Sept 2020/Blends/Battery_Small.blend
+  artifactKey: Guid(64f6ac63ceabde149bbc87dd33e06f2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Survival Pack - Sept 2020/Blends/Battery_Small.blend using Guid(64f6ac63ceabde149bbc87dd33e06f2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e2d1ea72f14842d2e0b4ff02bf9d7b8f') in 0.028024 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/ImportedAssets/Survival Pack - Sept 2020/Blends/Match.blend
+  artifactKey: Guid(92de3153227d14849a02ff56778cce24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Survival Pack - Sept 2020/Blends/Match.blend using Guid(92de3153227d14849a02ff56778cce24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb852d8dfb027eca77fd365489eb6168') in 0.029381 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/ImportedAssets/Survival Pack - Sept 2020/Blends/Pan.blend
+  artifactKey: Guid(dede0a5b3b083364fb78cee14a7f216a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Survival Pack - Sept 2020/Blends/Pan.blend using Guid(dede0a5b3b083364fb78cee14a7f216a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b45f01196ed5798865f75aca3c4a23e') in 0.032038 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/ImportedAssets/Survival Pack - Sept 2020/FBX/Match_Fire.fbx
+  artifactKey: Guid(312b1482e8ec4b447816f4d5fc842f2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Survival Pack - Sept 2020/FBX/Match_Fire.fbx using Guid(312b1482e8ec4b447816f4d5fc842f2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3240b539bf9e5c069458952993474605') in 0.027699 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/ImportedAssets/Survival Pack - Sept 2020/Blends/FirstAidKit.blend
+  artifactKey: Guid(f582b7d1ecdceff4a85e397c6a5cf13b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Survival Pack - Sept 2020/Blends/FirstAidKit.blend using Guid(f582b7d1ecdceff4a85e397c6a5cf13b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4af47a28bdf2d4b34e85ac16a473ea12') in 0.031709 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/ImportedAssets/Survival Pack - Sept 2020/Blends/Pistol_2.blend
+  artifactKey: Guid(ded12cac964b41f43bc69c2c1497c568) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Survival Pack - Sept 2020/Blends/Pistol_2.blend using Guid(ded12cac964b41f43bc69c2c1497c568) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f01c55e0d13436e1ac7d2682f4eca395') in 0.031236 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/ImportedAssets/Survival Pack - Sept 2020/Blends/Radio.blend
+  artifactKey: Guid(f0b45ffb87c91994c9dd4cd29340c5d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Survival Pack - Sept 2020/Blends/Radio.blend using Guid(f0b45ffb87c91994c9dd4cd29340c5d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a4af66b54b50bc55da2d65a8240e7a0a') in 0.031634 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/ImportedAssets/Survival Pack - Sept 2020/FBX/FirstAidKit_Hard.fbx
+  artifactKey: Guid(8a7824a966a99f94394e383cdd2d79cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Survival Pack - Sept 2020/FBX/FirstAidKit_Hard.fbx using Guid(8a7824a966a99f94394e383cdd2d79cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f93956d2617deaaf7f365ab5201435d') in 0.031604 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/ImportedAssets/Survival Pack - Sept 2020/FBX/Pan_Small.fbx
+  artifactKey: Guid(31f74cc1e04fc804f91acd2ae656073d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Survival Pack - Sept 2020/FBX/Pan_Small.fbx using Guid(31f74cc1e04fc804f91acd2ae656073d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6cf8a3c607eecf6f89a1dd7182f8da9c') in 0.028516 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/ImportedAssets/Survival Pack - Sept 2020/FBX/Shovel.fbx
+  artifactKey: Guid(20c010e5fabb79a4191f9ca2dcadc689) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Survival Pack - Sept 2020/FBX/Shovel.fbx using Guid(20c010e5fabb79a4191f9ca2dcadc689) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0286b0c936c6ab8823595ad298f077eb') in 0.028730 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/ImportedAssets/Survival Pack - Sept 2020/FBX/BearTrap_Open.fbx
+  artifactKey: Guid(510078bb9f3b8f04a80134ef4a5e866f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Survival Pack - Sept 2020/FBX/BearTrap_Open.fbx using Guid(510078bb9f3b8f04a80134ef4a5e866f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e1508ded5032f236b69c9737c9ca8c8') in 0.019082 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/ImportedAssets/Survival Pack - Sept 2020/Blends/Battery_Big.blend
+  artifactKey: Guid(2bf6d965a49b919428e47ebe0cfe9813) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Survival Pack - Sept 2020/Blends/Battery_Big.blend using Guid(2bf6d965a49b919428e47ebe0cfe9813) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6fb6edec75037a39ea9ba84afdd5033c') in 0.029129 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/ImportedAssets/Survival Pack - Sept 2020/FBX/Match.fbx
+  artifactKey: Guid(28bb177b80b4701449690a17a2e264cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Survival Pack - Sept 2020/FBX/Match.fbx using Guid(28bb177b80b4701449690a17a2e264cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e5ce6d7d1f2d1b4c9e4e9b2a83b8e0be') in 0.026252 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/ImportedAssets/Survival Pack - Sept 2020/Blends/Bonfire.blend
+  artifactKey: Guid(2b88fbf355d74424884fb6843ff7018c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Survival Pack - Sept 2020/Blends/Bonfire.blend using Guid(2b88fbf355d74424884fb6843ff7018c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4258d71539513f05ecbe2e654aa2cdfd') in 0.028496 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/ImportedAssets/Survival Pack - Sept 2020/Blends/Phone.blend
+  artifactKey: Guid(7b252dff687a3154b8a3bd52bc508418) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Survival Pack - Sept 2020/Blends/Phone.blend using Guid(7b252dff687a3154b8a3bd52bc508418) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3dc27e4163fede202af2599f232a8c39') in 0.031357 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/ImportedAssets/Survival Pack - Sept 2020/Preview.jpg
+  artifactKey: Guid(7185b2ab00163ce48a6bf7f9bbb5f0a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Survival Pack - Sept 2020/Preview.jpg using Guid(7185b2ab00163ce48a6bf7f9bbb5f0a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c2d21a19093932e316cbfb87ae0e8a09') in 0.026591 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 23.741092 seconds.
+  path: Assets/ImportedAssets/Survival Pack - Sept 2020/FBX/Fire.mat
+  artifactKey: Guid(ffb078ce5c828e84a895c378fe953b33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Survival Pack - Sept 2020/FBX/Fire.mat using Guid(ffb078ce5c828e84a895c378fe953b33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '929be43cd3a9e20a59b0d3035112412c') in 0.017631 seconds 
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0

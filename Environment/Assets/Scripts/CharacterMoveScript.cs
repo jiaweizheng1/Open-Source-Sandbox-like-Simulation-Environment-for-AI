@@ -48,7 +48,7 @@ public class CharacterMoveScript : Agent
     public override void OnEpisodeBegin()
     {
         //initially, stay at current place(which is itself)
-        transform.position = new Vector3(150, 1, 20);
+        transform.position = new Vector3(150, 1.36f, 25);
         target = transform;
         input = new Vector2(0, 0);
 
@@ -322,10 +322,10 @@ public class CharacterMoveScript : Agent
             Thirst = Thirst - BarSpeedMulti * Time.deltaTime;
         }
         if(Health > 0 && HungerSlider.value == 0){
-            Health = Health - BarSpeedMulti * Time.deltaTime;
+            Health = Health - BarSpeedMulti * 2 * Time.deltaTime;
         }
         if(Health > 0 && ThirstSlider.value == 0){
-            Health = Health - BarSpeedMulti * Time.deltaTime;
+            Health = Health - BarSpeedMulti * 2 * Time.deltaTime;
         }
         if(Health < 0)
         {

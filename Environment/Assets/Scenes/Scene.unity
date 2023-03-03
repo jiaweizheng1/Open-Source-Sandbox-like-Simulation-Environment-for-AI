@@ -139,7 +139,7 @@ GameObject:
   - component: {fileID: 11531439}
   - component: {fileID: 11531441}
   - component: {fileID: 11531440}
-  m_Layer: 5
+  m_Layer: 7
   m_Name: LogText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -359,7 +359,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 61092163}
-  m_Layer: 5
+  m_Layer: 7
   m_Name: Handle Slide Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -391,6 +391,90 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4000010845709248, guid: 8490d29919917de4ca0c5297d93090d7, type: 3}
   m_PrefabInstance: {fileID: 1154021070}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &97731689
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 97731690}
+  - component: {fileID: 97731692}
+  - component: {fileID: 97731691}
+  m_Layer: 7
+  m_Name: No Post Cam
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &97731690
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 97731689}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 963194228}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!81 &97731691
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 97731689}
+  m_Enabled: 1
+--- !u!20 &97731692
+Camera:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 97731689}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_ClearFlags: 4
+  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_projectionMatrixMode: 1
+  m_GateFitMode: 2
+  m_FOVAxisMode: 0
+  m_SensorSize: {x: 36, y: 24}
+  m_LensShift: {x: 0, y: 0}
+  m_FocalLength: 50
+  m_NormalizedViewPortRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  near clip plane: 0.3
+  far clip plane: 1000
+  field of view: 60
+  orthographic: 0
+  orthographic size: 5
+  m_Depth: 1
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 128
+  m_RenderingPath: -1
+  m_TargetTexture: {fileID: 0}
+  m_TargetDisplay: 0
+  m_TargetEye: 3
+  m_HDR: 1
+  m_AllowMSAA: 1
+  m_AllowDynamicResolution: 0
+  m_ForceIntoRT: 0
+  m_OcclusionCulling: 1
+  m_StereoConvergence: 10
+  m_StereoSeparation: 0.022
 --- !u!4 &151213354 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5202732821079344928, guid: cebfacc247a640945a2c30b442202fca, type: 3}
@@ -575,7 +659,7 @@ GameObject:
   - component: {fileID: 176392774}
   - component: {fileID: 176392776}
   - component: {fileID: 176392775}
-  m_Layer: 5
+  m_Layer: 7
   m_Name: DropletImage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -651,7 +735,7 @@ GameObject:
   - component: {fileID: 183672695}
   - component: {fileID: 183672697}
   - component: {fileID: 183672696}
-  m_Layer: 5
+  m_Layer: 7
   m_Name: DropletText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -784,7 +868,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 193215354}
-  m_Layer: 5
+  m_Layer: 7
   m_Name: Handle Slide Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -948,7 +1032,7 @@ GameObject:
   - component: {fileID: 298568753}
   - component: {fileID: 298568752}
   - component: {fileID: 298568751}
-  m_Layer: 5
+  m_Layer: 7
   m_Name: GUI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -994,7 +1078,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 0
+  m_PresetInfoIsWorld: 1
 --- !u!223 &298568753
 Canvas:
   m_ObjectHideFlags: 0
@@ -1004,8 +1088,8 @@ Canvas:
   m_GameObject: {fileID: 298568750}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
-  m_Camera: {fileID: 963194229}
+  m_RenderMode: 2
+  m_Camera: {fileID: 97731692}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
@@ -1023,9 +1107,9 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 298568750}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: 0.17364816, y: -0, z: -0, w: 0.9848078}
+  m_LocalPosition: {x: 0, y: 0, z: 88.96926}
+  m_LocalScale: {x: 0.18842822, y: 0.18842822, z: 0.18842822}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 444504230}
@@ -1036,9 +1120,9 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 150, y: -11.702011}
+  m_SizeDelta: {x: 1300, y: 612.8066}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &312145542
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1127,7 +1211,7 @@ GameObject:
   - component: {fileID: 326421531}
   - component: {fileID: 326421533}
   - component: {fileID: 326421532}
-  m_Layer: 5
+  m_Layer: 7
   m_Name: HealthText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1504,7 +1588,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 444504230}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: InventoryBar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1734,7 +1818,7 @@ GameObject:
   - component: {fileID: 524712374}
   - component: {fileID: 524712376}
   - component: {fileID: 524712375}
-  m_Layer: 5
+  m_Layer: 7
   m_Name: Fill
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1922,7 +2006,7 @@ GameObject:
   - component: {fileID: 562616016}
   - component: {fileID: 562616018}
   - component: {fileID: 562616017}
-  m_Layer: 5
+  m_Layer: 7
   m_Name: DaysNumberText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2062,7 +2146,7 @@ GameObject:
   - component: {fileID: 572022817}
   - component: {fileID: 572022819}
   - component: {fileID: 572022818}
-  m_Layer: 5
+  m_Layer: 7
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2569,7 +2653,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 720237280}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: TimeInfo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2722,7 +2806,7 @@ GameObject:
   m_Component:
   - component: {fileID: 735313969}
   - component: {fileID: 735313970}
-  m_Layer: 5
+  m_Layer: 7
   m_Name: Health slider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2902,7 +2986,7 @@ GameObject:
   - component: {fileID: 770667776}
   - component: {fileID: 770667778}
   - component: {fileID: 770667777}
-  m_Layer: 5
+  m_Layer: 7
   m_Name: 'HungerText '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3042,7 +3126,7 @@ GameObject:
   - component: {fileID: 789192605}
   - component: {fileID: 789192607}
   - component: {fileID: 789192606}
-  m_Layer: 5
+  m_Layer: 7
   m_Name: FoodText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3694,7 +3778,7 @@ GameObject:
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!81 &963194226
 AudioListener:
@@ -3712,10 +3796,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   m_LocalRotation: {x: 0.17364816, y: 0, z: 0, w: 0.9848078}
-  m_LocalPosition: {x: 150, y: 22.5, z: -2}
+  m_LocalPosition: {x: 150, y: 22.5, z: -5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 97731690}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 20, y: 0, z: 0}
@@ -3750,7 +3835,7 @@ Camera:
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 2147483647
+    m_Bits: 119
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
@@ -3778,7 +3863,7 @@ MonoBehaviour:
   volumeLayer:
     serializedVersion: 2
     m_Bits: 64
-  stopNaNPropagation: 1
+  stopNaNPropagation: 0
   finalBlitToCameraTarget: 0
   antialiasingMode: 0
   temporalAntialiasing:
@@ -3911,7 +3996,7 @@ GameObject:
   - component: {fileID: 966448505}
   - component: {fileID: 966448507}
   - component: {fileID: 966448506}
-  m_Layer: 5
+  m_Layer: 7
   m_Name: IronText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4202,7 +4287,7 @@ GameObject:
   - component: {fileID: 1006835091}
   - component: {fileID: 1006835093}
   - component: {fileID: 1006835092}
-  m_Layer: 5
+  m_Layer: 7
   m_Name: DaysText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4717,7 +4802,7 @@ GameObject:
   - component: {fileID: 1106291016}
   - component: {fileID: 1106291018}
   - component: {fileID: 1106291017}
-  m_Layer: 5
+  m_Layer: 7
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4793,7 +4878,7 @@ GameObject:
   - component: {fileID: 1120949337}
   - component: {fileID: 1120949339}
   - component: {fileID: 1120949338}
-  m_Layer: 5
+  m_Layer: 7
   m_Name: InventoryImage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4869,7 +4954,7 @@ GameObject:
   - component: {fileID: 1130540958}
   - component: {fileID: 1130540957}
   - component: {fileID: 1130540956}
-  m_Layer: 5
+  m_Layer: 7
   m_Name: HourMinText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5003,6 +5088,22 @@ PrefabInstance:
     - target: {fileID: 1000010545572958, guid: bb39c892c3e8b7f42af1991b02c6a85b, type: 3}
       propertyPath: m_Name
       value: TorchEffectNoObject
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000010545572958, guid: bb39c892c3e8b7f42af1991b02c6a85b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011677897622, guid: bb39c892c3e8b7f42af1991b02c6a85b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1169119630861910, guid: bb39c892c3e8b7f42af1991b02c6a85b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1757632357703182, guid: bb39c892c3e8b7f42af1991b02c6a85b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4000011081001030, guid: bb39c892c3e8b7f42af1991b02c6a85b, type: 3}
       propertyPath: m_RootOrder
@@ -5254,7 +5355,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1169712158}
-  m_Layer: 5
+  m_Layer: 7
   m_Name: Fill Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5505,7 +5606,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1259340691}
-  m_Layer: 5
+  m_Layer: 7
   m_Name: Fill Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5530,7 +5631,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.25}
   m_AnchorMax: {x: 1, y: 0.75}
-  m_AnchoredPosition: {x: 0, y: 1.3998786}
+  m_AnchoredPosition: {x: 0, y: 1.3998785}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1268813712
@@ -5544,7 +5645,7 @@ GameObject:
   - component: {fileID: 1268813713}
   - component: {fileID: 1268813715}
   - component: {fileID: 1268813714}
-  m_Layer: 5
+  m_Layer: 7
   m_Name: ThirstText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5724,7 +5825,7 @@ MonoBehaviour:
   ThirstSlider: {fileID: 1677508124}
   directionallight: {fileID: 479630236}
   preset: {fileID: 11400000, guid: 90c3c66ae35e3b840be125e2619555e4, type: 2}
-  timemulti: 800
+  timemulti: 8000
   time_t: {fileID: 1130540956}
   day_t: {fileID: 562616017}
 --- !u!95 &1270447888
@@ -5747,6 +5848,7 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!54 &1270447890
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -5826,7 +5928,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1289849234}
-  m_Layer: 5
+  m_Layer: 7
   m_Name: Handle Slide Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5850,7 +5952,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 1.3998786}
+  m_AnchoredPosition: {x: 0, y: 1.3998795}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!4 &1290316874 stripped
@@ -5868,7 +5970,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1300092182}
   - component: {fileID: 1300092183}
-  m_Layer: 5
+  m_Layer: 7
   m_Name: Hunger slider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6033,7 +6135,7 @@ GameObject:
   - component: {fileID: 1349684836}
   - component: {fileID: 1349684838}
   - component: {fileID: 1349684837}
-  m_Layer: 5
+  m_Layer: 7
   m_Name: FoodImage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6492,7 +6594,7 @@ GameObject:
   - component: {fileID: 1440912282}
   - component: {fileID: 1440912284}
   - component: {fileID: 1440912283}
-  m_Layer: 5
+  m_Layer: 7
   m_Name: InventoryText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7076,9 +7178,41 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 733268613}
     m_Modifications:
+    - target: {fileID: 1000010336741610, guid: acf39d9f4addf294d93fa56fa373961b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011298463270, guid: acf39d9f4addf294d93fa56fa373961b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011796581256, guid: acf39d9f4addf294d93fa56fa373961b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 1000011797152326, guid: acf39d9f4addf294d93fa56fa373961b, type: 3}
       propertyPath: m_Name
       value: BigExplosionEffect
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011797152326, guid: acf39d9f4addf294d93fa56fa373961b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000012348499044, guid: acf39d9f4addf294d93fa56fa373961b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000013371323466, guid: acf39d9f4addf294d93fa56fa373961b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000014207458990, guid: acf39d9f4addf294d93fa56fa373961b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1108256732129644, guid: acf39d9f4addf294d93fa56fa373961b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4000010212820824, guid: acf39d9f4addf294d93fa56fa373961b, type: 3}
       propertyPath: m_RootOrder
@@ -7409,7 +7543,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1677508123}
   - component: {fileID: 1677508124}
-  m_Layer: 5
+  m_Layer: 7
   m_Name: Thirst slider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7583,7 +7717,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 30e8c4e89a517804bbc0c84c7ec09d18, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 127
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 30e8c4e89a517804bbc0c84c7ec09d18, type: 3}
@@ -7603,7 +7737,7 @@ GameObject:
   - component: {fileID: 1714510579}
   - component: {fileID: 1714510581}
   - component: {fileID: 1714510580}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Water
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7689,7 +7823,7 @@ GameObject:
   - component: {fileID: 1728607615}
   - component: {fileID: 1728607617}
   - component: {fileID: 1728607616}
-  m_Layer: 5
+  m_Layer: 7
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7770,7 +7904,7 @@ GameObject:
   - component: {fileID: 1751557879}
   - component: {fileID: 1751557881}
   - component: {fileID: 1751557880}
-  m_Layer: 5
+  m_Layer: 7
   m_Name: Fill
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7995,7 +8129,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1785580206}
-  m_Layer: 5
+  m_Layer: 7
   m_Name: Fill Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8112,7 +8246,7 @@ GameObject:
   - component: {fileID: 1798943176}
   - component: {fileID: 1798943178}
   - component: {fileID: 1798943177}
-  m_Layer: 5
+  m_Layer: 7
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8136,7 +8270,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.25}
   m_AnchorMax: {x: 1, y: 0.75}
-  m_AnchoredPosition: {x: 0, y: 1.4}
+  m_AnchoredPosition: {x: 0, y: 1.3999996}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1798943177
@@ -8353,7 +8487,7 @@ GameObject:
   - component: {fileID: 1863592534}
   - component: {fileID: 1863592536}
   - component: {fileID: 1863592535}
-  m_Layer: 5
+  m_Layer: 7
   m_Name: IronImage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8502,7 +8636,7 @@ GameObject:
   - component: {fileID: 1907985586}
   - component: {fileID: 1907985588}
   - component: {fileID: 1907985587}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Heart
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8689,9 +8823,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 733268613}
     m_Modifications:
+    - target: {fileID: 1000011663725438, guid: 85a8865d1bf4a63478038fae23776de8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 1000012560919920, guid: 85a8865d1bf4a63478038fae23776de8, type: 3}
       propertyPath: m_Name
       value: SmokeEffect
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000012560919920, guid: 85a8865d1bf4a63478038fae23776de8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000014148598988, guid: 85a8865d1bf4a63478038fae23776de8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4000011112872720, guid: 85a8865d1bf4a63478038fae23776de8, type: 3}
       propertyPath: m_RootOrder
@@ -8836,7 +8982,7 @@ GameObject:
   - component: {fileID: 2034209629}
   - component: {fileID: 2034209631}
   - component: {fileID: 2034209630}
-  m_Layer: 5
+  m_Layer: 7
   m_Name: Fill
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8910,7 +9056,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2059143895}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: HealthBar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8953,7 +9099,7 @@ GameObject:
   - component: {fileID: 2109697121}
   - component: {fileID: 2109697123}
   - component: {fileID: 2109697122}
-  m_Layer: 5
+  m_Layer: 7
   m_Name: LogImage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9029,7 +9175,7 @@ GameObject:
   - component: {fileID: 2115048316}
   - component: {fileID: 2115048318}
   - component: {fileID: 2115048317}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Meat
   m_TagString: Untagged
   m_Icon: {fileID: 0}

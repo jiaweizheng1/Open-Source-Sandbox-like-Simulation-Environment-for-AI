@@ -1,10 +1,10 @@
 Using pre-set license
-Built from '2021.3/staging' branch; Version is '2021.3.19f1 (c9714fde33b6) revision 13201743'; Using compiler version '192829333'; Build Type 'Release'
+Built from '2021.3/staging' branch; Version is '2021.3.20f1 (577897200b8b) revision 5732503'; Using compiler version '192829333'; Build Type 'Release'
 OS: 'Windows 10  (10.0.19044) 64bit Core' Language: 'en' Physical Memory: 16333 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
 
 COMMAND LINE ARGUMENTS:
-C:\Program Files\Unity\Hub\Editor\2021.3.19f1\Editor\Unity.exe
+C:\Program Files\Unity\Hub\Editor\2021.3.20f1\Editor\Unity.exe
 -adb2
 -batchMode
 -noUpm
@@ -15,7 +15,7 @@ C:/Users/jiawe/OneDrive/Documents/GitHub/Open-Source-Minecraft-like-Simulation-E
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-3736
+2278
 Successfully changed project path to: C:/Users/jiawe/OneDrive/Documents/GitHub/Open-Source-Minecraft-like-Simulation-Environment-for-AI/Environment
 C:/Users/jiawe/OneDrive/Documents/GitHub/Open-Source-Minecraft-like-Simulation-Environment-for-AI/Environment
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -47,14 +47,14 @@ C:/Users/jiawe/OneDrive/Documents/GitHub/Open-Source-Minecraft-like-Simulation-E
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [13632] Host "[IP] 10.0.0.67 [Port] 0 [Flags] 2 [Guid] 1573088917 [EditorId] 1573088917 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-TAGDHKG) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [6844] Host "[IP] 10.0.0.67 [Port] 0 [Flags] 2 [Guid] 1607405255 [EditorId] 1607405255 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-TAGDHKG) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [13632] Host "[IP] 10.0.0.67 [Port] 0 [Flags] 2 [Guid] 1573088917 [EditorId] 1573088917 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-TAGDHKG) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [6844] Host "[IP] 10.0.0.67 [Port] 0 [Flags] 2 [Guid] 1607405255 [EditorId] 1607405255 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-TAGDHKG) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
-Refreshing native plugins compatible for Editor in 101.66 ms, found 6 plugins.
+Refreshing native plugins compatible for Editor in 107.55 ms, found 6 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Initialize engine version: 2021.3.19f1 (c9714fde33b6)
-[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.19f1/Editor/Data/Resources/UnitySubsystems
+Initialize engine version: 2021.3.20f1 (577897200b8b)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.20f1/Editor/Data/Resources/UnitySubsystems
 [Subsystems] Discovering subsystems at path C:/Users/jiawe/OneDrive/Documents/GitHub/Open-Source-Minecraft-like-Simulation-Environment-for-AI/Environment/Assets
 GfxDevice: creating device client; threaded=0; jobified=0
 Direct3D:
@@ -64,40 +64,40 @@ Direct3D:
     VRAM:     8003 MB
     Driver:   31.0.15.3118
 Initialize mono
-Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.19f1/Editor/Data/Managed'
-Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.19f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
-Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.19f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56532
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.20f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.20f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.20f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56848
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
-Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.19f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.011810 seconds.
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.20f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.007738 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 102.04 ms, found 6 plugins.
+Refreshing native plugins compatible for Editor in 104.37 ms, found 6 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.645 seconds
+- Completed reload, in  0.615 seconds
 Domain Reload Profiling:
-	ReloadAssembly (646ms)
-		BeginReloadAssembly (78ms)
+	ReloadAssembly (615ms)
+		BeginReloadAssembly (80ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (447ms)
-			LoadAssemblies (75ms)
+		EndReloadAssembly (440ms)
+			LoadAssemblies (77ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (95ms)
+			SetupTypeCache (91ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (23ms)
-			SetupLoadedEditorAssemblies (278ms)
+			RebuildScriptCaches (27ms)
+			SetupLoadedEditorAssemblies (273ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (7ms)
+				InitializePlatformSupportModulesInManaged (8ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (102ms)
+				RefreshPlugins (104ms)
 				BeforeProcessingInitializeOnLoad (1ms)
-				ProcessInitializeOnLoadAttributes (128ms)
+				ProcessInitializeOnLoadAttributes (120ms)
 				ProcessInitializeOnLoadMethodAttributes (39ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
@@ -105,51 +105,51 @@ Domain Reload Profiling:
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.012726 seconds.
+Registered in 0.013227 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\jiawe\OneDrive\Documents\GitHub\Open-Source-Minecraft-like-Simulation-Environment-for-AI\Environment\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\jiawe\OneDrive\Documents\GitHub\Open-Source-Minecraft-like-Simulation-Environment-for-AI\Environment\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 108.77 ms, found 6 plugins.
+Refreshing native plugins compatible for Editor in 97.80 ms, found 6 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.289 seconds
+- Completed reload, in  1.204 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1290ms)
-		BeginReloadAssembly (120ms)
+	ReloadAssembly (1204ms)
+		BeginReloadAssembly (111ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (7ms)
+			DisableScriptedObjects (5ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (20ms)
-		EndReloadAssembly (1032ms)
-			LoadAssemblies (102ms)
+			CreateAndSetChildDomain (18ms)
+		EndReloadAssembly (988ms)
+			LoadAssemblies (95ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (292ms)
+			SetupTypeCache (269ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (66ms)
-			SetupLoadedEditorAssemblies (536ms)
+			RebuildScriptCaches (51ms)
+			SetupLoadedEditorAssemblies (540ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (5ms)
+				InitializePlatformSupportModulesInManaged (4ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (109ms)
-				BeforeProcessingInitializeOnLoad (104ms)
-				ProcessInitializeOnLoadAttributes (293ms)
+				RefreshPlugins (98ms)
+				BeforeProcessingInitializeOnLoad (107ms)
+				ProcessInitializeOnLoadAttributes (303ms)
 				ProcessInitializeOnLoadMethodAttributes (15ms)
-				AfterProcessingInitializeOnLoad (9ms)
+				AfterProcessingInitializeOnLoad (11ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (7ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
-Refreshing native plugins compatible for Editor in 1.01 ms, found 6 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Refreshing native plugins compatible for Editor in 1.28 ms, found 6 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4200 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 136 unused Assets / (26.3 MB). Loaded Objects now: 4609.
-Memory consumption went from 305.0 MB to 278.6 MB.
-Total: 10.366500 ms (FindLiveObjects: 0.435900 ms CreateObjectMapping: 0.106000 ms MarkObjects: 2.532000 ms  DeleteObjects: 7.291100 ms)
+Unloading 4211 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 137 unused Assets / (26.3 MB). Loaded Objects now: 4625.
+Memory consumption went from 306.8 MB to 280.5 MB.
+Total: 9.181900 ms (FindLiveObjects: 0.459800 ms CreateObjectMapping: 0.105800 ms MarkObjects: 2.594900 ms  DeleteObjects: 6.019600 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -163,121 +163,7 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 25019.200357 seconds.
-  path: Assets/ImportedAssets/Ultimate Space Kit - March 2023/Vehicles/OBJ/Spaceship_BarbaraTheBee.obj
-  artifactKey: Guid(3796d53938b7c19488567e585edc2d44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ImportedAssets/Ultimate Space Kit - March 2023/Vehicles/OBJ/Spaceship_BarbaraTheBee.obj using Guid(3796d53938b7c19488567e585edc2d44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f51aea86b655999f7376e064ee7509f6') in 0.156529 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000031 seconds.
-  path: Assets/ImportedAssets/Ultimate Space Kit - March 2023/Vehicles
-  artifactKey: Guid(7eb065cc2a0ec7045852115b74931c61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ImportedAssets/Ultimate Space Kit - March 2023/Vehicles using Guid(7eb065cc2a0ec7045852115b74931c61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d282db5f473c29ab0adf8c0375e516f') in 0.006574 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/ImportedAssets/Ultimate Space Kit - March 2023/Vehicles/OBJ
-  artifactKey: Guid(507a6fe2a810b8a41b8062421323aa55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ImportedAssets/Ultimate Space Kit - March 2023/Vehicles/OBJ using Guid(507a6fe2a810b8a41b8062421323aa55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8fa23d978a283fd9615167cf7c232d13') in 0.002682 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000016 seconds.
-  path: Assets/ImportedAssets/Ultimate Space Kit - March 2023/Vehicles/OBJ/Rover_Round.obj
-  artifactKey: Guid(65cdbaf41688ea2469cfb46e872baac4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ImportedAssets/Ultimate Space Kit - March 2023/Vehicles/OBJ/Rover_Round.obj using Guid(65cdbaf41688ea2469cfb46e872baac4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a8e06b980fcc8fe1439c30e18656ecdb') in 0.023831 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/ImportedAssets/Ultimate Space Kit - March 2023/Preview.jpg
-  artifactKey: Guid(bab7397612072a144ad911319ea75158) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ImportedAssets/Ultimate Space Kit - March 2023/Preview.jpg using Guid(bab7397612072a144ad911319ea75158) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '77207ff0bb0ccd6c8d4feffb2a14a5ba') in 0.025278 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000032 seconds.
-  path: Assets/ImportedAssets/Ultimate Space Kit - March 2023/Vehicles/OBJ/Spaceship_FernandoTheFlamingo.obj
-  artifactKey: Guid(954e6307498411f4c97d34bbf26eacd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ImportedAssets/Ultimate Space Kit - March 2023/Vehicles/OBJ/Spaceship_FernandoTheFlamingo.obj using Guid(954e6307498411f4c97d34bbf26eacd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '77cbb8c256cf2323cd50f51915188c0c') in 0.022802 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 21.886793 seconds.
-  path: Assets/ImportedAssets/Ultimate Space Kit - March 2023/Vehicles/FBX/Rover_2.fbx
-  artifactKey: Guid(036284ac4bcb9cb49b735745cc50b41d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ImportedAssets/Ultimate Space Kit - March 2023/Vehicles/FBX/Rover_2.fbx using Guid(036284ac4bcb9cb49b735745cc50b41d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '12f02b0d7ff11cce731ec7cec36b3a2c') in 0.083531 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000027 seconds.
-  path: Assets/ImportedAssets/Ultimate Space Kit - March 2023/Vehicles/FBX/Spaceship_FernandoTheFlamingo.fbx
-  artifactKey: Guid(4d024e18d02f8024dbb5f005c947dccf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ImportedAssets/Ultimate Space Kit - March 2023/Vehicles/FBX/Spaceship_FernandoTheFlamingo.fbx using Guid(4d024e18d02f8024dbb5f005c947dccf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '69ba7e526e64e0e84156f356ac176c54') in 0.056709 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000028 seconds.
-  path: Assets/ImportedAssets/Ultimate Space Kit - March 2023/Vehicles/FBX/Spaceship_RaeTheRedPanda.fbx
-  artifactKey: Guid(d6f3842228f568349b4278c1aa7e5bf7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ImportedAssets/Ultimate Space Kit - March 2023/Vehicles/FBX/Spaceship_RaeTheRedPanda.fbx using Guid(d6f3842228f568349b4278c1aa7e5bf7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a50b9211a7158debd560600eeaa7c96') in 0.023987 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 69.904393 seconds.
-  path: Assets/ImportedAssets/Animated Robot - Oct 2018/FBX/Robot.fbx
-  artifactKey: Guid(341918f0eaea4ec45b5147ca28029b25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ImportedAssets/Animated Robot - Oct 2018/FBX/Robot.fbx using Guid(341918f0eaea4ec45b5147ca28029b25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'feeff59e2f959c1a423fd0b3534201f1') in 0.097857 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 37.766986 seconds.
-  path: Assets/ImportedAssets/Animated Robot - Oct 2018/FBX/Robot.fbx
-  artifactKey: Guid(341918f0eaea4ec45b5147ca28029b25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ImportedAssets/Animated Robot - Oct 2018/FBX/Robot.fbx using Guid(341918f0eaea4ec45b5147ca28029b25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5de92e00d256d14a05be4079eb47e72e') in 0.107407 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2.513999 seconds.
-  path: Assets/ImportedAssets/Animated Robot - Oct 2018/FBX/Robot.fbx
-  artifactKey: Guid(341918f0eaea4ec45b5147ca28029b25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ImportedAssets/Animated Robot - Oct 2018/FBX/Robot.fbx using Guid(341918f0eaea4ec45b5147ca28029b25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e375177ea73381e386c8bd59ac91fec') in 0.145477 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2.549298 seconds.
-  path: Assets/ImportedAssets/Animated Robot - Oct 2018/FBX/Robot.fbx
-  artifactKey: Guid(341918f0eaea4ec45b5147ca28029b25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ImportedAssets/Animated Robot - Oct 2018/FBX/Robot.fbx using Guid(341918f0eaea4ec45b5147ca28029b25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '545eb41aaf4322293bbd2d722da043ef') in 0.192909 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 36.247682 seconds.
-  path: Assets/ImportedAssets/Ultimate Space Kit - March 2023/Vehicles/Blends/Rover_1.blend
-  artifactKey: Guid(742ea94424f5e6e4e87062d59e4914c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ImportedAssets/Ultimate Space Kit - March 2023/Vehicles/Blends/Rover_1.blend using Guid(742ea94424f5e6e4e87062d59e4914c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a19892ed0355242f7d1474b5fde8e50') in 0.106100 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000031 seconds.
-  path: Assets/ImportedAssets/Ultimate Space Kit - March 2023/Vehicles/Blends/Rover_Round.blend
-  artifactKey: Guid(9569f2ad684c8c44b9246a077a6b1062) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ImportedAssets/Ultimate Space Kit - March 2023/Vehicles/Blends/Rover_Round.blend using Guid(9569f2ad684c8c44b9246a077a6b1062) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4951efdb4aed098540ac62712049df17') in 0.059441 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000033 seconds.
-  path: Assets/ImportedAssets/Ultimate Space Kit - March 2023/Vehicles/Blends/Spaceship_BarbaraTheBee.blend
-  artifactKey: Guid(e246993f238fd2c41bb9646513d65090) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ImportedAssets/Ultimate Space Kit - March 2023/Vehicles/Blends/Spaceship_BarbaraTheBee.blend using Guid(e246993f238fd2c41bb9646513d65090) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ce620f0ae73780d108825cfb50cf9e1') in 0.022707 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 48.857406 seconds.
-  path: Assets/ImportedAssets/Ultimate Space Kit - March 2023/Vehicles/FBX/Atlas.mat
-  artifactKey: Guid(2e5114ad309279d45b32169b47c2fae9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ImportedAssets/Ultimate Space Kit - March 2023/Vehicles/FBX/Atlas.mat using Guid(2e5114ad309279d45b32169b47c2fae9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '29586809451801ee347946091ba05e5a') in 0.021915 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 55.107614 seconds.
-  path: Assets/ImportedAssets/Ultimate Space Kit - March 2023/Vehicles/FBX/Spaceship_FernandoTheFlamingo.fbx
-  artifactKey: Guid(4d024e18d02f8024dbb5f005c947dccf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ImportedAssets/Ultimate Space Kit - March 2023/Vehicles/FBX/Spaceship_FernandoTheFlamingo.fbx using Guid(4d024e18d02f8024dbb5f005c947dccf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4401da6c31f7c2c8eac2f641cf938b48') in 0.069892 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 260.084995 seconds.
-  path: Assets/ImportedAssets/Ultimate Space Kit - March 2023/Vehicles/FBX/Spaceship_FernandoTheFlamingo.fbx
-  artifactKey: Guid(4d024e18d02f8024dbb5f005c947dccf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ImportedAssets/Ultimate Space Kit - March 2023/Vehicles/FBX/Spaceship_FernandoTheFlamingo.fbx using Guid(4d024e18d02f8024dbb5f005c947dccf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '78eec8d672b3b1e9c4150c066b9639da') in 0.042905 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 21.359614 seconds.
-  path: Assets/ImportedAssets/Ultimate Space Kit - March 2023/Vehicles/FBX/Spaceship_FernandoTheFlamingo.fbx
-  artifactKey: Guid(4d024e18d02f8024dbb5f005c947dccf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ImportedAssets/Ultimate Space Kit - March 2023/Vehicles/FBX/Spaceship_FernandoTheFlamingo.fbx using Guid(4d024e18d02f8024dbb5f005c947dccf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8143551424772bb93417e9d13aaaa429') in 0.025403 seconds 
+  Time since last request: 6700.790031 seconds.
+  path: Assets/Scenes/CustomSkyBox.mat
+  artifactKey: Guid(fc071f6339acac742b37bf5f3177fd6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/CustomSkyBox.mat using Guid(fc071f6339acac742b37bf5f3177fd6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a9deaaf669d358037c3588382a102669') in 0.121037 seconds 

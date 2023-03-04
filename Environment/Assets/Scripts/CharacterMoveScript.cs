@@ -83,6 +83,10 @@ public class CharacterMoveScript : Agent
         fireui.transform.Find("UICook").gameObject.SetActive(false);
 
         rocketbuilt = false;
+        rocket.transform.Find("RocketBlueprint").gameObject.SetActive(true);
+        rocket.transform.Find("Rocket").gameObject.SetActive(false);
+        rocketui.transform.Find("UIBuild").gameObject.SetActive(true);
+        rocketui.transform.Find("UILaunch").gameObject.SetActive(false);
 
         log = 0;
         log_t.text = "x" + log;
@@ -244,13 +248,20 @@ public class CharacterMoveScript : Agent
         busy = true;
         animator.SetBool("harvesting", true);
         yield return new WaitForSeconds(2);
-        campfirebuilt = true;
+        rocketbuilt = true;
         rocket.transform.Find("RocketBlueprint").gameObject.SetActive(false);
         rocket.transform.Find("Rocket").gameObject.SetActive(true);
         rocketui.transform.Find("UIBuild").gameObject.SetActive(false);
         rocketui.transform.Find("UILaunch").gameObject.SetActive(true);
         animator.SetBool("harvesting", false);
         busy = false;
+    }
+
+    IEnumerator LaunchRocket()
+    {
+        busy = true;
+        yield return new WaitForSeconds(5);
+        EndEpisode();
     }
 
     IEnumerator Die()
@@ -312,11 +323,11 @@ public class CharacterMoveScript : Agent
                 }
                 else if(!benchbuilt && log >= benchbuildmats[0] && copper >= benchbuildmats[1] && gold >= benchbuildmats[2] && iron >= benchbuildmats[3])
                 {
-                    StartCoroutine(BuildBench());
                     log -= benchbuildmats[0];
                     copper -= benchbuildmats[1];
                     gold -= benchbuildmats[2];
                     iron -= benchbuildmats[3];
+                    StartCoroutine(BuildBench());
                 }
             }
             if(vetcaction.DiscreteActions[0] == 5)
@@ -326,17 +337,17 @@ public class CharacterMoveScript : Agent
                 }
                 else if(!campfirebuilt && log >= firebuildmats[0] && iron >= firebuildmats[1])
                 {
-                    StartCoroutine(BuildFire());
                     log -= firebuildmats[0];
                     iron -= firebuildmats[1];
+                    StartCoroutine(BuildFire());
                 }
                 else if(campfirebuilt && log >= cookmats[0] && apple >= cookmats[1] && meat >= cookmats[2] && water >= cookmats[3])
                 {
-                    StartCoroutine(Cook());
                     log -= cookmats[0];
                     apple -= cookmats[1];
                     meat -= cookmats[2];
                     water -= cookmats[3];
+                    StartCoroutine(Cook());
                 }
             }
             if(vetcaction.DiscreteActions[0] == 6)
@@ -346,16 +357,24 @@ public class CharacterMoveScript : Agent
                 }
                 else if(!rocketbuilt && log >= rocketbuildmats[0] && copper >= rocketbuildmats[1] && gold >= rocketbuildmats[2] && iron >= rocketbuildmats[3])
                 {
-                    StartCoroutine(BuildRocket());
                     log -= rocketbuildmats[0];
                     copper -= rocketbuildmats[1];
                     gold -= rocketbuildmats[2];
                     iron -= rocketbuildmats[3];
+                    StartCoroutine(BuildRocket());
 
                 }
-                else if(rocketbuilt && log >= rocketbuildmats[0] && apple >= rocketbuildmats[1] && meat >= rocketbuildmats[2] && oil >= rocketbuildmats[3] 
-                && copper >= rocketbuildmats[4] && gold >= rocketbuildmats[5] && iron >= rocketbuildmats[6])
+                else if(rocketbuilt && log >= rocketlaunchmats[0] && apple >= rocketlaunchmats[1] && meat >= rocketlaunchmats[2] && oil >= rocketlaunchmats[3] 
+                && copper >= rocketlaunchmats[4] && gold >= rocketlaunchmats[5] && iron >= rocketlaunchmats[6])
                 {
+                    log -= rocketlaunchmats[0];
+                    apple -= rocketlaunchmats[1];
+                    meat -= rocketlaunchmats[2];
+                    oil-= rocketlaunchmats[3];
+                    copper -= rocketlaunchmats[4];
+                    gold -= rocketlaunchmats[5];
+                    iron -= rocketlaunchmats[6];
+                    StartCoroutine(LaunchRocket());
                 }
             }
         }

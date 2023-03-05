@@ -45,6 +45,8 @@ public class CharacterMoveScript : Agent
     public TMP_Text time_t;
     public TMP_Text day_t;
 
+    
+    private bool setrocketfree;
     private bool benchbuilt, campfirebuilt, rocketbuilt;
     public GameObject bench, fire, rocket;
     public GameObject benchui, fireui, rocketui;
@@ -86,6 +88,12 @@ public class CharacterMoveScript : Agent
         rocket.transform.Find("Rocket").gameObject.SetActive(false);
         rocketui.transform.Find("UIBuild").gameObject.SetActive(true);
         rocketui.transform.Find("UILaunch").gameObject.SetActive(false);
+
+        setrocketfree = false;
+        rocket.transform.Find("Rocket").position = new Vector3(160.8f, 4.42f, 19.3f);
+        rocket.transform.Find("SmokeEffect").position = new Vector3(160.8f, 1.75f, 19.3f);
+        rocket.transform.Find("BigExplosionEffect").gameObject.SetActive(false);
+        rocket.transform.Find("SmokeEffect").gameObject.SetActive(false);
 
         log = 0;
         apple = 0;
@@ -201,6 +209,11 @@ public class CharacterMoveScript : Agent
         bench.transform.Find("Bench").gameObject.SetActive(true);
         benchui.transform.Find("UIBuild").gameObject.SetActive(false);
         benchui.transform.Find("UIBuilt").gameObject.SetActive(true);
+        log -= benchbuildmats[0];
+        copper -= benchbuildmats[1];
+        gold -= benchbuildmats[2];
+        iron -= benchbuildmats[3];
+        ManualUpdateAllText();
         animator.SetBool("harvesting", false);
         busy = false;
     }
@@ -215,6 +228,9 @@ public class CharacterMoveScript : Agent
         fire.transform.Find("Fire").gameObject.SetActive(true);
         fireui.transform.Find("UIBuild").gameObject.SetActive(false);
         fireui.transform.Find("UICook").gameObject.SetActive(true);
+        log -= firebuildmats[0];
+        iron -= firebuildmats[1];
+        ManualUpdateAllText();
         animator.SetBool("harvesting", false);
         busy = false;
     }
@@ -227,6 +243,11 @@ public class CharacterMoveScript : Agent
         Health = MaxHealth;
         Hunger = MaxHunger;
         Thirst = MaxThirst;
+        log -= cookmats[0];
+        apple -= cookmats[1];
+        meat -= cookmats[2];
+        water -= cookmats[3];
+        ManualUpdateAllText();
         animator.SetBool("harvesting", false);
         busy = false;
     }
@@ -241,6 +262,11 @@ public class CharacterMoveScript : Agent
         rocket.transform.Find("Rocket").gameObject.SetActive(true);
         rocketui.transform.Find("UIBuild").gameObject.SetActive(false);
         rocketui.transform.Find("UILaunch").gameObject.SetActive(true);
+        log -= rocketbuildmats[0];
+        copper -= rocketbuildmats[1];
+        gold -= rocketbuildmats[2];
+        iron -= rocketbuildmats[3];
+        ManualUpdateAllText();
         animator.SetBool("harvesting", false);
         busy = false;
     }
@@ -248,7 +274,11 @@ public class CharacterMoveScript : Agent
     IEnumerator LaunchRocket()
     {
         busy = true;
-        yield return new WaitForSeconds(5);
+        rocket.transform.Find("BigExplosionEffect").gameObject.SetActive(true);
+        rocket.transform.Find("SmokeEffect").gameObject.SetActive(true);
+        transform.position = new Vector3(150, 30, 25);
+        setrocketfree = true;
+        yield return new WaitForSeconds(4);
         EndEpisode();
     }
 
@@ -323,11 +353,6 @@ public class CharacterMoveScript : Agent
                 }
                 else if(!benchbuilt && log >= benchbuildmats[0] && copper >= benchbuildmats[1] && gold >= benchbuildmats[2] && iron >= benchbuildmats[3])
                 {
-                    log -= benchbuildmats[0];
-                    copper -= benchbuildmats[1];
-                    gold -= benchbuildmats[2];
-                    iron -= benchbuildmats[3];
-                    ManualUpdateAllText();
                     StartCoroutine(BuildBench());
                 }
             }
@@ -338,18 +363,10 @@ public class CharacterMoveScript : Agent
                 }
                 else if(!campfirebuilt && log >= firebuildmats[0] && iron >= firebuildmats[1])
                 {
-                    log -= firebuildmats[0];
-                    iron -= firebuildmats[1];
-                    ManualUpdateAllText();
                     StartCoroutine(BuildFire());
                 }
                 else if(campfirebuilt && log >= cookmats[0] && apple >= cookmats[1] && meat >= cookmats[2] && water >= cookmats[3])
                 {
-                    log -= cookmats[0];
-                    apple -= cookmats[1];
-                    meat -= cookmats[2];
-                    water -= cookmats[3];
-                    ManualUpdateAllText();
                     StartCoroutine(Cook());
                 }
             }
@@ -361,11 +378,6 @@ public class CharacterMoveScript : Agent
                 else if(!rocketbuilt)
                 //  && log >= rocketbuildmats[0] && copper >= rocketbuildmats[1] && gold >= rocketbuildmats[2] && iron >= rocketbuildmats[3])
                 {
-                    log -= rocketbuildmats[0];
-                    copper -= rocketbuildmats[1];
-                    gold -= rocketbuildmats[2];
-                    iron -= rocketbuildmats[3];
-                    ManualUpdateAllText();
                     StartCoroutine(BuildRocket());
 
                 }
@@ -484,6 +496,12 @@ public class CharacterMoveScript : Agent
         if(Health < 0)
         {
             StartCoroutine(Die());
+        }
+
+        if(setrocketfree)
+        {
+            rocket.transform.Find("Rocket").Translate(0, -0.2f, 0);
+            rocket.transform.Find("SmokeEffect").Translate(0, 0.2f, 0);
         }
     }
 

@@ -74,7 +74,6 @@ public class CharacterMoveScript : Agent
         bench.transform.Find("Bench").gameObject.SetActive(false);
         benchui.transform.Find("UIBuild").gameObject.SetActive(true);
         benchui.transform.Find("UIBuilt").gameObject.SetActive(false);
-        animator.SetBool("harvesting", false);
 
         campfirebuilt = false;
         fire.transform.Find("FireBlueprint").gameObject.SetActive(true);
@@ -89,21 +88,14 @@ public class CharacterMoveScript : Agent
         rocketui.transform.Find("UILaunch").gameObject.SetActive(false);
 
         log = 0;
-        log_t.text = "x" + log;
         apple = 0;
-        apple_t.text = "x" + apple;
         meat = 0;
-        meat_t.text = "x" + meat;
         oil = 0;
-        oil_t.text = "x" + oil;
         water = 0;
-        water_t.text = "x" + water;
         copper = 0;
-        copper_t.text = "x" + copper;
         gold = 0;
-        gold_t.text = "x" + gold;
         iron = 0;
-        iron_t.text = "x" + iron;
+        ManualUpdateAllText();
 
         Health = MaxHealth;
         Hunger = MaxHunger;
@@ -136,7 +128,7 @@ public class CharacterMoveScript : Agent
         animator.SetBool("harvesting", true);
         yield return new WaitForSeconds(2);
         log++;
-        log_t.text = "x" + log;
+        ManualUpdateAllText();
         animator.SetBool("harvesting", false);
         busy = false;
     }
@@ -150,19 +142,17 @@ public class CharacterMoveScript : Agent
         if(whichfood == 0)
         {
             apple++;
-            apple_t.text = "x" + apple;
         }
         else
         {
             meat++;
-            meat_t.text = "x" + meat;
         }
         int chanceoil = Random.Range(0, 10);
         if(chanceoil <= 2)
         {
             oil++;
-            oil_t.text = "x" + oil;
         }
+        ManualUpdateAllText();
         animator.SetBool("harvesting", false);
         busy = false;
     }
@@ -173,7 +163,7 @@ public class CharacterMoveScript : Agent
         animator.SetBool("harvesting", true);
         yield return new WaitForSeconds(2);
         water++;
-        water_t.text = "x" + water;
+        ManualUpdateAllText();
         animator.SetBool("harvesting", false);
         busy = false;
     }
@@ -187,18 +177,16 @@ public class CharacterMoveScript : Agent
         if(whichmineral == 0)
         {
             copper++;
-            copper_t.text = "x" + copper;
         }
         else if(whichmineral == 1)
         {
             gold++;
-            gold_t.text = "x" + gold;
         }
         else
         {
             iron++;
-            iron_t.text = "x" + iron;
         }
+        ManualUpdateAllText();
         animator.SetBool("harvesting", false);
         busy = false;
     }
@@ -272,6 +260,18 @@ public class CharacterMoveScript : Agent
         EndEpisode();
     }
 
+    public void ManualUpdateAllText()
+    {
+        log_t.text = "x" + log;
+        apple_t.text = "x" + apple;
+        meat_t.text = "x" + meat;
+        oil_t.text = "x" + oil;
+        water_t.text = "x" + water;
+        copper_t.text = "x" + copper;
+        gold_t.text = "x" + gold;
+        iron_t.text = "x" + iron;
+    }
+
     public override void OnActionReceived(ActionBuffers vetcaction)
     {
         if(!moving && !busy)
@@ -327,6 +327,7 @@ public class CharacterMoveScript : Agent
                     copper -= benchbuildmats[1];
                     gold -= benchbuildmats[2];
                     iron -= benchbuildmats[3];
+                    ManualUpdateAllText();
                     StartCoroutine(BuildBench());
                 }
             }
@@ -339,6 +340,7 @@ public class CharacterMoveScript : Agent
                 {
                     log -= firebuildmats[0];
                     iron -= firebuildmats[1];
+                    ManualUpdateAllText();
                     StartCoroutine(BuildFire());
                 }
                 else if(campfirebuilt && log >= cookmats[0] && apple >= cookmats[1] && meat >= cookmats[2] && water >= cookmats[3])
@@ -347,6 +349,7 @@ public class CharacterMoveScript : Agent
                     apple -= cookmats[1];
                     meat -= cookmats[2];
                     water -= cookmats[3];
+                    ManualUpdateAllText();
                     StartCoroutine(Cook());
                 }
             }
@@ -355,25 +358,29 @@ public class CharacterMoveScript : Agent
                 if(needtomove(rocketlocation))
                 {
                 }
-                else if(!rocketbuilt && log >= rocketbuildmats[0] && copper >= rocketbuildmats[1] && gold >= rocketbuildmats[2] && iron >= rocketbuildmats[3])
+                else if(!rocketbuilt)
+                //  && log >= rocketbuildmats[0] && copper >= rocketbuildmats[1] && gold >= rocketbuildmats[2] && iron >= rocketbuildmats[3])
                 {
                     log -= rocketbuildmats[0];
                     copper -= rocketbuildmats[1];
                     gold -= rocketbuildmats[2];
                     iron -= rocketbuildmats[3];
+                    ManualUpdateAllText();
                     StartCoroutine(BuildRocket());
 
                 }
-                else if(rocketbuilt && log >= rocketlaunchmats[0] && apple >= rocketlaunchmats[1] && meat >= rocketlaunchmats[2] && oil >= rocketlaunchmats[3] 
-                && copper >= rocketlaunchmats[4] && gold >= rocketlaunchmats[5] && iron >= rocketlaunchmats[6])
+                else if(rocketbuilt)
+                //  && log >= rocketlaunchmats[0] && apple >= rocketlaunchmats[1] && meat >= rocketlaunchmats[2] && oil >= rocketlaunchmats[3] 
+                // && copper >= rocketlaunchmats[4] && gold >= rocketlaunchmats[5] && iron >= rocketlaunchmats[6])
                 {
                     log -= rocketlaunchmats[0];
                     apple -= rocketlaunchmats[1];
                     meat -= rocketlaunchmats[2];
-                    oil-= rocketlaunchmats[3];
+                    oil -= rocketlaunchmats[3];
                     copper -= rocketlaunchmats[4];
                     gold -= rocketlaunchmats[5];
                     iron -= rocketlaunchmats[6];
+                    ManualUpdateAllText();
                     StartCoroutine(LaunchRocket());
                 }
             }

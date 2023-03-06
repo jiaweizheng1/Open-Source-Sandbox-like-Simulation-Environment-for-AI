@@ -18,10 +18,10 @@ public class CharacterMoveScript : Agent
     public TMP_Text log_t, apple_t, meat_t, oil_t, water_t, copper_t, gold_t, iron_t;
     private int log, apple, meat, oil, water, copper, gold, iron;
     private bool moving, busy;
-    private Transform target;
+    private Vector3 target;
     private Vector2 input;
     private Vector3 direction;
-    private float turnsmoothtime = 0.05f, turnsmoothvelocity = 1f;
+    private float turnsmoothtime = 0.1f, turnsmoothvelocity = 0.1f;
     private float gravity = -9.81f, gravitymulti = 3f, velocity;
     
     public float BarSpeedMulti;
@@ -45,8 +45,6 @@ public class CharacterMoveScript : Agent
     public TMP_Text time_t;
     public TMP_Text day_t;
 
-    
-    private bool setrocketfree;
     private bool benchbuilt, campfirebuilt, rocketbuilt;
     public GameObject bench, fire, rocket;
     public GameObject benchui, fireui, rocketui;
@@ -60,7 +58,7 @@ public class CharacterMoveScript : Agent
     {
         //initially, stay at current place(which is itself)
         transform.position = new Vector3(150, 1.36f, 25);
-        target = transform;
+        target = transform.position;
         input = new Vector2(0, 0);
 
         time = new DateTime();
@@ -89,7 +87,6 @@ public class CharacterMoveScript : Agent
         rocketui.transform.Find("UIBuild").gameObject.SetActive(true);
         rocketui.transform.Find("UILaunch").gameObject.SetActive(false);
 
-        setrocketfree = false;
         rocket.transform.Find("Rocket").position = new Vector3(160.8f, 4.42f, 19.3f);
         rocket.transform.Find("SmokeEffect").position = new Vector3(160.8f, 1.75f, 19.3f);
         rocket.transform.Find("BigExplosionEffect").gameObject.SetActive(false);
@@ -271,14 +268,44 @@ public class CharacterMoveScript : Agent
         busy = false;
     }
 
+    IEnumerator Wave()
+    {
+        direction = new Vector3(-1,0,-3);
+        animator.SetBool("waving", true);
+        yield return new WaitForSeconds(2);
+        animator.SetBool("waving", false);
+    }
+
+    IEnumerator GetInRocket()
+    {
+        moving = true;
+        busy = false;
+        target = new Vector3(161.3f, 1.7f, 18.9f);
+        yield return new WaitForSeconds(0.2f);
+        busy = true;
+        moving = false;
+    }
+
+    IEnumerator RocketUp()
+    {
+        rocket.transform.Find("BigExplosionEffect").gameObject.SetActive(true);
+        rocket.transform.Find("SmokeEffect").gameObject.SetActive(true);
+        for(int i = 1; i <= 200; i++)
+        {
+            rocket.transform.Find("Rocket").Translate(0, -0.2f, 0);
+            rocket.transform.Find("SmokeEffect").Translate(0, 0.2f, 0);
+            yield return null;
+        }
+    }
+
     IEnumerator LaunchRocket()
     {
         busy = true;
-        rocket.transform.Find("BigExplosionEffect").gameObject.SetActive(true);
-        rocket.transform.Find("SmokeEffect").gameObject.SetActive(true);
-        transform.position = new Vector3(150, 30, 25);
-        setrocketfree = true;
-        yield return new WaitForSeconds(4);
+        yield return StartCoroutine(Wave());
+        yield return StartCoroutine(GetInRocket());
+        controller.transform.position = new Vector3(0, 0, 0);
+        yield return new WaitForSeconds(0.5f);
+        yield return StartCoroutine(RocketUp());
         EndEpisode();
     }
 
@@ -440,7 +467,7 @@ public class CharacterMoveScript : Agent
     {
         if(Vector3.Distance(targetlocation.transform.position, controller.transform.position) > 0.9)
         {
-            target = targetlocation;
+            target = targetlocation.position;
             moving = true;
             return true;
         }
@@ -454,13 +481,12 @@ public class CharacterMoveScript : Agent
     {
         if(moving && !busy)
         {
-            if(Vector3.Distance(target.transform.position, controller.transform.position) > 0.9)
+            if(Vector3.Distance(target, controller.transform.position) > 0.9)
             {
-                input = new Vector2(target.transform.position.x - controller.transform.position.x, target.transform.position.z - controller.transform.position.z);
+                input = new Vector2(target.x - controller.transform.position.x, target.z - controller.transform.position.z);
                 input.Normalize();
                 direction = new Vector3(input.x, 0, input.y);
                 ApplyGravity();
-                ApplyRotation();
                 ApplyMovement();
             }
             else
@@ -469,6 +495,7 @@ public class CharacterMoveScript : Agent
                 moving = false;
             }
         }
+        ApplyRotation();
         animator.SetFloat("speed", input.sqrMagnitude);
 
         time = time.AddSeconds(Time.deltaTime * timemulti);
@@ -487,10 +514,12 @@ public class CharacterMoveScript : Agent
         {
             Thirst = Thirst - BarSpeedMulti * Time.deltaTime;
         }
-        if(Health > 0 && HungerSlider.value == 0){
+        if(Health > 0 && HungerSlider.value == 0)
+        {
             Health = Health - BarSpeedMulti * Time.deltaTime;
         }
-        if(Health > 0 && ThirstSlider.value == 0){
+        if(Health > 0 && ThirstSlider.value == 0)
+        {
             Health = Health - BarSpeedMulti * Time.deltaTime;
         }
         if(Health < 0)
@@ -498,11 +527,11 @@ public class CharacterMoveScript : Agent
             StartCoroutine(Die());
         }
 
-        if(setrocketfree)
-        {
-            rocket.transform.Find("Rocket").Translate(0, -0.2f, 0);
-            rocket.transform.Find("SmokeEffect").Translate(0, 0.2f, 0);
-        }
+        // if(setrocketfree)
+        // {
+        //     rocket.transform.Find("Rocket").Translate(0, -0.2f, 0);
+        //     rocket.transform.Find("SmokeEffect").Translate(0, 0.2f, 0);
+        // }
     }
 
     private void UpdateLighting(float timePercent)
@@ -528,7 +557,6 @@ public class CharacterMoveScript : Agent
 
     private void ApplyRotation()
     {
-        if(input.sqrMagnitude == 0) return;
         float targetAngle = Mathf.Atan2(direction.x, direction.z) * Mathf.Rad2Deg;
         float angle = Mathf.SmoothDampAngle(transform.eulerAngles.y, targetAngle, ref turnsmoothvelocity, turnsmoothtime);
         transform.rotation = Quaternion.Euler(0, angle, 0);

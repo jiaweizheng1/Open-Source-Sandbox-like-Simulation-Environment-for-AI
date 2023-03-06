@@ -2,22 +2,22 @@
     "AI": {
         "checkpoints": [
             {
-                "steps": 64,
-                "file_path": "results/ppo/AI/AI-64.onnx",
+                "steps": 320,
+                "file_path": "results\\ppo\\AI\\AI-320.onnx",
                 "reward": null,
-                "creation_time": 1677107668.53706,
+                "creation_time": 1677032228.7136104,
                 "auxillary_file_paths": [
-                    "results/ppo/AI/AI-64.pt"
+                    "results\\ppo\\AI\\AI-320.pt"
                 ]
             }
         ],
         "final_checkpoint": {
-            "steps": 64,
-            "file_path": "results/ppo/AI.onnx",
+            "steps": 320,
+            "file_path": "results\\ppo\\AI.onnx",
             "reward": null,
-            "creation_time": 1677107668.53706,
+            "creation_time": 1677032228.7136104,
             "auxillary_file_paths": [
-                "results/ppo/AI/AI-64.pt"
+                "results\\ppo\\AI\\AI-320.pt"
             ]
         }
     },

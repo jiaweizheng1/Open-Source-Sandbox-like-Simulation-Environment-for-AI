@@ -189,7 +189,7 @@ QualitySettings:
   - serializedVersion: 2
     name: Ultra
     pixelLightCount: 4
-    shadows: 2
+    shadows: 1
     shadowResolution: 2
     shadowProjection: 1
     shadowCascades: 4
@@ -198,7 +198,7 @@ QualitySettings:
     shadowCascade2Split: 0.33333334
     shadowCascade4Split: {x: 0.06666667, y: 0.2, z: 0.46666667}
     shadowmaskMode: 1
-    skinWeights: 4
+    skinWeights: 255
     textureQuality: 0
     anisotropicTextures: 2
     antiAliasing: 2
@@ -224,14 +224,15 @@ QualitySettings:
     excludedTargetPlatforms: []
   m_PerPlatformDefaultQuality:
     Android: 2
+    EmbeddedLinux: 5
     GameCoreScarlett: 5
     GameCoreXboxOne: 5
+    LinuxHeadlessSimulation: 5
     Lumin: 5
-    Nintendo 3DS: 5
     Nintendo Switch: 5
     PS4: 5
     PS5: 5
-    Server: 0
+    Server: 5
     Stadia: 5
     Standalone: 5
     WebGL: 3

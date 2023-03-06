@@ -81,7 +81,8 @@ public class CharacterMoveScript : Agent
     IEnumerator Consumefood()
     {
         busy = true;
-        animator.SetBool("harvesting", true);
+        
+        animator.SetBool("eating", true);
         yield return new WaitForSeconds(2);
         food--;
         if(Hunger + 20 > MaxHunger){
@@ -92,7 +93,7 @@ public class CharacterMoveScript : Agent
         }
 
         food_t.text = "x" + food;
-        animator.SetBool("harvesting", false);
+        animator.SetBool("eating", false);
         busy = false;
     }
 
@@ -111,7 +112,7 @@ public class CharacterMoveScript : Agent
     IEnumerator Consumedroplets()
     {
         busy = true;
-        animator.SetBool("harvesting", true);
+        animator.SetBool("eating", true);
         yield return new WaitForSeconds(2);
         droplet--;
         if(Thirst + 20 > MaxThirst){
@@ -121,7 +122,7 @@ public class CharacterMoveScript : Agent
             Thirst += 20;
         }
         droplet_t.text = "x" + droplet;
-        animator.SetBool("harvesting", false);
+        animator.SetBool("eating", false);
         busy = false;
     }
 

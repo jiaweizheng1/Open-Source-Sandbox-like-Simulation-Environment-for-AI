@@ -187,8 +187,6 @@ public class CharacterMoveScript : Agent
         else{
             Thirst += 20;
         }
-        water.text = "x" + water;
-        
         ManualUpdateAllText();
         animator.SetBool("eating", false);
         busy = false;
@@ -204,8 +202,6 @@ public class CharacterMoveScript : Agent
         else{
             Hunger += 20;
         }
-
-        meat.text = "x" + meat;
         ManualUpdateAllText();
         animator.SetBool("eating", false);
         busy = false;
@@ -221,8 +217,6 @@ public class CharacterMoveScript : Agent
         else{
             Hunger += 20;
         }
-
-        apple.text = "x" + apple;
         ManualUpdateAllText();
         animator.SetBool("eating", false);
         busy = false;
@@ -480,19 +474,19 @@ public class CharacterMoveScript : Agent
             if(vetcaction.DiscreteActions[0] == 7)
             {
                 if(apple > 0){
-                    EatApple();
+                    StartCoroutine(EatApple());
                 }
             }
             if(vetcaction.DiscreteActions[0] == 8)
             {
                 if(meat > 0){
-                    EatMeat();
+                    StartCoroutine(EatMeat());
                 }
             }
-            if(vetcaction.DiscreteActions[0] == 8)
+            if(vetcaction.DiscreteActions[0] == 9)
             {
                 if(water > 0){
-                    ConsumeWater();
+                    StartCoroutine(ConsumeWater());
                 }
             }
 
@@ -529,6 +523,18 @@ public class CharacterMoveScript : Agent
         else if(Input.GetKey(KeyCode.U))
         {
             discreteactions[0] = 6;
+        }
+        else if(Input.GetKey(KeyCode.I))
+        {
+            discreteactions[0] = 7;
+        }
+        else if(Input.GetKey(KeyCode.O))
+        {
+            discreteactions[0] = 8;
+        }
+        else if(Input.GetKey(KeyCode.P))
+        {
+            discreteactions[0] =9;
         }
         else
         {

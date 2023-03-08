@@ -14,7 +14,7 @@ public class CharacterMoveScript : Agent
     public float speed;
     public Animator animator;
     public CharacterController controller;
-    public Transform treeslocation, farmlocation, poollocation, rockslocation, benchlocation, firelocation, rocketlocation;
+    public Transform treeslocation, farmlocation, poollocation, rockslocation, benchlocation, firelocation, rocketlocation, axelocation, pickaxelocation, scythelocation;
     public TMP_Text log_t, apple_t, meat_t, oil_t, water_t, copper_t, gold_t, iron_t;
     private int log, apple, meat, oil, water, copper, gold, iron;
     private bool moving, busy;
@@ -45,18 +45,19 @@ public class CharacterMoveScript : Agent
     public TMP_Text time_t;
     public TMP_Text day_t;
 
-    private bool benchbuilt, campfirebuilt, rocketbuilt;
-    public GameObject bench, fire, rocket;
-    public GameObject benchui, fireui, rocketui;
+    private bool benchbuilt, campfirebuilt, rocketbuilt, axebuilt, pickaxebuilt, scythebuilt;
+    public GameObject bench, fire, rocket, tool;
+    public GameObject benchui, fireui, rocketui, toolui;
     private int[] benchbuildmats = { 3, 1, 1, 1 };
     private int[] firebuildmats = { 2, 1 };
     private int[] cookmats = { 1, 1, 1, 1 };
     private int[] rocketbuildmats = { 10, 10, 7, 10 };
     private int[] rocketlaunchmats = { 1, 5, 5, 10, 1, 1, 1 };
+    private int[] toolbuildmats = { 2, 3 };
 
     public GameObject toolSelector;
-    private int[] toolChoose = { 350, 400, 450, 500, 550, 600 };
-    private int log_tool, apple_tool, meat_tool, oil_tool, water_tool, copper_tool, gold_tool, iron_tool;
+    private bool log_tool, apple_tool, meat_tool, oil_tool, water_tool, copper_tool, gold_tool, iron_tool;
+    private float toolXposition, toolYposition, flag;
 
     public override void OnEpisodeBegin()
     {
@@ -96,6 +97,27 @@ public class CharacterMoveScript : Agent
         rocket.transform.Find("BigExplosionEffect").gameObject.SetActive(false);
         rocket.transform.Find("SmokeEffect").gameObject.SetActive(false);
 
+        // tool initialize
+        axebuilt = false;
+        pickaxebuilt = false;
+        scythebuilt = false;
+        tool.transform.Find("Tool").gameObject.SetActive(true);
+        tool.transform.Find("Tool").gameObject.transform.Find("Axe").gameObject.SetActive(false);
+        tool.transform.Find("Tool").gameObject.transform.Find("PickAxe").gameObject.SetActive(false);
+        tool.transform.Find("Tool").gameObject.transform.Find("Scythe").gameObject.SetActive(false);
+        tool.transform.Find("ToolBlueprint").gameObject.SetActive(false);
+        tool.transform.Find("ToolBlueprint").gameObject.transform.Find("Axe").gameObject.SetActive(true);
+        tool.transform.Find("ToolBlueprint").gameObject.transform.Find("PickAxe").gameObject.SetActive(true);
+        tool.transform.Find("ToolBlueprint").gameObject.transform.Find("Scythe").gameObject.SetActive(true);
+        toolui.transform.Find("AxeUI").gameObject.SetActive(false);
+        toolui.transform.Find("PickAxeUI").gameObject.SetActive(false);
+        toolui.transform.Find("ScytheUI").gameObject.SetActive(false);
+        // item selector
+        toolSelector.SetActive(false);
+        toolXposition = toolSelector.GetComponent<RectTransform>().anchoredPosition.x;
+        toolYposition = toolSelector.GetComponent<RectTransform>().anchoredPosition.y;
+        flag = -1;
+
         log = 0;
         apple = 0;
         meat = 0;
@@ -110,14 +132,7 @@ public class CharacterMoveScript : Agent
         Hunger = MaxHunger;
         Thirst = MaxThirst;
 
-        log_tool = 0;
-        apple_tool = 0;
-        meat_tool = 0;
-        oil_tool = 0;
-        water_tool = 0;
-        copper_tool = 0;
-        gold_tool = 0;
-        iron_tool = 0;
+        toolselectorreset();
     }
 
     public override void CollectObservations(VectorSensor sensor)
@@ -145,8 +160,14 @@ public class CharacterMoveScript : Agent
         busy = true;
         animator.SetBool("harvesting", true);
         yield return new WaitForSeconds(2);
-        Debug.Log(log_tool);
-        log += 1 + log_tool;
+        if (log_tool)
+        {
+            log += 1 + Random.Range(1, 3);
+        }
+        else
+        {
+            log++;
+        }
         ManualUpdateAllText();
         animator.SetBool("harvesting", false);
         busy = false;
@@ -160,16 +181,37 @@ public class CharacterMoveScript : Agent
         int whichfood = Random.Range(0, 2);
         if (whichfood == 0)
         {
-            apple += 1 + apple_tool;
+            if (apple_tool)
+            {
+                apple += 1 + Random.Range(1, 3);
+            }
+            else
+            {
+                apple++;
+            }
         }
         else
         {
-            meat += 1 + meat_tool;
+            if (meat_tool)
+            {
+                meat += 1 + Random.Range(1, 3);
+            }
+            else
+            {
+                meat++;
+            }
         }
         int chanceoil = Random.Range(0, 10);
         if (chanceoil <= 2)
         {
-            oil += 1 + oil_tool;
+            if (oil_tool)
+            {
+                oil += 1 + Random.Range(1, 3);
+            }
+            else
+            {
+                oil++;
+            }
         }
         ManualUpdateAllText();
         animator.SetBool("harvesting", false);
@@ -181,7 +223,14 @@ public class CharacterMoveScript : Agent
         busy = true;
         animator.SetBool("harvesting", true);
         yield return new WaitForSeconds(2);
-        water += 1 + water_tool;
+        if (water_tool)
+        {
+            water += 1 + Random.Range(1, 3);
+        }
+        else
+        {
+            water++;
+        }
         ManualUpdateAllText();
         animator.SetBool("harvesting", false);
         busy = false;
@@ -195,15 +244,36 @@ public class CharacterMoveScript : Agent
         int whichmineral = Random.Range(0, 3);
         if (whichmineral == 0)
         {
-            copper += 1 + copper_tool;
+            if (copper_tool)
+            {
+                copper += 1 + Random.Range(1, 3);
+            }
+            else
+            {
+                copper++;
+            }
         }
         else if (whichmineral == 1)
         {
-            gold += 1 + gold_tool;
+            if (gold_tool)
+            {
+                gold += 1 + Random.Range(1, 3);
+            }
+            else
+            {
+                gold++;
+            }
         }
         else
         {
-            iron += 1 + iron_tool;
+            if (iron_tool)
+            {
+                iron += 1 + Random.Range(1, 3);
+            }
+            else
+            {
+                iron++;
+            }
         }
         ManualUpdateAllText();
         animator.SetBool("harvesting", false);
@@ -220,6 +290,10 @@ public class CharacterMoveScript : Agent
         bench.transform.Find("Bench").gameObject.SetActive(true);
         benchui.transform.Find("UIBuild").gameObject.SetActive(false);
         benchui.transform.Find("UIBuilt").gameObject.SetActive(true);
+        tool.transform.Find("ToolBlueprint").gameObject.SetActive(true);
+        toolui.transform.Find("AxeUI").gameObject.SetActive(true);
+        toolui.transform.Find("PickAxeUI").gameObject.SetActive(true);
+        toolui.transform.Find("ScytheUI").gameObject.SetActive(true);
         log -= benchbuildmats[0];
         copper -= benchbuildmats[1];
         gold -= benchbuildmats[2];
@@ -241,6 +315,54 @@ public class CharacterMoveScript : Agent
         fireui.transform.Find("UICook").gameObject.SetActive(true);
         log -= firebuildmats[0];
         iron -= firebuildmats[1];
+        ManualUpdateAllText();
+        animator.SetBool("harvesting", false);
+        busy = false;
+    }
+
+    IEnumerator BuildAxe()
+    {
+        busy = true;
+        animator.SetBool("harvesting", true);
+        yield return new WaitForSeconds(2);
+        axebuilt = true;
+        tool.transform.Find("ToolBlueprint").gameObject.transform.Find("Axe").gameObject.SetActive(false);
+        tool.transform.Find("Tool").gameObject.transform.Find("Axe").gameObject.SetActive(true);
+        toolui.transform.Find("AxeUI").gameObject.SetActive(false);
+        log -= toolbuildmats[0];
+        iron -= benchbuildmats[1];
+        ManualUpdateAllText();
+        animator.SetBool("harvesting", false);
+        busy = false;
+    }
+
+    IEnumerator BuildPickAxe()
+    {
+        busy = true;
+        animator.SetBool("harvesting", true);
+        yield return new WaitForSeconds(2);
+        pickaxebuilt = true;
+        tool.transform.Find("ToolBlueprint").gameObject.transform.Find("PickAxe").gameObject.SetActive(false);
+        tool.transform.Find("Tool").gameObject.transform.Find("PickAxe").gameObject.SetActive(true);
+        toolui.transform.Find("PickAxeUI").gameObject.SetActive(false);
+        log -= toolbuildmats[0];
+        copper -= benchbuildmats[1];
+        ManualUpdateAllText();
+        animator.SetBool("harvesting", false);
+        busy = false;
+    }
+
+    IEnumerator BuildScythe()
+    {
+        busy = true;
+        animator.SetBool("harvesting", true);
+        yield return new WaitForSeconds(2);
+        scythebuilt = true;
+        tool.transform.Find("ToolBlueprint").gameObject.transform.Find("Scythe").gameObject.SetActive(false);
+        tool.transform.Find("Tool").gameObject.transform.Find("Scythe").gameObject.SetActive(true);
+        toolui.transform.Find("ScytheUI").gameObject.SetActive(false);
+        log -= toolbuildmats[0];
+        gold -= benchbuildmats[1];
         ManualUpdateAllText();
         animator.SetBool("harvesting", false);
         busy = false;
@@ -437,6 +559,76 @@ public class CharacterMoveScript : Agent
                     StartCoroutine(LaunchRocket());
                 }
             }
+            // Axe
+            if (vetcaction.DiscreteActions[0] == 7)
+            {
+                if (benchbuilt && !axebuilt )
+                {
+                    if (needtomove(axelocation))
+                    {
+
+                    } 
+                    else if (log >= toolbuildmats[0] && iron >= toolbuildmats[1])
+                    {
+                        StartCoroutine(BuildAxe());
+                    }
+                }
+                else if (axebuilt) 
+                {
+                    flag = 0;
+                    toolAction();
+                    toolselectorreset();
+                    log_tool = true;
+                }
+            }
+            // PickAxe
+            if (vetcaction.DiscreteActions[0] == 8)
+            {
+                if (benchbuilt && !pickaxebuilt)
+                {
+                    if (needtomove(pickaxelocation))
+                    {
+
+                    }
+                    else if (log >= toolbuildmats[0] && copper >= toolbuildmats[1])
+                    {
+                        StartCoroutine(BuildPickAxe());
+                    }
+                }
+                else if (pickaxebuilt)
+                {
+                    flag = 3;
+                    toolAction();
+                    toolselectorreset();
+                    iron_tool = true;
+                    copper_tool = true;
+                    gold_tool = true;
+                }
+            }
+            // Scythe
+            if (vetcaction.DiscreteActions[0] == 9)
+            {
+                if (benchbuilt && !scythebuilt)
+                {
+                    if (needtomove(scythelocation))
+                    {
+
+                    }
+                    else if (log >= toolbuildmats[0] && gold >= toolbuildmats[1])
+                    {
+                        StartCoroutine(BuildScythe());
+                    }
+                }
+                else if (scythebuilt)
+                {
+                    flag = 4;
+                    toolAction();
+                    toolselectorreset();
+                    apple_tool = true;
+                    meat_tool = true;
+                    oil_tool = true;
+                }
+            }
         }
     }
 
@@ -471,6 +663,18 @@ public class CharacterMoveScript : Agent
         {
             discreteactions[0] = 6;
         }
+        else if (Input.GetKey(KeyCode.Alpha1))
+        {
+            discreteactions[0] = 7;
+        }
+        else if (Input.GetKey(KeyCode.Alpha2))
+        {
+            discreteactions[0] = 8;
+        }
+        else if (Input.GetKey(KeyCode.Alpha3))
+        {
+            discreteactions[0] = 9;
+        }
         else
         {
             discreteactions[0] = -1; //else, invalid input
@@ -492,30 +696,21 @@ public class CharacterMoveScript : Agent
 
     public void toolAction()
     {
-        if (toolSelector.activeInHierarchy == true)
-        {
-            float toolXposition = toolSelector.GetComponent<RectTransform>().anchoredPosition.x;
-            if (toolXposition >= 340 && toolXposition <= 360)
-            {
-                log_tool = 1;
-            }
-            else
-            {
-                log_tool = 0;
-            }
-        }
+        toolSelector.SetActive(true);
+        Vector2 Position = new Vector2(toolXposition + (50 * flag), toolYposition);
+        toolSelector.GetComponent<RectTransform>().anchoredPosition = Position;
     }
 
-    public void synchAllText()
+    public void toolselectorreset()
     {
-        log = int.Parse(log_t.text.Split('x')[1]);
-        apple = int.Parse(apple_t.text.Split('x')[1]);
-        meat = int.Parse(meat_t.text.Split('x')[1]);
-        oil = int.Parse(oil_t.text.Split('x')[1]);
-        water = int.Parse(water_t.text.Split('x')[1]);
-        copper = int.Parse(copper_t.text.Split('x')[1]);
-        gold = int.Parse(gold_t.text.Split('x')[1]);
-        iron = int.Parse(iron_t.text.Split('x')[1]);
+        log_tool = false;
+        apple_tool = false;
+        meat_tool = false;
+        oil_tool = false;
+        water_tool = false;
+        copper_tool = false;
+        gold_tool = false;
+        iron_tool = false;
     }
 
     // Update is called once per frame
@@ -574,8 +769,8 @@ public class CharacterMoveScript : Agent
         //     rocket.transform.Find("Rocket").Translate(0, -0.2f, 0);
         //     rocket.transform.Find("SmokeEffect").Translate(0, 0.2f, 0);
         // }
-        toolAction();
-        synchAllText();
+        /*toolAction();
+        synchAllText();*/
     }
 
     private void UpdateLighting(float timePercent)

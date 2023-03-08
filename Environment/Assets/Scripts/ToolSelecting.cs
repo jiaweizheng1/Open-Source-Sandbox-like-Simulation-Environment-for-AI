@@ -33,7 +33,6 @@ public class ToolSelecting : MonoBehaviour
             itemSelector.SetActive(true);
             Position = new Vector2(toolXposition + (50 * flag), toolYposition);
             itemSelector.GetComponent<RectTransform>().anchoredPosition = Position;
-            Debug.Log(log);
             ManualUpdateAllText();
         }
         else

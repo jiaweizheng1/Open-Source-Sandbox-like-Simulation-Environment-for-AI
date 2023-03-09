@@ -14,7 +14,7 @@ public class CharacterMoveScript : Agent
     public float speed;
     public Animator animator;
     public CharacterController controller;
-    public Transform treeslocation, farmlocation, poollocation, rockslocation, benchlocation, firelocation, rocketlocation, axelocation, pickaxelocation, scythelocation;
+    public Transform treeslocation, farmlocation, poollocation, rockslocation, benchlocation, firelocation, rocketlocation;
     public TMP_Text log_t, apple_t, meat_t, oil_t, water_t, copper_t, gold_t, iron_t;
     private int log, apple, meat, oil, water, copper, gold, iron;
     private bool moving, busy;
@@ -78,7 +78,6 @@ public class CharacterMoveScript : Agent
         bench.transform.Find("BenchBlueprint").gameObject.SetActive(true);
         bench.transform.Find("Bench").gameObject.SetActive(false);
         benchui.transform.Find("UIBuild").gameObject.SetActive(true);
-        benchui.transform.Find("UIBuilt").gameObject.SetActive(false);
 
         campfirebuilt = false;
         fire.transform.Find("FireBlueprint").gameObject.SetActive(true);
@@ -101,14 +100,10 @@ public class CharacterMoveScript : Agent
         axebuilt = false;
         pickaxebuilt = false;
         scythebuilt = false;
-        tool.transform.Find("Tool").gameObject.SetActive(true);
-        tool.transform.Find("Tool").gameObject.transform.Find("Axe").gameObject.SetActive(false);
-        tool.transform.Find("Tool").gameObject.transform.Find("PickAxe").gameObject.SetActive(false);
-        tool.transform.Find("Tool").gameObject.transform.Find("Scythe").gameObject.SetActive(false);
-        tool.transform.Find("ToolBlueprint").gameObject.SetActive(false);
-        tool.transform.Find("ToolBlueprint").gameObject.transform.Find("Axe").gameObject.SetActive(true);
-        tool.transform.Find("ToolBlueprint").gameObject.transform.Find("PickAxe").gameObject.SetActive(true);
-        tool.transform.Find("ToolBlueprint").gameObject.transform.Find("Scythe").gameObject.SetActive(true);
+        tool.transform.Find("ToolBlueprint").gameObject.SetActive(true);
+        tool.transform.Find("ToolBlueprint").gameObject.transform.Find("Axe").gameObject.SetActive(false);
+        tool.transform.Find("ToolBlueprint").gameObject.transform.Find("PickAxe").gameObject.SetActive(false);
+        tool.transform.Find("ToolBlueprint").gameObject.transform.Find("Scythe").gameObject.SetActive(false);
         toolui.transform.Find("AxeUI").gameObject.SetActive(false);
         toolui.transform.Find("PickAxeUI").gameObject.SetActive(false);
         toolui.transform.Find("ScytheUI").gameObject.SetActive(false);
@@ -289,11 +284,8 @@ public class CharacterMoveScript : Agent
         bench.transform.Find("BenchBlueprint").gameObject.SetActive(false);
         bench.transform.Find("Bench").gameObject.SetActive(true);
         benchui.transform.Find("UIBuild").gameObject.SetActive(false);
-        benchui.transform.Find("UIBuilt").gameObject.SetActive(true);
-        tool.transform.Find("ToolBlueprint").gameObject.SetActive(true);
+        tool.transform.Find("ToolBlueprint").gameObject.transform.Find("Axe").gameObject.SetActive(true);
         toolui.transform.Find("AxeUI").gameObject.SetActive(true);
-        toolui.transform.Find("PickAxeUI").gameObject.SetActive(true);
-        toolui.transform.Find("ScytheUI").gameObject.SetActive(true);
         log -= benchbuildmats[0];
         copper -= benchbuildmats[1];
         gold -= benchbuildmats[2];
@@ -325,10 +317,12 @@ public class CharacterMoveScript : Agent
         busy = true;
         animator.SetBool("harvesting", true);
         yield return new WaitForSeconds(2);
-        axebuilt = true;
+        axebuilt = true; 
+        log_tool = true;
         tool.transform.Find("ToolBlueprint").gameObject.transform.Find("Axe").gameObject.SetActive(false);
-        tool.transform.Find("Tool").gameObject.transform.Find("Axe").gameObject.SetActive(true);
         toolui.transform.Find("AxeUI").gameObject.SetActive(false);
+        tool.transform.Find("ToolBlueprint").gameObject.transform.Find("PickAxe").gameObject.SetActive(true);
+        toolui.transform.Find("PickAxeUI").gameObject.SetActive(true);
         log -= toolbuildmats[0];
         iron -= benchbuildmats[1];
         ManualUpdateAllText();
@@ -342,9 +336,13 @@ public class CharacterMoveScript : Agent
         animator.SetBool("harvesting", true);
         yield return new WaitForSeconds(2);
         pickaxebuilt = true;
+        copper_tool = true;
+        gold_tool = true;
+        iron_tool = true;
         tool.transform.Find("ToolBlueprint").gameObject.transform.Find("PickAxe").gameObject.SetActive(false);
-        tool.transform.Find("Tool").gameObject.transform.Find("PickAxe").gameObject.SetActive(true);
         toolui.transform.Find("PickAxeUI").gameObject.SetActive(false);
+        tool.transform.Find("ToolBlueprint").gameObject.transform.Find("Scythe").gameObject.SetActive(true);
+        toolui.transform.Find("ScytheUI").gameObject.SetActive(true);
         log -= toolbuildmats[0];
         copper -= benchbuildmats[1];
         ManualUpdateAllText();
@@ -358,8 +356,10 @@ public class CharacterMoveScript : Agent
         animator.SetBool("harvesting", true);
         yield return new WaitForSeconds(2);
         scythebuilt = true;
+        apple_tool = true;
+        meat_tool = true;
+        oil_tool = true;
         tool.transform.Find("ToolBlueprint").gameObject.transform.Find("Scythe").gameObject.SetActive(false);
-        tool.transform.Find("Tool").gameObject.transform.Find("Scythe").gameObject.SetActive(true);
         toolui.transform.Find("ScytheUI").gameObject.SetActive(false);
         log -= toolbuildmats[0];
         gold -= benchbuildmats[1];
@@ -514,9 +514,21 @@ public class CharacterMoveScript : Agent
                 if (needtomove(benchlocation))
                 {
                 }
-                else if (!benchbuilt && log >= benchbuildmats[0] && copper >= benchbuildmats[1] && gold >= benchbuildmats[2] && iron >= benchbuildmats[3])
+                else if (!benchbuilt /*&& log >= benchbuildmats[0] && copper >= benchbuildmats[1] && gold >= benchbuildmats[2] && iron >= benchbuildmats[3]*/)
                 {
                     StartCoroutine(BuildBench());
+                }
+                else if (benchbuilt && !axebuilt /*&& log >= toolbuildmats[0] && iron >= toolbuildmats[1]*/)
+                {  
+                    StartCoroutine(BuildAxe());  
+                }
+                else if (benchbuilt && axebuilt && !pickaxebuilt /*&& log >= toolbuildmats[0] && copper >= toolbuildmats[1]*/)
+                {
+                    StartCoroutine(BuildPickAxe());
+                }
+                else if (benchbuilt && axebuilt && pickaxebuilt && !scythebuilt /*&& log >= toolbuildmats[0] && gold >= toolbuildmats[1]*/)
+                {
+                    StartCoroutine(BuildScythe());
                 }
             }
             if (vetcaction.DiscreteActions[0] == 5)
@@ -559,76 +571,6 @@ public class CharacterMoveScript : Agent
                     StartCoroutine(LaunchRocket());
                 }
             }
-            // Axe
-            if (vetcaction.DiscreteActions[0] == 7)
-            {
-                if (benchbuilt && !axebuilt )
-                {
-                    if (needtomove(axelocation))
-                    {
-
-                    } 
-                    else if (log >= toolbuildmats[0] && iron >= toolbuildmats[1])
-                    {
-                        StartCoroutine(BuildAxe());
-                    }
-                }
-                else if (axebuilt) 
-                {
-                    flag = 0;
-                    toolAction();
-                    toolselectorreset();
-                    log_tool = true;
-                }
-            }
-            // PickAxe
-            if (vetcaction.DiscreteActions[0] == 8)
-            {
-                if (benchbuilt && !pickaxebuilt)
-                {
-                    if (needtomove(pickaxelocation))
-                    {
-
-                    }
-                    else if (log >= toolbuildmats[0] && copper >= toolbuildmats[1])
-                    {
-                        StartCoroutine(BuildPickAxe());
-                    }
-                }
-                else if (pickaxebuilt)
-                {
-                    flag = 3;
-                    toolAction();
-                    toolselectorreset();
-                    iron_tool = true;
-                    copper_tool = true;
-                    gold_tool = true;
-                }
-            }
-            // Scythe
-            if (vetcaction.DiscreteActions[0] == 9)
-            {
-                if (benchbuilt && !scythebuilt)
-                {
-                    if (needtomove(scythelocation))
-                    {
-
-                    }
-                    else if (log >= toolbuildmats[0] && gold >= toolbuildmats[1])
-                    {
-                        StartCoroutine(BuildScythe());
-                    }
-                }
-                else if (scythebuilt)
-                {
-                    flag = 4;
-                    toolAction();
-                    toolselectorreset();
-                    apple_tool = true;
-                    meat_tool = true;
-                    oil_tool = true;
-                }
-            }
         }
     }
 
@@ -662,18 +604,6 @@ public class CharacterMoveScript : Agent
         else if (Input.GetKey(KeyCode.U))
         {
             discreteactions[0] = 6;
-        }
-        else if (Input.GetKey(KeyCode.Alpha1))
-        {
-            discreteactions[0] = 7;
-        }
-        else if (Input.GetKey(KeyCode.Alpha2))
-        {
-            discreteactions[0] = 8;
-        }
-        else if (Input.GetKey(KeyCode.Alpha3))
-        {
-            discreteactions[0] = 9;
         }
         else
         {

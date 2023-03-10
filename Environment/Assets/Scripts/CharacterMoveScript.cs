@@ -710,6 +710,11 @@ public class CharacterMoveScript : Agent
     // Update is called once per frame
     void Update()
     {
+        if(!moving && !busy)
+        {
+            Debug.Log("Request Decision");
+            RequestDecision();
+        }
         if (moving && !busy)
         {
             if (Vector3.Distance(target, controller.transform.position) > 0.9)

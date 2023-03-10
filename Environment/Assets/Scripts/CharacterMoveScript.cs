@@ -58,6 +58,8 @@ public class CharacterMoveScript : Agent
 
     public override void OnEpisodeBegin()
     {
+        SetReward(0);
+
         //initially, stay at current place(which is itself)
         transform.position = new Vector3(150, 1.36f, 25);
         target = transform.position;
@@ -89,7 +91,7 @@ public class CharacterMoveScript : Agent
         rocketui.transform.Find("UILaunch").gameObject.SetActive(false);
 
         rocket.transform.Find("Rocket").position = new Vector3(160.8f, 4.42f, 19.3f);
-        rocket.transform.Find("SmokeEffect").position = new Vector3(160.8f, 1.75f, 19.3f);
+        rocket.transform.Find("SmokeEffect").position = new Vector3(160.8f, 1.75f, 18f);
         rocket.transform.Find("BigExplosionEffect").gameObject.SetActive(false);
         rocket.transform.Find("SmokeEffect").gameObject.SetActive(false);
 
@@ -482,7 +484,6 @@ public class CharacterMoveScript : Agent
         for (int i = 1; i <= 200; i++)
         {
             rocket.transform.Find("Rocket").Translate(0, -0.2f, 0);
-            rocket.transform.Find("SmokeEffect").Translate(0, 0, -0.2f);
             yield return null;
         }
     }
@@ -530,6 +531,7 @@ public class CharacterMoveScript : Agent
                 else
                 {
                     StartCoroutine(Log());
+                    AddReward(1);
                 }
             }
             if (vetcaction.DiscreteActions[0] == 1)
@@ -540,6 +542,7 @@ public class CharacterMoveScript : Agent
                 else
                 {
                     StartCoroutine(Gatherfood());
+                    AddReward(1);
                 }
             }
             if (vetcaction.DiscreteActions[0] == 2)
@@ -550,6 +553,7 @@ public class CharacterMoveScript : Agent
                 else
                 {
                     StartCoroutine(CollectWater());
+                    AddReward(1);
                 }
             }
             if (vetcaction.DiscreteActions[0] == 3)
@@ -560,9 +564,10 @@ public class CharacterMoveScript : Agent
                 else
                 {
                     StartCoroutine(Mine());
+                    AddReward(1);
                 }
             }
-            if (vetcaction.DiscreteActions[0] == 4)
+            if (vetcaction.DiscreteActions[0] == 5)
             {
                 if (needtomove(benchlocation))
                 {
@@ -584,7 +589,7 @@ public class CharacterMoveScript : Agent
                     StartCoroutine(BuildPickaxe());
                 }
             }
-            if (vetcaction.DiscreteActions[0] == 5)
+            if (vetcaction.DiscreteActions[0] == 4)
             {
                 if (needtomove(firelocation))
                 {
@@ -592,10 +597,12 @@ public class CharacterMoveScript : Agent
                 else if (!campfirebuilt && log >= firebuildmats[0] && iron >= firebuildmats[1])
                 {
                     StartCoroutine(BuildFire());
+                    AddReward(50);
                 }
                 else if (campfirebuilt && log >= cookmats[0] && apple >= cookmats[1] && meat >= cookmats[2] && water >= cookmats[3])
                 {
                     StartCoroutine(Cook());
+                    AddReward(100);
                 }
             }
             if (vetcaction.DiscreteActions[0] == 6)
@@ -761,6 +768,7 @@ public class CharacterMoveScript : Agent
         if (Health < 0)
         {
             StartCoroutine(Die());
+            AddReward(-9000);
         }
     }
 

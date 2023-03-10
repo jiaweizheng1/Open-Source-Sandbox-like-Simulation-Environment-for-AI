@@ -45,8 +45,7 @@ public class CharacterMoveScript : Agent
     public TMP_Text time_t;
     public TMP_Text day_t;
 
-    private bool benchbuilt, campfirebuilt, rocketbuilt;
-    private int toolshave;
+    private bool benchbuilt, campfirebuilt, rocketbuilt, axebuilt, scythebuilt, pickaxebuilt;
     public GameObject tools;
     public GameObject bench, fire, rocket, toolblueprints;
     public GameObject benchui, fireui, rocketui, toolui;
@@ -95,7 +94,9 @@ public class CharacterMoveScript : Agent
         rocket.transform.Find("SmokeEffect").gameObject.SetActive(false);
 
         // tool initialize
-        toolshave = 0;
+        axebuilt = false;
+        scythebuilt = false; 
+        pickaxebuilt = false;
         toolblueprints.transform.Find("ToolBlueprint").gameObject.transform.Find("Axe").gameObject.SetActive(false);
         toolblueprints.transform.Find("ToolBlueprint").gameObject.transform.Find("PickAxe").gameObject.SetActive(false);
         toolblueprints.transform.Find("ToolBlueprint").gameObject.transform.Find("Scythe").gameObject.SetActive(false);
@@ -106,6 +107,7 @@ public class CharacterMoveScript : Agent
         tools.transform.Find("Axe").gameObject.SetActive(false);
         tools.transform.Find("Scythe").gameObject.SetActive(false);
         tools.transform.Find("Pickaxe").gameObject.SetActive(false);
+        tools.transform.Find("Chickenleg").gameObject.SetActive(false);
 
         log = 0;
         apple = 0;
@@ -145,7 +147,7 @@ public class CharacterMoveScript : Agent
     IEnumerator Log()
     {
         busy = true;
-        if(toolshave>0)
+        if(axebuilt)
         {
             tools.transform.Find("Axe").gameObject.SetActive(true);
             tools.transform.Find("Scythe").gameObject.SetActive(false);
@@ -157,7 +159,7 @@ public class CharacterMoveScript : Agent
             animator.SetBool("harvesting", true);
         }
         yield return new WaitForSeconds(2);
-        if (toolshave>0)
+        if (axebuilt)
         {
             log += 3;
         }
@@ -174,7 +176,7 @@ public class CharacterMoveScript : Agent
     IEnumerator Gatherfood()
     {
         busy = true;
-        if(toolshave>1)
+        if(scythebuilt)
         {
             tools.transform.Find("Axe").gameObject.SetActive(false);
             tools.transform.Find("Scythe").gameObject.SetActive(true);
@@ -186,7 +188,7 @@ public class CharacterMoveScript : Agent
             animator.SetBool("harvesting", true);
         }
         yield return new WaitForSeconds(2);
-        if(toolshave>1)
+        if(scythebuilt)
         {
             apple++;
             meat++;
@@ -279,7 +281,7 @@ public class CharacterMoveScript : Agent
     IEnumerator Mine()
     {
         busy = true;
-        if(toolshave>2)
+        if(pickaxebuilt)
         {
             tools.transform.Find("Axe").gameObject.SetActive(false);
             tools.transform.Find("Scythe").gameObject.SetActive(false);
@@ -291,7 +293,7 @@ public class CharacterMoveScript : Agent
             animator.SetBool("harvesting", true);
         }
         yield return new WaitForSeconds(2);
-        if(toolshave>2)
+        if(pickaxebuilt)
         {
             copper++;
             gold++;
@@ -344,7 +346,7 @@ public class CharacterMoveScript : Agent
         busy = true;
         animator.SetBool("harvesting", true);
         yield return new WaitForSeconds(2);
-        toolshave++; 
+        axebuilt=true; 
         toolblueprints.transform.Find("ToolBlueprint").gameObject.transform.Find("Axe").gameObject.SetActive(false);
         toolui.transform.Find("UIBuildAxe").gameObject.SetActive(false);
         toolblueprints.transform.Find("ToolBlueprint").gameObject.transform.Find("Scythe").gameObject.SetActive(true);
@@ -361,7 +363,7 @@ public class CharacterMoveScript : Agent
         busy = true;
         animator.SetBool("harvesting", true);
         yield return new WaitForSeconds(2);
-        toolshave++;
+        scythebuilt=true;
         toolblueprints.transform.Find("ToolBlueprint").gameObject.transform.Find("Scythe").gameObject.SetActive(false);
         toolui.transform.Find("UIBuildScythe").gameObject.SetActive(false);
         toolblueprints.transform.Find("ToolBlueprint").gameObject.transform.Find("PickAxe").gameObject.SetActive(true);
@@ -378,7 +380,7 @@ public class CharacterMoveScript : Agent
         busy = true;
         animator.SetBool("harvesting", true);
         yield return new WaitForSeconds(2);
-        toolshave++;
+        pickaxebuilt=true;
         toolblueprints.transform.Find("ToolBlueprint").gameObject.transform.Find("PickAxe").gameObject.SetActive(false);
         toolui.transform.Find("UIBuildPickaxe").gameObject.SetActive(false);
         log -= toolbuildmats[0];
@@ -408,6 +410,10 @@ public class CharacterMoveScript : Agent
     IEnumerator Cook()
     {
         busy = true;
+        tools.transform.Find("Axe").gameObject.SetActive(false);
+        tools.transform.Find("Scythe").gameObject.SetActive(false);
+        tools.transform.Find("Pickaxe").gameObject.SetActive(false);
+        tools.transform.Find("Chickenleg").gameObject.SetActive(true);
         animator.SetBool("eating", true);
         yield return new WaitForSeconds(2);
         Health = MaxHealth;
@@ -419,6 +425,7 @@ public class CharacterMoveScript : Agent
         water -= cookmats[3];
         ManualUpdateAllText();
         animator.SetBool("eating", false);
+        tools.transform.Find("Chickenleg").gameObject.SetActive(false);
         busy = false;
     }
 
@@ -555,15 +562,15 @@ public class CharacterMoveScript : Agent
                 {
                     StartCoroutine(BuildBench());
                 }
-                else if (benchbuilt && toolshave<1 /*&& log >= toolbuildmats[0] && iron >= toolbuildmats[1]*/)
+                else if (benchbuilt && !axebuilt /*&& log >= toolbuildmats[0] && iron >= toolbuildmats[1]*/)
                 {  
                     StartCoroutine(BuildAxe());  
                 }
-                else if (benchbuilt && toolshave<2 /*&& log >= toolbuildmats[0] && gold >= toolbuildmats[1]*/)
+                else if (benchbuilt && axebuilt & !scythebuilt /*&& log >= toolbuildmats[0] && gold >= toolbuildmats[1]*/)
                 {
                     StartCoroutine(BuildScythe());
                 }
-                else if (benchbuilt && toolshave<3 /*&& log >= toolbuildmats[0] && copper >= toolbuildmats[1]*/)
+                else if (benchbuilt && axebuilt & scythebuilt && !pickaxebuilt/*&& log >= toolbuildmats[0] && copper >= toolbuildmats[1]*/)
                 {
                     StartCoroutine(BuildPickaxe());
                 }

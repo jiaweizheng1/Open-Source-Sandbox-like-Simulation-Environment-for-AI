@@ -127,11 +127,13 @@ public class CharacterMoveScript : Agent
     public override void CollectObservations(VectorSensor sensor)
     {
         sensor.AddObservation(controller.transform.position);
-
         sensor.AddObservation(treeslocation);
         sensor.AddObservation(farmlocation);
         sensor.AddObservation(poollocation);
         sensor.AddObservation(rockslocation);
+        sensor.AddObservation(benchlocation);
+        sensor.AddObservation(firelocation);
+        sensor.AddObservation(rocketlocation);
 
         sensor.AddObservation(log);
         sensor.AddObservation(apple);
@@ -141,7 +143,14 @@ public class CharacterMoveScript : Agent
         sensor.AddObservation(copper);
         sensor.AddObservation(gold);
         sensor.AddObservation(iron);
-        //Add all the important observations like HP, food, thirst, inventory items
+        
+        sensor.AddObservation(Health);
+        sensor.AddObservation(Hunger);
+        sensor.AddObservation(Thirst);
+
+        sensor.AddObservation(axebuilt);
+        sensor.AddObservation(scythebuilt);
+        sensor.AddObservation(pickaxebuilt);
     }
 
     IEnumerator Log()
@@ -580,11 +589,11 @@ public class CharacterMoveScript : Agent
                 if (needtomove(firelocation))
                 {
                 }
-                else if (!campfirebuilt /*&& log >= firebuildmats[0] && iron >= firebuildmats[1]*/)
+                else if (!campfirebuilt && log >= firebuildmats[0] && iron >= firebuildmats[1])
                 {
                     StartCoroutine(BuildFire());
                 }
-                else if (campfirebuilt /*&& log >= cookmats[0] && apple >= cookmats[1] && meat >= cookmats[2] && water >= cookmats[3]*/)
+                else if (campfirebuilt && log >= cookmats[0] && apple >= cookmats[1] && meat >= cookmats[2] && water >= cookmats[3])
                 {
                     StartCoroutine(Cook());
                 }

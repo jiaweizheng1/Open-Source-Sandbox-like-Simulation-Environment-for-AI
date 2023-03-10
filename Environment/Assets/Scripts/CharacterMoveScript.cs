@@ -229,8 +229,56 @@ public class CharacterMoveScript : Agent
         ManualUpdateAllText();
         animator.SetBool("harvesting", false);
         busy = false;
+
     }
 
+
+    IEnumerator ConsumeWater()
+    {
+        busy = true;
+        animator.SetBool("eating", true);
+        yield return new WaitForSeconds(2);
+        water--;
+        if(Thirst + 20 > MaxThirst){
+            Thirst=MaxThirst;
+        }
+        else{
+            Thirst += 20;
+        }
+        ManualUpdateAllText();
+        animator.SetBool("eating", false);
+        busy = false;
+    }
+    IEnumerator EatMeat(){
+        busy = true;
+        animator.SetBool("eating", true);
+        yield return new WaitForSeconds(2);
+        meat--;
+        if(Hunger + 20 > MaxHunger){
+            Hunger=MaxHunger;
+        }
+        else{
+            Hunger += 20;
+        }
+        ManualUpdateAllText();
+        animator.SetBool("eating", false);
+        busy = false;
+    }
+    IEnumerator EatApple(){
+        busy = true;
+        animator.SetBool("eating", true);
+        yield return new WaitForSeconds(2);
+        apple--;
+        if(Hunger + 20 > MaxHunger){
+            Hunger=MaxHunger;
+        }
+        else{
+            Hunger += 20;
+        }
+        ManualUpdateAllText();
+        animator.SetBool("eating", false);
+        busy = false;
+    }
     IEnumerator Mine()
     {
         busy = true;
@@ -571,6 +619,25 @@ public class CharacterMoveScript : Agent
                     StartCoroutine(LaunchRocket());
                 }
             }
+            if(vetcaction.DiscreteActions[0] == 7)
+            {
+                if(apple > 0){
+                    StartCoroutine(EatApple());
+                }
+            }
+            if(vetcaction.DiscreteActions[0] == 8)
+            {
+                if(meat > 0){
+                    StartCoroutine(EatMeat());
+                }
+            }
+            if(vetcaction.DiscreteActions[0] == 9)
+            {
+                if(water > 0){
+                    StartCoroutine(ConsumeWater());
+                }
+            }
+
         }
     }
 
@@ -604,6 +671,18 @@ public class CharacterMoveScript : Agent
         else if (Input.GetKey(KeyCode.U))
         {
             discreteactions[0] = 6;
+        }
+        else if(Input.GetKey(KeyCode.I))
+        {
+            discreteactions[0] = 7;
+        }
+        else if(Input.GetKey(KeyCode.O))
+        {
+            discreteactions[0] = 8;
+        }
+        else if(Input.GetKey(KeyCode.P))
+        {
+            discreteactions[0] =9;
         }
         else
         {

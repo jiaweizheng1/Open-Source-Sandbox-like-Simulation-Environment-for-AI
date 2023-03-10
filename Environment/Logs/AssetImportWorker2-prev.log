@@ -1,0 +1,290 @@
+Unity Editor version:    2021.3.18f1 (3129e69bc0c7)
+Branch:                  2021.3/staging
+Build type:              Release
+Batch mode:              YES
+macOS version:           Version 13.0 (Build 22A8380)
+Darwin version:          22.1.0
+Architecture:            arm64
+Running under Rosetta:   NO
+Available memory:        16384 MB
+Using pre-set license
+Pro License: YES
+
+COMMAND LINE ARGUMENTS:
+/Applications/Unity/Hub/Editor/2021.3.18f1/Unity.app/Contents/MacOS/Unity
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker2
+-projectPath
+/Users/a./ecs193_git/Open-Source-Minecraft-like-Simulation-Environment-for-AI/Environment
+-logFile
+Logs/AssetImportWorker2.log
+-srvPort
+60820
+Successfully changed project path to: /Users/a./ecs193_git/Open-Source-Minecraft-like-Simulation-Environment-for-AI/Environment
+/Users/a./ecs193_git/Open-Source-Minecraft-like-Simulation-Environment-for-AI/Environment
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [8699045120] Host "[IP] 10.0.0.121 [Port] 0 [Flags] 2 [Guid] 3279211299 [EditorId] 3279211299 [Version] 1048832 [Id] OSXEditor(0,MacBook-Pro-109.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [8699045120] Host "[IP] 10.0.0.121 [Port] 0 [Flags] 2 [Guid] 3279211299 [EditorId] 3279211299 [Version] 1048832 [Id] OSXEditor(0,MacBook-Pro-109.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+Refreshing native plugins compatible for Editor in 67.69 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.3.18f1 (3129e69bc0c7)
+[Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/2021.3.18f1/Unity.app/Contents/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path /Users/a./ecs193_git/Open-Source-Minecraft-like-Simulation-Environment-for-AI/Environment/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+ preferred device: Apple M2 Pro (high power)
+Metal devices available: 1
+0: Apple M2 Pro (high power)
+Using device Apple M2 Pro (high power)
+Initializing Metal device caps: Apple M2 Pro
+Initialize mono
+Mono path[0] = '/Applications/Unity/Hub/Editor/2021.3.18f1/Unity.app/Contents/Managed'
+Mono path[1] = '/Applications/Unity/Hub/Editor/2021.3.18f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityjit-macos'
+Mono config path = '/Applications/Unity/Hub/Editor/2021.3.18f1/Unity.app/Contents/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56361
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: /Applications/Unity/Hub/Editor/2021.3.18f1/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: /Applications/Unity/Hub/Editor/2021.3.18f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
+Registered in 0.002763 seconds.
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 63.84 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.380 seconds
+Domain Reload Profiling:
+	ReloadAssembly (380ms)
+		BeginReloadAssembly (45ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (0ms)
+		EndReloadAssembly (270ms)
+			LoadAssemblies (45ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (63ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (18ms)
+			SetupLoadedEditorAssemblies (164ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (64ms)
+				BeforeProcessingInitializeOnLoad (1ms)
+				ProcessInitializeOnLoadAttributes (73ms)
+				ProcessInitializeOnLoadMethodAttributes (22ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.008719 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image /Users/a./ecs193_git/Open-Source-Minecraft-like-Simulation-Environment-for-AI/Environment/Library/PackageCache/com.unity.visualscripting@1.8.0/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image /Users/a./ecs193_git/Open-Source-Minecraft-like-Simulation-Environment-for-AI/Environment/Library/PackageCache/com.unity.visualscripting@1.8.0/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 62.49 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.753 seconds
+Domain Reload Profiling:
+	ReloadAssembly (754ms)
+		BeginReloadAssembly (52ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (15ms)
+		EndReloadAssembly (632ms)
+			LoadAssemblies (67ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (182ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (37ms)
+			SetupLoadedEditorAssemblies (314ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (2ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (63ms)
+				BeforeProcessingInitializeOnLoad (54ms)
+				ProcessInitializeOnLoadAttributes (185ms)
+				ProcessInitializeOnLoadMethodAttributes (9ms)
+				AfterProcessingInitializeOnLoad (2ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (2ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launching external process: /Applications/Unity/Hub/Editor/2021.3.18f1/Unity.app/Contents/Tools/UnityShaderCompiler
+Launched and connected shader compiler UnityShaderCompiler after 0.04 seconds
+Refreshing native plugins compatible for Editor in 0.54 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4212 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 100 unused Assets / (23.6 MB). Loaded Objects now: 4635.
+Memory consumption went from 224.3 MB to 200.7 MB.
+Total: 5.616417 ms (FindLiveObjects: 0.136375 ms CreateObjectMapping: 0.068958 ms MarkObjects: 2.145958 ms  DeleteObjects: 3.264792 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 715104.906232 seconds.
+  path: Assets/ImportedAssets/Furniture Pack - March 2019/FBX/OfficeChair.fbx
+  artifactKey: Guid(73a58859fbd2c4142b3bdf0807ae1f08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Furniture Pack - March 2019/FBX/OfficeChair.fbx using Guid(73a58859fbd2c4142b3bdf0807ae1f08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '373b2355b3016f2afd6175e6a93350c9') in 0.174984 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000057 seconds.
+  path: Assets/ImportedAssets/Furniture Pack - March 2019/FBX/Table.fbx
+  artifactKey: Guid(cda252eb5f34b1e4ba80c490623cdeb8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Furniture Pack - March 2019/FBX/Table.fbx using Guid(cda252eb5f34b1e4ba80c490623cdeb8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8b493708310c4458423fb08d59ce73b6') in 0.013185 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000071 seconds.
+  path: Assets/ImportedAssets/Furniture Pack - March 2019/FBX/Bookcase_Books.fbx
+  artifactKey: Guid(ba0358b1f2cce934aa40dafbe547c324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Furniture Pack - March 2019/FBX/Bookcase_Books.fbx using Guid(ba0358b1f2cce934aa40dafbe547c324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a4fcc2a750f917edb05f5ee4ce75b7b2') in 0.070498 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/ImportedAssets/Furniture Pack - March 2019/FBX/Sofa2.fbx
+  artifactKey: Guid(064857fe4110e874b93eb75112d9c19b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Furniture Pack - March 2019/FBX/Sofa2.fbx using Guid(064857fe4110e874b93eb75112d9c19b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '289f7d1196bd6bca9bf740599faf3182') in 0.014440 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/ImportedAssets/Furniture Pack - March 2019/FBX/BedDouble.fbx
+  artifactKey: Guid(b94518df39844c346a628b6597080746) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Furniture Pack - March 2019/FBX/BedDouble.fbx using Guid(b94518df39844c346a628b6597080746) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a1cfa7daa2c81b1f87192689bfdb0eb5') in 0.048178 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/ImportedAssets/Furniture Pack - March 2019/FBX/Sofa3.fbx
+  artifactKey: Guid(4a04e970a1c5ce94ca6e808a1ec75208) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Furniture Pack - March 2019/FBX/Sofa3.fbx using Guid(4a04e970a1c5ce94ca6e808a1ec75208) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2860cc032ff91b97add38faaf770f266') in 0.010304 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/ImportedAssets/Furniture Pack - March 2019/FBX/Table2.fbx
+  artifactKey: Guid(221608edfaa72c8489accb4be58ef320) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Furniture Pack - March 2019/FBX/Table2.fbx using Guid(221608edfaa72c8489accb4be58ef320) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '99717e440352ba2ba218812325c5dc5c') in 0.011503 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000065 seconds.
+  path: Assets/ImportedAssets/Furniture Pack - March 2019/FBX/Desk.fbx
+  artifactKey: Guid(a9f0fff7ff4b3604b9a841f8af4ceba0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Furniture Pack - March 2019/FBX/Desk.fbx using Guid(a9f0fff7ff4b3604b9a841f8af4ceba0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0baccae79d1891f39a89f4fe4e970d00') in 0.034021 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/ImportedAssets/Furniture Pack - March 2019/FBX/Bookcase.fbx
+  artifactKey: Guid(1521d91055f66e04f86a8ec26a966214) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Furniture Pack - March 2019/FBX/Bookcase.fbx using Guid(1521d91055f66e04f86a8ec26a966214) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ceec294ae36f0a2ab72b29d691653b72') in 0.031564 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.054960 seconds.
+  path: Assets/ImportedAssets/SimpleNaturePack/Materials/SimpleNaturePack_Texture_01.mat
+  artifactKey: Guid(93caadf4359ae8143aad35b3145d31af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/SimpleNaturePack/Materials/SimpleNaturePack_Texture_01.mat using Guid(93caadf4359ae8143aad35b3145d31af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0319c2456ccae8003f6c0ba2137ae839') in 0.073444 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.249636 seconds.
+  path: Assets/ImportedAssets/Survival Pack - Sept 2020/Blends/WoodLog.blend
+  artifactKey: Guid(04cbb33b3ef3f6644999248a5e6de1cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Survival Pack - Sept 2020/Blends/WoodLog.blend using Guid(04cbb33b3ef3f6644999248a5e6de1cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b7dd9e00f6c08a6b21c068965ecb21f3') in 0.028208 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 504.576752 seconds.
+  path: Assets/ImportedAssets/Alstra Infinite/Tool Set - PolyPack/Materials/MetalV1.mat
+  artifactKey: Guid(f7ebf90318e22d14ba2b9db3099952a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Alstra Infinite/Tool Set - PolyPack/Materials/MetalV1.mat using Guid(f7ebf90318e22d14ba2b9db3099952a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a9b877e6465043e91733e35383400d0f') in 0.015489 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000062 seconds.
+  path: Assets/ImportedAssets/Alstra Infinite/Tool Set - PolyPack/Materials/PolyPack_Main.mat
+  artifactKey: Guid(18c9e94dd61f38949a78534f943fee84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Alstra Infinite/Tool Set - PolyPack/Materials/PolyPack_Main.mat using Guid(18c9e94dd61f38949a78534f943fee84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '395a5f1a0cc005ac23f5942cd4be0d44') in 0.007209 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.701049 seconds.
+  path: Assets/ImportedAssets/Alstra Infinite/Tool Set - PolyPack/Models/AxeV1.fbx
+  artifactKey: Guid(bda3df0b090a6d64f9ef4850a025dc3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Alstra Infinite/Tool Set - PolyPack/Models/AxeV1.fbx using Guid(bda3df0b090a6d64f9ef4850a025dc3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '11dd85d152fde64ecd56a4c89a2dce7b') in 0.015637 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/ImportedAssets/Alstra Infinite/Tool Set - PolyPack/Models/ScytheV1.fbx
+  artifactKey: Guid(2dbfb94aea12daf43bbaa0bdf3d9b5f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Alstra Infinite/Tool Set - PolyPack/Models/ScytheV1.fbx using Guid(2dbfb94aea12daf43bbaa0bdf3d9b5f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a671368508d3baafc064fadc10cba5f7') in 0.009778 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/ImportedAssets/Alstra Infinite/Tool Set - PolyPack/Models/HoeV1.fbx
+  artifactKey: Guid(cac02654c83b2c94faf8ee2dfcaab1d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Alstra Infinite/Tool Set - PolyPack/Models/HoeV1.fbx using Guid(cac02654c83b2c94faf8ee2dfcaab1d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c510ed576fdd1ac738c4a9f15e3d964d') in 0.015530 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000050 seconds.
+  path: Assets/ImportedAssets/Alstra Infinite/Tool Set - PolyPack/Models/PickAxeV1.fbx
+  artifactKey: Guid(a2e5c537bbbaee44082807d1614edef1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Alstra Infinite/Tool Set - PolyPack/Models/PickAxeV1.fbx using Guid(a2e5c537bbbaee44082807d1614edef1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3491f18e5a7abe7b96edb81fc36fccaf') in 0.011557 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 56.857178 seconds.
+  path: Assets/ImportedAssets/Alstra Infinite/Tool Set - PolyPack/Prefabs/AxeV1.prefab
+  artifactKey: Guid(c8abccebf51185b4097c6c21f9537b03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Alstra Infinite/Tool Set - PolyPack/Prefabs/AxeV1.prefab using Guid(c8abccebf51185b4097c6c21f9537b03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e0a35fb9f097b0285a107dd1593641d2') in 0.046285 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/ImportedAssets/Alstra Infinite/Tool Set - PolyPack/Prefabs/ScytheV1.prefab
+  artifactKey: Guid(6d5c973482b67d04e8b5574a2dc815a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Alstra Infinite/Tool Set - PolyPack/Prefabs/ScytheV1.prefab using Guid(6d5c973482b67d04e8b5574a2dc815a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e76ef5dfe0518087c5dc9c6c28c800f8') in 0.005782 seconds 
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting

@@ -573,11 +573,11 @@ public class CharacterMoveScript : Agent
                 if (needtomove(firelocation))
                 {
                 }
-                else if (!campfirebuilt && log >= firebuildmats[0] && iron >= firebuildmats[1])
+                else if (!campfirebuilt /*&& log >= firebuildmats[0] && iron >= firebuildmats[1]*/)
                 {
                     StartCoroutine(BuildFire());
                 }
-                else if (campfirebuilt && log >= cookmats[0] && apple >= cookmats[1] && meat >= cookmats[2] && water >= cookmats[3])
+                else if (campfirebuilt /*&& log >= cookmats[0] && apple >= cookmats[1] && meat >= cookmats[2] && water >= cookmats[3]*/)
                 {
                     StartCoroutine(Cook());
                 }

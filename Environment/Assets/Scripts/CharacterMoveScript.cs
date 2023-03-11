@@ -491,25 +491,25 @@ public class CharacterMoveScript : Agent
             {
                 needtomove(treeslocation);
                 StartCoroutine(WaitForMove(Log()));
-                AddReward(.06f);
+                AddReward(0.001f);
             }
             if (vetcaction.DiscreteActions[0] == 1)
             {
                 needtomove(farmlocation);
                 StartCoroutine(WaitForMove(Gatherfood()));
-                AddReward(.06f);
+                AddReward(0.0009f);
             }
             if (vetcaction.DiscreteActions[0] == 2)
             {
                 needtomove(poollocation);
                 StartCoroutine(WaitForMove(CollectWater()));
-                AddReward(.05f);
+                AddReward(0.0008f);
             }
             if (vetcaction.DiscreteActions[0] == 3)
             {
                 needtomove(rockslocation);
                 StartCoroutine(WaitForMove(Mine()));
-                AddReward(.06f);
+                AddReward(0.001f);
             }
             if (vetcaction.DiscreteActions[0] == 4)
             {
@@ -517,20 +517,13 @@ public class CharacterMoveScript : Agent
                 {
                     needtomove(firelocation);
                     StartCoroutine(WaitForMove(BuildFire()));
-                    AddReward(25);
+                    AddReward(0.9f);
                 }
-                else if(campfirebuilt && log >= cookmats[0] && apple >= cookmats[1] && meat >= cookmats[2] && water >= cookmats[3])
+                else if(campfirebuilt && Health<100 && log >= cookmats[0] && apple >= cookmats[1] && meat >= cookmats[2] && water >= cookmats[3])
                 {
                     needtomove(firelocation);
                     StartCoroutine(WaitForMove(Cook()));
-                    if(Health<100)
-                    {
-                        AddReward(25);
-                    }
-                    else
-                    {
-                        AddReward(-25);
-                    }
+                    AddReward(0.1f);
                 }
             }
             if (vetcaction.DiscreteActions[0] == 5)
@@ -539,25 +532,25 @@ public class CharacterMoveScript : Agent
                 {
                     needtomove(benchlocation);
                     StartCoroutine(WaitForMove(BuildBench()));
-                    AddReward(25);
+                    AddReward(0.85f);
                 }
                 else if (benchbuilt && !axebuilt && log >= toolbuildmats[0] && iron >= toolbuildmats[1])
                 {  
                     needtomove(benchlocation);
                     StartCoroutine(WaitForMove(BuildAxe()));  
-                    AddReward(25);
+                    AddReward(0.85f);
                 }
                 else if (benchbuilt && axebuilt & !scythebuilt && log >= toolbuildmats[0] && gold >= toolbuildmats[1])
                 {
                     needtomove(benchlocation);
                     StartCoroutine(WaitForMove(BuildScythe()));  
-                    AddReward(25);
+                    AddReward(0.85f);
                 }
                 else if (benchbuilt && axebuilt & scythebuilt && !pickaxebuilt && log >= toolbuildmats[0] && diamond >= toolbuildmats[1])
                 {
                     needtomove(benchlocation);
                     StartCoroutine(WaitForMove(BuildPickaxe())); 
-                    AddReward(25);
+                    AddReward(0.85f);
                 }
             }
             if (vetcaction.DiscreteActions[0] == 6)
@@ -566,10 +559,11 @@ public class CharacterMoveScript : Agent
                 {
                     needtomove(rocketlocation);
                     StartCoroutine(WaitForMove(BuildRocket()));
-                    AddReward(50);
+                    AddReward(1);
                 }
                 else if (rocketbuilt && log >= rocketlaunchmats[0] && apple >= rocketlaunchmats[1] && meat >= rocketlaunchmats[2] && oil >= rocketlaunchmats[3] && iron >= rocketlaunchmats[4] && gold >= rocketlaunchmats[5] && diamond >= rocketlaunchmats[6])
                 {
+                    //maybe also add water later
                     log -= rocketlaunchmats[0];
                     apple -= rocketlaunchmats[1];
                     meat -= rocketlaunchmats[2];
@@ -578,8 +572,8 @@ public class CharacterMoveScript : Agent
                     gold -= rocketlaunchmats[5];
                     diamond -= rocketlaunchmats[6];
                     ManualUpdateAllText();
-                    AddReward(9000);
-                    AddReward(time.Day * -10); //penality based on number of days taken to finish rocket
+                    AddReward(1);
+                    AddReward(time.Day * -0.5f); //penality based on number of days taken to finish rocket
                     StartCoroutine(WaitForMove(LaunchRocket()));
                 }
             }
@@ -686,9 +680,17 @@ public class CharacterMoveScript : Agent
         if (Health < 0 && alive)
         {
             alive = false;
-            AddReward(-9000);
+            AddReward(-5);
             StopAllCoroutines();
             StartCoroutine(Die());
+        }
+        if (!rocketbuilt && log >= rocketbuildmats[0] && iron >= rocketbuildmats[1] && gold >= rocketbuildmats[2] && diamond >= rocketbuildmats[3])
+        {
+            AddReward(-0.001f);
+        }
+        if(rocketbuilt && log >= rocketlaunchmats[0] && apple >= rocketlaunchmats[1] && meat >= rocketlaunchmats[2] && oil >= rocketlaunchmats[3] && iron >= rocketlaunchmats[4] && gold >= rocketlaunchmats[5] && diamond >= rocketlaunchmats[6])
+        {
+            AddReward(-0.001f);
         }
     }
 

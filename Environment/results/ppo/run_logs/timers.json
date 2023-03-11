@@ -1,0 +1,42 @@
+{
+    "name": "root",
+    "metadata": {
+        "timer_format_version": "0.1.0",
+        "start_time_seconds": "1678525442",
+        "python_version": "3.9.13 (tags/v3.9.13:6de2ca5, May 17 2022, 16:36:42) [MSC v.1929 64 bit (AMD64)]",
+        "command_line_arguments": "C:\\Users\\jiawe\\OneDrive\\Documents\\GitHub\\Open-Source-Minecraft-like-Simulation-Environment-for-AI\\Environment\\venv\\Scripts\\mlagents-learn config/AI.yaml.txt --force --time-scale=5",
+        "mlagents_version": "0.30.0",
+        "mlagents_envs_version": "0.30.0",
+        "communication_protocol_version": "1.5.0",
+        "pytorch_version": "1.13.1+cpu",
+        "numpy_version": "1.21.2",
+        "end_time_seconds": "1678525506"
+    },
+    "total": 64.1014385,
+    "count": 1,
+    "self": 0.0063952999999941085,
+    "children": {
+        "run_training.setup": {
+            "total": 0.08431830000000007,
+            "count": 1,
+            "self": 0.08431830000000007
+        },
+        "TrainerController.start_learning": {
+            "total": 64.0107249,
+            "count": 1,
+            "self": 0.0001257999999779713,
+            "children": {
+                "TrainerController._reset_env": {
+                    "total": 64.01057630000001,
+                    "count": 1,
+                    "self": 64.01057630000001
+                },
+                "TrainerController._save_models": {
+                    "total": 2.2800000010647636e-05,
+                    "count": 1,
+                    "self": 2.2800000010647636e-05
+                }
+            }
+        }
+    }
+}

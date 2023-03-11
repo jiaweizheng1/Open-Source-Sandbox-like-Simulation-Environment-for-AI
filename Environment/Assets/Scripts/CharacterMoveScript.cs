@@ -318,7 +318,7 @@ public class CharacterMoveScript : Agent
         toolblueprints.transform.Find("ToolBlueprint").gameObject.transform.Find("Scythe").gameObject.SetActive(true);
         toolui.transform.Find("UIBuildScythe").gameObject.SetActive(true);
         log -= toolbuildmats[0];
-        diamond -= toolbuildmats[1];
+        iron -= toolbuildmats[1];
         ManualUpdateAllText();
         animator.SetBool("harvesting", false);
         busy = false;
@@ -350,7 +350,7 @@ public class CharacterMoveScript : Agent
         toolblueprints.transform.Find("ToolBlueprint").gameObject.transform.Find("PickAxe").gameObject.SetActive(false);
         toolui.transform.Find("UIBuildPickaxe").gameObject.SetActive(false);
         log -= toolbuildmats[0];
-        iron -= toolbuildmats[1];
+        diamond -= toolbuildmats[1];
         ManualUpdateAllText();
         animator.SetBool("harvesting", false);
         busy = false;
@@ -367,7 +367,7 @@ public class CharacterMoveScript : Agent
         fireui.transform.Find("UIBuild").gameObject.SetActive(false);
         fireui.transform.Find("UICook").gameObject.SetActive(true);
         log -= firebuildmats[0];
-        diamond -= firebuildmats[1];
+        iron -= firebuildmats[1];
         ManualUpdateAllText();
         animator.SetBool("harvesting", false);
         busy = false;
@@ -513,7 +513,7 @@ public class CharacterMoveScript : Agent
             }
             if (vetcaction.DiscreteActions[0] == 4)
             {
-                if (!campfirebuilt && log >= firebuildmats[0] && diamond >= firebuildmats[1])
+                if (!campfirebuilt && log >= firebuildmats[0] && iron >= firebuildmats[1])
                 {
                     needtomove(firelocation);
                     StartCoroutine(WaitForMove(BuildFire()));
@@ -541,7 +541,7 @@ public class CharacterMoveScript : Agent
                     StartCoroutine(WaitForMove(BuildBench()));
                     AddReward(25);
                 }
-                else if (benchbuilt && !axebuilt && log >= toolbuildmats[0] && diamond >= toolbuildmats[1])
+                else if (benchbuilt && !axebuilt && log >= toolbuildmats[0] && iron >= toolbuildmats[1])
                 {  
                     needtomove(benchlocation);
                     StartCoroutine(WaitForMove(BuildAxe()));  
@@ -553,7 +553,7 @@ public class CharacterMoveScript : Agent
                     StartCoroutine(WaitForMove(BuildScythe()));  
                     AddReward(25);
                 }
-                else if (benchbuilt && axebuilt & scythebuilt && !pickaxebuilt && log >= toolbuildmats[0] && iron >= toolbuildmats[1])
+                else if (benchbuilt && axebuilt & scythebuilt && !pickaxebuilt && log >= toolbuildmats[0] && diamond >= toolbuildmats[1])
                 {
                     needtomove(benchlocation);
                     StartCoroutine(WaitForMove(BuildPickaxe())); 

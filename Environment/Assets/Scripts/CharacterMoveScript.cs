@@ -91,7 +91,6 @@ public class CharacterMoveScript : Agent
         rocketui.transform.Find("UILaunch").gameObject.SetActive(false);
 
         rocket.transform.Find("Rocket").position = new Vector3(160.8f, 4.42f, 19.3f);
-        rocket.transform.Find("SmokeEffect").position = new Vector3(160.8f, 1.75f, 18f);
         rocket.transform.Find("BigExplosionEffect").gameObject.SetActive(false);
         rocket.transform.Find("SmokeEffect").gameObject.SetActive(false);
 
@@ -150,6 +149,9 @@ public class CharacterMoveScript : Agent
         sensor.AddObservation(Hunger);
         sensor.AddObservation(Thirst);
 
+        sensor.AddObservation(benchbuilt);
+        sensor.AddObservation(campfirebuilt);
+        sensor.AddObservation(rocketbuilt);
         sensor.AddObservation(axebuilt);
         sensor.AddObservation(scythebuilt);
         sensor.AddObservation(pickaxebuilt);
@@ -499,6 +501,15 @@ public class CharacterMoveScript : Agent
         EndEpisode();
     }
 
+    IEnumerator WaitForMove(IEnumerator Action)
+    {
+        while(moving)
+        {
+            yield return null;
+        }
+        StartCoroutine(Action);
+    }
+
     IEnumerator Die()
     {
         busy = true;
@@ -527,44 +538,44 @@ public class CharacterMoveScript : Agent
             {
                 if (needtomove(treeslocation))
                 {
+                    StartCoroutine(WaitForMove(Log()));
                 }
                 else
                 {
                     StartCoroutine(Log());
-                    AddReward(1);
                 }
             }
             if (vetcaction.DiscreteActions[0] == 1)
             {
                 if (needtomove(farmlocation))
                 {
+                    StartCoroutine(WaitForMove(Gatherfood()));
                 }
                 else
                 {
                     StartCoroutine(Gatherfood());
-                    AddReward(1);
                 }
             }
             if (vetcaction.DiscreteActions[0] == 2)
             {
                 if (needtomove(poollocation))
                 {
+                    StartCoroutine(WaitForMove(CollectWater()));
                 }
                 else
                 {
                     StartCoroutine(CollectWater());
-                    AddReward(1);
                 }
             }
             if (vetcaction.DiscreteActions[0] == 3)
             {
                 if (needtomove(rockslocation))
                 {
+                    StartCoroutine(WaitForMove(Mine()));
                 }
                 else
                 {
                     StartCoroutine(Mine());
-                    AddReward(1);
                 }
             }
             if (vetcaction.DiscreteActions[0] == 5)
@@ -591,18 +602,23 @@ public class CharacterMoveScript : Agent
             }
             if (vetcaction.DiscreteActions[0] == 4)
             {
-                if (needtomove(firelocation))
+                if (!campfirebuilt && log >= firebuildmats[0] && iron >= firebuildmats[1] && needtomove(firelocation))
                 {
-                }
-                else if (!campfirebuilt && log >= firebuildmats[0] && iron >= firebuildmats[1])
-                {
-                    StartCoroutine(BuildFire());
+                    StartCoroutine(WaitForMove(BuildFire()));
                     AddReward(50);
                 }
-                else if (campfirebuilt && log >= cookmats[0] && apple >= cookmats[1] && meat >= cookmats[2] && water >= cookmats[3])
+                else if(campfirebuilt && log >= cookmats[0] && apple >= cookmats[1] && meat >= cookmats[2] && water >= cookmats[3] && needtomove(firelocation))
                 {
-                    StartCoroutine(Cook());
-                    AddReward(100);
+                    if(needtomove(firelocation))
+                    {
+                        StartCoroutine(WaitForMove(Cook()));
+                        AddReward(100);
+                    }
+                    else
+                    {
+                        StartCoroutine(Cook());
+                        AddReward(100);
+                    }
                 }
             }
             if (vetcaction.DiscreteActions[0] == 6)

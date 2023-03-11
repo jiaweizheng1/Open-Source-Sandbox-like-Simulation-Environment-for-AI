@@ -17,7 +17,7 @@ public class CharacterMoveScript : Agent
     public Transform treeslocation, farmlocation, poollocation, rockslocation, benchlocation, firelocation, rocketlocation;
     public TMP_Text log_t, apple_t, meat_t, oil_t, water_t, copper_t, gold_t, iron_t;
     private int log, apple, meat, oil, water, copper, gold, iron;
-    private bool moving, busy;
+    private bool alive, moving, busy;
     private Vector3 target;
     private Vector2 input;
     private Vector3 direction;
@@ -60,18 +60,25 @@ public class CharacterMoveScript : Agent
     {
         SetReward(0);
 
+        log = 0;
+        apple = 0;
+        meat = 0;
+        oil = 0;
+        water = 0;
+        copper = 0;
+        gold = 0;
+        iron = 0;
+        ManualUpdateAllText();
+
+        animator.SetBool("deadge", false);
+        animator.SetFloat("speed", 0);
+
         //initially, stay at current place(which is itself)
         transform.position = new Vector3(150, 1.36f, 25);
         target = transform.position;
         input = new Vector2(0, 0);
 
         time = new DateTime();
-
-        moving = false;
-        busy = false;
-        animator.SetBool("deadge", false);
-        animator.SetBool("harvesting", false);
-        animator.SetFloat("speed", 0);
 
         benchbuilt = false;
         bench.transform.Find("BenchBlueprint").gameObject.SetActive(true);
@@ -110,19 +117,13 @@ public class CharacterMoveScript : Agent
         tools.transform.Find("Pickaxe").gameObject.SetActive(false);
         tools.transform.Find("Chickenleg").gameObject.SetActive(false);
 
-        log = 0;
-        apple = 0;
-        meat = 0;
-        oil = 0;
-        water = 0;
-        copper = 0;
-        gold = 0;
-        iron = 0;
-        ManualUpdateAllText();
-
         Health = MaxHealth;
         Hunger = MaxHunger;
         Thirst = MaxThirst;
+
+        alive = true;
+        moving = false;
+        busy = false;
     }
 
     public override void CollectObservations(VectorSensor sensor)
@@ -539,10 +540,12 @@ public class CharacterMoveScript : Agent
                 if (needtomove(treeslocation))
                 {
                     StartCoroutine(WaitForMove(Log()));
+                    AddReward(1);
                 }
                 else
                 {
                     StartCoroutine(Log());
+                    AddReward(1);
                 }
             }
             if (vetcaction.DiscreteActions[0] == 1)
@@ -550,10 +553,12 @@ public class CharacterMoveScript : Agent
                 if (needtomove(farmlocation))
                 {
                     StartCoroutine(WaitForMove(Gatherfood()));
+                    AddReward(1);
                 }
                 else
                 {
                     StartCoroutine(Gatherfood());
+                    AddReward(1);
                 }
             }
             if (vetcaction.DiscreteActions[0] == 2)
@@ -561,10 +566,12 @@ public class CharacterMoveScript : Agent
                 if (needtomove(poollocation))
                 {
                     StartCoroutine(WaitForMove(CollectWater()));
+                    AddReward(1);
                 }
                 else
                 {
                     StartCoroutine(CollectWater());
+                    AddReward(1);
                 }
             }
             if (vetcaction.DiscreteActions[0] == 3)
@@ -572,10 +579,12 @@ public class CharacterMoveScript : Agent
                 if (needtomove(rockslocation))
                 {
                     StartCoroutine(WaitForMove(Mine()));
+                    AddReward(1);
                 }
                 else
                 {
                     StartCoroutine(Mine());
+                    AddReward(1);
                 }
             }
             if (vetcaction.DiscreteActions[0] == 5)
@@ -605,19 +614,19 @@ public class CharacterMoveScript : Agent
                 if (!campfirebuilt && log >= firebuildmats[0] && iron >= firebuildmats[1] && needtomove(firelocation))
                 {
                     StartCoroutine(WaitForMove(BuildFire()));
-                    AddReward(50);
+                    AddReward(150);
                 }
                 else if(campfirebuilt && log >= cookmats[0] && apple >= cookmats[1] && meat >= cookmats[2] && water >= cookmats[3] && needtomove(firelocation))
                 {
                     if(needtomove(firelocation))
                     {
                         StartCoroutine(WaitForMove(Cook()));
-                        AddReward(100);
+                        AddReward(300);
                     }
                     else
                     {
                         StartCoroutine(Cook());
-                        AddReward(100);
+                        AddReward(300);
                     }
                 }
             }
@@ -733,7 +742,7 @@ public class CharacterMoveScript : Agent
     // Update is called once per frame
     void Update()
     {
-        if(!moving && !busy)
+        if(alive && !moving && !busy)
         {
             Debug.Log("Request Decision");
             RequestDecision();
@@ -781,10 +790,12 @@ public class CharacterMoveScript : Agent
         {
             Health = Health - BarSpeedMulti * Time.deltaTime;
         }
-        if (Health < 0)
+        if (Health < 0 && alive)
         {
-            StartCoroutine(Die());
+            alive = false;
             AddReward(-9000);
+            StopAllCoroutines();
+            StartCoroutine(Die());
         }
     }
 

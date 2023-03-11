@@ -438,7 +438,7 @@ public class CharacterMoveScript : Agent
         rocket.transform.Find("SmokeEffect").gameObject.SetActive(true);
         for (int i = 1; i <= 200; i++)
         {
-            rocket.transform.Find("Rocket").Translate(0, -0.2f, 0);
+            rocket.transform.Find("Rocket").Translate(0, -10.1f*Time.deltaTime, 0);
             yield return null;
         }
     }
@@ -574,6 +574,7 @@ public class CharacterMoveScript : Agent
                     ManualUpdateAllText();
                     AddReward(1);
                     AddReward(time.Day * -0.5f); //penality based on number of days taken to finish rocket
+                    needtomove(rocketlocation);
                     StartCoroutine(WaitForMove(LaunchRocket()));
                 }
             }

@@ -631,7 +631,7 @@ public class CharacterMoveScript : Agent
     {
         if(alive && !moving && !busy)
         {
-            Debug.Log("Request Decision");
+            Debug.Log("Reward: " + GetCumulativeReward());
             RequestDecision();
         }
         if (moving && !busy)

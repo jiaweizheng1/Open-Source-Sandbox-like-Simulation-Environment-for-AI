@@ -243,55 +243,6 @@ public class CharacterMoveScript : Agent
 
     }
 
-    IEnumerator ConsumeWater()
-    {
-        busy = true;
-        animator.SetBool("eating", true);
-        yield return new WaitForSeconds(2);
-        water--;
-        if(Thirst + 20 > MaxThirst){
-            Thirst=MaxThirst;
-        }
-        else{
-            Thirst += 20;
-        }
-        ManualUpdateAllText();
-        animator.SetBool("eating", false);
-        busy = false;
-    }
-
-    IEnumerator EatMeat(){
-        busy = true;
-        animator.SetBool("eating", true);
-        yield return new WaitForSeconds(2);
-        meat--;
-        if(Hunger + 20 > MaxHunger){
-            Hunger=MaxHunger;
-        }
-        else{
-            Hunger += 20;
-        }
-        ManualUpdateAllText();
-        animator.SetBool("eating", false);
-        busy = false;
-    }
-
-    IEnumerator EatApple(){
-        busy = true;
-        animator.SetBool("eating", true);
-        yield return new WaitForSeconds(2);
-        apple--;
-        if(Hunger + 20 > MaxHunger){
-            Hunger=MaxHunger;
-        }
-        else{
-            Hunger += 20;
-        }
-        ManualUpdateAllText();
-        animator.SetBool("eating", false);
-        busy = false;
-    }
-
     IEnumerator Mine()
     {
         busy = true;
@@ -537,113 +488,82 @@ public class CharacterMoveScript : Agent
         {
             if (vetcaction.DiscreteActions[0] == 0)
             {
-                if (needtomove(treeslocation))
-                {
-                    StartCoroutine(WaitForMove(Log()));
-                    AddReward(1);
-                }
-                else
-                {
-                    StartCoroutine(Log());
-                    AddReward(1);
-                }
+                needtomove(treeslocation);
+                StartCoroutine(WaitForMove(Log()));
+                AddReward(.1f);
             }
             if (vetcaction.DiscreteActions[0] == 1)
             {
-                if (needtomove(farmlocation))
-                {
-                    StartCoroutine(WaitForMove(Gatherfood()));
-                    AddReward(1);
-                }
-                else
-                {
-                    StartCoroutine(Gatherfood());
-                    AddReward(1);
-                }
+                needtomove(farmlocation);
+                StartCoroutine(WaitForMove(Gatherfood()));
+                AddReward(.1f);
             }
             if (vetcaction.DiscreteActions[0] == 2)
             {
-                if (needtomove(poollocation))
-                {
-                    StartCoroutine(WaitForMove(CollectWater()));
-                    AddReward(1);
-                }
-                else
-                {
-                    StartCoroutine(CollectWater());
-                    AddReward(1);
-                }
+                needtomove(poollocation);
+                StartCoroutine(WaitForMove(CollectWater()));
+                AddReward(.1f);
             }
             if (vetcaction.DiscreteActions[0] == 3)
             {
-                if (needtomove(rockslocation))
-                {
-                    StartCoroutine(WaitForMove(Mine()));
-                    AddReward(1);
-                }
-                else
-                {
-                    StartCoroutine(Mine());
-                    AddReward(1);
-                }
+                needtomove(rockslocation);
+                StartCoroutine(WaitForMove(Mine()));
+                AddReward(1);
             }
             if (vetcaction.DiscreteActions[0] == 5)
             {
-                if (needtomove(benchlocation))
+                if (!benchbuilt && log >= benchbuildmats[0] && copper >= benchbuildmats[1] && gold >= benchbuildmats[2] && iron >= benchbuildmats[3])
                 {
+                    needtomove(benchlocation);
+                    StartCoroutine(WaitForMove(BuildBench()));
+                    AddReward(25);
                 }
-                else if (!benchbuilt /*&& log >= benchbuildmats[0] && copper >= benchbuildmats[1] && gold >= benchbuildmats[2] && iron >= benchbuildmats[3]*/)
-                {
-                    StartCoroutine(BuildBench());
-                }
-                else if (benchbuilt && !axebuilt /*&& log >= toolbuildmats[0] && iron >= toolbuildmats[1]*/)
+                else if (benchbuilt && !axebuilt && log >= toolbuildmats[0] && iron >= toolbuildmats[1])
                 {  
+                    needtomove(benchlocation);
                     StartCoroutine(BuildAxe());  
+                    AddReward(25);
                 }
-                else if (benchbuilt && axebuilt & !scythebuilt /*&& log >= toolbuildmats[0] && gold >= toolbuildmats[1]*/)
+                else if (benchbuilt && axebuilt & !scythebuilt && log >= toolbuildmats[0] && gold >= toolbuildmats[1])
                 {
+                    needtomove(benchlocation);
                     StartCoroutine(BuildScythe());
+                    AddReward(25);
                 }
-                else if (benchbuilt && axebuilt & scythebuilt && !pickaxebuilt/*&& log >= toolbuildmats[0] && copper >= toolbuildmats[1]*/)
+                else if (benchbuilt && axebuilt & scythebuilt && !pickaxebuilt && log >= toolbuildmats[0] && copper >= toolbuildmats[1])
                 {
+                    needtomove(benchlocation);
                     StartCoroutine(BuildPickaxe());
+                    AddReward(25);
                 }
             }
             if (vetcaction.DiscreteActions[0] == 4)
             {
-                if (!campfirebuilt && log >= firebuildmats[0] && iron >= firebuildmats[1] && needtomove(firelocation))
+                if (!campfirebuilt && log >= firebuildmats[0] && iron >= firebuildmats[1])
                 {
+                    needtomove(firelocation);
                     StartCoroutine(WaitForMove(BuildFire()));
-                    AddReward(150);
+                    AddReward(25);
                 }
-                else if(campfirebuilt && log >= cookmats[0] && apple >= cookmats[1] && meat >= cookmats[2] && water >= cookmats[3] && needtomove(firelocation))
+                else if(campfirebuilt && log >= cookmats[0] && apple >= cookmats[1] && meat >= cookmats[2] && water >= cookmats[3])
                 {
-                    if(needtomove(firelocation))
+                    needtomove(firelocation);
+                    StartCoroutine(WaitForMove(Cook()));
+                    if(Health<100)
                     {
-                        StartCoroutine(WaitForMove(Cook()));
-                        AddReward(300);
-                    }
-                    else
-                    {
-                        StartCoroutine(Cook());
-                        AddReward(300);
+                        AddReward(25);
                     }
                 }
             }
             if (vetcaction.DiscreteActions[0] == 6)
             {
-                if (needtomove(rocketlocation))
+                if (!rocketbuilt && log >= rocketbuildmats[0] && copper >= rocketbuildmats[1] && gold >= rocketbuildmats[2] && iron >= rocketbuildmats[3])
                 {
+                    needtomove(rocketlocation);
+                    StartCoroutine(WaitForMove(BuildRocket()));
+                    AddReward(50);
                 }
-                else if (!rocketbuilt)
-                //  && log >= rocketbuildmats[0] && copper >= rocketbuildmats[1] && gold >= rocketbuildmats[2] && iron >= rocketbuildmats[3])
-                {
-                    StartCoroutine(BuildRocket());
-
-                }
-                else if (rocketbuilt)
-                //  && log >= rocketlaunchmats[0] && apple >= rocketlaunchmats[1] && meat >= rocketlaunchmats[2] && oil >= rocketlaunchmats[3] 
-                // && copper >= rocketlaunchmats[4] && gold >= rocketlaunchmats[5] && iron >= rocketlaunchmats[6])
+                else if (rocketbuilt && log >= rocketlaunchmats[0] && apple >= rocketlaunchmats[1] && meat >= rocketlaunchmats[2] && oil >= rocketlaunchmats[3] && copper >= rocketlaunchmats[4] && gold >= rocketlaunchmats[5] && iron >= rocketlaunchmats[6])
                 {
                     log -= rocketlaunchmats[0];
                     apple -= rocketlaunchmats[1];
@@ -653,25 +573,8 @@ public class CharacterMoveScript : Agent
                     gold -= rocketlaunchmats[5];
                     iron -= rocketlaunchmats[6];
                     ManualUpdateAllText();
-                    StartCoroutine(LaunchRocket());
-                }
-            }
-            if(vetcaction.DiscreteActions[0] == 7)
-            {
-                if(apple > 0){
-                    StartCoroutine(EatApple());
-                }
-            }
-            if(vetcaction.DiscreteActions[0] == 8)
-            {
-                if(meat > 0){
-                    StartCoroutine(EatMeat());
-                }
-            }
-            if(vetcaction.DiscreteActions[0] == 9)
-            {
-                if(water > 0){
-                    StartCoroutine(ConsumeWater());
+                    AddReward(9000);
+                    StartCoroutine(WaitForMove(LaunchRocket()));
                 }
             }
         }
@@ -708,34 +611,18 @@ public class CharacterMoveScript : Agent
         {
             discreteactions[0] = 6;
         }
-        else if(Input.GetKey(KeyCode.I))
-        {
-            discreteactions[0] = 7;
-        }
-        else if(Input.GetKey(KeyCode.O))
-        {
-            discreteactions[0] = 8;
-        }
-        else if(Input.GetKey(KeyCode.P))
-        {
-            discreteactions[0] =9;
-        }
         else
         {
             discreteactions[0] = -1; //else, invalid input
         }
     }
 
-    public bool needtomove(Transform targetlocation)
+    public void needtomove(Transform targetlocation)
     {
         if (Vector3.Distance(targetlocation.transform.position, controller.transform.position) > 0.9)
         {
             target = targetlocation.position;
             moving = true;
-            return true;
-        }
-        {
-            return false;
         }
     }
 

@@ -15,8 +15,8 @@ public class CharacterMoveScript : Agent
     public Animator animator;
     public CharacterController controller;
     public Transform treeslocation, farmlocation, poollocation, rockslocation, benchlocation, firelocation, rocketlocation;
-    public TMP_Text log_t, apple_t, meat_t, oil_t, water_t, copper_t, gold_t, iron_t;
-    private int log, apple, meat, oil, water, copper, gold, iron;
+    public TMP_Text log_t, apple_t, meat_t, oil_t, water_t, iron_t, gold_t, diamond_t;
+    private int log, apple, meat, oil, water, iron, gold, diamond;
     private bool alive, moving, busy;
     private Vector3 target;
     private Vector2 input;
@@ -52,7 +52,7 @@ public class CharacterMoveScript : Agent
     private int[] benchbuildmats = { 3, 1, 1, 1 };
     private int[] firebuildmats = { 2, 1 };
     private int[] cookmats = { 1, 1, 1, 1 };
-    private int[] rocketbuildmats = { 10, 10, 7, 10 };
+    private int[] rocketbuildmats = { 10, 10, 10, 10 };
     private int[] rocketlaunchmats = { 1, 5, 5, 10, 1, 1, 1 };
     private int[] toolbuildmats = { 2, 3 };
 
@@ -65,9 +65,9 @@ public class CharacterMoveScript : Agent
         meat = 0;
         oil = 0;
         water = 0;
-        copper = 0;
-        gold = 0;
         iron = 0;
+        gold = 0;
+        diamond = 0;
         ManualUpdateAllText();
 
         animator.SetBool("deadge", false);
@@ -142,9 +142,9 @@ public class CharacterMoveScript : Agent
         sensor.AddObservation(meat);
         sensor.AddObservation(oil);
         sensor.AddObservation(water);
-        sensor.AddObservation(copper);
-        sensor.AddObservation(gold);
         sensor.AddObservation(iron);
+        sensor.AddObservation(gold);
+        sensor.AddObservation(diamond);
         
         sensor.AddObservation(Health);
         sensor.AddObservation(Hunger);
@@ -260,24 +260,25 @@ public class CharacterMoveScript : Agent
         yield return new WaitForSeconds(2);
         if(pickaxebuilt)
         {
-            copper++;
-            gold++;
             iron++;
+            gold++;
+            diamond++;
         }
         else
         {
-            int whichmineral = Random.Range(0, 3);
+            int whichmineral = Random.Range(0, 2);
             if (whichmineral == 0)
             {
-                copper++;
-            }
-            else if (whichmineral == 1)
-            {
-                gold++;
+                iron++;
             }
             else
             {
-                iron++;
+                gold++;
+            }
+            int chancediamond = Random.Range(0, 10);
+            if (chancediamond <= 2)
+            {
+                diamond++;
             }
         }
         ManualUpdateAllText();
@@ -298,9 +299,9 @@ public class CharacterMoveScript : Agent
         toolblueprints.transform.Find("ToolBlueprint").gameObject.transform.Find("Axe").gameObject.SetActive(true);
         toolui.transform.Find("UIBuildAxe").gameObject.SetActive(true);
         log -= benchbuildmats[0];
-        copper -= benchbuildmats[1];
+        iron -= benchbuildmats[1];
         gold -= benchbuildmats[2];
-        iron -= benchbuildmats[3];
+        diamond -= benchbuildmats[3];
         ManualUpdateAllText();
         animator.SetBool("harvesting", false);
         busy = false;
@@ -317,7 +318,7 @@ public class CharacterMoveScript : Agent
         toolblueprints.transform.Find("ToolBlueprint").gameObject.transform.Find("Scythe").gameObject.SetActive(true);
         toolui.transform.Find("UIBuildScythe").gameObject.SetActive(true);
         log -= toolbuildmats[0];
-        iron -= toolbuildmats[1];
+        diamond -= toolbuildmats[1];
         ManualUpdateAllText();
         animator.SetBool("harvesting", false);
         busy = false;
@@ -349,7 +350,7 @@ public class CharacterMoveScript : Agent
         toolblueprints.transform.Find("ToolBlueprint").gameObject.transform.Find("PickAxe").gameObject.SetActive(false);
         toolui.transform.Find("UIBuildPickaxe").gameObject.SetActive(false);
         log -= toolbuildmats[0];
-        copper -= toolbuildmats[1];
+        iron -= toolbuildmats[1];
         ManualUpdateAllText();
         animator.SetBool("harvesting", false);
         busy = false;
@@ -366,7 +367,7 @@ public class CharacterMoveScript : Agent
         fireui.transform.Find("UIBuild").gameObject.SetActive(false);
         fireui.transform.Find("UICook").gameObject.SetActive(true);
         log -= firebuildmats[0];
-        iron -= firebuildmats[1];
+        diamond -= firebuildmats[1];
         ManualUpdateAllText();
         animator.SetBool("harvesting", false);
         busy = false;
@@ -405,9 +406,9 @@ public class CharacterMoveScript : Agent
         rocketui.transform.Find("UIBuild").gameObject.SetActive(false);
         rocketui.transform.Find("UILaunch").gameObject.SetActive(true);
         log -= rocketbuildmats[0];
-        copper -= rocketbuildmats[1];
+        iron -= rocketbuildmats[1];
         gold -= rocketbuildmats[2];
-        iron -= rocketbuildmats[3];
+        diamond -= rocketbuildmats[3];
         ManualUpdateAllText();
         animator.SetBool("harvesting", false);
         busy = false;
@@ -477,9 +478,9 @@ public class CharacterMoveScript : Agent
         meat_t.text = "x" + meat;
         oil_t.text = "x" + oil;
         water_t.text = "x" + water;
-        copper_t.text = "x" + copper;
-        gold_t.text = "x" + gold;
         iron_t.text = "x" + iron;
+        gold_t.text = "x" + gold;
+        diamond_t.text = "x" + diamond;
     }
 
     public override void OnActionReceived(ActionBuffers vetcaction)
@@ -490,56 +491,29 @@ public class CharacterMoveScript : Agent
             {
                 needtomove(treeslocation);
                 StartCoroutine(WaitForMove(Log()));
-                AddReward(.1f);
+                AddReward(.06f);
             }
             if (vetcaction.DiscreteActions[0] == 1)
             {
                 needtomove(farmlocation);
                 StartCoroutine(WaitForMove(Gatherfood()));
-                AddReward(.1f);
+                AddReward(.06f);
             }
             if (vetcaction.DiscreteActions[0] == 2)
             {
                 needtomove(poollocation);
                 StartCoroutine(WaitForMove(CollectWater()));
-                AddReward(.1f);
+                AddReward(.05f);
             }
             if (vetcaction.DiscreteActions[0] == 3)
             {
                 needtomove(rockslocation);
                 StartCoroutine(WaitForMove(Mine()));
-                AddReward(1);
-            }
-            if (vetcaction.DiscreteActions[0] == 5)
-            {
-                if (!benchbuilt && log >= benchbuildmats[0] && copper >= benchbuildmats[1] && gold >= benchbuildmats[2] && iron >= benchbuildmats[3])
-                {
-                    needtomove(benchlocation);
-                    StartCoroutine(WaitForMove(BuildBench()));
-                    AddReward(25);
-                }
-                else if (benchbuilt && !axebuilt && log >= toolbuildmats[0] && iron >= toolbuildmats[1])
-                {  
-                    needtomove(benchlocation);
-                    StartCoroutine(BuildAxe());  
-                    AddReward(25);
-                }
-                else if (benchbuilt && axebuilt & !scythebuilt && log >= toolbuildmats[0] && gold >= toolbuildmats[1])
-                {
-                    needtomove(benchlocation);
-                    StartCoroutine(BuildScythe());
-                    AddReward(25);
-                }
-                else if (benchbuilt && axebuilt & scythebuilt && !pickaxebuilt && log >= toolbuildmats[0] && copper >= toolbuildmats[1])
-                {
-                    needtomove(benchlocation);
-                    StartCoroutine(BuildPickaxe());
-                    AddReward(25);
-                }
+                AddReward(.06f);
             }
             if (vetcaction.DiscreteActions[0] == 4)
             {
-                if (!campfirebuilt && log >= firebuildmats[0] && iron >= firebuildmats[1])
+                if (!campfirebuilt && log >= firebuildmats[0] && diamond >= firebuildmats[1])
                 {
                     needtomove(firelocation);
                     StartCoroutine(WaitForMove(BuildFire()));
@@ -553,27 +527,59 @@ public class CharacterMoveScript : Agent
                     {
                         AddReward(25);
                     }
+                    else
+                    {
+                        AddReward(-25);
+                    }
+                }
+            }
+            if (vetcaction.DiscreteActions[0] == 5)
+            {
+                if (!benchbuilt && log >= benchbuildmats[0] && iron >= benchbuildmats[1] && gold >= benchbuildmats[2] && diamond >= benchbuildmats[3])
+                {
+                    needtomove(benchlocation);
+                    StartCoroutine(WaitForMove(BuildBench()));
+                    AddReward(25);
+                }
+                else if (benchbuilt && !axebuilt && log >= toolbuildmats[0] && diamond >= toolbuildmats[1])
+                {  
+                    needtomove(benchlocation);
+                    StartCoroutine(WaitForMove(BuildAxe()));  
+                    AddReward(25);
+                }
+                else if (benchbuilt && axebuilt & !scythebuilt && log >= toolbuildmats[0] && gold >= toolbuildmats[1])
+                {
+                    needtomove(benchlocation);
+                    StartCoroutine(WaitForMove(BuildScythe()));  
+                    AddReward(25);
+                }
+                else if (benchbuilt && axebuilt & scythebuilt && !pickaxebuilt && log >= toolbuildmats[0] && iron >= toolbuildmats[1])
+                {
+                    needtomove(benchlocation);
+                    StartCoroutine(WaitForMove(BuildPickaxe())); 
+                    AddReward(25);
                 }
             }
             if (vetcaction.DiscreteActions[0] == 6)
             {
-                if (!rocketbuilt && log >= rocketbuildmats[0] && copper >= rocketbuildmats[1] && gold >= rocketbuildmats[2] && iron >= rocketbuildmats[3])
+                if (!rocketbuilt && log >= rocketbuildmats[0] && iron >= rocketbuildmats[1] && gold >= rocketbuildmats[2] && diamond >= rocketbuildmats[3])
                 {
                     needtomove(rocketlocation);
                     StartCoroutine(WaitForMove(BuildRocket()));
                     AddReward(50);
                 }
-                else if (rocketbuilt && log >= rocketlaunchmats[0] && apple >= rocketlaunchmats[1] && meat >= rocketlaunchmats[2] && oil >= rocketlaunchmats[3] && copper >= rocketlaunchmats[4] && gold >= rocketlaunchmats[5] && iron >= rocketlaunchmats[6])
+                else if (rocketbuilt && log >= rocketlaunchmats[0] && apple >= rocketlaunchmats[1] && meat >= rocketlaunchmats[2] && oil >= rocketlaunchmats[3] && iron >= rocketlaunchmats[4] && gold >= rocketlaunchmats[5] && diamond >= rocketlaunchmats[6])
                 {
                     log -= rocketlaunchmats[0];
                     apple -= rocketlaunchmats[1];
                     meat -= rocketlaunchmats[2];
                     oil -= rocketlaunchmats[3];
-                    copper -= rocketlaunchmats[4];
+                    iron -= rocketlaunchmats[4];
                     gold -= rocketlaunchmats[5];
-                    iron -= rocketlaunchmats[6];
+                    diamond -= rocketlaunchmats[6];
                     ManualUpdateAllText();
                     AddReward(9000);
+                    AddReward(time.Day * -10); //penality based on number of days taken to finish rocket
                     StartCoroutine(WaitForMove(LaunchRocket()));
                 }
             }
@@ -601,11 +607,11 @@ public class CharacterMoveScript : Agent
         }
         else if (Input.GetKey(KeyCode.T))
         {
-            discreteactions[0] = 4;
+            discreteactions[0] = 5;
         }
         else if (Input.GetKey(KeyCode.Y))
         {
-            discreteactions[0] = 5;
+            discreteactions[0] = 4;
         }
         else if (Input.GetKey(KeyCode.U))
         {

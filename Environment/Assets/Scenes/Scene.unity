@@ -15479,13 +15479,14 @@ MonoBehaviour:
   iron_t: {fileID: 707521716}
   gold_t: {fileID: 395629179}
   diamond_t: {fileID: 55337893}
-  BarSpeedMulti: 0.85
+  BarSpeedMulti: 0.8
   HealthSlider: {fileID: 735313970}
   HungerSlider: {fileID: 1300092183}
   ThirstSlider: {fileID: 1677508124}
   directionallight: {fileID: 479630236}
   preset: {fileID: 11400000, guid: 90c3c66ae35e3b840be125e2619555e4, type: 2}
   timemulti: 750
+  timescale: 4
   time_t: {fileID: 1130540956}
   day_t: {fileID: 562616017}
   tools: {fileID: 267131399}
@@ -15558,7 +15559,7 @@ MonoBehaviour:
     hasUpgradedBrainParametersWithActionSpec: 1
   m_Model: {fileID: 5022602860645237092, guid: 34cf270894ec9804f8a5c1504b4a7adc, type: 3}
   m_InferenceDevice: 0
-  m_BehaviorType: 1
+  m_BehaviorType: 2
   m_BehaviorName: AI
   TeamId: 0
   m_UseChildSensors: 1

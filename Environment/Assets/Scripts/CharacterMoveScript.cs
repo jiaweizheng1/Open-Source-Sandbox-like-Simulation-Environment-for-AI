@@ -42,6 +42,7 @@ public class CharacterMoveScript : Agent
     public LightingPreset preset;
     private DateTime time;
     public float timemulti;
+    public float timescale;
     public TMP_Text time_t;
     public TMP_Text day_t;
 
@@ -55,6 +56,11 @@ public class CharacterMoveScript : Agent
     private int[] rocketbuildmats = { 10, 10, 10, 10 };
     private int[] rocketlaunchmats = { 1, 5, 5, 10, 1, 1, 1 };
     private int[] toolbuildmats = { 2, 3 };
+
+    void Start()
+    {
+        Time.timeScale = timescale;
+    }
 
     public override void OnEpisodeBegin()
     {

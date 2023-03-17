@@ -525,7 +525,7 @@ public class CharacterMoveScript : Agent
                     StartCoroutine(WaitForMove(BuildFire()));
                     AddReward(0.9f);
                 }
-                else if(campfirebuilt && Health<100 && log >= cookmats[0] && apple >= cookmats[1] && meat >= cookmats[2] && water >= cookmats[3])
+                else if(campfirebuilt && Hunger<25 && log >= cookmats[0] && apple >= cookmats[1] && meat >= cookmats[2] && water >= cookmats[3])
                 {
                     needtomove(firelocation);
                     StartCoroutine(WaitForMove(Cook()));

@@ -15,7 +15,7 @@ C:/Users/sherm/Documents/GitHub/Open-Source-Minecraft-like-Simulation-Environmen
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-64624
+61326
 Successfully changed project path to: C:/Users/sherm/Documents/GitHub/Open-Source-Minecraft-like-Simulation-Environment-for-AI/Environment
 C:/Users/sherm/Documents/GitHub/Open-Source-Minecraft-like-Simulation-Environment-for-AI/Environment
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -47,11 +47,11 @@ C:/Users/sherm/Documents/GitHub/Open-Source-Minecraft-like-Simulation-Environmen
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [24660] Host "[IP] 192.168.1.14 [Port] 0 [Flags] 2 [Guid] 2929968138 [EditorId] 2929968138 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-R7J5RA9) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [2596] Host "[IP] 192.168.1.14 [Port] 0 [Flags] 2 [Guid] 1508322263 [EditorId] 1508322263 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-R7J5RA9) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [24660] Host "[IP] 192.168.1.14 [Port] 0 [Flags] 2 [Guid] 2929968138 [EditorId] 2929968138 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-R7J5RA9) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [2596] Host "[IP] 192.168.1.14 [Port] 0 [Flags] 2 [Guid] 1508322263 [EditorId] 1508322263 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-R7J5RA9) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
-Refreshing native plugins compatible for Editor in 128.13 ms, found 6 plugins.
+Refreshing native plugins compatible for Editor in 111.67 ms, found 6 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.20f1 (577897200b8b)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.20f1/Editor/Data/Resources/UnitySubsystems
@@ -67,89 +67,89 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.20f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.20f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.20f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56656
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56940
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.20f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.008031 seconds.
+Registered in 0.010492 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 93.41 ms, found 6 plugins.
+Refreshing native plugins compatible for Editor in 99.48 ms, found 6 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.661 seconds
+- Completed reload, in  0.762 seconds
 Domain Reload Profiling:
-	ReloadAssembly (662ms)
-		BeginReloadAssembly (113ms)
+	ReloadAssembly (762ms)
+		BeginReloadAssembly (102ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (451ms)
-			LoadAssemblies (109ms)
+		EndReloadAssembly (531ms)
+			LoadAssemblies (99ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (95ms)
+			SetupTypeCache (127ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (25ms)
-			SetupLoadedEditorAssemblies (283ms)
+			RebuildScriptCaches (30ms)
+			SetupLoadedEditorAssemblies (317ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (8ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (94ms)
+				RefreshPlugins (100ms)
 				BeforeProcessingInitializeOnLoad (1ms)
-				ProcessInitializeOnLoadAttributes (136ms)
-				ProcessInitializeOnLoadMethodAttributes (44ms)
+				ProcessInitializeOnLoadAttributes (154ms)
+				ProcessInitializeOnLoadMethodAttributes (54ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.012498 seconds.
+Registered in 0.011082 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\sherm\Documents\GitHub\Open-Source-Minecraft-like-Simulation-Environment-for-AI\Environment\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\sherm\Documents\GitHub\Open-Source-Minecraft-like-Simulation-Environment-for-AI\Environment\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 95.18 ms, found 6 plugins.
+Refreshing native plugins compatible for Editor in 123.84 ms, found 6 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.354 seconds
+- Completed reload, in  1.510 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1355ms)
-		BeginReloadAssembly (161ms)
+	ReloadAssembly (1511ms)
+		BeginReloadAssembly (145ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (5ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (21ms)
-		EndReloadAssembly (1036ms)
-			LoadAssemblies (176ms)
+		EndReloadAssembly (1241ms)
+			LoadAssemblies (123ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (305ms)
+			SetupTypeCache (351ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (56ms)
-			SetupLoadedEditorAssemblies (500ms)
+			RebuildScriptCaches (77ms)
+			SetupLoadedEditorAssemblies (664ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (6ms)
+				InitializePlatformSupportModulesInManaged (7ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (95ms)
-				BeforeProcessingInitializeOnLoad (97ms)
-				ProcessInitializeOnLoadAttributes (278ms)
-				ProcessInitializeOnLoadMethodAttributes (15ms)
-				AfterProcessingInitializeOnLoad (8ms)
+				RefreshPlugins (124ms)
+				BeforeProcessingInitializeOnLoad (130ms)
+				ProcessInitializeOnLoadAttributes (368ms)
+				ProcessInitializeOnLoadMethodAttributes (24ms)
+				AfterProcessingInitializeOnLoad (12ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (7ms)
+			AwakeInstancesAfterBackupRestoration (10ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
-Refreshing native plugins compatible for Editor in 0.83 ms, found 6 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.12 seconds
+Refreshing native plugins compatible for Editor in 1.38 ms, found 6 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 4214 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 100 unused Assets / (23.7 MB). Loaded Objects now: 4622.
-Memory consumption went from 216.5 MB to 192.8 MB.
-Total: 8.371500 ms (FindLiveObjects: 0.516400 ms CreateObjectMapping: 0.152100 ms MarkObjects: 2.556400 ms  DeleteObjects: 5.145400 ms)
+Unloading 99 unused Assets / (23.7 MB). Loaded Objects now: 4641.
+Memory consumption went from 301.5 MB to 277.8 MB.
+Total: 9.156700 ms (FindLiveObjects: 0.631700 ms CreateObjectMapping: 0.187200 ms MarkObjects: 3.257100 ms  DeleteObjects: 5.078600 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -163,1009 +163,67 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 19427.860285 seconds.
-  path: Assets/ImportedAssets/UnityTechnologies/ParticlePack/Readme.asset
-  artifactKey: Guid(83c2ed844a8c74b779a4c823d16594b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ImportedAssets/UnityTechnologies/ParticlePack/Readme.asset using Guid(83c2ed844a8c74b779a4c823d16594b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8448eeec5d62c3fed3622c745de96bbe') in 0.043220 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 6.126378 seconds.
-  path: Assets/Scenes/Blueprint.mat
-  artifactKey: Guid(a5dd42f5f0e9f154fb4ecacf5b7dcd20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Blueprint.mat using Guid(a5dd42f5f0e9f154fb4ecacf5b7dcd20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dfe2045c4750c91de83f32126555d7c6') in 0.455413 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.022619 seconds.
-  path: Assets/Scenes/Scene.unity
-  artifactKey: Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Scene.unity using Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '203ea5f09c6ed99fdd44caa673870959') in 0.003332 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 6656.243184 seconds.
-  path: Assets/ImportedAssets/UnityTechnologies/ParticlePack/EffectExamples/Fire & Explosion Effects/Prefabs/BigExplosion.prefab
-  artifactKey: Guid(e1b08032bec16ba4eb1ae23cbd572664) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ImportedAssets/UnityTechnologies/ParticlePack/EffectExamples/Fire & Explosion Effects/Prefabs/BigExplosion.prefab using Guid(e1b08032bec16ba4eb1ae23cbd572664) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd6512cbcb698476f2e93490b07e7f979') in 3.109571 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000125 seconds.
-  path: Assets/ImportedAssets/Ultimate Food Pack - Oct 2019/FBX/IceCream_2.fbx
-  artifactKey: Guid(6de083db6d2f50d45b8438b58df38111) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ImportedAssets/Ultimate Food Pack - Oct 2019/FBX/IceCream_2.fbx using Guid(6de083db6d2f50d45b8438b58df38111) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '86a8507b4701a523eafdf7cd36c94fd9') in 0.863420 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000037 seconds.
-  path: Assets/ImportedAssets/Furniture Pack - March 2019/FBX/BedDouble.fbx
-  artifactKey: Guid(b94518df39844c346a628b6597080746) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ImportedAssets/Furniture Pack - March 2019/FBX/BedDouble.fbx using Guid(b94518df39844c346a628b6597080746) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b2fb5fe67f0857973697b374cbf48af1') in 0.099747 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/ImportedAssets/Alstra Infinite/Tool Set - PolyPack/Models/HoeV1.fbx
-  artifactKey: Guid(cac02654c83b2c94faf8ee2dfcaab1d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ImportedAssets/Alstra Infinite/Tool Set - PolyPack/Models/HoeV1.fbx using Guid(cac02654c83b2c94faf8ee2dfcaab1d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c8a0773e7a931780dd61c14ab565a17b') in 0.035147 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000027 seconds.
-  path: Assets/ImportedAssets/UnityTechnologies/ParticlePack/EffectExamples/Water Effects/Models/DropSplash.fbx
-  artifactKey: Guid(e6c27adf3e47c024da4e786f5898c785) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ImportedAssets/UnityTechnologies/ParticlePack/EffectExamples/Water Effects/Models/DropSplash.fbx using Guid(e6c27adf3e47c024da4e786f5898c785) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '61c48aa6446a1b1d5dadf8c0ef45e044') in 0.127535 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/ImportedAssets/Ultimate Food Pack - Oct 2019/FBX/Bread_Slice.fbx
-  artifactKey: Guid(bcb347ea35cf50d479fd9dfe94726af9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ImportedAssets/Ultimate Food Pack - Oct 2019/FBX/Bread_Slice.fbx using Guid(bcb347ea35cf50d479fd9dfe94726af9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f8c31cd70eaad717a3151054a5f72b4') in 0.064438 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000028 seconds.
-  path: Assets/ImportedAssets/Survival Pack - Sept 2020/FBX/Bonfire_Fire.fbx
-  artifactKey: Guid(29fe3bc0b1b10b3419c094d2eaf259b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ImportedAssets/Survival Pack - Sept 2020/FBX/Bonfire_Fire.fbx using Guid(29fe3bc0b1b10b3419c094d2eaf259b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '55221dda93298cae8dae153a6921ecb9') in 0.019816 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/ImportedAssets/UnityTechnologies/ParticlePack/EffectExamples/Fire & Explosion Effects/Prefabs/LargeFlames.prefab
-  artifactKey: Guid(bb98861c48ad2024ca93498c7dd93a6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ImportedAssets/UnityTechnologies/ParticlePack/EffectExamples/Fire & Explosion Effects/Prefabs/LargeFlames.prefab using Guid(bb98861c48ad2024ca93498c7dd93a6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7be54aaf9b11450da0e92e47041e6164') in 0.101849 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/ImportedAssets/Survival Pack - Sept 2020/FBX/Backpack.fbx
-  artifactKey: Guid(13bd56dd261dba248ab96112e4ba1287) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ImportedAssets/Survival Pack - Sept 2020/FBX/Backpack.fbx using Guid(13bd56dd261dba248ab96112e4ba1287) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '38b30616854e877995524c2295d6a524') in 0.041371 seconds 
+  Time since last request: 50731.671096 seconds.
+  path: Assets/ImportedAssets/Alstra Infinite/Tool Set - PolyPack/Prefabs/PickAxeV1.prefab
+  artifactKey: Guid(fcdb12c0011022649b9ec1569d29917d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Alstra Infinite/Tool Set - PolyPack/Prefabs/PickAxeV1.prefab using Guid(fcdb12c0011022649b9ec1569d29917d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c7c86749729318035c5c5570bd412728') in 0.179720 seconds 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000029 seconds.
-  path: Assets/ImportedAssets/SimpleNaturePack/Models/Bush_02.fbx
-  artifactKey: Guid(ba52853a69186a841a52a9cc2e9b77fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ImportedAssets/SimpleNaturePack/Models/Bush_02.fbx using Guid(ba52853a69186a841a52a9cc2e9b77fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1814a5b5db19e5e240a04086fdd3e75b') in 0.114089 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000028 seconds.
-  path: Assets/ImportedAssets/Ultimate Food Pack - Oct 2019/FBX/Mushroom_Sliced.fbx
-  artifactKey: Guid(aa6d3d47a5a2d9045b3f3c149780d0fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ImportedAssets/Ultimate Food Pack - Oct 2019/FBX/Mushroom_Sliced.fbx using Guid(aa6d3d47a5a2d9045b3f3c149780d0fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '642641a189f98106fca9c749e981c0f0') in 0.037554 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000050 seconds.
-  path: Assets/ImportedAssets/Furniture Pack - March 2019/FBX/Closet.fbx
-  artifactKey: Guid(71d167de3478ba041be1fea8bb534c8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ImportedAssets/Furniture Pack - March 2019/FBX/Closet.fbx using Guid(71d167de3478ba041be1fea8bb534c8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9bd673f6c841aa67e775a09aefbd1b20') in 0.084755 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/ImportedAssets/Cartoon_Farm_Crops/Meshes/Cartoon_Farm_Crops.fbx
-  artifactKey: Guid(b69b26c8b73b8bd49bf243bbe541a2e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ImportedAssets/Cartoon_Farm_Crops/Meshes/Cartoon_Farm_Crops.fbx using Guid(b69b26c8b73b8bd49bf243bbe541a2e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e63df59926238764caa4de5249f12d0') in 0.123823 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000027 seconds.
-  path: Assets/ImportedAssets/Survival Pack - Sept 2020/FBX/Knife.fbx
-  artifactKey: Guid(8a1e9340e7c54ed489cb47c3591b89a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ImportedAssets/Survival Pack - Sept 2020/FBX/Knife.fbx using Guid(8a1e9340e7c54ed489cb47c3591b89a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '01aa19836298ad34f96afd3ee861b0a0') in 0.044698 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000036 seconds.
-  path: Assets/ImportedAssets/Ultimate Food Pack - Oct 2019/FBX/Lettuce.fbx
-  artifactKey: Guid(6a7bd6fa3066f794d8134e4342a5e769) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ImportedAssets/Ultimate Food Pack - Oct 2019/FBX/Lettuce.fbx using Guid(6a7bd6fa3066f794d8134e4342a5e769) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '164fe72971f1f349dc3b63271d331f7a') in 0.021966 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000032 seconds.
-  path: Assets/ImportedAssets/UnityTechnologies/ParticlePack/EffectExamples/Magic Effects/Prefabs/IceLance.prefab
-  artifactKey: Guid(1a1c02facd51d87458dcaa3a761e2c03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ImportedAssets/UnityTechnologies/ParticlePack/EffectExamples/Magic Effects/Prefabs/IceLance.prefab using Guid(1a1c02facd51d87458dcaa3a761e2c03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd7551a307939a9a79c2a95078cb829eb') in 0.454867 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000028 seconds.
-  path: Assets/ImportedAssets/Cartoon_Farm_Crops/Prefabs/Standard/Dirt_Pile.prefab
-  artifactKey: Guid(c26cacf51e485c54b95fdbf9ad976ddf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ImportedAssets/Cartoon_Farm_Crops/Prefabs/Standard/Dirt_Pile.prefab using Guid(c26cacf51e485c54b95fdbf9ad976ddf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '21d7029f533fd8d88fe82a2c0fb74bcc') in 0.019158 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000047 seconds.
-  path: Assets/ImportedAssets/Survival Pack - Sept 2020/FBX/Axe_Small.fbx
-  artifactKey: Guid(b200906c4f83042459ff4478afe56211) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ImportedAssets/Survival Pack - Sept 2020/FBX/Axe_Small.fbx using Guid(b200906c4f83042459ff4478afe56211) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1a2c61874d20692b8817902ba14ec109') in 0.035830 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000086 seconds.
-  path: Assets/ImportedAssets/UnityTechnologies/ParticlePack/EffectExamples/Water Effects/Prefabs/BigSplash.prefab
-  artifactKey: Guid(c1c88308ebb5d2541a282905b854ee4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ImportedAssets/UnityTechnologies/ParticlePack/EffectExamples/Water Effects/Prefabs/BigSplash.prefab using Guid(c1c88308ebb5d2541a282905b854ee4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'abfe59960e5608c57d41e40a95954f27') in 0.031438 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/ImportedAssets/Ultimate Food Pack - Oct 2019/FBX/Pancake.fbx
-  artifactKey: Guid(b80e61b8e639a3148928ca74c4ebe70e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ImportedAssets/Ultimate Food Pack - Oct 2019/FBX/Pancake.fbx using Guid(b80e61b8e639a3148928ca74c4ebe70e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d232abce5f4323b8e34a914b075b6a9') in 0.038648 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/ImportedAssets/Ultimate Food Pack - Oct 2019/FBX/Bottle2.fbx
-  artifactKey: Guid(77b9f04ba1da3b448aa5da58422f9d71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ImportedAssets/Ultimate Food Pack - Oct 2019/FBX/Bottle2.fbx using Guid(77b9f04ba1da3b448aa5da58422f9d71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b9bd1b7094b40608caa4290f26f98ac7') in 0.031974 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000026 seconds.
-  path: Assets/ImportedAssets/Ultimate Food Pack - Oct 2019/FBX/Pepper_Red.fbx
-  artifactKey: Guid(82db753d79241e247b6eb734712089c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ImportedAssets/Ultimate Food Pack - Oct 2019/FBX/Pepper_Red.fbx using Guid(82db753d79241e247b6eb734712089c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ebabdec3a80f947fd000a835bf5b47a8') in 0.097446 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000030 seconds.
-  path: Assets/ImportedAssets/SimpleNaturePack/Models/Bush_01.fbx
-  artifactKey: Guid(d8ea93d2d4757e444a5349f4bc849128) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ImportedAssets/SimpleNaturePack/Models/Bush_01.fbx using Guid(d8ea93d2d4757e444a5349f4bc849128) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f44412fcd8ed7367a12a643a93dbdf66') in 0.014813 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000037 seconds.
-  path: Assets/ImportedAssets/Ultimate Food Pack - Oct 2019/FBX/CookingPot_Soup.fbx
-  artifactKey: Guid(d6ae486081069d245936c928149c7de7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ImportedAssets/Ultimate Food Pack - Oct 2019/FBX/CookingPot_Soup.fbx using Guid(d6ae486081069d245936c928149c7de7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3bb154406241a9a04d9c204a86e71df6') in 0.024772 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/ImportedAssets/SimpleNaturePack/Models/Mushroom_02.fbx
-  artifactKey: Guid(6c890c97a154a474082af84a379dffce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ImportedAssets/SimpleNaturePack/Models/Mushroom_02.fbx using Guid(6c890c97a154a474082af84a379dffce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '547b19c3b3073166f9ee5b0cdb626a4c') in 0.016010 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/ImportedAssets/Ultimate Food Pack - Oct 2019/FBX/Plate_Square.fbx
-  artifactKey: Guid(29738d89da749cc438ca9319cba13331) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ImportedAssets/Ultimate Food Pack - Oct 2019/FBX/Plate_Square.fbx using Guid(29738d89da749cc438ca9319cba13331) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c9ddad9bea7e4794b6e0983121315503') in 0.030028 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000016 seconds.
-  path: Assets/ImportedAssets/Survival Pack - Sept 2020/FBX/Pistol_2.fbx
-  artifactKey: Guid(af267a25e8bee5a4a855ce247e0f42a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ImportedAssets/Survival Pack - Sept 2020/FBX/Pistol_2.fbx using Guid(af267a25e8bee5a4a855ce247e0f42a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '112a9815b0e57675698d75c443ba3c59') in 0.027512 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/ImportedAssets/Furniture Pack - March 2019/FBX/Door2.fbx
-  artifactKey: Guid(005f52e2f08b31647afdb47ee7ffa14f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ImportedAssets/Furniture Pack - March 2019/FBX/Door2.fbx using Guid(005f52e2f08b31647afdb47ee7ffa14f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b15c65500e81e5f7db554ccfedb2bcb9') in 0.041557 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/ImportedAssets/UnityTechnologies/ParticlePack/EffectExamples/Misc Effects/Models/FireFly.fbx
-  artifactKey: Guid(dc6b02b1d8deafa448e0985c40c217ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ImportedAssets/UnityTechnologies/ParticlePack/EffectExamples/Misc Effects/Models/FireFly.fbx using Guid(dc6b02b1d8deafa448e0985c40c217ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5ec2f7d5fa46c11a6e9b83ddc749c241') in 0.060486 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000035 seconds.
-  path: Assets/ImportedAssets/UnityTechnologies/ParticlePack/EffectExamples/Fire & Explosion Effects/Prefabs/FlameThrower.prefab
-  artifactKey: Guid(007c57e2df8e9b144b99f471b84f3d56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ImportedAssets/UnityTechnologies/ParticlePack/EffectExamples/Fire & Explosion Effects/Prefabs/FlameThrower.prefab using Guid(007c57e2df8e9b144b99f471b84f3d56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a8fc2a9837fccefa3ae63d366bdbdf1f') in 0.032984 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000038 seconds.
-  path: Assets/ImportedAssets/UnityTechnologies/ParticlePack/EffectExamples/Misc Effects/Models/Flakes.fbx
-  artifactKey: Guid(dc789956fe23a1941adff98b407addf0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ImportedAssets/UnityTechnologies/ParticlePack/EffectExamples/Misc Effects/Models/Flakes.fbx using Guid(dc789956fe23a1941adff98b407addf0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '10a79f9283a2c03b424bbe00af4fb273') in 0.042745 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000026 seconds.
-  path: Assets/ImportedAssets/Cartoon_Farm_Crops/Meshes/Cartoon_Farm_Crops_Mobile.fbx
-  artifactKey: Guid(fbd33e75d8d4bf9479c9cb59e83a9e37) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ImportedAssets/Cartoon_Farm_Crops/Meshes/Cartoon_Farm_Crops_Mobile.fbx using Guid(fbd33e75d8d4bf9479c9cb59e83a9e37) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '733cc17be91674cc230fa25fe62a2584') in 0.107279 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000026 seconds.
-  path: Assets/ImportedAssets/UnityTechnologies/ParticlePack/EffectExamples/Magic Effects/Models/IceLance.FBX
-  artifactKey: Guid(735d1d1e5a1d1934589aa44da6a7ea75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ImportedAssets/UnityTechnologies/ParticlePack/EffectExamples/Magic Effects/Models/IceLance.FBX using Guid(735d1d1e5a1d1934589aa44da6a7ea75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'baeddc9f372d5e5850059bc9be4b5ac6') in 0.020806 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/ImportedAssets/Survival Pack - Sept 2020/FBX/Battery_Small.fbx
-  artifactKey: Guid(9e2d0cc10dc8d3445a7f2f889c5ddc13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ImportedAssets/Survival Pack - Sept 2020/FBX/Battery_Small.fbx using Guid(9e2d0cc10dc8d3445a7f2f889c5ddc13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa1ddeaa948f45f49a229a0280508072') in 0.026455 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/ImportedAssets/Furniture Pack - March 2019/FBX/Door1.fbx
-  artifactKey: Guid(e6cac86e297cd7448b8dfaad3715fb60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ImportedAssets/Furniture Pack - March 2019/FBX/Door1.fbx using Guid(e6cac86e297cd7448b8dfaad3715fb60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e9d8c02d29b602eb2698830d76f8dad2') in 0.037395 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000026 seconds.
-  path: Assets/ImportedAssets/Ultimate Food Pack - Oct 2019/FBX/Carrot.fbx
-  artifactKey: Guid(6dac6f1ed05737342ab4363f7f85ecf3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ImportedAssets/Ultimate Food Pack - Oct 2019/FBX/Carrot.fbx using Guid(6dac6f1ed05737342ab4363f7f85ecf3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4ae072bbc7678638f7666b691cbd7c5') in 0.025231 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000020 seconds.
-  path: Assets/ImportedAssets/Survival Pack - Sept 2020/FBX/Match_Burnt.fbx
-  artifactKey: Guid(ef90841845129bc45a1ea8ffc66e5ef2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ImportedAssets/Survival Pack - Sept 2020/FBX/Match_Burnt.fbx using Guid(ef90841845129bc45a1ea8ffc66e5ef2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '75e715a5cd4b766542b9fa2e527fcea1') in 0.018231 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000026 seconds.
-  path: Assets/ImportedAssets/Survival Pack - Sept 2020/FBX/Pistol_1.fbx
-  artifactKey: Guid(74794e3e152d4c148a59e4379bfda682) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ImportedAssets/Survival Pack - Sept 2020/FBX/Pistol_1.fbx using Guid(74794e3e152d4c148a59e4379bfda682) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0529279236934c169aa6b3d6c2f1583a') in 0.041147 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/ImportedAssets/Alstra Infinite/Tool Set - PolyPack/Prefabs/HammerV1.prefab
-  artifactKey: Guid(12137e5a4f0f13d45b921a301983726b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ImportedAssets/Alstra Infinite/Tool Set - PolyPack/Prefabs/HammerV1.prefab using Guid(12137e5a4f0f13d45b921a301983726b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d3dda2884b0937cd81c8eb34b0b9a50') in 0.011771 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/ImportedAssets/Ultimate Food Pack - Oct 2019/FBX/ChocolateBar.fbx
-  artifactKey: Guid(e6eddfbd73dcede4f803b74a838a71c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ImportedAssets/Ultimate Food Pack - Oct 2019/FBX/ChocolateBar.fbx using Guid(e6eddfbd73dcede4f803b74a838a71c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b26f1a4ede2839526cf023b27faa5a2a') in 0.018274 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/ImportedAssets/Ultimate Food Pack - Oct 2019/FBX/Jar_Large.fbx
-  artifactKey: Guid(462ca0e62ac331e43a028fb69512b027) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ImportedAssets/Ultimate Food Pack - Oct 2019/FBX/Jar_Large.fbx using Guid(462ca0e62ac331e43a028fb69512b027) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3edda9a61db4cd7fb1891528efadd808') in 0.028793 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/ImportedAssets/UnityTechnologies/ParticlePack/Shared/Environment/Models/AreaLine.fbx
-  artifactKey: Guid(534f375dff9795c4baa527015ef28ddb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ImportedAssets/UnityTechnologies/ParticlePack/Shared/Environment/Models/AreaLine.fbx using Guid(534f375dff9795c4baa527015ef28ddb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d33589c28fd4beaec0c24cf0cd56289') in 0.309676 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/ImportedAssets/Cartoon_Farm_Crops/Prefabs/Standard/Carrot_Plant.prefab
-  artifactKey: Guid(56b36da289d9a9e4cb37c5f588e23748) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ImportedAssets/Cartoon_Farm_Crops/Prefabs/Standard/Carrot_Plant.prefab using Guid(56b36da289d9a9e4cb37c5f588e23748) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7486bb9389162275209fe3bf9b800e75') in 0.014339 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000032 seconds.
-  path: Assets/ImportedAssets/SimpleNaturePack/Models/Bush_03.fbx
-  artifactKey: Guid(7b5a098d913a3c74692a2a9963dbd3ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ImportedAssets/SimpleNaturePack/Models/Bush_03.fbx using Guid(7b5a098d913a3c74692a2a9963dbd3ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c14cf902e6ed7250d491ca2978d43d7') in 0.015629 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000033 seconds.
-  path: Assets/ImportedAssets/Ultimate Food Pack - Oct 2019/FBX/KetchupBottle.fbx
-  artifactKey: Guid(26ebfbe1bd4b71d46b347fac434d245c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ImportedAssets/Ultimate Food Pack - Oct 2019/FBX/KetchupBottle.fbx using Guid(26ebfbe1bd4b71d46b347fac434d245c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d60a7face8facf5de2024f08800bb79') in 0.019495 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000027 seconds.
-  path: Assets/ImportedAssets/Survival Pack - Sept 2020/FBX/FlareGun.fbx
-  artifactKey: Guid(790c47f197443804cb373ca03e9e978b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ImportedAssets/Survival Pack - Sept 2020/FBX/FlareGun.fbx using Guid(790c47f197443804cb373ca03e9e978b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fd81977c052ba636da42afdd2e2ccb31') in 0.028384 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000020 seconds.
-  path: Assets/ImportedAssets/Survival Pack - Sept 2020/FBX/Can_Closed.fbx
-  artifactKey: Guid(025fd62784b72fc4bb57f4c66891b795) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ImportedAssets/Survival Pack - Sept 2020/FBX/Can_Closed.fbx using Guid(025fd62784b72fc4bb57f4c66891b795) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee1aa74cbd176347991fccfa4ad64fd5') in 0.028096 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/ImportedAssets/UnityTechnologies/ParticlePack/EffectExamples/Goop Effects/Prefabs/GoopSprayEffect.prefab
-  artifactKey: Guid(abb9f519b142e304d9c45b56afa768bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ImportedAssets/UnityTechnologies/ParticlePack/EffectExamples/Goop Effects/Prefabs/GoopSprayEffect.prefab using Guid(abb9f519b142e304d9c45b56afa768bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '56ba2c58a5261fbe253abd1e35a7cea9') in 1.794451 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000031 seconds.
-  path: Assets/ImportedAssets/Ultimate Food Pack - Oct 2019/FBX/MustardBottle.fbx
-  artifactKey: Guid(b429c3afbc395344c81d6e3f64fbfc2a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ImportedAssets/Ultimate Food Pack - Oct 2019/FBX/MustardBottle.fbx using Guid(b429c3afbc395344c81d6e3f64fbfc2a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '027b685342821b3e2d988b98519575ef') in 0.018215 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000040 seconds.
-  path: Assets/ImportedAssets/Cartoon_Farm_Crops/Prefabs/Standard/Corn_Fruit.prefab
-  artifactKey: Guid(8490d29919917de4ca0c5297d93090d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ImportedAssets/Cartoon_Farm_Crops/Prefabs/Standard/Corn_Fruit.prefab using Guid(8490d29919917de4ca0c5297d93090d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e6742f33c68bdcdc920b1c8365c54ad5') in 0.013169 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/ImportedAssets/Ultimate Food Pack - Oct 2019/FBX/KetchupMustard.fbx
-  artifactKey: Guid(9cca815df5dbb554da52424fd3e22d34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ImportedAssets/Ultimate Food Pack - Oct 2019/FBX/KetchupMustard.fbx using Guid(9cca815df5dbb554da52424fd3e22d34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bea6e81fded6b681fcaf8c016fb5518b') in 0.032310 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/ImportedAssets/Ultimate Food Pack - Oct 2019/FBX/ChickenLeg.fbx
-  artifactKey: Guid(f8fa7747f82829d4682a603e71b76fba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ImportedAssets/Ultimate Food Pack - Oct 2019/FBX/ChickenLeg.fbx using Guid(f8fa7747f82829d4682a603e71b76fba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3effc0767b081cc286fec96880a5424b') in 0.028151 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/ImportedAssets/Ultimate Food Pack - Oct 2019/FBX/Fish.fbx
-  artifactKey: Guid(478f4a67ed90e7e4abbbf1d0519afdbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ImportedAssets/Ultimate Food Pack - Oct 2019/FBX/Fish.fbx using Guid(478f4a67ed90e7e4abbbf1d0519afdbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '62c586c4a39d6e9fb24ad8e24ccd199f') in 0.036159 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000038 seconds.
-  path: Assets/ImportedAssets/Ultimate Food Pack - Oct 2019/FBX/IceCream_1.fbx
-  artifactKey: Guid(a21d053f95be2ae4ab56c946e385e1b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ImportedAssets/Ultimate Food Pack - Oct 2019/FBX/IceCream_1.fbx using Guid(a21d053f95be2ae4ab56c946e385e1b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc02b2b0229d82de0b11be211fe79dcd') in 0.040107 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000030 seconds.
-  path: Assets/ImportedAssets/Survival Pack - Sept 2020/FBX/BearTrap_Closed.fbx
-  artifactKey: Guid(75da34566fe409d48bb1ac5a20c9e10b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ImportedAssets/Survival Pack - Sept 2020/FBX/BearTrap_Closed.fbx using Guid(75da34566fe409d48bb1ac5a20c9e10b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d601a25bd1746ba7c024d629b6d3275') in 0.023867 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/ImportedAssets/Ultimate Food Pack - Oct 2019/FBX/Donut4.fbx
-  artifactKey: Guid(5826c66f8c0e07f49bfcf5c56a9bfa67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ImportedAssets/Ultimate Food Pack - Oct 2019/FBX/Donut4.fbx using Guid(5826c66f8c0e07f49bfcf5c56a9bfa67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e0b09f01444a1d51d7d819ebad4842d1') in 0.037245 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000036 seconds.
-  path: Assets/ImportedAssets/UnityTechnologies/ParticlePack/Shared/Environment/Models/FloorLong.fbx
-  artifactKey: Guid(446cd81926e0f8f41ba901232882f7eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ImportedAssets/UnityTechnologies/ParticlePack/Shared/Environment/Models/FloorLong.fbx using Guid(446cd81926e0f8f41ba901232882f7eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8e09b0fcaf57f826b1f44753c1952212') in 0.482910 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/ImportedAssets/Ultimate Food Pack - Oct 2019/FBX/Egg_Whole.fbx
-  artifactKey: Guid(a52dc5e7778902a4fb17bf252ceb4d09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ImportedAssets/Ultimate Food Pack - Oct 2019/FBX/Egg_Whole.fbx using Guid(a52dc5e7778902a4fb17bf252ceb4d09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ca8d6a519dc67c2ca1fb8d48724d483') in 0.022379 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000041 seconds.
-  path: Assets/ImportedAssets/Ultimate Food Pack - Oct 2019/FBX/Bottle1.fbx
-  artifactKey: Guid(0d8ca43a34c4e3b41a5796d92735c0b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ImportedAssets/Ultimate Food Pack - Oct 2019/FBX/Bottle1.fbx using Guid(0d8ca43a34c4e3b41a5796d92735c0b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f223a6561dd459388e931e03ff38eb6e') in 0.041480 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000026 seconds.
-  path: Assets/ImportedAssets/UnityTechnologies/ParticlePack/EffectExamples/Magic Effects/Prefabs/EarthShatter.prefab
-  artifactKey: Guid(32c9fd11a72259d45aa26ae41c34c5aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ImportedAssets/UnityTechnologies/ParticlePack/EffectExamples/Magic Effects/Prefabs/EarthShatter.prefab using Guid(32c9fd11a72259d45aa26ae41c34c5aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e60a5d6aa81adaf79d4d7a866c76dd76') in 1.326611 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000040 seconds.
-  path: Assets/ImportedAssets/Cartoon_Farm_Crops/Prefabs/Mobile/Corn_Plant.prefab
-  artifactKey: Guid(a97ffd75102541b46b48cffc80ef3da0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ImportedAssets/Cartoon_Farm_Crops/Prefabs/Mobile/Corn_Plant.prefab using Guid(a97ffd75102541b46b48cffc80ef3da0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c2b24f5555e8ca484f2ffcbf942d5ce9') in 0.020078 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000047 seconds.
-  path: Assets/ImportedAssets/UnityTechnologies/ParticlePack/EffectExamples/Fire & Explosion Effects/Prefabs/DustExplosion.prefab
-  artifactKey: Guid(d8f0099df63275647a8bcf646df1ca00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ImportedAssets/UnityTechnologies/ParticlePack/EffectExamples/Fire & Explosion Effects/Prefabs/DustExplosion.prefab using Guid(d8f0099df63275647a8bcf646df1ca00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c359347fc11ada2981a439385a483ca9') in 0.306581 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000030 seconds.
-  path: Assets/ImportedAssets/Survival Pack - Sept 2020/FBX/Can_Broken.fbx
-  artifactKey: Guid(933deeff7be42204d84e88a082ba2c37) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ImportedAssets/Survival Pack - Sept 2020/FBX/Can_Broken.fbx using Guid(933deeff7be42204d84e88a082ba2c37) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '50ec56457dfc7838633414a75327d701') in 0.025052 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000030 seconds.
-  path: Assets/ImportedAssets/UnityTechnologies/ParticlePack/Shared/Environment/Prefabs/FloorTiny.prefab
-  artifactKey: Guid(8e1da52275f7dd14982d99253940530e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ImportedAssets/UnityTechnologies/ParticlePack/Shared/Environment/Prefabs/FloorTiny.prefab using Guid(8e1da52275f7dd14982d99253940530e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa73af2b366269adfe7335c0a35f2d62') in 0.040598 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000028 seconds.
-  path: Assets/ImportedAssets/Ultimate Food Pack - Oct 2019/FBX/CookingPot2.fbx
-  artifactKey: Guid(fd877a361bf144547a5cc7cbafcaa23c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ImportedAssets/Ultimate Food Pack - Oct 2019/FBX/CookingPot2.fbx using Guid(fd877a361bf144547a5cc7cbafcaa23c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'afd903eb44970fac72a31af20ddf6043') in 0.030335 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/ImportedAssets/Ultimate Food Pack - Oct 2019/FBX/Hotdog_Bun.fbx
-  artifactKey: Guid(86f9d9ac595aaa444af03cfe239dc1d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ImportedAssets/Ultimate Food Pack - Oct 2019/FBX/Hotdog_Bun.fbx using Guid(86f9d9ac595aaa444af03cfe239dc1d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '927e6a6d759f0d5f79ab3700b61ed2ac') in 0.021128 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/ImportedAssets/SimpleNaturePack/Prefabs/Bush_01.prefab
-  artifactKey: Guid(3cdafb3c2f54d434894928d72d282874) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ImportedAssets/SimpleNaturePack/Prefabs/Bush_01.prefab using Guid(3cdafb3c2f54d434894928d72d282874) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '56bf9626b31eff5b435785cb94964215') in 0.016248 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/ImportedAssets/Ultimate Food Pack - Oct 2019/FBX/Lettuce_Whole.fbx
-  artifactKey: Guid(6f3482d2ff764f143857ff8d3f013385) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ImportedAssets/Ultimate Food Pack - Oct 2019/FBX/Lettuce_Whole.fbx using Guid(6f3482d2ff764f143857ff8d3f013385) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0cbc98f8ed9db2c327df43cf99ea4cf4') in 0.016072 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000028 seconds.
-  path: Assets/ImportedAssets/UnityTechnologies/ParticlePack/Shared/Environment/Models/FloorTiny.fbx
-  artifactKey: Guid(9446cfbf8049f8840a94568ebfd2ea85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ImportedAssets/UnityTechnologies/ParticlePack/Shared/Environment/Models/FloorTiny.fbx using Guid(9446cfbf8049f8840a94568ebfd2ea85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'caa192565ddbeb9f12e4418591b40aae') in 0.033615 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/ImportedAssets/Cartoon_Farm_Crops/Prefabs/Mobile/Corn_Fruit.prefab
-  artifactKey: Guid(525cdbe33e2709049b014f3e3748e15a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ImportedAssets/Cartoon_Farm_Crops/Prefabs/Mobile/Corn_Fruit.prefab using Guid(525cdbe33e2709049b014f3e3748e15a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c5c3d5e539cfc4bae888ff41746a9f64') in 0.017359 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/ImportedAssets/SimpleNaturePack/Prefabs/Bush_02.prefab
-  artifactKey: Guid(b71b0f8d2f881c743a85228f3030d1cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ImportedAssets/SimpleNaturePack/Prefabs/Bush_02.prefab using Guid(b71b0f8d2f881c743a85228f3030d1cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1b3b763d663c5d8ba0420d70b21d4e55') in 0.015107 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000045 seconds.
-  path: Assets/ImportedAssets/UnityTechnologies/ParticlePack/EffectExamples/Misc Effects/Models/Candle.fbx
-  artifactKey: Guid(47422950376b0d8458d22d6185bcdcb3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ImportedAssets/UnityTechnologies/ParticlePack/EffectExamples/Misc Effects/Models/Candle.fbx using Guid(47422950376b0d8458d22d6185bcdcb3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d6c804fe4dc06a95df3105e87ffe254') in 0.013409 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/ImportedAssets/Ultimate Food Pack - Oct 2019/FBX/Avocado_Empty.fbx
-  artifactKey: Guid(96f7ba03e6d6a9e46a2b06202acdf5ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ImportedAssets/Ultimate Food Pack - Oct 2019/FBX/Avocado_Empty.fbx using Guid(96f7ba03e6d6a9e46a2b06202acdf5ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ca872a549e26aa3dc67dcd197c43694') in 0.031606 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000029 seconds.
-  path: Assets/ImportedAssets/Survival Pack - Sept 2020/FBX/Bandages.fbx
-  artifactKey: Guid(d57c90547baed43448dea3778178c35b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ImportedAssets/Survival Pack - Sept 2020/FBX/Bandages.fbx using Guid(d57c90547baed43448dea3778178c35b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e1666acbfed099bdee46492983334613') in 0.033502 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/ImportedAssets/Ultimate Food Pack - Oct 2019/FBX/Apple_Green.fbx
-  artifactKey: Guid(190d68cce4381eb41bbfa23f4ba70abb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ImportedAssets/Ultimate Food Pack - Oct 2019/FBX/Apple_Green.fbx using Guid(190d68cce4381eb41bbfa23f4ba70abb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8bdcad20ec8854a40c56823419e56aab') in 0.031876 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/ImportedAssets/Survival Pack - Sept 2020/FBX/Pot.fbx
-  artifactKey: Guid(911695bb71379f046a49e2c9d4b787cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ImportedAssets/Survival Pack - Sept 2020/FBX/Pot.fbx using Guid(911695bb71379f046a49e2c9d4b787cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0282b55d6cd0d323706d53b26954db9f') in 0.028280 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/ImportedAssets/Cartoon_Farm_Crops/Prefabs/Standard/Eggplant_Fruit.prefab
-  artifactKey: Guid(92417dd2b68fd6147a711fb2af4275b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ImportedAssets/Cartoon_Farm_Crops/Prefabs/Standard/Eggplant_Fruit.prefab using Guid(92417dd2b68fd6147a711fb2af4275b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '624a18679280e26c8e489e9ae75f9724') in 0.010979 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000014 seconds.
-  path: Assets/ImportedAssets/UnityTechnologies/ParticlePack/EffectExamples/Fire & Explosion Effects/Prefabs/FlameStream.prefab
-  artifactKey: Guid(bccc7a794e75b2a44a4b0dac69160b7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ImportedAssets/UnityTechnologies/ParticlePack/EffectExamples/Fire & Explosion Effects/Prefabs/FlameStream.prefab using Guid(bccc7a794e75b2a44a4b0dac69160b7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de91aecf7080ea06cfc19457a33752f9') in 0.020261 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Packages/com.unity.ml-agents/Tests/Editor/TestModels/old_serialized_agent.prefab
-  artifactKey: Guid(07e2de94fa37b49c3bdf7a21857c0f73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.ml-agents/Tests/Editor/TestModels/old_serialized_agent.prefab using Guid(07e2de94fa37b49c3bdf7a21857c0f73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd650625f562223587024773129a8976d') in 0.057349 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000032 seconds.
-  path: Assets/ImportedAssets/Survival Pack - Sept 2020/FBX/Bonfire.fbx
-  artifactKey: Guid(30e8c4e89a517804bbc0c84c7ec09d18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ImportedAssets/Survival Pack - Sept 2020/FBX/Bonfire.fbx using Guid(30e8c4e89a517804bbc0c84c7ec09d18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '39117bfa273a7a8c967c4e265559177e') in 0.017855 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000032 seconds.
-  path: Assets/ImportedAssets/Ultimate Food Pack - Oct 2019/FBX/Orange.fbx
-  artifactKey: Guid(7f495c9be432cef468da5883a7941bd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ImportedAssets/Ultimate Food Pack - Oct 2019/FBX/Orange.fbx using Guid(7f495c9be432cef468da5883a7941bd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '950803de80fa8f3160085b09e5971588') in 0.026942 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000035 seconds.
-  path: Assets/ImportedAssets/Ultimate Food Pack - Oct 2019/FBX/CookingPot.fbx
-  artifactKey: Guid(2e27b5d39de32c04ab4ee72c0a23be4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ImportedAssets/Ultimate Food Pack - Oct 2019/FBX/CookingPot.fbx using Guid(2e27b5d39de32c04ab4ee72c0a23be4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8bb40ea2d0c059b2d02cc7f321140323') in 0.021735 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000034 seconds.
-  path: Assets/ImportedAssets/Ultimate Food Pack - Oct 2019/FBX/BurgerPatty_Raw.fbx
-  artifactKey: Guid(a3eba6bd301df35449f7617241d92d25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ImportedAssets/Ultimate Food Pack - Oct 2019/FBX/BurgerPatty_Raw.fbx using Guid(a3eba6bd301df35449f7617241d92d25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '03ce38def5032f5290500f35b95f8e9f') in 0.031437 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000029 seconds.
-  path: Assets/ImportedAssets/Ultimate Food Pack - Oct 2019/FBX/BurgerPatty_Burned.fbx
-  artifactKey: Guid(8d16beb414c71544d9e25e696a017d54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ImportedAssets/Ultimate Food Pack - Oct 2019/FBX/BurgerPatty_Burned.fbx using Guid(8d16beb414c71544d9e25e696a017d54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '44d5b53baf65899ebf2af026a3040d08') in 0.025802 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/ImportedAssets/SimpleNaturePack/Prefabs/Grass_02.prefab
-  artifactKey: Guid(ffbddc4ef9676cc419e81e06aaa836d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ImportedAssets/SimpleNaturePack/Prefabs/Grass_02.prefab using Guid(ffbddc4ef9676cc419e81e06aaa836d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '198e3bdd171b5ebfe98eca787d5f2878') in 0.011911 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000044 seconds.
-  path: Assets/ImportedAssets/Ultimate Food Pack - Oct 2019/FBX/Eggplant.fbx
-  artifactKey: Guid(ce29d8a02c7082741bafe6d9ddf0f7e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ImportedAssets/Ultimate Food Pack - Oct 2019/FBX/Eggplant.fbx using Guid(ce29d8a02c7082741bafe6d9ddf0f7e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '32094c84b0a3fac008304b91fe6ea52b') in 0.034241 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000031 seconds.
-  path: Assets/ImportedAssets/Cartoon_Farm_Crops/Prefabs/Mobile/Dirt_Pile.prefab
-  artifactKey: Guid(8dfbe94bc89610d489620aca436a33ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ImportedAssets/Cartoon_Farm_Crops/Prefabs/Mobile/Dirt_Pile.prefab using Guid(8dfbe94bc89610d489620aca436a33ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '693faa6ee4ebb27cd177535d2b0cfe9b') in 0.019278 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000042 seconds.
-  path: Assets/ImportedAssets/Furniture Pack - March 2019/FBX/Bookcase.fbx
-  artifactKey: Guid(1521d91055f66e04f86a8ec26a966214) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ImportedAssets/Furniture Pack - March 2019/FBX/Bookcase.fbx using Guid(1521d91055f66e04f86a8ec26a966214) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e292ada3cd2deefa183edaded024af82') in 0.066676 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/ImportedAssets/Ultimate Food Pack - Oct 2019/FBX/Donut2.fbx
-  artifactKey: Guid(02083c188c829b84086ccb21971144a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ImportedAssets/Ultimate Food Pack - Oct 2019/FBX/Donut2.fbx using Guid(02083c188c829b84086ccb21971144a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3fa10c54b71660aae61990700e74f27d') in 0.041369 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/ImportedAssets/UnityTechnologies/ParticlePack/Shared/Environment/Prefabs/LongOverhangWall.prefab
-  artifactKey: Guid(c5aa08609f3d9f547aca9af1d6c18070) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ImportedAssets/UnityTechnologies/ParticlePack/Shared/Environment/Prefabs/LongOverhangWall.prefab using Guid(c5aa08609f3d9f547aca9af1d6c18070) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c221897ae1c324ec4f76f4ec05ab02a') in 0.271661 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000047 seconds.
-  path: Assets/ImportedAssets/UnityTechnologies/ParticlePack/Shared/Environment/Models/EndWall.fbx
-  artifactKey: Guid(18f35b9d268a5e2418ed0f7628c2d86d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ImportedAssets/UnityTechnologies/ParticlePack/Shared/Environment/Models/EndWall.fbx using Guid(18f35b9d268a5e2418ed0f7628c2d86d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fde0032ed74362bdf5331c56b0876255') in 0.056080 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000059 seconds.
-  path: Assets/ImportedAssets/Ultimate Food Pack - Oct 2019/FBX/Egg_Whole_White.fbx
-  artifactKey: Guid(e22c39b948080874580a6cfa90efd5a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ImportedAssets/Ultimate Food Pack - Oct 2019/FBX/Egg_Whole_White.fbx using Guid(e22c39b948080874580a6cfa90efd5a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '39b51ce8c474a60066c48c922a947163') in 0.022957 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000029 seconds.
-  path: Assets/ImportedAssets/Cartoon_Farm_Crops/Prefabs/Standard/Carrot_Fruit.prefab
-  artifactKey: Guid(2cf13a738fc434c46bda5ebf7ca44756) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ImportedAssets/Cartoon_Farm_Crops/Prefabs/Standard/Carrot_Fruit.prefab using Guid(2cf13a738fc434c46bda5ebf7ca44756) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad158a694f0dc7f2b99cb7acfe93f436') in 0.021480 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000028 seconds.
-  path: Assets/ImportedAssets/Cartoon_Farm_Crops/Prefabs/Standard/Corn_Plant.prefab
-  artifactKey: Guid(1c8776a0b36cd9a4f813bf0d2d59d109) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ImportedAssets/Cartoon_Farm_Crops/Prefabs/Standard/Corn_Plant.prefab using Guid(1c8776a0b36cd9a4f813bf0d2d59d109) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2bffa180b396b448b53647b4c97d987b') in 0.020369 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000034 seconds.
-  path: Assets/ImportedAssets/UnityTechnologies/ParticlePack/EffectExamples/Weapon Effects/Prefabs/MuzzleFlash01.prefab
-  artifactKey: Guid(ad2ab49d0a2a17148bd51c93d977bdbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ImportedAssets/UnityTechnologies/ParticlePack/EffectExamples/Weapon Effects/Prefabs/MuzzleFlash01.prefab using Guid(ad2ab49d0a2a17148bd51c93d977bdbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '000a24334e8a551ac73d59ba7fa6113c') in 0.014541 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/ImportedAssets/UnityTechnologies/ParticlePack/EffectExamples/Smoke & Steam Effects/Prefabs/GroundFog.prefab
-  artifactKey: Guid(1a365141225c22e49a7bb976869b22a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ImportedAssets/UnityTechnologies/ParticlePack/EffectExamples/Smoke & Steam Effects/Prefabs/GroundFog.prefab using Guid(1a365141225c22e49a7bb976869b22a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b3a7459951fec48bca7ef8f6acad5ea4') in 1.570101 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 14.628686 seconds.
-  path: Assets/ImportedAssets/Survival Pack - Sept 2020/FBX/PropaneTank.fbx
-  artifactKey: Guid(05309733928af0740b66f33775c03c22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ImportedAssets/Survival Pack - Sept 2020/FBX/PropaneTank.fbx using Guid(05309733928af0740b66f33775c03c22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b06136255840dceeb86bb45574443b55') in 0.038574 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000027 seconds.
-  path: Assets/ImportedAssets/UnityTechnologies/ParticlePack/Shared/Environment/Models/SideWall.fbx
-  artifactKey: Guid(b03a156a678c5aa42b3abd35f650bb53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ImportedAssets/UnityTechnologies/ParticlePack/Shared/Environment/Models/SideWall.fbx using Guid(b03a156a678c5aa42b3abd35f650bb53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea77850daa93b1910322346196ef1a1f') in 0.045225 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/ImportedAssets/SimpleNaturePack/Models/Rock_01.fbx
-  artifactKey: Guid(e9089b1db16b58f4282a94e020b9c0e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ImportedAssets/SimpleNaturePack/Models/Rock_01.fbx using Guid(e9089b1db16b58f4282a94e020b9c0e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd2b6005b0ed9738dab230aa1e869674') in 0.015615 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000035 seconds.
-  path: Assets/ImportedAssets/Ultimate Space Kit - March 2023/Vehicles/FBX/Rover_2.fbx
-  artifactKey: Guid(036284ac4bcb9cb49b735745cc50b41d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ImportedAssets/Ultimate Space Kit - March 2023/Vehicles/FBX/Rover_2.fbx using Guid(036284ac4bcb9cb49b735745cc50b41d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3d225095fbab5f866c43340be945d4ba') in 0.091692 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000039 seconds.
-  path: Assets/ImportedAssets/UnityTechnologies/ParticlePack/Shared/Environment/Models/Stairs.fbx
-  artifactKey: Guid(c11028ca051352e48879875d3abab77a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ImportedAssets/UnityTechnologies/ParticlePack/Shared/Environment/Models/Stairs.fbx using Guid(c11028ca051352e48879875d3abab77a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '427e1008c9e6a95b75fab60174517951') in 0.031252 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000028 seconds.
-  path: Assets/ImportedAssets/Ultimate Space Kit - March 2023/Vehicles/FBX/Rover_Round.fbx
-  artifactKey: Guid(bcfa6a6d80180c242b5401367606084f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ImportedAssets/Ultimate Space Kit - March 2023/Vehicles/FBX/Rover_Round.fbx using Guid(bcfa6a6d80180c242b5401367606084f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '002dd321acf1fa615c6a6721ebf0403f') in 0.084199 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/ImportedAssets/Survival Pack - Sept 2020/FBX/Shovel.fbx
-  artifactKey: Guid(20c010e5fabb79a4191f9ca2dcadc689) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ImportedAssets/Survival Pack - Sept 2020/FBX/Shovel.fbx using Guid(20c010e5fabb79a4191f9ca2dcadc689) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '62293f112e096395da5679701bbb3e58') in 0.034078 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000020 seconds.
-  path: Assets/ImportedAssets/Ultimate Food Pack - Oct 2019/FBX/Sausage_Cooked.fbx
-  artifactKey: Guid(3d561e3136ba17745ae448c7eb6ea460) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ImportedAssets/Ultimate Food Pack - Oct 2019/FBX/Sausage_Cooked.fbx using Guid(3d561e3136ba17745ae448c7eb6ea460) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c7ada87c806de182a5a78751ab16490a') in 0.029850 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/ImportedAssets/Ultimate Food Pack - Oct 2019/FBX/Sashimi_Salmon.fbx
-  artifactKey: Guid(0e5ac3f905c114344801d062698eece2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ImportedAssets/Ultimate Food Pack - Oct 2019/FBX/Sashimi_Salmon.fbx using Guid(0e5ac3f905c114344801d062698eece2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '52befe3e224542ba2674253b4148dcd3') in 0.035936 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000026 seconds.
-  path: Assets/ImportedAssets/UnityTechnologies/ParticlePack/EffectExamples/Magic Effects/Models/RockDebris.FBX
-  artifactKey: Guid(88b9906b4442aa2448a9379fa0d1b987) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ImportedAssets/UnityTechnologies/ParticlePack/EffectExamples/Magic Effects/Models/RockDebris.FBX using Guid(88b9906b4442aa2448a9379fa0d1b987) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc4261d3bb996baa85f33315d22c4992') in 0.040148 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000037 seconds.
-  path: Assets/ImportedAssets/Survival Pack - Sept 2020/FBX/Shotgun_ShortStock.fbx
-  artifactKey: Guid(24a9985533a583840938a4534c60d510) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ImportedAssets/Survival Pack - Sept 2020/FBX/Shotgun_ShortStock.fbx using Guid(24a9985533a583840938a4534c60d510) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b6a567793917488a9152016dbc2caad3') in 0.054503 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/ImportedAssets/Survival Pack - Sept 2020/FBX/Radio.fbx
-  artifactKey: Guid(e0f0993c145571c4f88c8507f2e1b90e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ImportedAssets/Survival Pack - Sept 2020/FBX/Radio.fbx using Guid(e0f0993c145571c4f88c8507f2e1b90e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3453de4a6abb921743a0536a5fb6255f') in 0.043248 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/ImportedAssets/Ultimate Space Kit - March 2023/Vehicles/FBX/Spaceship_RaeTheRedPanda.fbx
-  artifactKey: Guid(d6f3842228f568349b4278c1aa7e5bf7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ImportedAssets/Ultimate Space Kit - March 2023/Vehicles/FBX/Spaceship_RaeTheRedPanda.fbx using Guid(d6f3842228f568349b4278c1aa7e5bf7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd203e24b700483dd3990533e0fea666') in 0.030217 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/ImportedAssets/UnityTechnologies/ParticlePack/Shared/Environment/Models/Railing.fbx
-  artifactKey: Guid(109fce1e867015f4ab66f27e2e5e0c3b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ImportedAssets/UnityTechnologies/ParticlePack/Shared/Environment/Models/Railing.fbx using Guid(109fce1e867015f4ab66f27e2e5e0c3b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a51b18aff503428c46c862929a2e3040') in 0.022810 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/ImportedAssets/Furniture Pack - March 2019/FBX/Sofa_individual.fbx
-  artifactKey: Guid(b882c839b1a04d4479469114923a393a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ImportedAssets/Furniture Pack - March 2019/FBX/Sofa_individual.fbx using Guid(b882c839b1a04d4479469114923a393a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '19563ab009229737efcabe8139db0483') in 0.023869 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/ImportedAssets/UnityTechnologies/ParticlePack/EffectExamples/Smoke & Steam Effects/Models/RockDebris.FBX
-  artifactKey: Guid(ec280bbfbd0550743b1e477c9d48abdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ImportedAssets/UnityTechnologies/ParticlePack/EffectExamples/Smoke & Steam Effects/Models/RockDebris.FBX using Guid(ec280bbfbd0550743b1e477c9d48abdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2d19b1bb3d09cbc524608c62b1e5eba9') in 1.749899 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 7.587072 seconds.
-  path: Assets/ImportedAssets/Ultimate Food Pack - Oct 2019/FBX/Steak_burned.fbx
-  artifactKey: Guid(ee247b9c1b73c464a8a6fe5e43a70615) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ImportedAssets/Ultimate Food Pack - Oct 2019/FBX/Steak_burned.fbx using Guid(ee247b9c1b73c464a8a6fe5e43a70615) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea863fd71c93a3354736a140def0175c') in 0.030840 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/ImportedAssets/Ultimate Food Pack - Oct 2019/FBX/Sushi_Roll1.fbx
-  artifactKey: Guid(d3d05a85ce8b4a84ca58254e856454bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ImportedAssets/Ultimate Food Pack - Oct 2019/FBX/Sushi_Roll1.fbx using Guid(d3d05a85ce8b4a84ca58254e856454bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c99dd0d7f6eea63341cdfcc79fd967de') in 0.031481 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000028 seconds.
-  path: Assets/ImportedAssets/Ultimate Food Pack - Oct 2019/FBX/Waffle.fbx
-  artifactKey: Guid(39a3522734a3d6f47a83da704c85f532) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ImportedAssets/Ultimate Food Pack - Oct 2019/FBX/Waffle.fbx using Guid(39a3522734a3d6f47a83da704c85f532) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a428dfa3f1c38979487764a4654fce1a') in 0.022069 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/ImportedAssets/Ultimate Food Pack - Oct 2019/FBX/Sushi_Roll2.fbx
-  artifactKey: Guid(28799d508fc940248bfa3b24e132bf4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ImportedAssets/Ultimate Food Pack - Oct 2019/FBX/Sushi_Roll2.fbx using Guid(28799d508fc940248bfa3b24e132bf4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c84d98744f3b7628f235b71db6894ad2') in 0.038834 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/ImportedAssets/Furniture Pack - March 2019/FBX/Table2.fbx
-  artifactKey: Guid(221608edfaa72c8489accb4be58ef320) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ImportedAssets/Furniture Pack - March 2019/FBX/Table2.fbx using Guid(221608edfaa72c8489accb4be58ef320) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c098fa940353605b93a6df9ca0aaf17f') in 0.031179 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/ImportedAssets/Ultimate Food Pack - Oct 2019/FBX/Sushi_NigiriOctopus.fbx
-  artifactKey: Guid(1e17b4035fea0a341afac64ca9667732) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ImportedAssets/Ultimate Food Pack - Oct 2019/FBX/Sushi_NigiriOctopus.fbx using Guid(1e17b4035fea0a341afac64ca9667732) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5628e337ab9540658acf5e00eb997625') in 0.040082 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/ImportedAssets/Ultimate Food Pack - Oct 2019/FBX/Tomato.fbx
-  artifactKey: Guid(347c0b105b11b7b4abd6d510ff5f52af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ImportedAssets/Ultimate Food Pack - Oct 2019/FBX/Tomato.fbx using Guid(347c0b105b11b7b4abd6d510ff5f52af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b89bc425f4833a291372c3e17ba365c6') in 0.031621 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000044 seconds.
-  path: Assets/ImportedAssets/Survival Pack - Sept 2020/FBX/WaterBottle_1.fbx
-  artifactKey: Guid(3ccdcf5cb2a02f44991ff77814375948) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ImportedAssets/Survival Pack - Sept 2020/FBX/WaterBottle_1.fbx using Guid(3ccdcf5cb2a02f44991ff77814375948) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd65694511f7c82ecc0a8020ec84f252f') in 0.030201 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/ImportedAssets/Survival Pack - Sept 2020/FBX/Trashcan.fbx
-  artifactKey: Guid(7f2b3c40225a2024c937643619794ef3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ImportedAssets/Survival Pack - Sept 2020/FBX/Trashcan.fbx using Guid(7f2b3c40225a2024c937643619794ef3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '67207beb63bcd34cd3bd7c2759ca4d30') in 0.032115 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/ImportedAssets/Survival Pack - Sept 2020/FBX/Tent.fbx
-  artifactKey: Guid(af028b58f2635b24b84c8fa9647ec976) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ImportedAssets/Survival Pack - Sept 2020/FBX/Tent.fbx using Guid(af028b58f2635b24b84c8fa9647ec976) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f8326457af26870b3e193bebd09085fd') in 0.041110 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 202.697286 seconds.
-  path: Assets/ImportedAssets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Bangers SDF.asset
-  artifactKey: Guid(125cb55b44b24c4393181402bc6200e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ImportedAssets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Bangers SDF.asset using Guid(125cb55b44b24c4393181402bc6200e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c00c043ab6735428a283629d03ce956a') in 0.424898 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.395527 seconds.
-  path: Assets/ImportedAssets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Anton SDF.asset
-  artifactKey: Guid(8a89fa14b10d46a99122fd4f73fca9a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ImportedAssets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Anton SDF.asset using Guid(8a89fa14b10d46a99122fd4f73fca9a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e200ee525c2a65b5a73ff1663ea7df45') in 0.048898 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 173.492187 seconds.
-  path: Assets/ImportedAssets/Fantasy Wooden GUI  Free/normal_ui_set A/1_normal_ui_set-free.png
-  artifactKey: Guid(f3e42cb7317f6f14186e2c2267014de2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ImportedAssets/Fantasy Wooden GUI  Free/normal_ui_set A/1_normal_ui_set-free.png using Guid(f3e42cb7317f6f14186e2c2267014de2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f8a666948d8b1bf682d9f87276ff046d') in 0.750141 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2.822572 seconds.
-  path: Assets/ImportedAssets/Fantasy Wooden GUI  Free/normal_ui_set A/UI board Large Set.png
-  artifactKey: Guid(90a2dde0942123c4ebb9c4af580c5818) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ImportedAssets/Fantasy Wooden GUI  Free/normal_ui_set A/UI board Large Set.png using Guid(90a2dde0942123c4ebb9c4af580c5818) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef5085bbf2bde2d0c7d7b5d5a17ab0f6') in 0.063435 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000040 seconds.
-  path: Assets/ImportedAssets/Fantasy Wooden GUI  Free/normal_ui_set A/UI board Medium  parchment.png
-  artifactKey: Guid(cf1462bc694c3c249831ad8ac5293aa2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ImportedAssets/Fantasy Wooden GUI  Free/normal_ui_set A/UI board Medium  parchment.png using Guid(cf1462bc694c3c249831ad8ac5293aa2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c2cd07c56e15ae07d1c6c38c3c86f366') in 0.049519 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000037 seconds.
-  path: Assets/ImportedAssets/Fantasy Wooden GUI  Free/normal_ui_set A/UI board Medium stone.png
-  artifactKey: Guid(9a6560e5bacb40847bb1b879ede354fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ImportedAssets/Fantasy Wooden GUI  Free/normal_ui_set A/UI board Medium stone.png using Guid(9a6560e5bacb40847bb1b879ede354fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '087895244b77ce74304220e1b7d28f0c') in 0.053907 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 6.900271 seconds.
-  path: Assets/ImportedAssets/Fantasy Wooden GUI  Free/normal_ui_set A/UI board Small  stone.png
-  artifactKey: Guid(8dd861a6e819de241bca68a36048a6bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ImportedAssets/Fantasy Wooden GUI  Free/normal_ui_set A/UI board Small  stone.png using Guid(8dd861a6e819de241bca68a36048a6bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a86a292270b5eda274b9d1c8f67dcbf') in 0.035863 seconds 
+  path: Assets/ImportedAssets/Cainos/Pixel Art Icon Pack - RPG/Texture/Weapon & Tool/Pickaxe.png
+  artifactKey: Guid(1fb46228a3bcb5042a763829cc07f9e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Cainos/Pixel Art Icon Pack - RPG/Texture/Weapon & Tool/Pickaxe.png using Guid(1fb46228a3bcb5042a763829cc07f9e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e647f74ec587e3941b38bef7534c39a8') in 0.079929 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 8.078074 seconds.
+  path: Assets/ImportedAssets/Alstra Infinite/Tool Set - PolyPack/Prefabs/ScytheV1.prefab
+  artifactKey: Guid(6d5c973482b67d04e8b5574a2dc815a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Alstra Infinite/Tool Set - PolyPack/Prefabs/ScytheV1.prefab using Guid(6d5c973482b67d04e8b5574a2dc815a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd481423b07a321225d1dece0e676d381') in 0.010918 seconds 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.009022 seconds.
+Registered in 0.010656 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\sherm\Documents\GitHub\Open-Source-Minecraft-like-Simulation-Environment-for-AI\Environment\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\sherm\Documents\GitHub\Open-Source-Minecraft-like-Simulation-Environment-for-AI\Environment\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.75 ms, found 6 plugins.
+Refreshing native plugins compatible for Editor in 0.99 ms, found 6 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  3.656 seconds
+- Completed reload, in  1.148 seconds
 Domain Reload Profiling:
-	ReloadAssembly (3703ms)
-		BeginReloadAssembly (2505ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (122ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (1097ms)
-		EndReloadAssembly (1021ms)
-			LoadAssemblies (283ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (390ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (59ms)
-			SetupLoadedEditorAssemblies (365ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (7ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (2ms)
-				BeforeProcessingInitializeOnLoad (73ms)
-				ProcessInitializeOnLoadAttributes (257ms)
-				ProcessInitializeOnLoadMethodAttributes (17ms)
-				AfterProcessingInitializeOnLoad (8ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (6ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 12.92 ms, found 6 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4120 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 85 unused Assets / (23.7 MB). Loaded Objects now: 4694.
-Memory consumption went from 285.2 MB to 261.5 MB.
-Total: 33.525600 ms (FindLiveObjects: 0.391900 ms CreateObjectMapping: 0.113100 ms MarkObjects: 28.708800 ms  DeleteObjects: 4.310400 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.009813 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\sherm\Documents\GitHub\Open-Source-Minecraft-like-Simulation-Environment-for-AI\Environment\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\sherm\Documents\GitHub\Open-Source-Minecraft-like-Simulation-Environment-for-AI\Environment\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.96 ms, found 6 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.073 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1073ms)
-		BeginReloadAssembly (147ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (5ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (36ms)
-		EndReloadAssembly (819ms)
-			LoadAssemblies (106ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (291ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (39ms)
-			SetupLoadedEditorAssemblies (352ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (5ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (75ms)
-				ProcessInitializeOnLoadAttributes (248ms)
-				ProcessInitializeOnLoadMethodAttributes (15ms)
-				AfterProcessingInitializeOnLoad (8ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (5ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 11.82 ms, found 6 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4120 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 82 unused Assets / (23.7 MB). Loaded Objects now: 4698.
-Memory consumption went from 285.2 MB to 261.5 MB.
-Total: 7.884900 ms (FindLiveObjects: 0.404100 ms CreateObjectMapping: 0.106200 ms MarkObjects: 2.577100 ms  DeleteObjects: 4.795800 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.008777 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\sherm\Documents\GitHub\Open-Source-Minecraft-like-Simulation-Environment-for-AI\Environment\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\sherm\Documents\GitHub\Open-Source-Minecraft-like-Simulation-Environment-for-AI\Environment\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.97 ms, found 6 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.058 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1059ms)
-		BeginReloadAssembly (142ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (6ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (38ms)
-		EndReloadAssembly (820ms)
-			LoadAssemblies (105ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (290ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (46ms)
-			SetupLoadedEditorAssemblies (350ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (5ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (73ms)
-				ProcessInitializeOnLoadAttributes (248ms)
-				ProcessInitializeOnLoadMethodAttributes (15ms)
-				AfterProcessingInitializeOnLoad (8ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (5ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 4.55 ms, found 6 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4120 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 82 unused Assets / (23.7 MB). Loaded Objects now: 4702.
-Memory consumption went from 285.2 MB to 261.5 MB.
-Total: 29.402700 ms (FindLiveObjects: 0.492300 ms CreateObjectMapping: 0.115100 ms MarkObjects: 24.156500 ms  DeleteObjects: 4.637400 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.013039 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\sherm\Documents\GitHub\Open-Source-Minecraft-like-Simulation-Environment-for-AI\Environment\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\sherm\Documents\GitHub\Open-Source-Minecraft-like-Simulation-Environment-for-AI\Environment\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.09 ms, found 6 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.085 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1085ms)
-		BeginReloadAssembly (156ms)
+	ReloadAssembly (1149ms)
+		BeginReloadAssembly (165ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (4ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (49ms)
-		EndReloadAssembly (828ms)
-			LoadAssemblies (103ms)
+			CreateAndSetChildDomain (44ms)
+		EndReloadAssembly (875ms)
+			LoadAssemblies (135ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (296ms)
+			SetupTypeCache (310ms)
 			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (55ms)
-			SetupLoadedEditorAssemblies (339ms)
+			RebuildScriptCaches (46ms)
+			SetupLoadedEditorAssemblies (362ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (5ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (1ms)
 				BeforeProcessingInitializeOnLoad (76ms)
-				ProcessInitializeOnLoadAttributes (233ms)
+				ProcessInitializeOnLoadAttributes (256ms)
 				ProcessInitializeOnLoadMethodAttributes (15ms)
 				AfterProcessingInitializeOnLoad (8ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (5ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 3.76 ms, found 6 plugins.
+Refreshing native plugins compatible for Editor in 5.00 ms, found 6 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4120 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 82 unused Assets / (23.7 MB). Loaded Objects now: 4706.
-Memory consumption went from 285.2 MB to 261.5 MB.
-Total: 6.988500 ms (FindLiveObjects: 0.369900 ms CreateObjectMapping: 0.110400 ms MarkObjects: 2.311700 ms  DeleteObjects: 4.195600 ms)
+Unloading 4122 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 83 unused Assets / (23.7 MB). Loaded Objects now: 4657.
+Memory consumption went from 296.4 MB to 272.7 MB.
+Total: 9.012500 ms (FindLiveObjects: 0.402200 ms CreateObjectMapping: 0.114100 ms MarkObjects: 2.478200 ms  DeleteObjects: 6.016700 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -1178,114 +236,8 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.012093 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\sherm\Documents\GitHub\Open-Source-Minecraft-like-Simulation-Environment-for-AI\Environment\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\sherm\Documents\GitHub\Open-Source-Minecraft-like-Simulation-Environment-for-AI\Environment\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.97 ms, found 6 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.117 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1118ms)
-		BeginReloadAssembly (194ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (5ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (69ms)
-		EndReloadAssembly (804ms)
-			LoadAssemblies (108ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (284ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (39ms)
-			SetupLoadedEditorAssemblies (347ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (5ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (72ms)
-				ProcessInitializeOnLoadAttributes (246ms)
-				ProcessInitializeOnLoadMethodAttributes (15ms)
-				AfterProcessingInitializeOnLoad (8ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (5ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 3.68 ms, found 6 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4120 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 82 unused Assets / (23.7 MB). Loaded Objects now: 4710.
-Memory consumption went from 285.2 MB to 261.5 MB.
-Total: 14.988300 ms (FindLiveObjects: 0.534700 ms CreateObjectMapping: 0.119300 ms MarkObjects: 10.054200 ms  DeleteObjects: 4.279000 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.009123 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\sherm\Documents\GitHub\Open-Source-Minecraft-like-Simulation-Environment-for-AI\Environment\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\sherm\Documents\GitHub\Open-Source-Minecraft-like-Simulation-Environment-for-AI\Environment\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.03 ms, found 6 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.160 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1161ms)
-		BeginReloadAssembly (163ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (5ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (45ms)
-		EndReloadAssembly (878ms)
-			LoadAssemblies (106ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (324ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (52ms)
-			SetupLoadedEditorAssemblies (361ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (5ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (78ms)
-				ProcessInitializeOnLoadAttributes (253ms)
-				ProcessInitializeOnLoadMethodAttributes (15ms)
-				AfterProcessingInitializeOnLoad (8ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (5ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 3.80 ms, found 6 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4120 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 82 unused Assets / (23.7 MB). Loaded Objects now: 4714.
-Memory consumption went from 285.2 MB to 261.5 MB.
-Total: 16.420900 ms (FindLiveObjects: 0.387500 ms CreateObjectMapping: 0.110400 ms MarkObjects: 11.626200 ms  DeleteObjects: 4.295400 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+Received Import Request.
+  Time since last request: 415.193581 seconds.
+  path: Assets/QuickOutline/Resources/Materials/OutlineFill.mat
+  artifactKey: Guid(311313efa011949e98b6761d652ad13c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/QuickOutline/Resources/Materials/OutlineFill.mat using Guid(311313efa011949e98b6761d652ad13c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '952593cc42b651abf1ee95e2289ce13f') in 0.097434 seconds 

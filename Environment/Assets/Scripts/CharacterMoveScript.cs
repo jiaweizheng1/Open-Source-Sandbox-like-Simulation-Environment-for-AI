@@ -42,6 +42,7 @@ public class CharacterMoveScript : Agent
     public LightingPreset preset;
     private DateTime time;
     public float timemulti;
+    public float timescale;
     public TMP_Text time_t;
     public TMP_Text day_t;
 
@@ -55,6 +56,11 @@ public class CharacterMoveScript : Agent
     private int[] rocketbuildmats = { 10, 10, 10, 10 };
     private int[] rocketlaunchmats = { 1, 5, 5, 10, 1, 1, 1 };
     private int[] toolbuildmats = { 2, 3 };
+
+    void Start()
+    {
+        Time.timeScale = timescale;
+    }
 
     public override void OnEpisodeBegin()
     {
@@ -537,7 +543,7 @@ public class CharacterMoveScript : Agent
                     StartCoroutine(WaitForMove(BuildFire()));
                     AddReward(0.9f);
                 }
-                else if(campfirebuilt && Health<100 && log >= cookmats[0] && apple >= cookmats[1] && meat >= cookmats[2] && water >= cookmats[3])
+                else if(campfirebuilt && Hunger<25 && log >= cookmats[0] && apple >= cookmats[1] && meat >= cookmats[2] && water >= cookmats[3])
                 {
                     needtomove(firelocation);
                     StartCoroutine(WaitForMove(Cook()));

@@ -60,14 +60,14 @@ public class CharacterMoveScript : Agent
     {
         SetReward(0);
 
-        log = 30;
-        apple = 30;
-        meat = 30;
-        oil = 30;
-        water = 30;
-        iron = 30;
-        gold = 30;
-        diamond = 30;
+        log = 0;
+        apple = 0;
+        meat = 0;
+        oil = 0;
+        water = 0;
+        iron = 0;
+        gold = 0;
+        diamond = 0;
         ManualUpdateAllText();
 
         animator.SetBool("deadge", false);

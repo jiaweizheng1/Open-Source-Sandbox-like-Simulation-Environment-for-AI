@@ -66,14 +66,14 @@ public class CharacterMoveScript : Agent
     {
         SetReward(0);
 
-        log = 0;
-        apple = 0;
-        meat = 0;
-        oil = 0;
-        water = 0;
-        iron = 0;
-        gold = 0;
-        diamond = 0;
+        log = 30;
+        apple = 30;
+        meat = 30;
+        oil = 30;
+        water = 30;
+        iron = 30;
+        gold = 30;
+        diamond = 30;
         ManualUpdateAllText();
 
         animator.SetBool("deadge", false);
@@ -124,9 +124,14 @@ public class CharacterMoveScript : Agent
         tools.transform.Find("Chickenleg").gameObject.SetActive(false);
 
         // toolbar initialize (axe -> scythe -> pickaxe)
-        toolbarui.transform.Find("AxeV1").gameObject.SetActive(false);
-        toolbarui.transform.Find("ScytheV1").gameObject.SetActive(false);
-        toolbarui.transform.Find("PickAxeV1").gameObject.SetActive(false);
+        toolbarui.transform.Find("InventoryImage").GetComponent<RectTransform>().sizeDelta = new Vector2(30, 110);
+        toolbarui.transform.Find("Tools").localPosition = new Vector3(0, 0, 0);
+        toolbarui.transform.Find("Tools").gameObject.transform.Find("AxeSelector").gameObject.SetActive(false);
+        toolbarui.transform.Find("Tools").gameObject.transform.Find("ScytheSelector").gameObject.SetActive(false);
+        toolbarui.transform.Find("Tools").gameObject.transform.Find("PickAxeSelector").gameObject.SetActive(false);
+        toolbarui.transform.Find("Tools").gameObject.transform.Find("AxeV1").gameObject.SetActive(false);
+        toolbarui.transform.Find("Tools").gameObject.transform.Find("ScytheV1").gameObject.SetActive(false);
+        toolbarui.transform.Find("Tools").gameObject.transform.Find("PickAxeV1").gameObject.SetActive(false);
 
         Health = MaxHealth;
         Hunger = MaxHunger;
@@ -177,6 +182,9 @@ public class CharacterMoveScript : Agent
             tools.transform.Find("Axe").gameObject.SetActive(true);
             tools.transform.Find("Scythe").gameObject.SetActive(false);
             tools.transform.Find("Pickaxe").gameObject.SetActive(false);
+            toolbarui.transform.Find("Tools").gameObject.transform.Find("AxeSelector").gameObject.SetActive(true);
+            toolbarui.transform.Find("Tools").gameObject.transform.Find("ScytheSelector").gameObject.SetActive(false);
+            toolbarui.transform.Find("Tools").gameObject.transform.Find("PickAxeSelector").gameObject.SetActive(false);
             animator.SetBool("chopping", true);
         }
         else
@@ -206,6 +214,9 @@ public class CharacterMoveScript : Agent
             tools.transform.Find("Axe").gameObject.SetActive(false);
             tools.transform.Find("Scythe").gameObject.SetActive(true);
             tools.transform.Find("Pickaxe").gameObject.SetActive(false);
+            toolbarui.transform.Find("Tools").gameObject.transform.Find("AxeSelector").gameObject.SetActive(false);
+            toolbarui.transform.Find("Tools").gameObject.transform.Find("ScytheSelector").gameObject.SetActive(true);
+            toolbarui.transform.Find("Tools").gameObject.transform.Find("PickAxeSelector").gameObject.SetActive(false);
             animator.SetBool("chopping", true);
         }
         else
@@ -262,6 +273,9 @@ public class CharacterMoveScript : Agent
             tools.transform.Find("Axe").gameObject.SetActive(false);
             tools.transform.Find("Scythe").gameObject.SetActive(false);
             tools.transform.Find("Pickaxe").gameObject.SetActive(true);
+            toolbarui.transform.Find("Tools").gameObject.transform.Find("AxeSelector").gameObject.SetActive(false);
+            toolbarui.transform.Find("Tools").gameObject.transform.Find("ScytheSelector").gameObject.SetActive(false);
+            toolbarui.transform.Find("Tools").gameObject.transform.Find("PickAxeSelector").gameObject.SetActive(true);
             animator.SetBool("mining", true);
         }
         else
@@ -328,7 +342,7 @@ public class CharacterMoveScript : Agent
         toolui.transform.Find("UIBuildAxe").gameObject.SetActive(false);
         toolblueprints.transform.Find("ToolBlueprint").gameObject.transform.Find("Scythe").gameObject.SetActive(true);
         toolui.transform.Find("UIBuildScythe").gameObject.SetActive(true);
-        toolbarui.transform.Find("AxeV1").gameObject.SetActive(true);
+        toolbarui.transform.Find("Tools").gameObject.transform.Find("AxeV1").gameObject.SetActive(true);
         log -= toolbuildmats[0];
         iron -= toolbuildmats[1];
         ManualUpdateAllText();
@@ -346,16 +360,14 @@ public class CharacterMoveScript : Agent
         toolui.transform.Find("UIBuildScythe").gameObject.SetActive(false);
         toolblueprints.transform.Find("ToolBlueprint").gameObject.transform.Find("PickAxe").gameObject.SetActive(true);
         toolui.transform.Find("UIBuildPickaxe").gameObject.SetActive(true);
-        toolbarui.transform.Find("ScytheV1").gameObject.SetActive(true);
+        toolbarui.transform.Find("Tools").gameObject.transform.Find("ScytheV1").gameObject.SetActive(true);
+        toolbarui.transform.Find("Tools").Translate(-5, 0, 0);
+        toolbarui.transform.Find("InventoryImage").GetComponent<RectTransform>().sizeDelta = new Vector2(45, 110);
         log -= toolbuildmats[0];
         gold -= toolbuildmats[1];
         ManualUpdateAllText();
         animator.SetBool("harvesting", false);
         busy = false;
-
-        RectTransform rt = toolbarui.transform.Find("InventoryImage").gameObject.GetComponent<RectTransform>();
-        rt.sizeDelta = new Vector2(40, 110);
-        toolbarui.transform.Find("AxeV1").gameObject.transform.position += new Vector3 (-4, 0, 0);
     }
 
     IEnumerator BuildPickaxe()
@@ -366,18 +378,14 @@ public class CharacterMoveScript : Agent
         pickaxebuilt=true;
         toolblueprints.transform.Find("ToolBlueprint").gameObject.transform.Find("PickAxe").gameObject.SetActive(false);
         toolui.transform.Find("UIBuildPickaxe").gameObject.SetActive(false);
-        toolbarui.transform.Find("PickAxeV1").gameObject.SetActive(true);
+        toolbarui.transform.Find("Tools").gameObject.transform.Find("PickAxeV1").gameObject.SetActive(true);
+        toolbarui.transform.Find("InventoryImage").GetComponent<RectTransform>().sizeDelta = new Vector2(60, 110);
+        toolbarui.transform.Find("Tools").Translate(-5, 0, 0);
         log -= toolbuildmats[0];
         diamond -= toolbuildmats[1];
         ManualUpdateAllText();
         animator.SetBool("harvesting", false);
         busy = false;
-
-        RectTransform rt = toolbarui.transform.Find("InventoryImage").gameObject.GetComponent<RectTransform>();
-        rt.sizeDelta = new Vector2(50, 110);
-
-        toolbarui.transform.Find("AxeV1").gameObject.transform.position += new Vector3 (-4, 0, 0);
-        toolbarui.transform.Find("ScytheV1").gameObject.transform.position += new Vector3 (-4.5f, 0, 0);
     }
 
     IEnumerator BuildFire()

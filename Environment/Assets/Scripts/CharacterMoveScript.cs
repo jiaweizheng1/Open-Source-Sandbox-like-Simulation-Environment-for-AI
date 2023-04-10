@@ -126,10 +126,10 @@ public class CharacterMoveScript : Agent
         // toolbar initialize (axe -> scythe -> pickaxe)
         toolbarui.transform.Find("InventoryImage").GetComponent<RectTransform>().sizeDelta = new Vector2(30, 110);
         toolbarui.transform.Find("Tools").localPosition = new Vector3(0, 0, 0);
+        toolbarui.gameObject.SetActive(false);
         toolbarui.transform.Find("Tools").gameObject.transform.Find("AxeSelector").gameObject.SetActive(false);
         toolbarui.transform.Find("Tools").gameObject.transform.Find("ScytheSelector").gameObject.SetActive(false);
         toolbarui.transform.Find("Tools").gameObject.transform.Find("PickAxeSelector").gameObject.SetActive(false);
-        toolbarui.transform.Find("Tools").gameObject.transform.Find("AxeV1").gameObject.SetActive(false);
         toolbarui.transform.Find("Tools").gameObject.transform.Find("ScytheV1").gameObject.SetActive(false);
         toolbarui.transform.Find("Tools").gameObject.transform.Find("PickAxeV1").gameObject.SetActive(false);
 
@@ -342,7 +342,7 @@ public class CharacterMoveScript : Agent
         toolui.transform.Find("UIBuildAxe").gameObject.SetActive(false);
         toolblueprints.transform.Find("ToolBlueprint").gameObject.transform.Find("Scythe").gameObject.SetActive(true);
         toolui.transform.Find("UIBuildScythe").gameObject.SetActive(true);
-        toolbarui.transform.Find("Tools").gameObject.transform.Find("AxeV1").gameObject.SetActive(true);
+        toolbarui.gameObject.SetActive(true);
         log -= toolbuildmats[0];
         iron -= toolbuildmats[1];
         ManualUpdateAllText();

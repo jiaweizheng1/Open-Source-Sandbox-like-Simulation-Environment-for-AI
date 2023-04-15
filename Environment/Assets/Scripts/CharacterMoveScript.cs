@@ -51,14 +51,14 @@ public class CharacterMoveScript : Agent
     public GameObject tools;
     public GameObject bench, fire, rocket, toolblueprints;
     public GameObject benchui, fireui, rocketui, toolui, toolbarui;
-    private int[] benchbuildmats = {3, 0, 0, 0, 0, 1, 1, 1};
-    private int[] firebuildmats = {2, 0, 0, 0, 0, 1, 0, 0};
-    private int[] cookmats = {1, 1, 1, 0, 1, 0, 0, 0};
-    private int[] rocketbuildmats = {10, 0, 0, 0, 0, 10, 10, 10};
-    private int[] rocketlaunchmats = {1, 5, 5, 0, 10, 1, 1, 1};
-    private int[] axebuildmats = {2, 0, 0, 0, 0, 3, 0, 0};
-    private int[] scythebuildmats = {2, 0, 0, 0, 0, 0, 3, 0};
-    private int[] pickaxebuildmats = {2, 0, 0, 0, 0, 0, 0, 3};
+    private float[] benchbuildmats = {3, 0, 0, 0, 0, 1, 1, 1};
+    private float[] firebuildmats = {2, 0, 0, 0, 0, 1, 0, 0};
+    private float[] cookmats = {1, 1, 1, 0, 1, 0, 0, 0};
+    private float[] rocketbuildmats = {10, 0, 0, 0, 0, 10, 10, 10};
+    private float[] rocketlaunchmats = {1, 5, 5, 0, 10, 1, 1, 1};
+    private float[] axebuildmats = {2, 0, 0, 0, 0, 3, 0, 0};
+    private float[] scythebuildmats = {2, 0, 0, 0, 0, 0, 3, 0};
+    private float[] pickaxebuildmats = {2, 0, 0, 0, 0, 0, 0, 3};
 
     void Start()
     {
@@ -161,6 +161,15 @@ public class CharacterMoveScript : Agent
         sensor.AddObservation(axebuilt);
         sensor.AddObservation(scythebuilt);
         sensor.AddObservation(pickaxebuilt);
+
+        sensor.AddObservation(benchbuildmats);
+        sensor.AddObservation(firebuildmats);
+        sensor.AddObservation(cookmats);
+        sensor.AddObservation(rocketbuildmats);
+        sensor.AddObservation(rocketlaunchmats );
+        sensor.AddObservation(axebuildmats);
+        sensor.AddObservation(scythebuildmats);
+        sensor.AddObservation(pickaxebuildmats);
     }
 
     IEnumerator Log()

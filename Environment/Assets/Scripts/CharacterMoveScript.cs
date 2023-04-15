@@ -8,6 +8,7 @@ using Unity.MLAgents.Actuators;
 using Unity.MLAgents.Sensors;
 using System;
 using Random=UnityEngine.Random;
+using System.IO;
 
 public class CharacterMoveScript : Agent
 {
@@ -200,6 +201,7 @@ public class CharacterMoveScript : Agent
         {
             log++;
         }
+        File.WriteAllText("observations.txt", log.ToString());
         ManualUpdateAllText();
         animator.SetBool("chopping", false);
         animator.SetBool("harvesting", false);
@@ -605,7 +607,6 @@ public class CharacterMoveScript : Agent
                     diamond -= rocketlaunchmats[6];
                     ManualUpdateAllText();
                     AddReward(1);
-                    AddReward(time.Day * -0.5f); //penality based on number of days taken to finish rocket
                     needtomove(rocketlocation);
                     StartCoroutine(WaitForMove(LaunchRocket()));
                 }
@@ -717,14 +718,7 @@ public class CharacterMoveScript : Agent
             StopAllCoroutines();
             StartCoroutine(Die());
         }
-        if (!rocketbuilt && log >= rocketbuildmats[0] && iron >= rocketbuildmats[1] && gold >= rocketbuildmats[2] && diamond >= rocketbuildmats[3])
-        {
-            AddReward(-0.001f);
-        }
-        if(rocketbuilt && log >= rocketlaunchmats[0] && apple >= rocketlaunchmats[1] && meat >= rocketlaunchmats[2] && oil >= rocketlaunchmats[3] && iron >= rocketlaunchmats[4] && gold >= rocketlaunchmats[5] && diamond >= rocketlaunchmats[6])
-        {
-            AddReward(-0.001f);
-        }
+        AddReward(-0.0001f);
     }
 
     private void UpdateLighting(float timePercent)
@@ -760,4 +754,3 @@ public class CharacterMoveScript : Agent
         controller.Move(direction * speed * Time.deltaTime);
     }
 }
-    

@@ -162,6 +162,7 @@ public class CharacterMoveScript : Agent
         sensor.AddObservation(scythebuilt);
         sensor.AddObservation(pickaxebuilt);
 
+        /* observations commented for backward compatiblity with previously Trained ML model
         sensor.AddObservation(benchbuildmats);
         sensor.AddObservation(firebuildmats);
         sensor.AddObservation(cookmats);
@@ -170,6 +171,7 @@ public class CharacterMoveScript : Agent
         sensor.AddObservation(axebuildmats);
         sensor.AddObservation(scythebuildmats);
         sensor.AddObservation(pickaxebuildmats);
+        */
     }
 
     IEnumerator Log()
@@ -511,6 +513,9 @@ public class CharacterMoveScript : Agent
         iron_t.text = "x" + inventory[5];
         gold_t.text = "x" + inventory[6];
         diamond_t.text = "x" + inventory[7];
+
+        File.WriteAllText(@"observations.txt", "hi");
+
     }
 
     public override void OnActionReceived(ActionBuffers vetcaction)

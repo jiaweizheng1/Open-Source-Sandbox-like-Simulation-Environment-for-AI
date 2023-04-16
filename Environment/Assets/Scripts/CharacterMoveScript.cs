@@ -18,6 +18,7 @@ public class CharacterMoveScript : Agent
     public Transform treeslocation, farmlocation, poollocation, rockslocation, benchlocation, firelocation, rocketlocation;
     public TMP_Text log_t, apple_t, meat_t, oil_t, water_t, iron_t, gold_t, diamond_t;
     private float[] inventory;
+    private double reward;
     private bool alive, moving, busy;
     private Vector3 target;
     private Vector2 input;
@@ -68,6 +69,7 @@ public class CharacterMoveScript : Agent
     public override void OnEpisodeBegin()
     {
         SetReward(0);
+        reward = 0;
 
         inventory = new float[8] {0, 0, 0, 0, 0, 0, 0, 0};
         ManualUpdateAllText();
@@ -503,6 +505,22 @@ public class CharacterMoveScript : Agent
         EndEpisode();
     }
 
+    public string myToString(float[] arr)
+    {
+        string s = "";
+        s += "(";
+        for(int i = 0; i < 8; i++)
+        {
+            s += arr[i].ToString();
+            if(i != 7)
+            {
+                s += ", ";
+            }
+        }
+        s += ")";
+        return s;
+    }
+
     public void ManualUpdateAllText()
     {
         log_t.text = "x" + inventory[0];
@@ -514,8 +532,39 @@ public class CharacterMoveScript : Agent
         gold_t.text = "x" + inventory[6];
         diamond_t.text = "x" + inventory[7];
 
-        File.WriteAllText(@"observations.txt", "hi");
+        string contents = "RobotLocation: " + controller.transform.position + Environment.NewLine;
+        contents += "TreesLocation: " + treeslocation.transform.position + Environment.NewLine;
+        contents += "FarmLocation: " + farmlocation.transform.position + Environment.NewLine;
+        contents += "PoolLocation: " + poollocation.transform.position + Environment.NewLine;
+        contents += "RocksLocation: " + rockslocation.transform.position + Environment.NewLine;
+        contents += "BenchLocation: " + benchlocation.transform.position + Environment.NewLine;
+        contents += "FireLocation: " + firelocation.transform.position + Environment.NewLine;
+        contents += "RocketLocation: " + rocketlocation.transform.position + Environment.NewLine;
 
+        contents += "Inventory: " + myToString(inventory) + Environment.NewLine;
+
+        contents += "Health: " + Health + Environment.NewLine;
+        contents += "Hunger: " + Hunger + Environment.NewLine;
+        contents += "Thirst: " + Thirst + Environment.NewLine;
+
+        contents += "BenchBuilt: " + benchbuilt + Environment.NewLine;
+        contents += "CampfireBuilt: " + campfirebuilt + Environment.NewLine;
+        contents += "RocketBuilt: " + rocketbuilt + Environment.NewLine;
+        contents += "AxeBuilt: " + axebuilt + Environment.NewLine;
+        contents += "ScytheBuilt: " + scythebuilt + Environment.NewLine;
+        contents += "PickaxehBuilt: " + pickaxebuilt + Environment.NewLine;
+
+        contents += "BenchBuildMats: " + myToString(benchbuildmats) + Environment.NewLine;
+        contents += "FireBuildMats: " + myToString(firebuildmats) + Environment.NewLine;
+        contents += "Cookmats: " + myToString(cookmats) + Environment.NewLine;
+        contents += "RocketBuildMats: " + myToString(rocketbuildmats) + Environment.NewLine;
+        contents += "RocketLaunchMats: " + myToString(rocketlaunchmats) + Environment.NewLine;
+        contents += "AxeBuildMats: " + myToString(axebuildmats) + Environment.NewLine;
+        contents += "ScytheBuildMats: " + myToString(scythebuildmats) + Environment.NewLine;
+        contents += "PickaxeBuildMats: " + myToString(pickaxebuildmats) + Environment.NewLine;
+        contents += "Reward: " + reward + Environment.NewLine;
+
+        File.WriteAllText(@"observations.txt", contents);
     }
 
     public override void OnActionReceived(ActionBuffers vetcaction)
@@ -524,80 +573,93 @@ public class CharacterMoveScript : Agent
         {
             if (vetcaction.DiscreteActions[0] == 0)
             {
+                AddReward(0.001f);
+                reward += 0.001f;
                 needtomove(treeslocation);
                 StartCoroutine(WaitForMove(Log()));
-                AddReward(0.001f);
             }
             if (vetcaction.DiscreteActions[0] == 1)
             {
+                AddReward(0.001f);
+                reward += 0.001f;
                 needtomove(farmlocation);
                 StartCoroutine(WaitForMove(Gatherfood()));
-                AddReward(0.0009f);
             }
             if (vetcaction.DiscreteActions[0] == 2)
             {
+                AddReward(0.001f);
+                reward += 0.001f;
                 needtomove(poollocation);
                 StartCoroutine(WaitForMove(CollectWater()));
-                AddReward(0.0008f);
             }
             if (vetcaction.DiscreteActions[0] == 3)
             {
+                AddReward(0.001f);
+                reward += 0.001f;
                 needtomove(rockslocation);
                 StartCoroutine(WaitForMove(Mine()));
-                AddReward(0.001f);
             }
             if (vetcaction.DiscreteActions[0] == 4)
             {
                 if (!campfirebuilt && inventory[0] >= firebuildmats[0] && inventory[5] >= firebuildmats[5])
                 {
+                    AddReward(0.9f);
+                    reward += 0.9f;
                     needtomove(firelocation);
                     StartCoroutine(WaitForMove(BuildFire()));
-                    AddReward(0.9f);
                 }
                 else if(campfirebuilt && Hunger<25 && inventory[0] >= cookmats[0] && inventory[1] >= cookmats[1] && inventory[2] >= cookmats[2] && inventory[4] >= cookmats[4])
                 {
+                    AddReward(0.1f);
+                    reward += 0.1f;
                     needtomove(firelocation);
                     StartCoroutine(WaitForMove(Cook()));
-                    AddReward(0.1f);
                 }
             }
             if (vetcaction.DiscreteActions[0] == 5)
             {
                 if (!benchbuilt && inventory[0] >= benchbuildmats[0] && inventory[5] >= benchbuildmats[5] && inventory[6] >= benchbuildmats[6] && inventory[7] >= benchbuildmats[7])
                 {
+                    AddReward(0.85f);
+                    reward += 0.85f;
                     needtomove(benchlocation);
                     StartCoroutine(WaitForMove(BuildBench()));
-                    AddReward(0.85f);
                 }
                 else if (benchbuilt && !axebuilt && inventory[0] >= axebuildmats[0] && inventory[5] >= axebuildmats[5])
                 {  
+                    AddReward(0.85f);
+                    reward += 0.85f;
                     needtomove(benchlocation);
                     StartCoroutine(WaitForMove(BuildAxe()));  
-                    AddReward(0.85f);
                 }
                 else if (benchbuilt && axebuilt & !scythebuilt && inventory[0] >= scythebuildmats[0] && inventory[6] >= scythebuildmats[6])
                 {
+                    AddReward(0.85f);
+                    reward += 0.85f;
                     needtomove(benchlocation);
                     StartCoroutine(WaitForMove(BuildScythe()));  
-                    AddReward(0.85f);
                 }
                 else if (benchbuilt && axebuilt & scythebuilt && !pickaxebuilt && inventory[0] >= pickaxebuildmats[0] && inventory[7] >= pickaxebuildmats[7])
                 {
+                    AddReward(0.85f);
+                    reward += 0.85f;
                     needtomove(benchlocation);
                     StartCoroutine(WaitForMove(BuildPickaxe())); 
-                    AddReward(0.85f);
                 }
             }
             if (vetcaction.DiscreteActions[0] == 6)
             {
                 if (!rocketbuilt && inventory[0] >= rocketbuildmats[0] && inventory[5] >= rocketbuildmats[5] && inventory[6] >= rocketbuildmats[6] && inventory[7] >= rocketbuildmats[7])
                 {
+                    AddReward(1);
+                    reward += 1;
                     needtomove(rocketlocation);
                     StartCoroutine(WaitForMove(BuildRocket()));
-                    AddReward(1);
                 }
                 else if (rocketbuilt && inventory[0] >= rocketlaunchmats[0] && inventory[1] >= rocketlaunchmats[1] && inventory[2] >= rocketlaunchmats[2] && inventory[3] >= rocketlaunchmats[3] && inventory[5] >= rocketlaunchmats[5] && inventory[6] >= rocketlaunchmats[6] && inventory[7] >= rocketlaunchmats[7])
                 {
+                    AddReward(1);
+                    reward += 1;
                     inventory[0] -= rocketlaunchmats[0];
                     inventory[1] -= rocketlaunchmats[1];
                     inventory[2] -= rocketlaunchmats[2];
@@ -606,7 +668,6 @@ public class CharacterMoveScript : Agent
                     inventory[6] -= rocketlaunchmats[6];
                     inventory[7] -= rocketlaunchmats[7];
                     ManualUpdateAllText();
-                    AddReward(1);
                     needtomove(rocketlocation);
                     StartCoroutine(WaitForMove(LaunchRocket()));
                 }
@@ -715,6 +776,8 @@ public class CharacterMoveScript : Agent
         {
             alive = false;
             AddReward(-5);
+            reward += -5;
+            ManualUpdateAllText();
             StopAllCoroutines();
             StartCoroutine(Die());
         }

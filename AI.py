@@ -1,7 +1,7 @@
 import random
 import gym
-import gym_examples
-env = gym.make('gym_examples/GridWorld-v0', render_mode = "human")
+import gym_environment
+env = gym.make('gym_environment/env', render_mode = "human")
 print(env.observation_space)
 print(env.action_space.np_random)
 for episode in range(1, 3+1):

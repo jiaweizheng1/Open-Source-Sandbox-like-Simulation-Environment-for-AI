@@ -3,15 +3,16 @@ import gym
 import gym_environment
 env = gym.make('gym_environment/env', render_mode = "human")
 print(env.observation_space)
-print(env.action_space.np_random)
+print(env.action_space)
 for episode in range(1, 3+1):
     state = env.reset()
-    done = False
+    terminated = False
     score = 0
 
-    while not done:
+    while not terminated:
         action = random.randint(0, 3)
-        next_state, reward, done, truncated, info = env.step(action)
+        observation, reward, terminated, truncated, info = env.step(action)
+        print(f"Observation: {observation}, Reward: {reward}, Info: {info}")
         score += reward
         env.render()
     

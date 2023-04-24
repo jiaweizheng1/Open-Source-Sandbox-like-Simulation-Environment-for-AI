@@ -35,7 +35,7 @@ class GymWorldEnv(gym.Env):
         self.observation_space["inventory"]["apple"] = np.array([0])
         self.observation_space["inventory"]["meat"] = np.array([0])
         self.observation_space["inventory"]["oil"] = np.array([0])
-        self.observation_space["inventory"]["water"] = np.array([3])
+        self.observation_space["inventory"]["water"] = np.array([0])
         self.observation_space["inventory"]["iron"] = np.array([0])
         self.observation_space["inventory"]["gold"] = np.array([0])
         self.observation_space["inventory"]["diamond"] = np.array([0])

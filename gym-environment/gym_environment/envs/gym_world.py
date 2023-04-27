@@ -2,169 +2,145 @@ import gym
 from gym import spaces
 import pygame
 import numpy as np
-
+import random
 
 class GymWorldEnv(gym.Env):
     metadata = {"render_modes": ["human", "rgb_array"], "render_fps": 4}
 
     def __init__(self, render_mode=None, size=5):
-        self.size = size  # The size of the square grid
-        self.window_size = 512  # The size of the PyGame window
+        self.action_space = spaces.Discrete(7)
+        self.observation_space = spaces.Dict({
+            "health": spaces.Box(low=0, high=100, shape=(1,), dtype=float),
+            "thirst": spaces.Box(low=0, high=100, shape=(1,), dtype=float),
+            "hunger": spaces.Box(low=0, high=100, shape=(1,), dtype=float),
+            "inventory": spaces.Dict({
+                "log": spaces.Box(low=0, high=100, shape=(1,), dtype=int),
+                "apple": spaces.Box(low=0, high=100, shape=(1,), dtype=int),
+                "meat": spaces.Box(low=0, high=100, shape=(1,), dtype=int),
+                "oil": spaces.Box(low=0, high=100, shape=(1,), dtype=int),
+                "water": spaces.Box(low=0, high=100, shape=(1,), dtype=int),
+                "iron": spaces.Box(low=0, high=100, shape=(1,), dtype=int),
+                "gold": spaces.Box(low=0, high=100, shape=(1,), dtype=int),
+                "diamond": spaces.Box(low=0, high=100, shape=(1,), dtype=int)
+            }),
+            "campfirebuilt": spaces.Box(low=0, high=1, shape=(1,), dtype=bool),
+            "benchbuilt": spaces.Box(low=0, high=1, shape=(1,), dtype=bool),
+            "axebuilt": spaces.Box(low=0, high=1, shape=(1,), dtype=bool),
+            "scythebuilt": spaces.Box(low=0, high=1, shape=(1,), dtype=bool),
+            "pickaxebuiltbuilt": spaces.Box(low=0, high=1, shape=(1,), dtype=bool),
+            "rocketbuilt": spaces.Box(low=0, high=1, shape=(1,), dtype=bool),
+            "days_survived": spaces.Box(low=0, high=365, shape=(1,), dtype=int)
+        })
+        self.decrease_rate = 0.3
+    def reset(self):
+        # Initialize the environment state
+        self.observation_space["health"] = np.array([100.0])
+        self.observation_space["thirst"] = np.array([100.0])
+        self.observation_space["hunger"] = np.array([100.0])
+        self.observation_space["inventory"]["log"] = np.array([0])
+        self.observation_space["inventory"]["apple"] = np.array([0])
+        self.observation_space["inventory"]["meat"] = np.array([0])
+        self.observation_space["inventory"]["oil"] = np.array([0])
+        self.observation_space["inventory"]["water"] = np.array([0])
+        self.observation_space["inventory"]["iron"] = np.array([0])
+        self.observation_space["inventory"]["gold"] = np.array([0])
+        self.observation_space["inventory"]["diamond"] = np.array([0])
+        self.observation_space["days_survived"] = np.array([0])
+        self.observation_space["campfirebuilt"] = False
+        self.observation_space["benchbuilt"] = False
+        self.observation_space["rocketbuilt"] = False
+        self.observation_space["axebuilt"] = False
+        self.observation_space["scythebuilt"] = False
+        self.observation_space["pickaxebuilt"] = False
 
-        # Observations are dictionaries with the agent's and the target's location.
-        # Each location is encoded as an element of {0, ..., `size`}^2, i.e. MultiDiscrete([size, size]).
-        self.observation_space = spaces.Dict(
-            {
-                "agent": spaces.Box(0, size - 1, shape=(2,), dtype=int),
-                "target": spaces.Box(0, size - 1, shape=(2,), dtype=int),
-            }
-        )
-
-        # We have 4 actions, corresponding to "right", "up", "left", "down", "right"
-        self.action_space = spaces.Discrete(4)
-
-        """
-        The following dictionary maps abstract actions from `self.action_space` to 
-        the direction we will walk in if that action is taken.
-        I.e. 0 corresponds to "right", 1 to "up" etc.
-        """
-        self._action_to_direction = {
-            0: np.array([1, 0]),
-            1: np.array([0, 1]),
-            2: np.array([-1, 0]),
-            3: np.array([0, -1]),
-        }
-
-        assert render_mode is None or render_mode in self.metadata["render_modes"]
-        self.render_mode = render_mode
-
-        """
-        If human-rendering is used, `self.window` will be a reference
-        to the window that we draw to. `self.clock` will be a clock that is used
-        to ensure that the environment is rendered at the correct framerate in
-        human-mode. They will remain `None` until human-mode is used for the
-        first time.
-        """
-        self.window = None
-        self.clock = None
-
-    def _get_obs(self):
-        return {"agent": self._agent_location, "target": self._target_location}
-
-    def _get_info(self):
-        return {
-            "distance": np.linalg.norm(
-                self._agent_location - self._target_location, ord=1
-            )
-        }
-
-    def reset(self, seed=None, options=None):
-        # We need the following line to seed self.np_random
-        super().reset(seed=seed)
-
-        # Choose the agent's location uniformly at random
-        self._agent_location = self.np_random.integers(0, self.size, size=2, dtype=int)
-
-        # We will sample the target's location randomly until it does not coincide with the agent's location
-        self._target_location = self._agent_location
-        while np.array_equal(self._target_location, self._agent_location):
-            self._target_location = self.np_random.integers(
-                0, self.size, size=2, dtype=int
-            )
-
-        observation = self._get_obs()
-        info = self._get_info()
-
-        if self.render_mode == "human":
-            self._render_frame()
-
-        return observation, info
+        return self.observation_space.copy()
 
     def step(self, action):
-        # Map the action (element of {0,1,2,3}) to the direction we walk in
-        direction = self._action_to_direction[action]
-        # We use `np.clip` to make sure we don't leave the grid
-        self._agent_location = np.clip(
-            self._agent_location + direction, 0, self.size - 1
-        )
-        # An episode is done iff the agent has reached the target
-        terminated = np.array_equal(self._agent_location, self._target_location)
-        reward = 1 if terminated else 0  # Binary sparse rewards
-        observation = self._get_obs()
-        info = self._get_info()
+        reward = 0
+        done = False
+        if action == 0:
+            self.observation_space["inventory"]["log"] += np.array([1])
+            reward += 0.01
+        elif action == 1:
+            whichfood = random.randint(0, 2)
+            oilchance = random.randint(0,10)
+            if whichfood == 0:
+                self.observation_space["inventory"]["apple"] += np.array([1])
+            else:
+                self.observation_space["inventory"]["meat"] += np.array([1])
+            if oilchance < 2:
+                self.observation_space["inventory"]["oil"] += np.array([1])
+            reward += 0.01
+        elif action == 2:
+            self.observation_space["inventory"]["water"] += np.array([1])
+            reward += 0.01
+        elif action == 3:
+            whichmineral = random.randint(0,2)
+            diamondchance = random.randint(0,10)
+            if whichmineral == 0:
+                self.observation_space["inventory"]["iron"] += np.array([1])
+            else:
+                self.observation_space["inventory"]["gold"] += np.array([1])
+            if diamondchance < 2:
+                self.observation_space["inventory"]["diamond"] += np.array([1])
+            reward += 0.01
+        elif action == 4:
+            if self.observation_space["campfirebuilt"] == False and self.observation_space["inventory"]["log"] >= 2 and self.observation_space["inventory"]["iron"] >= 1:
+                reward += 0.9
+                self.observation_space["campfirebuilt"] == True
+            elif self.observation_space["campfirebuilt"] == True and self.observation_space["inventory"]["water"] >=1 and self.observation_space["inventory"]["meat"] >=1 and self.observation_space["inventory"]["apple"] >= 1 and self.observation_space["inventory"]["log"] >=1:
+                reward += 0.1
+                self.observation_space["inventory"]["meat"] -= np.array([1])
+                self.observation_space["inventory"]["log"] -= np.array([1])
+                self.observation_space["inventory"]["water"] -= np.array([1])
+                self.observation_space["inventory"]["apple"] -= np.array([1])
+        elif action == 5:
+            if self.observation_space["benchbuilt"] == False and self.observation_space["inventory"]["log"] >=3 and self.observation_space["inventory"]["iron"] >=1 and self.observation_space["inventory"]["gold"] >=1 and self.observation_space["inventory"]["diamond"] >=1:
+                self.observation_space["benchbuilt"] == True
+                self.observation_space["inventory"]["diamond"] -= np.array([1])
+                self.observation_space["inventory"]["gold"] -= np.array([1])
+                self.observation_space["inventory"]["iron"] -= np.array([1])
+                self.observation_space["inventory"]["log"] -= np.array([3])
+                reward += 0.85
+            elif self.observation_space["benchbuilt"] == True and self.observation_space["axebuilt"] == False and self.observation_space["inventory"]["log"] >= 2 and self.observation_space["inventory"]["iron"] >= 3:
+                self.observation_space["inventory"]["iron"] -= np.array([3])
+                self.observation_space["inventory"]["log"] -= np.array([2])
+                reward += 0.85
+                self.observation_space["axebuilt"] = True
+            elif self.observation_space["benchbuilt"] == True and self.observation_space["axebuilt"] == True and self.observation_space["scythebuilt"] == False and self.observation_space["inventory"]["log"] >= 2 and self.observation_space["inventory"]["gold"] >= 3:
+                self.observation_space["inventory"]["gold"] -= np.array([3])
+                self.observation_space["inventory"]["log"] -= np.array([2])
+                reward += 0.85
+                self.observation_space["scythebuilt"] = True
+            elif self.observation_space["benchbuilt"] == True and self.observation_space["axebuilt"] == True and self.observation_space["scythebuilt"] == True and self.observation_space["pickaxebuilt"] == False and self.observation_space["inventory"]["log"] >= 2 and self.observation_space["inventory"]["gold"] >= 3:
+                self.observation_space["inventory"]["diamond"] -= np.array([3])
+                self.observation_space["inventory"]["log"] -= np.array([2])
+                reward += 0.85
+                self.observation_space["pickaxebuilt"] = True
 
-        if self.render_mode == "human":
-            self._render_frame()
+        elif action == 6:
+                if self.observation_space["rocketbuilt"] == False and self.observation_space["inventory"]["log"] >=10 and self.observation_space["inventory"]["iron"] >= 10 and self.observation_space["inventory"]["gold"] >= 10 and self.observation_space["inventory"]["diamond"] >= 10:
+                    self.observation_space["inventory"]["log"] -= np.array([10])
+                    self.observation_space["inventory"]["iron"] -= np.array([10])
+                    self.observation_space["inventory"]["gold"] -= np.array([10])
+                    self.observation_space["inventory"]["diamond"] -= np.array([10])
+                    reward +=1
+                elif self.observation_space["rocketbuilt"] == True and self.observation_space["inventory"]["log"] >=1 and self.observation_space["inventory"]["meat"] >= 5 and self.observation_space["inventory"]["apple"] >= 5 and self.observation_space["inventory"]["oil"] >= 10 and self.observation_space["inventory"]["iron"] >= 1 and self.observation_space["inventory"]["gold"] >= 1 and self.observation_space["inventory"]["diamond"] >= 1:
+                    self.observation_space["inventory"]["oil"] -= np.array([10])
+                    self.observation_space["inventory"]["meat"] -= np.array([5])
+                    self.observation_space["inventory"]["apple"] -= np.array([5])
+                    self.observation_space["inventory"]["diamond"] -= np.array([1])
+                    self.observation_space["inventory"]["gold"] -= np.array([1])
+                    self.observation_space["inventory"]["iron"] -= np.array([1])
+                    self.observation_space["inventory"]["log"] -= np.array([1])
+                    reward +=1
 
-        return observation, reward, terminated, False, info
+        self.observation_space["hunger"] -= np.array([self.decrease_rate])
+        self.observation_space["thirst"] -= np.array([self.decrease_rate])
+        if self.observation_space["hunger"] <= 0.0 or self.observation_space["thirst"] <= 0.0:
+            self.observation_space["health"] -= np.array([self.decrease_rate])
+        if self.observation_space["health"] == 0:
+            done = True
 
-    def render(self):
-        if self.render_mode == "rgb_array":
-            return self._render_frame()
+        return self.observation_space,reward,done
 
-    def _render_frame(self):
-        if self.window is None and self.render_mode == "human":
-            pygame.init()
-            pygame.display.init()
-            self.window = pygame.display.set_mode((self.window_size, self.window_size))
-        if self.clock is None and self.render_mode == "human":
-            self.clock = pygame.time.Clock()
-
-        canvas = pygame.Surface((self.window_size, self.window_size))
-        canvas.fill((255, 255, 255))
-        pix_square_size = (
-            self.window_size / self.size
-        )  # The size of a single grid square in pixels
-
-        # First we draw the target
-        pygame.draw.rect(
-            canvas,
-            (255, 0, 0),
-            pygame.Rect(
-                pix_square_size * self._target_location,
-                (pix_square_size, pix_square_size),
-            ),
-        )
-        # Now we draw the agent
-        pygame.draw.circle(
-            canvas,
-            (0, 0, 255),
-            (self._agent_location + 0.5) * pix_square_size,
-            pix_square_size / 3,
-        )
-
-        # Finally, add some gridlines
-        for x in range(self.size + 1):
-            pygame.draw.line(
-                canvas,
-                0,
-                (0, pix_square_size * x),
-                (self.window_size, pix_square_size * x),
-                width=3,
-            )
-            pygame.draw.line(
-                canvas,
-                0,
-                (pix_square_size * x, 0),
-                (pix_square_size * x, self.window_size),
-                width=3,
-            )
-
-        if self.render_mode == "human":
-            # The following line copies our drawings from `canvas` to the visible window
-            self.window.blit(canvas, canvas.get_rect())
-            pygame.event.pump()
-            pygame.display.update()
-
-            # We need to ensure that human-rendering occurs at the predefined framerate.
-            # The following line will automatically add a delay to keep the framerate stable.
-            self.clock.tick(self.metadata["render_fps"])
-        else:  # rgb_array
-            return np.transpose(
-                np.array(pygame.surfarray.pixels3d(canvas)), axes=(1, 0, 2)
-            )
-
-    def close(self):
-        if self.window is not None:
-            pygame.display.quit()
-            pygame.quit()

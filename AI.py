@@ -1,5 +1,6 @@
 import random
 import gym
+import gym_examples
 import gym_environment
 env = gym.make('gym_environment/env', render_mode = "human")
 print(env.observation_space)

@@ -724,62 +724,65 @@ public class CharacterMoveScript : Agent
     // Update is called once per frame
     void Update()
     {
-        if(alive && !moving && !busy)
+        if (!FindObjectOfType<PauseMenu>().isPaused)
         {
-            Debug.Log("Reward: " + GetCumulativeReward());
-            RequestDecision();
-        }
-        if (moving && !busy)
-        {
-            if (Vector3.Distance(target, controller.transform.position) > 0.9)
+            if(alive && !moving && !busy)
             {
-                input = new Vector2(target.x - controller.transform.position.x, target.z - controller.transform.position.z);
-                input.Normalize();
-                direction = new Vector3(input.x, 0, input.y);
-                ApplyGravity();
-                ApplyMovement();
+                Debug.Log("Reward: " + GetCumulativeReward());
+                RequestDecision();
             }
-            else
+            if (moving && !busy)
             {
-                input = new Vector2(0, 0);
-                moving = false;
+                if (Vector3.Distance(target, controller.transform.position) > 0.9)
+                {
+                    input = new Vector2(target.x - controller.transform.position.x, target.z - controller.transform.position.z);
+                    input.Normalize();
+                    direction = new Vector3(input.x, 0, input.y);
+                    ApplyGravity();
+                    ApplyMovement();
+                }
+                else
+                {
+                    input = new Vector2(0, 0);
+                    moving = false;
+                }
             }
-        }
-        ApplyRotation();
-        animator.SetFloat("speed", input.sqrMagnitude);
+            ApplyRotation();
+            animator.SetFloat("speed", input.sqrMagnitude);
 
-        time = time.AddSeconds(Time.deltaTime * timemulti);
-        UpdateLighting((time.Hour + time.Minute / 60f) / 24f);
-        time_t.text = time.ToString("HH:mm");
-        day_t.text = (time.Day - 1).ToString();
+            time = time.AddSeconds(Time.deltaTime * timemulti);
+            UpdateLighting((time.Hour + time.Minute / 60f) / 24f);
+            time_t.text = time.ToString("HH:mm");
+            day_t.text = (time.Day - 1).ToString();
 
-        HealthSlider.value = Health / MaxHealth;
-        HungerSlider.value = Hunger / MaxHunger;
-        ThirstSlider.value = Thirst / MaxThirst;
-        if (Hunger > 0)
-        {
-            Hunger = Hunger - BarSpeedMulti * Time.deltaTime;
-        }
-        if (Thirst > 0)
-        {
-            Thirst = Thirst - BarSpeedMulti * Time.deltaTime;
-        }
-        if (Health > 0 && HungerSlider.value == 0)
-        {
-            Health = Health - BarSpeedMulti * Time.deltaTime;
-        }
-        if (Health > 0 && ThirstSlider.value == 0)
-        {
-            Health = Health - BarSpeedMulti * Time.deltaTime;
-        }
-        if (Health < 0 && alive)
-        {
-            alive = false;
-            AddReward(-5);
-            reward += -5;
-            ManualUpdateAllText();
-            StopAllCoroutines();
-            StartCoroutine(Die());
+            HealthSlider.value = Health / MaxHealth;
+            HungerSlider.value = Hunger / MaxHunger;
+            ThirstSlider.value = Thirst / MaxThirst;
+            if (Hunger > 0)
+            {
+                Hunger = Hunger - BarSpeedMulti * Time.deltaTime;
+            }
+            if (Thirst > 0)
+            {
+                Thirst = Thirst - BarSpeedMulti * Time.deltaTime;
+            }
+            if (Health > 0 && HungerSlider.value == 0)
+            {
+                Health = Health - BarSpeedMulti * Time.deltaTime;
+            }
+            if (Health > 0 && ThirstSlider.value == 0)
+            {
+                Health = Health - BarSpeedMulti * Time.deltaTime;
+            }
+            if (Health < 0 && alive)
+            {
+                alive = false;
+                AddReward(-5);
+                reward += -5;
+                ManualUpdateAllText();
+                StopAllCoroutines();
+                StartCoroutine(Die());
+            }
         }
     }
 

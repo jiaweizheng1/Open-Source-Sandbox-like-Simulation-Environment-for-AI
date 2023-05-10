@@ -2,14 +2,16 @@ import os
 import glob
 import time
 from datetime import datetime
-
+from gym import spaces
 import torch
 import numpy as np
-
+from utils import *
 from PPO import PPO
 
 ################################### Training ###################################
 def train():
+
+
     print("============================================================================================")
 
     ####### initialize environment hyperparameters ######
@@ -48,13 +50,13 @@ def train():
     print("training environment name : " + env_name)
 
     # state space dimension
-    state_dim = env.observation_space.shape[0]
+    state_dim = len(env_state)
 
     # action space dimension
     if has_continuous_action_space:
-        action_dim = env.action_space.shape[0]
+        action_dim = env_actions.shape[0]
     else:
-        action_dim = env.action_space.n
+        action_dim = env_actions.n
 
     ###################### logging ######################
 
@@ -124,12 +126,12 @@ def train():
     print("--------------------------------------------------------------------------------------------")
     print("optimizer learning rate actor : ", lr_actor)
     print("optimizer learning rate critic : ", lr_critic)
-    if random_seed:
-        print("--------------------------------------------------------------------------------------------")
-        print("setting random seed to ", random_seed)
-        torch.manual_seed(random_seed)
-        env.seed(random_seed)
-        np.random.seed(random_seed)
+    # if random_seed:
+    #     print("--------------------------------------------------------------------------------------------")
+    #     print("setting random seed to ", random_seed)
+    #     torch.manual_seed(random_seed)
+    #     env.seed(random_seed)
+    #     np.random.seed(random_seed)
     #####################################################
 
     print("============================================================================================")
@@ -162,14 +164,13 @@ def train():
     # training loop
     while time_step <= max_training_timesteps:
 
-        state = env.reset()
+        state = env_reset()
         current_ep_reward = 0
 
         for t in range(1, max_ep_len+1):
-
             # select action with policy
             action = ppo_agent.select_action(state)
-            state, reward, done, _ = env.step(action)
+            state, reward, done, _ = env_step(action)
 
             # saving reward and is_terminals
             ppo_agent.buffer.rewards.append(reward)
@@ -233,7 +234,7 @@ def train():
         i_episode += 1
 
     log_f.close()
-    env.close()
+    env_close()
 
     # print total training time
     print("============================================================================================")

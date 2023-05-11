@@ -14,7 +14,7 @@ def train():
     print("============================================================================================")
 
     ####### initialize environment hyperparameters ######
-    env_name = "CartPole-v1"
+    env_name = "RobotSurvival"
 
     has_continuous_action_space = False  # continuous action space; else discrete
 

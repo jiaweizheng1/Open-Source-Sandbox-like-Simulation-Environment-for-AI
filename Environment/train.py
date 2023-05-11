@@ -174,10 +174,6 @@ def train():
             action = ppo_agent.select_action(state)
             print("action picked: ", action)
             state, reward, done = env_step(action)
-            while True:
-                time.sleep(0.5)
-                if is_idle():
-                    break
             print("state: ", state)
             print("reward: ", reward)
             print("done: ", done)

@@ -18,12 +18,12 @@ def train():
 
     has_continuous_action_space = False  # continuous action space; else discrete
 
-    max_ep_len = 10                   # max timesteps in one episode
+    max_ep_len = 200                  # max timesteps in one episode
     max_training_timesteps = int(1e5)   # break training loop if timeteps > max_training_timesteps
 
-    print_freq = max_ep_len * 4        # print avg reward in the interval (in num timesteps)
+    print_freq = max_ep_len * 4        # print avg reward ireqytyeryuruuwtteytttytyruyn the interval (in num timesteps)
     log_freq = max_ep_len * 2           # log avg reward in the interval (in num timesteps)
-    save_model_freq = int(2e5)          # save model frequency (in num timesteps)
+    save_model_freq = int(2e4)          # save model frequency (in num timesteps)
 
     action_std = None                    # starting std for action distribution (Multivariate Normal)
     action_std_decay_rate = 0.05        # linearly decay action_std (action_std = action_std - action_std_decay_rate)
@@ -52,7 +52,7 @@ def train():
     # print(env.observation_space.shape)
 
     # state space dimension
-    state_dim = 18
+    state_dim = 16
 
     # action space dimension
     if has_continuous_action_space:
@@ -165,17 +165,22 @@ def train():
 
     # training loop
     while time_step <= max_training_timesteps:
-        state= env_reset()
-        print(state)
+        state = env_reset()
+
         current_ep_reward = 0
+        
         for t in range(1, max_ep_len+1):
             # select action with policy
             action = ppo_agent.select_action(state)
-            print("action picked: ")
-            print(action)
+            print("action picked: ", action)
             state, reward, done = env_step(action)
-            print("next state")
-            print(state)
+            while True:
+                time.sleep(0.5)
+                if is_idle():
+                    break
+            print("state: ", state)
+            print("reward: ", reward)
+            print("done: ", done)
             # saving reward and is_terminals
             ppo_agent.buffer.rewards.append(reward)
             ppo_agent.buffer.is_terminals.append(done)
@@ -238,7 +243,6 @@ def train():
         i_episode += 1
 
     log_f.close()
-    env_close()
 
     # print total training time
     print("============================================================================================")

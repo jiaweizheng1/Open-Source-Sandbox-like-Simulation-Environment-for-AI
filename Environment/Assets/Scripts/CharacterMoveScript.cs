@@ -168,7 +168,7 @@ public class CharacterMoveScript : Agent
         sensor.AddObservation(firebuildmats);
         sensor.AddObservation(cookmats);
         sensor.AddObservation(rocketbuildmats);
-        sensor.AddObservation(rocketlaunchmats );
+        sensor.AddObservation(rocketlaunchmats);
         sensor.AddObservation(axebuildmats);
         sensor.AddObservation(scythebuildmats);
         sensor.AddObservation(pickaxebuildmats);
@@ -555,20 +555,10 @@ public class CharacterMoveScript : Agent
 
         contents += Environment.NewLine;
 
-        contents += "BenchBuildMats: " + myToString(benchbuildmats) + Environment.NewLine;
-        contents += "FireBuildMats: " + myToString(firebuildmats) + Environment.NewLine;
-        contents += "Cookmats: " + myToString(cookmats) + Environment.NewLine;
-        contents += "RocketBuildMats: " + myToString(rocketbuildmats) + Environment.NewLine;
-        contents += "RocketLaunchMats: " + myToString(rocketlaunchmats) + Environment.NewLine;
-        contents += "AxeBuildMats: " + myToString(axebuildmats) + Environment.NewLine;
-        contents += "ScytheBuildMats: " + myToString(scythebuildmats) + Environment.NewLine;
-        contents += "PickaxeBuildMats: " + myToString(pickaxebuildmats) + Environment.NewLine;
-
         contents += "Inventory: " + myToString(inventory) + Environment.NewLine;
 
         contents += "Health: " + Health + Environment.NewLine;
         contents += "Hunger: " + Hunger + Environment.NewLine;
-        contents += "Alive: " + alive + Environment.NewLine;
 
         contents += "BenchBuilt: " + benchbuilt + Environment.NewLine;
         contents += "CampfireBuilt: " + campfirebuilt + Environment.NewLine;

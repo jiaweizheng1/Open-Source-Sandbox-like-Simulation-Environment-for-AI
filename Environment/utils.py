@@ -128,7 +128,7 @@ def is_idle():
     else:
         return False
     
-def get_info():
+def read_info():
     f = open("observations.txt", "r")
     contents = f.readlines()
     f.close()
@@ -178,7 +178,7 @@ def env_reset():
         if is_idle():
             break
 
-    get_info()
+    read_info()
 
     return get_obs(observation_space)
 
@@ -197,7 +197,7 @@ def env_step(action):
         if is_idle():
             break
     
-    get_info()
+    read_info()
 
     return get_obs(observation_space), reward, done
 

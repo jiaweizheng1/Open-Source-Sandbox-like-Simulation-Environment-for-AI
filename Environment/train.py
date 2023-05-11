@@ -2,18 +2,15 @@ import os
 import glob
 import time
 from datetime import datetime
-from gym import spaces
+
 import torch
 import numpy as np
-from utils import *
 import gym
 
 from PPO import PPO
-
+from utils import *
 ################################### Training ###################################
 def train():
-
-
     print("============================================================================================")
 
     ####### initialize environment hyperparameters ######
@@ -21,7 +18,7 @@ def train():
 
     has_continuous_action_space = False  # continuous action space; else discrete
 
-    max_ep_len = 400                   # max timesteps in one episode
+    max_ep_len = 10                   # max timesteps in one episode
     max_training_timesteps = int(1e5)   # break training loop if timeteps > max_training_timesteps
 
     print_freq = max_ep_len * 4        # print avg reward in the interval (in num timesteps)
@@ -49,18 +46,19 @@ def train():
     random_seed = 0         # set random seed if required (0 = no random seed)
     #####################################################
 
-    print("training environment name : " + env_name)
-
-    env = gym.make(env_name)
+    # print("training environment name : " + env_name)
+    # env = gym.make(env_name)
+    # print("this==========")
+    # print(env.observation_space.shape)
 
     # state space dimension
-    state_dim = len(env_state)
+    state_dim = 18
 
     # action space dimension
     if has_continuous_action_space:
-        action_dim = env_actions.shape[0]
+        action_dim = action_space.shape[0]
     else:
-        action_dim = env_actions.n
+        action_dim = action_space.n
 
     ###################### logging ######################
 
@@ -167,15 +165,17 @@ def train():
 
     # training loop
     while time_step <= max_training_timesteps:
-
-        state = env_reset()
+        state= env_reset()
+        print(state)
         current_ep_reward = 0
-
         for t in range(1, max_ep_len+1):
             # select action with policy
             action = ppo_agent.select_action(state)
-            state, reward, done, _ = env_step(action)
-
+            print("action picked: ")
+            print(action)
+            state, reward, done = env_step(action)
+            print("next state")
+            print(state)
             # saving reward and is_terminals
             ppo_agent.buffer.rewards.append(reward)
             ppo_agent.buffer.is_terminals.append(done)
@@ -250,12 +250,7 @@ def train():
 
 
 if __name__ == '__main__':
-
     train()
-    
-    
-    
-    
     
     
     

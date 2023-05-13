@@ -166,6 +166,7 @@ def train():
     # training loop
     while time_step <= max_training_timesteps:
         state = env_reset()
+        print("reset state: ", state)
 
         current_ep_reward = 0
         
@@ -173,6 +174,7 @@ def train():
             # select action with policy
             action = ppo_agent.select_action(state)
             print("action picked: ", action)
+            print("waiting for action to be completed...")
             state, reward, done = env_step(action)
             print("state: ", state)
             print("reward: ", reward)

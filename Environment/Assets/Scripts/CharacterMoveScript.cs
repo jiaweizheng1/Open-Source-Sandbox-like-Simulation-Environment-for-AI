@@ -532,6 +532,7 @@ public class CharacterMoveScript : Agent
         gold_t.text = "x" + inventory[6];
         diamond_t.text = "x" + inventory[7];
 
+
         string contents = "RobotLocation: " + controller.transform.position + Environment.NewLine;
         contents += "TreesLocation: " + treeslocation.transform.position + Environment.NewLine;
         contents += "FarmLocation: " + farmlocation.transform.position + Environment.NewLine;

@@ -16,19 +16,12 @@ def train():
     ####### initialize environment hyperparameters ######
     env_name = "RobotSurvival"
 
-    has_continuous_action_space = False  # continuous action space; else discrete
-
     max_ep_len = 200                  # max timesteps in one episode
     max_training_timesteps = int(1e5)   # break training loop if timeteps > max_training_timesteps
 
-    print_freq = max_ep_len * 4        # print avg reward ireqytyeryuruuwtteytttytyruyn the interval (in num timesteps)
+    print_freq = max_ep_len * 4        # print avg reward in the interval (in num timesteps)
     log_freq = max_ep_len * 2           # log avg reward in the interval (in num timesteps)
     save_model_freq = int(2e4)          # save model frequency (in num timesteps)
-
-    action_std = None                    # starting std for action distribution (Multivariate Normal)
-    action_std_decay_rate = 0.05        # linearly decay action_std (action_std = action_std - action_std_decay_rate)
-    min_action_std = 0.1                # minimum action_std (stop decay after action_std <= min_action_std)
-    action_std_decay_freq = int(2.5e5)  # action_std decay frequency (in num timesteps)
     #####################################################
 
     ## Note : print/log frequencies should be > than max_ep_len
@@ -46,30 +39,24 @@ def train():
     random_seed = 0         # set random seed if required (0 = no random seed)
     #####################################################
 
-    # print("training environment name : " + env_name)
-    # env = gym.make(env_name)
-    # print("this==========")
-    # print(env.observation_space.shape)
+    print("training environment name : " + env_name)
 
     # state space dimension
     state_dim = 16
 
     # action space dimension
-    if has_continuous_action_space:
-        action_dim = action_space.shape[0]
-    else:
-        action_dim = action_space.n
+    action_dim = 7
 
     ###################### logging ######################
 
     #### log files for multiple runs are NOT overwritten
     log_dir = "PPO_logs"
     if not os.path.exists(log_dir):
-          os.makedirs(log_dir)
+        os.makedirs(log_dir)
 
     log_dir = log_dir + '/' + env_name + '/'
     if not os.path.exists(log_dir):
-          os.makedirs(log_dir)
+        os.makedirs(log_dir)
 
     #### get number of log files in log directory
     run_num = 0
@@ -88,11 +75,11 @@ def train():
 
     directory = "PPO_preTrained"
     if not os.path.exists(directory):
-          os.makedirs(directory)
+        os.makedirs(directory)
 
     directory = directory + '/' + env_name + '/'
     if not os.path.exists(directory):
-          os.makedirs(directory)
+        os.makedirs(directory)
 
 
     checkpoint_path = directory + "PPO_{}_{}_{}.pth".format(env_name, random_seed, run_num_pretrained)
@@ -111,15 +98,7 @@ def train():
     print("state space dimension : ", state_dim)
     print("action space dimension : ", action_dim)
     print("--------------------------------------------------------------------------------------------")
-    if has_continuous_action_space:
-        print("Initializing a continuous action space policy")
-        print("--------------------------------------------------------------------------------------------")
-        print("starting std of action distribution : ", action_std)
-        print("decay rate of std of action distribution : ", action_std_decay_rate)
-        print("minimum std of action distribution : ", min_action_std)
-        print("decay frequency of std of action distribution : " + str(action_std_decay_freq) + " timesteps")
-    else:
-        print("Initializing a discrete action space policy")
+    print("Initializing a discrete action space policy")
     print("--------------------------------------------------------------------------------------------")
     print("PPO update frequency : " + str(update_timestep) + " timesteps")
     print("PPO K epochs : ", K_epochs)
@@ -141,7 +120,7 @@ def train():
     ################# training procedure ################
 
     # initialize a PPO agent
-    ppo_agent = PPO(state_dim, action_dim, lr_actor, lr_critic, gamma, K_epochs, eps_clip, has_continuous_action_space, action_std)
+    ppo_agent = PPO(state_dim, action_dim, lr_actor, lr_critic, gamma, K_epochs, eps_clip)
 
     # track total training time
     start_time = datetime.now().replace(microsecond=0)
@@ -189,10 +168,6 @@ def train():
             # update PPO agent
             if time_step % update_timestep == 0:
                 ppo_agent.update()
-
-            # if continuous action space; then decay action std of ouput action distribution
-            if has_continuous_action_space and time_step % action_std_decay_freq == 0:
-                ppo_agent.decay_action_std(action_std_decay_rate, min_action_std)
 
             # log in logging file
             if time_step % log_freq == 0:
@@ -253,6 +228,3 @@ def train():
 
 if __name__ == '__main__':
     train()
-    
-    
-    

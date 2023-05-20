@@ -1,7 +1,7 @@
 import time
 import numpy as np
 from gym import spaces
-from pynput.keyboard import Controller
+from pynput.keyboard import Key, Controller
 
 keyboard = Controller()
 

@@ -34,22 +34,32 @@ class ActorCritic(nn.Module):
         # in: state of environment
         # out: action
         self.actor = nn.Sequential(
-                        nn.Linear(state_dim, 64),
-                        nn.Tanh(),
-                        nn.Linear(64, 64),
-                        nn.Tanh(),
-                        nn.Linear(64, action_dim),
+                        # input layer
+                        nn.Linear(state_dim, 128),
+                        nn.Sigmoid(),
+
+                        # hidden layers
+                        nn.Linear(128, 128),
+                        nn.Sigmoid(),
+                        
+                        # output layer
+                        nn.Linear(128, action_dim),
                         nn.Softmax(dim=-1)
                     )
         # neural network for critic(Value-based); this nn measures how good the action taken is 
         # in: state of environment
         # out: relative number, say 1, 2, 3, for how good action taken is
         self.critic = nn.Sequential(
-                        nn.Linear(state_dim, 64),
-                        nn.Tanh(),
-                        nn.Linear(64, 64),
-                        nn.Tanh(),
-                        nn.Linear(64, 1)
+                        # input layer
+                        nn.Linear(state_dim, 128),
+                        nn.Sigmoid(),
+
+                        # hidden layers
+                        nn.Linear(128, 128),
+                        nn.Sigmoid(),
+
+                        # output layer
+                        nn.Linear(128, 1)
                     )
     
     def act(self, state):

@@ -31,8 +31,6 @@ public class toggle_switch : MonoBehaviour, IPointerDownHandler
     private Color offColor;
     private Vector3 offX;
     private Vector3 onX;
-    [SerializeField]
-    private float tweenTime = 0.25f;
 
     private AudioSource audioSource;
     public delegate void ValueChanged(bool value);

@@ -15,6 +15,7 @@ public class Envrionment_UI : MonoBehaviour
     public GameObject optionMenu;
     public Slider HealthSlider, HungerSlider, ThirstSlider;
     private float Health, Hunger, Thirst;
+    private bool ToolEnable, GodModeEnable, RandomEnable;
     // Start is called before the first frame update
     private void Awake()
     {
@@ -41,6 +42,8 @@ public class Envrionment_UI : MonoBehaviour
     private void Update()
     {
         Show();
+        SliderUpdate();
+        ToggleUpdate();
     }
 
     public void Show()
@@ -86,6 +89,13 @@ public class Envrionment_UI : MonoBehaviour
         Thirst = ThirstSlider.value;
     }
 
+    public void ToggleUpdate()
+    {
+        ToolEnable = GameObject.Find("ToggleToolEnable").GetComponent<toggle_switch>().isOn;
+        GodModeEnable = GameObject.Find("ToggleGodMod").GetComponent<toggle_switch>().isOn;
+        RandomEnable = GameObject.Find("ToggleRandomness").GetComponent<toggle_switch>().isOn;
+    }
+
     private char ValidateChar(string validCharacters, char addedChar)
     {
         if (validCharacters.IndexOf(addedChar) != -1)
@@ -120,12 +130,29 @@ public class Envrionment_UI : MonoBehaviour
         gold_t.text = "x" + GoldNum.text;
         diamond_t.text = "x" + DimondNum.text;
 
-        optionMenu.SetActive(false);
-        startMenu.SetActive(true);
-
         HealthSlider.value = Health;
         HungerSlider.value = Hunger;
         ThirstSlider.value = Thirst;
+
+        Debug.Log("Log: " + LogNum.text);
+        Debug.Log("Apple: " + AppleNum.text);
+        Debug.Log("meat: " + MeatNum.text);
+        Debug.Log("Oil: " + OilNum.text);
+        Debug.Log("Water: " + WaterNum.text);
+        Debug.Log("Iron: " + IronNum.text);
+        Debug.Log("Gold: " + GoldNum.text);
+        Debug.Log("Dimond: " + DimondNum.text);
+
+        Debug.Log("Health: " + Health);
+        Debug.Log("Hunger: " + Hunger);
+        Debug.Log("Thirst: " + Thirst);
+
+        Debug.Log("Tool enable: " + ToolEnable);
+        Debug.Log("God Mode: " + GodModeEnable);
+        Debug.Log("Random: " + RandomEnable);
+
+        optionMenu.SetActive(false);
+        startMenu.SetActive(true);
     }
 
     public void Cancel()

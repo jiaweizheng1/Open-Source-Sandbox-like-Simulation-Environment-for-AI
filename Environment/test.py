@@ -10,8 +10,7 @@ import gym
 # import roboschool
 
 from PPO import PPO
-
-
+from utils import *
 #################################### Testing ###################################
 def test():
     print("============================================================================================")
@@ -33,38 +32,33 @@ def test():
     # max_ep_len = 1500           # max timesteps in one episode
     # action_std = 0.1            # set same std for action distribution which was used while saving
 
-    env_name = "RoboschoolWalker2d-v1"
-    has_continuous_action_space = True
-    max_ep_len = 1000           # max timesteps in one episode
+    env_name = "RobotSurvival"
+    has_continuous_action_space = False
+    max_ep_len = 250           # max timesteps in one episode
     action_std = 0.1            # set same std for action distribution which was used while saving
 
-    render = True              # render environment on screen
+    render = False              # render environment on screen
     frame_delay = 0             # if required; add delay b/w frames
 
     total_test_episodes = 10    # total num of testing episodes
 
-    K_epochs = 80               # update policy for K epochs
-    eps_clip = 0.2              # clip parameter for PPO
+    K_epochs = 10               # update policy for K epochs
+    eps_clip = 0.3              # clip parameter for PPO
     gamma = 0.99                # discount factor
 
     lr_actor = 0.0003           # learning rate for actor
-    lr_critic = 0.001           # learning rate for critic
+    lr_critic = 0.003           # learning rate for critic
 
     #####################################################
 
-    env = gym.make(env_name)
-
     # state space dimension
-    state_dim = env.observation_space.shape[0]
+    state_dim = 16
 
     # action space dimension
-    if has_continuous_action_space:
-        action_dim = env.action_space.shape[0]
-    else:
-        action_dim = env.action_space.n
+    action_dim = 7
 
     # initialize a PPO agent
-    ppo_agent = PPO(state_dim, action_dim, lr_actor, lr_critic, gamma, K_epochs, eps_clip, has_continuous_action_space, action_std)
+    ppo_agent = PPO(state_dim, action_dim, lr_actor, lr_critic, gamma, K_epochs, eps_clip)
 
     # preTrained weights directory
 
@@ -83,16 +77,19 @@ def test():
 
     for ep in range(1, total_test_episodes+1):
         ep_reward = 0
-        state = env.reset()
+        state = env_reset()
 
         for t in range(1, max_ep_len+1):
+            # select action with policy
             action = ppo_agent.select_action(state)
-            state, reward, done, _ = env.step(action)
+            print("action picked: ", action)
+            print("waiting for action to be completed...")
+            state, reward, done = env_step(action)
+            print("state: ", state)
+            print("reward: ", reward)
+            print("done: ", done)
+            
             ep_reward += reward
-
-            if render:
-                env.render()
-                time.sleep(frame_delay)
 
             if done:
                 break
@@ -103,8 +100,6 @@ def test():
         test_running_reward +=  ep_reward
         print('Episode: {} \t\t Reward: {}'.format(ep, round(ep_reward, 2)))
         ep_reward = 0
-
-    env.close()
 
     print("============================================================================================")
 

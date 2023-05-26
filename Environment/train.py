@@ -16,25 +16,25 @@ def train():
     ####### initialize environment hyperparameters ######
     env_name = "RobotSurvival"
 
-    max_ep_len = 200                  # max timesteps in one episode
-    max_training_timesteps = int(1e5)   # break training loop if timeteps > max_training_timesteps
+    max_ep_len = 175                  # max timesteps in one episode
+    max_training_timesteps = 9999   # break training loop if timeteps > max_training_timesteps
 
-    print_freq = max_ep_len * 4        # print avg reward in the interval (in num timesteps)
-    log_freq = max_ep_len * 2           # log avg reward in the interval (in num timesteps)
-    save_model_freq = int(2e4)          # save model frequency (in num timesteps)
+    print_freq = max_ep_len         # print avg reward in the interval (in num timesteps)
+    log_freq = max_ep_len            # log avg rewiard in the interval (in num timesteps)
+    save_model_freq =  10               # save model frequency (in num timesteps)
     #####################################################
 
     ## Note : print/log frequencies should be > than max_ep_len
 
     ################ PPO hyperparameters ################
-    update_timestep = max_ep_len * 4      # update policy every n timesteps
+    update_timestep = max_ep_len      # update policy every n timesteps
     K_epochs = 10               # update policy for K epochs in one PPO update
 
     eps_clip = 0.3          # clip parameter for PPO
-    gamma = 0.995            # discount factor
+    gamma = 0.99            # discount factor
 
     lr_actor = 0.003       # learning rate for actor network
-    lr_critic = 0.001       # learning rate for critic network
+    lr_critic = 0.003       # learning rate for critic network
 
     random_seed = 0         # set random seed if required (0 = no random seed)
     #####################################################

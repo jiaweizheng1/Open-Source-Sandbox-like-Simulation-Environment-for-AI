@@ -584,29 +584,29 @@ public class CharacterMoveScript : Agent
         {
             if (vetcaction.DiscreteActions[0] == 0)
             {
-                AddReward(0.001f);
-                reward = 0.001f;
+                AddReward(0.0003f);
+                reward = 0.0003f;
                 needtomove(treeslocation);
                 StartCoroutine(WaitForMove(Log()));
             }
             if (vetcaction.DiscreteActions[0] == 1)
             {
-                AddReward(0.001f);
-                reward = 0.001f;
+                AddReward(0.0002f);
+                reward = 0.0002f;
                 needtomove(farmlocation);
                 StartCoroutine(WaitForMove(Gatherfood()));
             }
             if (vetcaction.DiscreteActions[0] == 2)
             {
-                AddReward(0.001f);
-                reward = 0.001f;
+                AddReward(0.0001f);
+                reward = 0.0001f;
                 needtomove(poollocation);
                 StartCoroutine(WaitForMove(CollectWater()));
             }
             if (vetcaction.DiscreteActions[0] == 3)
             {
-                AddReward(0.001f);
-                reward = 0.001f;
+                AddReward(0.0005f);
+                reward = 0.0005f;
                 needtomove(rockslocation);
                 StartCoroutine(WaitForMove(Mine()));
             }
@@ -614,15 +614,15 @@ public class CharacterMoveScript : Agent
             {
                 if (!campfirebuilt && inventory[0] >= firebuildmats[0] && inventory[5] >= firebuildmats[5])
                 {
-                    AddReward(0.9f);
-                    reward = 0.9f;
+                    AddReward(0.75f);
+                    reward = 0.75f;
                     needtomove(firelocation);
                     StartCoroutine(WaitForMove(BuildFire()));
                 }
                 else if(campfirebuilt && Hunger<25 && inventory[0] >= cookmats[0] && inventory[1] >= cookmats[1] && inventory[2] >= cookmats[2] && inventory[4] >= cookmats[4])
                 {
-                    AddReward(0.1f);
-                    reward = 0.1f;
+                    AddReward(0.05f);
+                    reward = 0.05f;
                     needtomove(firelocation);
                     StartCoroutine(WaitForMove(Cook()));
                 }
@@ -635,29 +635,29 @@ public class CharacterMoveScript : Agent
             {
                 if (!benchbuilt && inventory[0] >= benchbuildmats[0] && inventory[5] >= benchbuildmats[5] && inventory[6] >= benchbuildmats[6] && inventory[7] >= benchbuildmats[7])
                 {
-                    AddReward(0.85f);
-                    reward = 0.85f;
+                    AddReward(0.75f);
+                    reward = 0.75f;
                     needtomove(benchlocation);
                     StartCoroutine(WaitForMove(BuildBench()));
                 }
                 else if (benchbuilt && !axebuilt && inventory[0] >= axebuildmats[0] && inventory[5] >= axebuildmats[5])
                 {  
-                    AddReward(0.85f);
-                    reward = 0.85f;
+                    AddReward(0.75f);
+                    reward = 0.75f;
                     needtomove(benchlocation);
                     StartCoroutine(WaitForMove(BuildAxe()));  
                 }
                 else if (benchbuilt && axebuilt & !scythebuilt && inventory[0] >= scythebuildmats[0] && inventory[6] >= scythebuildmats[6])
                 {
-                    AddReward(0.85f);
-                    reward = 0.85f;
+                    AddReward(0.75f);
+                    reward = 0.75f;
                     needtomove(benchlocation);
                     StartCoroutine(WaitForMove(BuildScythe()));  
                 }
                 else if (benchbuilt && axebuilt & scythebuilt && !pickaxebuilt && inventory[0] >= pickaxebuildmats[0] && inventory[7] >= pickaxebuildmats[7])
                 {
-                    AddReward(0.85f);
-                    reward = 0.85f;
+                    AddReward(0.75f);
+                    reward = 0.75f;
                     needtomove(benchlocation);
                     StartCoroutine(WaitForMove(BuildPickaxe())); 
                 }

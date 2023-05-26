@@ -1,7 +1,7 @@
 import time
 import numpy as np
 from gym import spaces
-from pynput.keyboard import Controller
+from pynput.keyboard import Key, Controller
 
 keyboard = Controller()
 
@@ -167,7 +167,7 @@ def read_info():
 def env_reset():
     # wait for idle
     while True:
-        time.sleep(0.1)
+        time.sleep(0.075)
         if is_idle():
             break
 
@@ -177,7 +177,7 @@ def env_reset():
 
     # wait for game reset
     while True:
-        time.sleep(0.1)
+        time.sleep(0.075)
         if is_idle():
             break
 
@@ -188,7 +188,7 @@ def env_reset():
 def env_step(action):
     # wait for idle
     while True:
-        time.sleep(0.1)
+        time.sleep(0.075)
         if is_idle():
             break
 
@@ -198,7 +198,7 @@ def env_step(action):
 
     # wait for action to be completed
     while True:
-        time.sleep(0.1)
+        time.sleep(0.075)
         if is_idle():
             break
     

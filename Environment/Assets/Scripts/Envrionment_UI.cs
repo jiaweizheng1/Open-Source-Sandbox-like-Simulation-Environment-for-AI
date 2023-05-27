@@ -13,21 +13,28 @@ public class Envrionment_UI : MonoBehaviour
     public TMP_Text log_t, apple_t, meat_t, oil_t, water_t, iron_t, gold_t, diamond_t;
     public GameObject startMenu;
     public GameObject optionMenu;
+    public GameObject enemyMenu;
     public Slider HealthSlider, HungerSlider, ThirstSlider;
     private float Health, Hunger, Thirst;
+    private float Health_saved, Hunger_saved, Thirst_saved;
     private bool ToolEnable, GodModeEnable, RandomEnable;
+    private bool ToolEnable_saved, GodModeEnable_saved, RandomEnable_saved;
     // Start is called before the first frame update
+    private void Start()
+    {
+        ToolEnable_saved = false;
+        GodModeEnable_saved = false;
+        RandomEnable_saved = false;
+
+        Health_saved = 100;
+        Hunger_saved = 100;
+        Thirst_saved = 100;
+
+        enemyMenu.SetActive(false);
+    }
+
     private void Awake()
     {
-        LogNum = transform.Find("Log").transform.Find("LogNum").GetComponent<TMP_InputField>();
-        AppleNum = transform.Find("Apple").transform.Find("AppleNum").GetComponent<TMP_InputField>();
-        MeatNum = transform.Find("Meat").transform.Find("MeatNum").GetComponent<TMP_InputField>();
-        OilNum = transform.Find("Oil").transform.Find("OilNum").GetComponent<TMP_InputField>();
-        WaterNum = transform.Find("Water").transform.Find("WaterNum").GetComponent<TMP_InputField>();
-        IronNum = transform.Find("Iron").transform.Find("IronNum").GetComponent<TMP_InputField>();
-        GoldNum = transform.Find("Gold").transform.Find("GoldNum").GetComponent<TMP_InputField>();
-        DimondNum = transform.Find("Dimond").transform.Find("DimondNum").GetComponent<TMP_InputField>();
-
         LogNum.text = log_t.text;
         AppleNum.text = apple_t.text;
         MeatNum.text = meat_t.text;
@@ -36,6 +43,14 @@ public class Envrionment_UI : MonoBehaviour
         IronNum.text = iron_t.text;
         GoldNum.text = gold_t.text;
         DimondNum.text = diamond_t.text;
+
+        ToolEnable = ToolEnable_saved;
+        GodModeEnable = GodModeEnable_saved;
+        RandomEnable = RandomEnable_saved;
+
+        Health = Health_saved;
+        Hunger = Hunger_saved;
+        Thirst = Thirst_saved;
     }
 
     // Update is called once per frame
@@ -151,6 +166,14 @@ public class Envrionment_UI : MonoBehaviour
         Debug.Log("God Mode: " + GodModeEnable);
         Debug.Log("Random: " + RandomEnable);
 
+        ToolEnable_saved = ToolEnable;
+        GodModeEnable_saved = GodModeEnable;
+        RandomEnable_saved = RandomEnable;
+
+        Health_saved = Health;
+        Hunger_saved = Hunger;
+        Thirst_saved = Thirst;
+
         optionMenu.SetActive(false);
         startMenu.SetActive(true);
     }
@@ -159,5 +182,10 @@ public class Envrionment_UI : MonoBehaviour
     {
         optionMenu.SetActive(false);
         startMenu.SetActive(true);
+    }
+
+    public void EnemyEdit()
+    {
+        enemyMenu.SetActive(true);
     }
 }

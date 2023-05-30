@@ -73,8 +73,7 @@ public class CharacterMoveScript : Agent
         reward = 0;
         done = false;
 
-        inventory = new float[8] {0, 0, 0, 0, 0, 0, 0, 0};
-        // ManualUpdateAllText();
+        inventory = new float[8] { 0, 0, 0, 0, 0, 0, 0, 0 };
 
         animator.SetBool("deadge", false);
         animator.SetFloat("speed", 0);
@@ -530,6 +529,18 @@ public class CharacterMoveScript : Agent
         return s;
     }
 
+    public void StartUpInventory()
+    {
+        inventory[0] = float.Parse(log_t.text.Split('x')[1]);
+        inventory[1] = float.Parse(apple_t.text.Split('x')[1]);
+        inventory[2] = float.Parse(meat_t.text.Split('x')[1]);
+        inventory[3] = float.Parse(oil_t.text.Split('x')[1]);
+        inventory[4] = float.Parse(water_t.text.Split('x')[1]);
+        inventory[5] = float.Parse(iron_t.text.Split('x')[1]);
+        inventory[6] = float.Parse(gold_t.text.Split('x')[1]);
+        inventory[7] = float.Parse(diamond_t.text.Split('x')[1]);
+    }
+
     public void ManualUpdateAllText()
     {
         log_t.text = "x" + inventory[0];
@@ -749,7 +760,7 @@ public class CharacterMoveScript : Agent
     {
         if(alive && !moving && !busy)
         {
-            Debug.Log("Reward: " + GetCumulativeReward());
+            // Debug.Log("Reward: " + GetCumulativeReward());
             RequestDecision();
         }
         if (moving && !busy)

@@ -8,7 +8,7 @@ public class PauseMenu : MonoBehaviour
 {
     public GameObject pauseMenu;
     public GameObject startMenu;
-    public GameObject optionMenu;
+    public GameObject optionMenu, rewardMenu;
     public bool isPaused;
     // Start is called before the first frame update
     void Start()
@@ -16,6 +16,7 @@ public class PauseMenu : MonoBehaviour
         pauseMenu.SetActive(false);
         startMenu.SetActive(true);
         optionMenu.SetActive(false);
+        rewardMenu.SetActive(false);
         Time.timeScale = 0f;
         isPaused = true;
     }
@@ -75,6 +76,12 @@ public class PauseMenu : MonoBehaviour
     {
         startMenu.SetActive(false);
         optionMenu.SetActive(true);
+    }
+
+    public void RewardEditing()
+    {
+        startMenu.SetActive(false);
+        rewardMenu.SetActive(true);
     }
 
     public void BackToMain()

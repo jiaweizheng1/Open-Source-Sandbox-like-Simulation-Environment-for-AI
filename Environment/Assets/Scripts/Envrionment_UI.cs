@@ -6,19 +6,18 @@ using UnityEngine.SceneManagement;
 using Unity.MLAgents;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
+using Unity.VisualScripting;
 
 public class Envrionment_UI : MonoBehaviour
 {
     private TMP_InputField LogNum, AppleNum, MeatNum, OilNum, WaterNum, IronNum, GoldNum, DimondNum;
     public TMP_Text log_t, apple_t, meat_t, oil_t, water_t, iron_t, gold_t, diamond_t;
-    public GameObject startMenu;
-    public GameObject optionMenu;
-    public GameObject enemyMenu;
+    public GameObject startMenu, optionMenu;
     public Slider HealthSlider, HungerSlider, ThirstSlider;
     private float Health, Hunger, Thirst;
     private float Health_saved, Hunger_saved, Thirst_saved;
-    private bool ToolEnable, GodModeEnable, RandomEnable;
-    private bool ToolEnable_saved, GodModeEnable_saved, RandomEnable_saved;
+    private bool ToolEnable, GodModeEnable, RandomEnable, EnemyEnable;
+    private bool ToolEnable_saved, GodModeEnable_saved, RandomEnable_saved, EnemyEnable_saved;
     // Start is called before the first frame update
     private void Start()
     {
@@ -29,24 +28,32 @@ public class Envrionment_UI : MonoBehaviour
         Health_saved = 100;
         Hunger_saved = 100;
         Thirst_saved = 100;
-
-        enemyMenu.SetActive(false);
     }
 
     private void Awake()
     {
-        LogNum.text = log_t.text;
-        AppleNum.text = apple_t.text;
-        MeatNum.text = meat_t.text;
-        OilNum.text = oil_t.text;
-        WaterNum.text = water_t.text;
-        IronNum.text = iron_t.text;
-        GoldNum.text = gold_t.text;
-        DimondNum.text = diamond_t.text;
+        LogNum = transform.Find("Log/LogNum").GetComponent<TMP_InputField>();
+        AppleNum = transform.Find("Apple/AppleNum").GetComponent<TMP_InputField>();
+        MeatNum = transform.Find("Meat/MeatNum").GetComponent<TMP_InputField>();
+        OilNum = transform.Find("Oil/OilNum").GetComponent<TMP_InputField>();
+        WaterNum = transform.Find("Water/WaterNum").GetComponent<TMP_InputField>();
+        IronNum = transform.Find("Iron/IronNum").GetComponent<TMP_InputField>();
+        GoldNum = transform.Find("Gold/GoldNum").GetComponent<TMP_InputField>();
+        DimondNum = transform.Find("Dimond/DimondNum").GetComponent<TMP_InputField>();
 
-        ToolEnable = ToolEnable_saved;
-        GodModeEnable = GodModeEnable_saved;
-        RandomEnable = RandomEnable_saved;
+        LogNum.text = log_t.text.Split('x')[1];
+        AppleNum.text = apple_t.text.Split('x')[1];
+        MeatNum.text = meat_t.text.Split('x')[1];
+        OilNum.text = oil_t.text.Split('x')[1];
+        WaterNum.text = water_t.text.Split('x')[1];
+        IronNum.text = iron_t.text.Split('x')[1];
+        GoldNum.text = gold_t.text.Split('x')[1];
+        DimondNum.text = diamond_t.text.Split('x')[1];
+
+        GameObject.Find("ToggleToolEnable").GetComponent<toggle_switch>().isOn = ToolEnable_saved;
+        GameObject.Find("ToggleGodMod").GetComponent<toggle_switch>().isOn = GodModeEnable_saved;
+        GameObject.Find("ToggleRandomness").GetComponent<toggle_switch>().isOn = RandomEnable_saved;
+        GameObject.Find("ToggleEnemy").GetComponent<toggle_switch>().isOn = EnemyEnable_saved;
 
         Health = Health_saved;
         Hunger = Hunger_saved;
@@ -109,6 +116,7 @@ public class Envrionment_UI : MonoBehaviour
         ToolEnable = GameObject.Find("ToggleToolEnable").GetComponent<toggle_switch>().isOn;
         GodModeEnable = GameObject.Find("ToggleGodMod").GetComponent<toggle_switch>().isOn;
         RandomEnable = GameObject.Find("ToggleRandomness").GetComponent<toggle_switch>().isOn;
+        EnemyEnable = GameObject.Find("ToggleEnemy").GetComponent<toggle_switch>().isOn;
     }
 
     private char ValidateChar(string validCharacters, char addedChar)
@@ -145,34 +153,38 @@ public class Envrionment_UI : MonoBehaviour
         gold_t.text = "x" + GoldNum.text;
         diamond_t.text = "x" + DimondNum.text;
 
+        GameObject.Find("Robot").GetComponent<CharacterMoveScript>().StartUpInventory();
+
         HealthSlider.value = Health;
         HungerSlider.value = Hunger;
         ThirstSlider.value = Thirst;
 
-        Debug.Log("Log: " + LogNum.text);
-        Debug.Log("Apple: " + AppleNum.text);
-        Debug.Log("meat: " + MeatNum.text);
-        Debug.Log("Oil: " + OilNum.text);
-        Debug.Log("Water: " + WaterNum.text);
-        Debug.Log("Iron: " + IronNum.text);
-        Debug.Log("Gold: " + GoldNum.text);
-        Debug.Log("Dimond: " + DimondNum.text);
+        ToolEnable_saved = ToolEnable;
+        GodModeEnable_saved = GodModeEnable;
+        RandomEnable_saved = RandomEnable;
+        EnemyEnable_saved = EnemyEnable;
+
+        Health_saved = Health;
+        Hunger_saved = Hunger;
+        Thirst_saved = Thirst;
+
+        Debug.Log("Log: " + log_t.text);
+        Debug.Log("Apple: " + apple_t.text);
+        Debug.Log("meat: " + meat_t.text);
+        Debug.Log("Oil: " + oil_t.text);
+        Debug.Log("Water: " + water_t.text);
+        Debug.Log("Iron: " + iron_t.text);
+        Debug.Log("Gold: " + gold_t.text);
+        Debug.Log("Dimond: " + diamond_t.text);
 
         Debug.Log("Health: " + Health);
         Debug.Log("Hunger: " + Hunger);
         Debug.Log("Thirst: " + Thirst);
 
-        Debug.Log("Tool enable: " + ToolEnable);
-        Debug.Log("God Mode: " + GodModeEnable);
-        Debug.Log("Random: " + RandomEnable);
-
-        ToolEnable_saved = ToolEnable;
-        GodModeEnable_saved = GodModeEnable;
-        RandomEnable_saved = RandomEnable;
-
-        Health_saved = Health;
-        Hunger_saved = Hunger;
-        Thirst_saved = Thirst;
+        Debug.Log("Tool enable: " + ToolEnable_saved);
+        Debug.Log("God Mode: " + GodModeEnable_saved);
+        Debug.Log("Random: " + RandomEnable_saved); 
+        Debug.Log("Enemy: " + EnemyEnable_saved);
 
         optionMenu.SetActive(false);
         startMenu.SetActive(true);
@@ -182,10 +194,10 @@ public class Envrionment_UI : MonoBehaviour
     {
         optionMenu.SetActive(false);
         startMenu.SetActive(true);
-    }
 
-    public void EnemyEdit()
-    {
-        enemyMenu.SetActive(true);
+        Debug.Log("Tool enable: " + ToolEnable_saved);
+        Debug.Log("God Mode: " + GodModeEnable_saved);
+        Debug.Log("Random: " + RandomEnable_saved); 
+        Debug.Log("Enemy: " + EnemyEnable_saved);
     }
 }

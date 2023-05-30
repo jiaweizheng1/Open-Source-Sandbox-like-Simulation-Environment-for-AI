@@ -34,7 +34,7 @@ public class Reward : MonoBehaviour
 
     private void Awake()
     {
-        logNum = transform.Find("Menu/RewardMenu/Log/LogReward").GetComponent<TMP_InputField>();
+        logNum = transform.Find("Log/LogReward").GetComponent<TMP_InputField>();
         foodNum = transform.Find("Food/FoodReward").GetComponent<TMP_InputField>();
         waterNum = transform.Find("Water/WaterReward").GetComponent<TMP_InputField>();
         mineNum = transform.Find("Mine/MineReward").GetComponent<TMP_InputField>();
@@ -44,6 +44,17 @@ public class Reward : MonoBehaviour
         toolNum = transform.Find("Tool/ToolReward").GetComponent<TMP_InputField>();
         rocketNum = transform.Find("Rocket/RocketReward").GetComponent<TMP_InputField>();
         launchNum = transform.Find("Launch/LaunchReward").GetComponent<TMP_InputField>();
+
+        logNum.text = logReward.ToString();
+        foodNum.text = foodReward.ToString();
+        waterNum.text = waterReward.ToString();
+        mineNum.text = mineReward.ToString();
+        campfireNum.text = campfireReward.ToString();
+        recoverNum.text = recoverReward.ToString();
+        benchNum.text = benchReward.ToString();
+        toolNum.text = toolReward.ToString();
+        rocketNum.text = rocketReward.ToString();
+        launchNum.text = launchReward.ToString();
     }
 
     public void Show()

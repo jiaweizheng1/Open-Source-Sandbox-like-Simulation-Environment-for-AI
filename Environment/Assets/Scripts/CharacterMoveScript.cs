@@ -61,6 +61,7 @@ public class CharacterMoveScript : Agent
     private float[] axebuildmats = {2, 0, 0, 0, 0, 3, 0, 0};
     private float[] scythebuildmats = {2, 0, 0, 0, 0, 0, 3, 0};
     private float[] pickaxebuildmats = {2, 0, 0, 0, 0, 0, 0, 3};
+    private float logReward, foodReward, waterReward, mineReward, campfireReward, recoverReward, benchReward, toolReward, rocketReward, launchReward, zeroReward;
 
     void Start()
     {
@@ -595,29 +596,29 @@ public class CharacterMoveScript : Agent
         {
             if (vetcaction.DiscreteActions[0] == 0)
             {
-                AddReward(0.0003f);
-                reward = 0.0003f;
+                AddReward(logReward);
+                reward = logReward;
                 needtomove(treeslocation);
                 StartCoroutine(WaitForMove(Log()));
             }
             if (vetcaction.DiscreteActions[0] == 1)
             {
-                AddReward(0.0002f);
-                reward = 0.0002f;
+                AddReward(foodReward);
+                reward = foodReward;
                 needtomove(farmlocation);
                 StartCoroutine(WaitForMove(Gatherfood()));
             }
             if (vetcaction.DiscreteActions[0] == 2)
             {
-                AddReward(0.0001f);
-                reward = 0.0001f;
+                AddReward(waterReward);
+                reward = waterReward;
                 needtomove(poollocation);
                 StartCoroutine(WaitForMove(CollectWater()));
             }
             if (vetcaction.DiscreteActions[0] == 3)
             {
-                AddReward(0.0005f);
-                reward = 0.0005f;
+                AddReward(mineReward);
+                reward = mineReward;
                 needtomove(rockslocation);
                 StartCoroutine(WaitForMove(Mine()));
             }
@@ -625,71 +626,71 @@ public class CharacterMoveScript : Agent
             {
                 if (!campfirebuilt && inventory[0] >= firebuildmats[0] && inventory[5] >= firebuildmats[5])
                 {
-                    AddReward(0.75f);
-                    reward = 0.75f;
+                    AddReward(campfireReward);
+                    reward = campfireReward;
                     needtomove(firelocation);
                     StartCoroutine(WaitForMove(BuildFire()));
                 }
                 else if(campfirebuilt && Hunger<25 && inventory[0] >= cookmats[0] && inventory[1] >= cookmats[1] && inventory[2] >= cookmats[2] && inventory[4] >= cookmats[4])
                 {
-                    AddReward(0.05f);
-                    reward = 0.05f;
+                    AddReward(recoverReward);
+                    reward = recoverReward;
                     needtomove(firelocation);
                     StartCoroutine(WaitForMove(Cook()));
                 }
                 else
                 {
-                    reward = 0;
+                    reward = zeroReward;
                 }
             }
             if (vetcaction.DiscreteActions[0] == 5)
             {
                 if (!benchbuilt && inventory[0] >= benchbuildmats[0] && inventory[5] >= benchbuildmats[5] && inventory[6] >= benchbuildmats[6] && inventory[7] >= benchbuildmats[7])
                 {
-                    AddReward(0.75f);
-                    reward = 0.75f;
+                    AddReward(benchReward);
+                    reward = benchReward;
                     needtomove(benchlocation);
                     StartCoroutine(WaitForMove(BuildBench()));
                 }
                 else if (benchbuilt && !axebuilt && inventory[0] >= axebuildmats[0] && inventory[5] >= axebuildmats[5])
                 {  
-                    AddReward(0.75f);
-                    reward = 0.75f;
+                    AddReward(toolReward);
+                    reward = toolReward;
                     needtomove(benchlocation);
                     StartCoroutine(WaitForMove(BuildAxe()));  
                 }
                 else if (benchbuilt && axebuilt & !scythebuilt && inventory[0] >= scythebuildmats[0] && inventory[6] >= scythebuildmats[6])
                 {
-                    AddReward(0.75f);
-                    reward = 0.75f;
+                    AddReward(toolReward);
+                    reward = toolReward;
                     needtomove(benchlocation);
                     StartCoroutine(WaitForMove(BuildScythe()));  
                 }
                 else if (benchbuilt && axebuilt & scythebuilt && !pickaxebuilt && inventory[0] >= pickaxebuildmats[0] && inventory[7] >= pickaxebuildmats[7])
                 {
-                    AddReward(0.75f);
-                    reward = 0.75f;
+                    AddReward(toolReward);
+                    reward = toolReward;
                     needtomove(benchlocation);
                     StartCoroutine(WaitForMove(BuildPickaxe())); 
                 }
                 else
                 {
-                    reward = 0;
+                    reward = zeroReward;
                 }
             }
             if (vetcaction.DiscreteActions[0] == 6)
             {
                 if (!rocketbuilt && inventory[0] >= rocketbuildmats[0] && inventory[5] >= rocketbuildmats[5] && inventory[6] >= rocketbuildmats[6] && inventory[7] >= rocketbuildmats[7])
                 {
-                    AddReward(1);
-                    reward = 1;
+                    AddReward(rocketReward);
+                    reward = rocketReward;
                     needtomove(rocketlocation);
                     StartCoroutine(WaitForMove(BuildRocket()));
                 }
                 else if (rocketbuilt && inventory[0] >= rocketlaunchmats[0] && inventory[1] >= rocketlaunchmats[1] && inventory[2] >= rocketlaunchmats[2] && inventory[3] >= rocketlaunchmats[3] && inventory[5] >= rocketlaunchmats[5] && inventory[6] >= rocketlaunchmats[6] && inventory[7] >= rocketlaunchmats[7])
                 {
-                    AddReward(1);
-                    reward = 1;
+                    AddReward(launchReward);
+                    reward = launchReward;
                     inventory[0] -= rocketlaunchmats[0];
                     inventory[1] -= rocketlaunchmats[1];
                     inventory[2] -= rocketlaunchmats[2];
@@ -703,7 +704,7 @@ public class CharacterMoveScript : Agent
                 }
                 else
                 {
-                    reward = 0;
+                    reward = zeroReward;
                 }
             }
         }
@@ -854,5 +855,19 @@ public class CharacterMoveScript : Agent
     private void ApplyMovement()
     {
         controller.Move(direction * speed * Time.deltaTime);
+    }
+
+    public void RewardUpdate()
+    {
+        logReward = GameObject.Find("Menu/RewardMenu").GetComponent<Reward>().logReward;
+        foodReward = GameObject.Find("Menu/RewardMenu").GetComponent<Reward>().foodReward;
+        waterReward = GameObject.Find("Menu/RewardMenu").GetComponent<Reward>().waterReward;
+        mineReward = GameObject.Find("Menu/RewardMenu").GetComponent<Reward>().mineReward;
+        campfireReward = GameObject.Find("Menu/RewardMenu").GetComponent<Reward>().campfireReward;
+        recoverReward = GameObject.Find("Menu/RewardMenu").GetComponent<Reward>().recoverReward;
+        benchReward = GameObject.Find("Menu/RewardMenu").GetComponent<Reward>().benchReward;
+        toolReward = GameObject.Find("Menu/RewardMenu").GetComponent<Reward>().toolReward;
+        rocketReward = GameObject.Find("Menu/RewardMenu").GetComponent<Reward>().rocketReward;
+        launchReward = GameObject.Find("Menu/RewardMenu").GetComponent<Reward>().launchReward;
     }
 }

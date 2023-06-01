@@ -20,6 +20,7 @@ public class MainMenu : MonoBehaviour
     public void StartGame()
     {
         SceneManager.LoadScene("Scene");
+        GameObject.Find("Robot").GetComponent<CharacterMoveScript>().EndEpisode();
     }
 }
 

@@ -75,6 +75,11 @@ public class CharacterMoveScript : Agent
         done = false;
 
         animator.SetBool("deadge", false);
+        animator.SetBool("chopping", false);
+        animator.SetBool("harvesting", false);
+        animator.SetBool("mining", false);
+        animator.SetBool("eating", false);
+        animator.SetBool("waving", false);
         animator.SetFloat("speed", 0);
 
         transform.position = new Vector3(150, 1.36f, 25);
@@ -869,5 +874,10 @@ public class CharacterMoveScript : Agent
         toolReward = GameObject.Find("Menu/RewardMenu").GetComponent<Reward>().toolReward;
         rocketReward = GameObject.Find("Menu/RewardMenu").GetComponent<Reward>().rocketReward;
         launchReward = GameObject.Find("Menu/RewardMenu").GetComponent<Reward>().launchReward;
+    }
+
+    public void StopAllCor()
+    {
+        StopAllCoroutines();
     }
 }

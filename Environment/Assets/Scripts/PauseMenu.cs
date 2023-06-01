@@ -53,11 +53,12 @@ public class PauseMenu : MonoBehaviour
 
     public void BackToMenu()
     {
+        GameObject.Find("Robot").GetComponent<CharacterMoveScript>().StopAllCor();
+        GameObject.Find("Robot").GetComponent<CharacterMoveScript>().EndEpisode();
         Time.timeScale = 1f;
         pauseMenu.SetActive(false);
         /*SceneManager.LoadScene("MainMenu");*/
         startMenu.SetActive(true);
-        GameObject.Find("Robot").GetComponent<CharacterMoveScript>().EndEpisode();
     }
 
     public void ExitGame()
@@ -69,6 +70,8 @@ public class PauseMenu : MonoBehaviour
     {
         startMenu.SetActive(false);
         Time.timeScale = FindObjectOfType<CharacterMoveScript>().timescale;
+        GameObject.Find("Robot").GetComponent<CharacterMoveScript>().StopAllCor();
+        GameObject.Find("Robot").GetComponent<CharacterMoveScript>().EndEpisode();
         isPaused = false;
     }
 

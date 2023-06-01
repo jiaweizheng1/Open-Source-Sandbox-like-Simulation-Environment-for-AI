@@ -139,7 +139,6 @@ public class Envrionment_UI : MonoBehaviour
         optionMenu.SetActive(false);
         /*SceneManager.LoadScene("MainMenu");*/
         startMenu.SetActive(true);
-        GameObject.Find("Robot").GetComponent<CharacterMoveScript>().EndEpisode();
     }
 
     public void Confirm()

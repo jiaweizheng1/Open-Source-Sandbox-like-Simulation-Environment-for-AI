@@ -135,7 +135,6 @@ public class Envrionment_UI : MonoBehaviour
 
     public void BackToMenu()
     {
-        Time.timeScale = 1f;
         optionMenu.SetActive(false);
         /*SceneManager.LoadScene("MainMenu");*/
         startMenu.SetActive(true);

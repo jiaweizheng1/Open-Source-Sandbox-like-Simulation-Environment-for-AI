@@ -19,7 +19,7 @@ public class CharacterMoveScript : Agent
     public Transform treeslocation, farmlocation, poollocation, rockslocation, benchlocation, firelocation, rocketlocation;
     public TMP_Text log_t, apple_t, meat_t, oil_t, water_t, iron_t, gold_t, diamond_t;
     private float[] inventory;
-    private double reward;
+    private float reward;
     private bool alive, moving, busy, done;
     private Vector3 target;
     private Vector2 input;
@@ -61,7 +61,8 @@ public class CharacterMoveScript : Agent
     private float[] axebuildmats = {2, 0, 0, 0, 0, 3, 0, 0};
     private float[] scythebuildmats = {2, 0, 0, 0, 0, 0, 3, 0};
     private float[] pickaxebuildmats = {2, 0, 0, 0, 0, 0, 0, 3};
-    private float logReward, foodReward, waterReward, mineReward, campfireReward, recoverReward, benchReward, toolReward, rocketReward, launchReward, zeroReward;
+    private float logReward, foodReward, waterReward, mineReward, campfireReward, recoverReward, benchReward, toolReward, rocketReward, launchReward;
+    public GameObject rewardmenu;
 
     void Start()
     {
@@ -71,6 +72,16 @@ public class CharacterMoveScript : Agent
     public override void OnEpisodeBegin()
     {
         SetReward(0);
+        logReward = float.Parse(rewardmenu.transform.Find("Log/LogReward").gameObject.transform.GetComponent<TMP_InputField>().text);
+        foodReward = float.Parse(rewardmenu.transform.Find("Food/FoodReward").gameObject.transform.GetComponent<TMP_InputField>().text);
+        waterReward = float.Parse(rewardmenu.transform.Find("Water/WaterReward").gameObject.transform.GetComponent<TMP_InputField>().text);
+        mineReward = float.Parse(rewardmenu.transform.Find("Mine/MineReward").gameObject.transform.GetComponent<TMP_InputField>().text);
+        campfireReward = float.Parse(rewardmenu.transform.Find("Campfire/CampfireReward").gameObject.transform.GetComponent<TMP_InputField>().text);
+        recoverReward = float.Parse(rewardmenu.transform.Find("Recover/RecoverReward").gameObject.transform.GetComponent<TMP_InputField>().text);
+        benchReward = float.Parse(rewardmenu.transform.Find("Bench/BenchReward").gameObject.transform.GetComponent<TMP_InputField>().text);
+        toolReward = float.Parse(rewardmenu.transform.Find("Tool/ToolReward").gameObject.transform.GetComponent<TMP_InputField>().text);
+        rocketReward = float.Parse(rewardmenu.transform.Find("Rocket/RocketReward").gameObject.transform.GetComponent<TMP_InputField>().text);
+        launchReward = float.Parse(rewardmenu.transform.Find("Launch/LaunchReward").gameObject.transform.GetComponent<TMP_InputField>().text);
         reward = 0;
         done = false;
 
@@ -534,19 +545,6 @@ public class CharacterMoveScript : Agent
         s += ")";
         return s;
     }
-
-    public void StartUpInventory()
-    {
-        inventory[0] = float.Parse(log_t.text.Split('x')[1]);
-        inventory[1] = float.Parse(apple_t.text.Split('x')[1]);
-        inventory[2] = float.Parse(meat_t.text.Split('x')[1]);
-        inventory[3] = float.Parse(oil_t.text.Split('x')[1]);
-        inventory[4] = float.Parse(water_t.text.Split('x')[1]);
-        inventory[5] = float.Parse(iron_t.text.Split('x')[1]);
-        inventory[6] = float.Parse(gold_t.text.Split('x')[1]);
-        inventory[7] = float.Parse(diamond_t.text.Split('x')[1]);
-    }
-
     public void ManualUpdateAllText()
     {
         log_t.text = "x" + inventory[0];
@@ -645,7 +643,7 @@ public class CharacterMoveScript : Agent
                 }
                 else
                 {
-                    reward = zeroReward;
+                    reward = 0;
                 }
             }
             if (vetcaction.DiscreteActions[0] == 5)
@@ -680,7 +678,7 @@ public class CharacterMoveScript : Agent
                 }
                 else
                 {
-                    reward = zeroReward;
+                    reward = 0;
                 }
             }
             if (vetcaction.DiscreteActions[0] == 6)
@@ -709,7 +707,7 @@ public class CharacterMoveScript : Agent
                 }
                 else
                 {
-                    reward = zeroReward;
+                    reward = 0;
                 }
             }
         }
@@ -766,7 +764,7 @@ public class CharacterMoveScript : Agent
     {
         if(alive && !moving && !busy)
         {
-            // Debug.Log("Reward: " + GetCumulativeReward());
+            Debug.Log("Reward: " + reward);
             RequestDecision();
         }
         if (moving && !busy)
@@ -860,20 +858,6 @@ public class CharacterMoveScript : Agent
     private void ApplyMovement()
     {
         controller.Move(direction * speed * Time.deltaTime);
-    }
-
-    public void RewardUpdate()
-    {
-        logReward = GameObject.Find("Menu/RewardMenu").GetComponent<Reward>().logReward;
-        foodReward = GameObject.Find("Menu/RewardMenu").GetComponent<Reward>().foodReward;
-        waterReward = GameObject.Find("Menu/RewardMenu").GetComponent<Reward>().waterReward;
-        mineReward = GameObject.Find("Menu/RewardMenu").GetComponent<Reward>().mineReward;
-        campfireReward = GameObject.Find("Menu/RewardMenu").GetComponent<Reward>().campfireReward;
-        recoverReward = GameObject.Find("Menu/RewardMenu").GetComponent<Reward>().recoverReward;
-        benchReward = GameObject.Find("Menu/RewardMenu").GetComponent<Reward>().benchReward;
-        toolReward = GameObject.Find("Menu/RewardMenu").GetComponent<Reward>().toolReward;
-        rocketReward = GameObject.Find("Menu/RewardMenu").GetComponent<Reward>().rocketReward;
-        launchReward = GameObject.Find("Menu/RewardMenu").GetComponent<Reward>().launchReward;
     }
 
     public void StopAllCor()

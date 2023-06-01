@@ -11,21 +11,6 @@ public class Reward : MonoBehaviour
     public float logReward, foodReward, waterReward, mineReward, campfireReward, recoverReward, benchReward, toolReward, rocketReward, launchReward;
     private TMP_InputField logNum, foodNum, waterNum, mineNum, campfireNum, recoverNum, benchNum, toolNum, rocketNum, launchNum;
     public GameObject startMenu, rewardMenu;
-    // Start is called before the first frame update
-    void Start()
-    {
-        logReward = 0.0003f;
-        foodReward = 0.0002f;
-        waterReward = 0.0001f;
-        mineReward = 0.0005f;
-        campfireReward = 0.75f;
-        recoverReward = 0.05f;
-        benchReward = 0.75f;
-        toolReward = 0.75f;
-        rocketReward = 1f;
-        launchReward = 1f;
-    }
-
     // Update is called once per frame
     void Update()
     {
@@ -128,36 +113,12 @@ public class Reward : MonoBehaviour
         rocketReward = float.Parse(rocketNum.text);
         launchReward = float.Parse(launchNum.text);
 
-        GameObject.Find("Robot").GetComponent<CharacterMoveScript>().RewardUpdate();
-
-        Debug.Log("Log: " + logReward);
-        Debug.Log("Apple: " + foodReward);
-        Debug.Log("meat: " + waterReward);
-        Debug.Log("Oil: " + mineReward);
-        Debug.Log("Water: " + campfireReward);
-        Debug.Log("Iron: " + recoverReward);
-        Debug.Log("Gold: " + benchReward);
-        Debug.Log("Dimond: " + toolReward);
-        Debug.Log("Gold: " + rocketReward);
-        Debug.Log("Dimond: " + launchReward);
-
         rewardMenu.SetActive(false);
         startMenu.SetActive(true);
     }
 
     public void Cancel()
     {
-        Debug.Log("Log: " + logReward);
-        Debug.Log("Apple: " + foodReward);
-        Debug.Log("meat: " + waterReward);
-        Debug.Log("Oil: " + mineReward);
-        Debug.Log("Water: " + campfireReward);
-        Debug.Log("Iron: " + recoverReward);
-        Debug.Log("Gold: " + benchReward);
-        Debug.Log("Dimond: " + toolReward);
-        Debug.Log("Gold: " + rocketReward);
-        Debug.Log("Dimond: " + launchReward);
-
         rewardMenu.SetActive(false);
         startMenu.SetActive(true);
     }

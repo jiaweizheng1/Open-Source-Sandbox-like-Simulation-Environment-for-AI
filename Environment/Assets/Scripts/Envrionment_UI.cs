@@ -151,8 +151,6 @@ public class Envrionment_UI : MonoBehaviour
         gold_t.text = "x" + GoldNum.text;
         diamond_t.text = "x" + DimondNum.text;
 
-        GameObject.Find("Robot").GetComponent<CharacterMoveScript>().StartUpInventory();
-
         HealthSlider.value = Health;
         HungerSlider.value = Hunger;
         ThirstSlider.value = Thirst;
@@ -166,24 +164,6 @@ public class Envrionment_UI : MonoBehaviour
         Hunger_saved = Hunger;
         Thirst_saved = Thirst;
 
-        Debug.Log("Log: " + log_t.text);
-        Debug.Log("Apple: " + apple_t.text);
-        Debug.Log("meat: " + meat_t.text);
-        Debug.Log("Oil: " + oil_t.text);
-        Debug.Log("Water: " + water_t.text);
-        Debug.Log("Iron: " + iron_t.text);
-        Debug.Log("Gold: " + gold_t.text);
-        Debug.Log("Dimond: " + diamond_t.text);
-
-        Debug.Log("Health: " + Health);
-        Debug.Log("Hunger: " + Hunger);
-        Debug.Log("Thirst: " + Thirst);
-
-        Debug.Log("Tool enable: " + ToolEnable_saved);
-        Debug.Log("God Mode: " + GodModeEnable_saved);
-        Debug.Log("Random: " + RandomEnable_saved); 
-        Debug.Log("Enemy: " + EnemyEnable_saved);
-
         optionMenu.SetActive(false);
         startMenu.SetActive(true);
     }
@@ -192,10 +172,5 @@ public class Envrionment_UI : MonoBehaviour
     {
         optionMenu.SetActive(false);
         startMenu.SetActive(true);
-
-        Debug.Log("Tool enable: " + ToolEnable_saved);
-        Debug.Log("God Mode: " + GodModeEnable_saved);
-        Debug.Log("Random: " + RandomEnable_saved); 
-        Debug.Log("Enemy: " + EnemyEnable_saved);
     }
 }

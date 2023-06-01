@@ -74,8 +74,6 @@ public class CharacterMoveScript : Agent
         reward = 0;
         done = false;
 
-        inventory = new float[8] { 0, 0, 0, 0, 0, 0, 0, 0 };
-
         animator.SetBool("deadge", false);
         animator.SetFloat("speed", 0);
 
@@ -137,6 +135,8 @@ public class CharacterMoveScript : Agent
         alive = true;
         moving = false;
         busy = false;
+
+        inventory = new float[8] { 0, 0, 0, 0, 0, 0, 0, 0 };
     }
 
     public override void CollectObservations(VectorSensor sensor)

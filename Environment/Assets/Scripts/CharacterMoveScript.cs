@@ -78,6 +78,7 @@ public class CharacterMoveScript : Agent
     private float[] pickaxebuildmats = {2, 0, 0, 0, 0, 0, 0, 3};
     NavMeshAgent agent;
     public float closeEnoughDistance = 3.0f;
+    public bool spawnSpider;
     void Start()
     {
         Time.timeScale = timescale;
@@ -819,7 +820,7 @@ public class CharacterMoveScript : Agent
         Quaternion rotation = Quaternion.Euler(rotationAngles);
         if(current_hour == random_nighttime_hour)
         {
-            if(spider_count == 0 && campfirebuilt && !spider_spawned){
+            if(spider_count == 0 && campfirebuilt && !spider_spawned && spawnSpider){
                 spider_spawned = true;
                 spider_health = 5;
                 Vector3 randomSpawnPosition = new Vector3(Random.Range(120,170),2,Random.Range(50,60));

@@ -25456,6 +25456,7 @@ MonoBehaviour:
   MaxStep: 0
   speed: 10
   animator: {fileID: 875354791}
+  animator_spider: {fileID: 0}
   controller: {fileID: 875354792}
   treeslocation: {fileID: 1649053313}
   farmlocation: {fileID: 1082861703}
@@ -25482,6 +25483,10 @@ MonoBehaviour:
   timescale: 3
   time_t: {fileID: 1130540956}
   day_t: {fileID: 562616017}
+  spiderPrefab: {fileID: 0}
+  spider_count: 0
+  Target: {fileID: 0}
+  Escape: {fileID: 0}
   tools: {fileID: 2002205127}
   bench: {fileID: 386402238}
   fire: {fileID: 1866209618}
@@ -25492,6 +25497,7 @@ MonoBehaviour:
   rocketui: {fileID: 405168375}
   toolui: {fileID: 1017595516}
   toolbarui: {fileID: 303884398}
+  closeEnoughDistance: 3
   rewardmenu: {fileID: 2104499020}
 --- !u!95 &875354791
 Animator:
@@ -54226,7 +54232,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Start training
+  m_text: Start Training
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 using UnityEngine.UI;
 using TMPro; 
 using Unity.MLAgents;
@@ -15,6 +16,7 @@ public class CharacterMoveScript : Agent
     private bool Unity_ML_Agent_Mode = false; // 'true' for Unity ML Agent, 'false' for Python PPO AI
     public float speed;
     public Animator animator;
+    public Animator animator_spider;
     public CharacterController controller;
     public Transform treeslocation, farmlocation, poollocation, rockslocation, benchlocation, firelocation, rocketlocation;
     public TMP_Text log_t, apple_t, meat_t, oil_t, water_t, iron_t, gold_t, diamond_t;
@@ -26,7 +28,6 @@ public class CharacterMoveScript : Agent
     private Vector3 direction;
     private float turnsmoothtime = 0.1f, turnsmoothvelocity = 0.1f;
     private float gravity = -9.81f, gravitymulti = 3f, velocity;
-
     public float BarSpeedMulti;
     [Header("Player Health")]
     private float MaxHealth = 100f;
@@ -48,6 +49,20 @@ public class CharacterMoveScript : Agent
     public float timescale;
     public TMP_Text time_t;
     public TMP_Text day_t;
+    
+    public GameObject spiderPrefab;
+    public int spider_count = 0;
+    Vector3 rotationAngles = new Vector3(0f, 180f, 0f);
+    
+    int nighttime_start_hour = 22;
+    int nighttime_end_hour = 6;
+    int random_nighttime_hour = 1;
+    private GameObject spider;
+    int spider_health = 5;
+    bool spider_spawned = false;
+    public Transform Target;
+    public Transform Escape;
+    Coroutine myCoroutine;
 
     private bool benchbuilt, campfirebuilt, rocketbuilt, axebuilt, scythebuilt, pickaxebuilt;
     public GameObject tools;
@@ -61,7 +76,8 @@ public class CharacterMoveScript : Agent
     private float[] axebuildmats = {2, 0, 0, 0, 0, 3, 0, 0};
     private float[] scythebuildmats = {2, 0, 0, 0, 0, 0, 3, 0};
     private float[] pickaxebuildmats = {2, 0, 0, 0, 0, 0, 0, 3};
-
+    NavMeshAgent agent;
+    public float closeEnoughDistance = 3.0f;
     void Start()
     {
         Time.timeScale = timescale;
@@ -455,6 +471,16 @@ public class CharacterMoveScript : Agent
         animator.SetBool("waving", false);
     }
 
+    IEnumerator Attack()
+    {
+        direction = new Vector3(-1, 0, -3);
+        animator.SetBool("mining", true);
+        yield return new WaitForSeconds(2);
+        animator.SetBool("mining", false);
+        spider_health --;
+
+    }
+
     IEnumerator GetInRocket()
     {
         moving = true;
@@ -514,6 +540,24 @@ public class CharacterMoveScript : Agent
         busy = false;
     }
 
+    IEnumerator Destroy_camp()
+    {
+        if(spider!=null && campfirebuilt){
+            animator_spider.SetBool("attack", true);
+        }
+        yield return new WaitForSeconds(10);
+
+        if(spider!=null && campfirebuilt){
+
+            fire.transform.Find("FireBlueprint").gameObject.SetActive(true);
+            fire.transform.Find("Fire").gameObject.SetActive(false);
+            fireui.transform.Find("UIBuild").gameObject.SetActive(true);
+            fireui.transform.Find("UICook").gameObject.SetActive(false);
+            campfirebuilt = false;
+            animator_spider.SetBool("attack", false);
+        }
+
+    }
     public string myToString(float[] arr)
     {
         string s = "";
@@ -584,6 +628,7 @@ public class CharacterMoveScript : Agent
         {
             if (vetcaction.DiscreteActions[0] == 0)
             {
+                
                 AddReward(0.0003f);
                 reward = 0.0003f;
                 needtomove(treeslocation);
@@ -690,11 +735,19 @@ public class CharacterMoveScript : Agent
                     needtomove(rocketlocation);
                     StartCoroutine(WaitForMove(LaunchRocket()));
                 }
-                else
+            }
+            if (vetcaction.DiscreteActions[0] == 7)
+                {
+                    if(spider_count == 1 && spider_health >0){
+                        Transform spiderlocation = spider.transform;
+                        needtomove(spiderlocation);
+                        StartCoroutine(WaitForMove(Attack()));
+                    }
+                }
+            else
                 {
                     reward = 0;
                 }
-            }
         }
     }
 
@@ -729,6 +782,10 @@ public class CharacterMoveScript : Agent
         {
             discreteactions[0] = 6;
         }
+        else if (Input.GetKey(KeyCode.A))
+        {
+            discreteactions[0] = 7;
+        }
         else
         {
             discreteactions[0] = -1; //else, invalid input
@@ -747,9 +804,61 @@ public class CharacterMoveScript : Agent
     // Update is called once per frame
     void Update()
     {
+        int current_hour = time.Hour;
+        int random_offset = Random.Range(0, 7);
+        if(spider_health == 0 && spider!= null){
+            
+            spider_count = 0;
+            if (myCoroutine != null) {
+                StopCoroutine(myCoroutine);
+                myCoroutine = null;
+            }
+            Destroy(spider);
+        }
+
+        Quaternion rotation = Quaternion.Euler(rotationAngles);
+        if(current_hour == random_nighttime_hour)
+        {
+            if(spider_count == 0 && campfirebuilt && !spider_spawned){
+                spider_spawned = true;
+                spider_health = 5;
+                Vector3 randomSpawnPosition = new Vector3(Random.Range(120,170),2,Random.Range(50,60));
+                spider = Instantiate(spiderPrefab,randomSpawnPosition,rotation);
+                animator_spider = spider.GetComponent<Animator>();
+                agent = spider.GetComponent<NavMeshAgent>();
+                if (agent == null || !agent.enabled) {
+                    Debug.LogError("No enabled NavMeshAgent on spider");
+                } else {
+                    agent.SetDestination(Target.position);
+                    animator_spider.SetBool("walk",true);
+                }
+                random_nighttime_hour = (nighttime_start_hour + random_offset) % 24;
+                spider_count ++;
+            }
+        }
+        if(current_hour == nighttime_end_hour){
+            spider_spawned = false;
+        }
+        if(agent!= null && spider_count != 0 && campfirebuilt)
+        {
+            closeEnoughDistance = 3.0f;
+            if (!agent.pathPending && agent.remainingDistance <= closeEnoughDistance && agent.remainingDistance > 0)
+            {
+                // Perform your action here
+                animator_spider.SetBool("walk",false);
+                myCoroutine = StartCoroutine(WaitForMove(Destroy_camp()));
+                
+            }
+        }
+
+        if (myCoroutine != null && (!campfirebuilt || spider_count == 0)) {
+            StopCoroutine(myCoroutine);
+            myCoroutine = null;
+            Destroy(spider);
+        }
         if(alive && !moving && !busy)
         {
-            Debug.Log("Reward: " + GetCumulativeReward());
+            // Debug.Log("Reward: " + GetCumulativeReward());
             RequestDecision();
         }
         if (moving && !busy)

@@ -18,7 +18,7 @@ public class CharacterMoveScript : Agent
     public CharacterController controller;
     public Transform treeslocation, farmlocation, poollocation, rockslocation, benchlocation, firelocation, rocketlocation;
     public TMP_Text log_t, apple_t, meat_t, oil_t, water_t, iron_t, gold_t, diamond_t;
-    private float[] inventory;
+    private float[] inventory = {0, 0, 0, 0, 0, 0, 0, 0};
     private float reward;
     private bool alive, moving, busy, done;
     private Vector3 target;
@@ -61,8 +61,9 @@ public class CharacterMoveScript : Agent
     private float[] axebuildmats = {2, 0, 0, 0, 0, 3, 0, 0};
     private float[] scythebuildmats = {2, 0, 0, 0, 0, 0, 3, 0};
     private float[] pickaxebuildmats = {2, 0, 0, 0, 0, 0, 0, 3};
+    
     private float logReward, foodReward, waterReward, mineReward, campfireReward, recoverReward, benchReward, toolReward, rocketReward, launchReward;
-    public GameObject rewardmenu;
+    public GameObject environmentmenu, rewardmenu;
 
     void Start()
     {
@@ -144,15 +145,22 @@ public class CharacterMoveScript : Agent
         toolbarui.transform.Find("Tools").gameObject.transform.Find("ScytheV1").gameObject.SetActive(false);
         toolbarui.transform.Find("Tools").gameObject.transform.Find("PickAxeV1").gameObject.SetActive(false);
 
-        Health = MaxHealth;
-        Hunger = MaxHunger;
-        Thirst = MaxThirst;
+        Health = environmentmenu.transform.Find ("Health/HealthValue").GetComponent<Slider>().value;
+        Hunger = environmentmenu.transform.Find ("Hunger/HungerValue").GetComponent<Slider>().value;
+        Thirst = environmentmenu.transform.Find ("Thirst/ThirstValue").GetComponent<Slider>().value;
 
         alive = true;
         moving = false;
         busy = false;
 
-        inventory = new float[8] { 0, 0, 0, 0, 0, 0, 0, 0 };
+        inventory[0] = int.Parse(environmentmenu.transform.Find("Log/LogNum").gameObject.transform.GetComponent<TMP_InputField>().text);
+        inventory[1] = int.Parse(environmentmenu.transform.Find("Apple/AppleNum").gameObject.transform.GetComponent<TMP_InputField>().text);
+        inventory[2] = int.Parse(environmentmenu.transform.Find("Meat/MeatNum").gameObject.transform.GetComponent<TMP_InputField>().text);
+        inventory[3] = int.Parse(environmentmenu.transform.Find("Oil/OilNum").gameObject.transform.GetComponent<TMP_InputField>().text);
+        inventory[4] = int.Parse(environmentmenu.transform.Find("Water/WaterNum").gameObject.transform.GetComponent<TMP_InputField>().text);
+        inventory[5] = int.Parse(environmentmenu.transform.Find("Iron/IronNum").gameObject.transform.GetComponent<TMP_InputField>().text);
+        inventory[6] = int.Parse(environmentmenu.transform.Find("Gold/GoldNum").gameObject.transform.GetComponent<TMP_InputField>().text);
+        inventory[7] = int.Parse(environmentmenu.transform.Find("Dimond/DimondNum").gameObject.transform.GetComponent<TMP_InputField>().text);
     }
 
     public override void CollectObservations(VectorSensor sensor)

@@ -119,6 +119,17 @@ public class Reward : MonoBehaviour
 
     public void Cancel()
     {
+        logNum.text = logReward.ToString();
+        foodNum.text = foodReward.ToString();
+        waterNum.text = waterReward.ToString();
+        mineNum.text = mineReward.ToString();
+        campfireNum.text = campfireReward.ToString();
+        recoverNum.text = recoverReward.ToString();
+        benchNum.text = benchReward.ToString();
+        toolNum.text = toolReward.ToString();
+        rocketNum.text = rocketReward.ToString();
+        launchNum.text = launchReward.ToString();
+
         rewardMenu.SetActive(false);
         startMenu.SetActive(true);
     }

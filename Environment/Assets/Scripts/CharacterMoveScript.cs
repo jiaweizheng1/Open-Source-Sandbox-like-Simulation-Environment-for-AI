@@ -82,6 +82,7 @@ public class CharacterMoveScript : Agent
 
     public GameObject environmentmenu, rewardmenu;
     private bool ToolEnable, GodModeEnable, RandomEnable, EnemyEnable;
+    private int[] actions = {0, 1, 2, 3, 4, 5, 6, 7};
 
     public bool spawnSpider;
     void Start()
@@ -117,6 +118,26 @@ public class CharacterMoveScript : Agent
         GodModeEnable = environmentmenu.transform.Find("ToggleGodMod").GetComponent<toggle_switch>().isOn;
         RandomEnable = environmentmenu.transform.Find("ToggleRandomness").GetComponent<toggle_switch>().isOn;
         EnemyEnable = environmentmenu.transform.Find("ToggleEnemy").GetComponent<toggle_switch>().isOn;
+        actions[0] = 0;
+        actions[1] = 1;
+        actions[2] = 2;
+        actions[3] = 3;
+        actions[4] = 4;
+        actions[5] = 5;
+        actions[6] = 6;
+        // Fisher–Yates shuffle Algorithm
+        if(RandomEnable)
+        {
+            Debug.Log("Fisher Algorithm");
+            for (int i = actions.Length - 1; i > 0; i--)
+            {
+                int j = Random.Range(0, i + 1);
+
+                int temp = actions[i];
+                actions[i] = actions[j];
+                actions[j] = temp;
+            }
+        }
 
         transform.position = new Vector3(150, 1.36f, 25);
         target = transform.position;
@@ -659,37 +680,37 @@ public class CharacterMoveScript : Agent
     {
         if (alive && !moving && !busy)
         {
-            if (vetcaction.DiscreteActions[0] == 0)
+            if (vetcaction.DiscreteActions[0] == actions[0])
             {
                 AddReward(logReward);
                 reward = logReward;
                 needtomove(treeslocation);
                 StartCoroutine(WaitForMove(Log()));
             }
-            if (vetcaction.DiscreteActions[0] == 1)
+            if (vetcaction.DiscreteActions[0] == actions[1])
             {
                 AddReward(foodReward);
                 reward = foodReward;
                 needtomove(farmlocation);
                 StartCoroutine(WaitForMove(Gatherfood()));
             }
-            if (vetcaction.DiscreteActions[0] == 2)
+            if (vetcaction.DiscreteActions[0] == actions[2])
             {
                 AddReward(waterReward);
                 reward = waterReward;
                 needtomove(poollocation);
                 StartCoroutine(WaitForMove(CollectWater()));
             }
-            if (vetcaction.DiscreteActions[0] == 3)
+            if (vetcaction.DiscreteActions[0] == actions[3])
             {
                 AddReward(mineReward);
                 reward = mineReward;
                 needtomove(rockslocation);
                 StartCoroutine(WaitForMove(Mine()));
             }
-            if (vetcaction.DiscreteActions[0] == 4)
+            if (vetcaction.DiscreteActions[0] == actions[4])
             {
-                if(spider_count == 1 && spider_health >0){
+                if(spider_count == 1 && spider_health > 0){
                     Transform spiderlocation = spider.transform;
                     needtomove(spiderlocation);
                     StartCoroutine(WaitForMove(Attack()));
@@ -713,7 +734,7 @@ public class CharacterMoveScript : Agent
                     reward = 0;
                 }
             }
-            if (vetcaction.DiscreteActions[0] == 5)
+            if (vetcaction.DiscreteActions[0] == actions[5])
             {
                 if (ToolEnable && !benchbuilt && inventory[0] >= benchbuildmats[0] && inventory[5] >= benchbuildmats[5] && inventory[6] >= benchbuildmats[6] && inventory[7] >= benchbuildmats[7])
                 {
@@ -748,7 +769,7 @@ public class CharacterMoveScript : Agent
                     reward = 0;
                 }
             }
-            if (vetcaction.DiscreteActions[0] == 6)
+            if (vetcaction.DiscreteActions[0] == actions[6])
             {
                 if (!rocketbuilt && inventory[0] >= rocketbuildmats[0] && inventory[5] >= rocketbuildmats[5] && inventory[6] >= rocketbuildmats[6] && inventory[7] >= rocketbuildmats[7])
                 {
@@ -888,7 +909,7 @@ public class CharacterMoveScript : Agent
         }
         if(alive && !moving && !busy)
         {
-            Debug.Log("Reward: " + reward);
+            // Debug.Log("Reward: " + reward);
             RequestDecision();
         }
         if (moving && !busy)

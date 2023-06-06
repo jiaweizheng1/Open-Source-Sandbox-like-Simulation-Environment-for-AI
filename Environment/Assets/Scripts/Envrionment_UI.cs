@@ -15,6 +15,7 @@ public class Envrionment_UI : MonoBehaviour
     private TMP_InputField LogNum, AppleNum, MeatNum, OilNum, WaterNum, IronNum, GoldNum, DimondNum;
     public int log, apple, meat, oil, water, iron, gold, diamond;
     private float Health, Hunger, Thirst;
+    private bool ToolEnable, GodModeEnable, RandomEnable, EnemyEnable;
 
     private void Awake()
     {
@@ -30,6 +31,11 @@ public class Envrionment_UI : MonoBehaviour
         Health = GameObject.Find ("Health/HealthValue").GetComponent<Slider>().value;
         Hunger = GameObject.Find ("Hunger/HungerValue").GetComponent<Slider>().value;
         Thirst = GameObject.Find ("Thirst/ThirstValue").GetComponent<Slider>().value;
+    
+        ToolEnable = GameObject.Find("ToggleToolEnable").GetComponent<toggle_switch>().isOn;
+        GodModeEnable = GameObject.Find("ToggleGodMod").GetComponent<toggle_switch>().isOn;
+        RandomEnable = GameObject.Find("ToggleRandomness").GetComponent<toggle_switch>().isOn;
+        EnemyEnable = GameObject.Find("ToggleEnemy").GetComponent<toggle_switch>().isOn;  
     }
 
     // Update is called once per frame
@@ -103,6 +109,11 @@ public class Envrionment_UI : MonoBehaviour
         Hunger = GameObject.Find ("Hunger/HungerValue").GetComponent<Slider>().value;
         Thirst = GameObject.Find ("Thirst/ThirstValue").GetComponent<Slider>().value;
 
+        ToolEnable = GameObject.Find("ToggleToolEnable").GetComponent<toggle_switch>().isOn;
+        GodModeEnable = GameObject.Find("ToggleGodMod").GetComponent<toggle_switch>().isOn;
+        RandomEnable = GameObject.Find("ToggleRandomness").GetComponent<toggle_switch>().isOn;
+        EnemyEnable = GameObject.Find("ToggleEnemy").GetComponent<toggle_switch>().isOn;
+
         optionMenu.SetActive(false);
         startMenu.SetActive(true);
     }
@@ -118,9 +129,14 @@ public class Envrionment_UI : MonoBehaviour
         GoldNum.text = gold.ToString();
         DimondNum.text = diamond.ToString();
 
-        Health = GameObject.Find ("Health/HealthValue").GetComponent<Slider>().value = Health;
-        Hunger = GameObject.Find ("Hunger/HungerValue").GetComponent<Slider>().value = Hunger;
-        Thirst = GameObject.Find ("Thirst/ThirstValue").GetComponent<Slider>().value = Thirst;
+        GameObject.Find ("Health/HealthValue").GetComponent<Slider>().value = Health;
+        GameObject.Find ("Hunger/HungerValue").GetComponent<Slider>().value = Hunger;
+        GameObject.Find ("Thirst/ThirstValue").GetComponent<Slider>().value = Thirst;
+
+        GameObject.Find("ToggleToolEnable").GetComponent<toggle_switch>().Toggle(ToolEnable);
+        GameObject.Find("ToggleGodMod").GetComponent<toggle_switch>().Toggle(GodModeEnable);
+        GameObject.Find("ToggleRandomness").GetComponent<toggle_switch>().Toggle(RandomEnable);
+        GameObject.Find("ToggleEnemy").GetComponent<toggle_switch>().Toggle(EnemyEnable);
 
         optionMenu.SetActive(false);
         startMenu.SetActive(true);

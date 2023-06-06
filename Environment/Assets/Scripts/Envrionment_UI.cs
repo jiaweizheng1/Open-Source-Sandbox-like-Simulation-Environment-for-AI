@@ -30,11 +30,6 @@ public class Envrionment_UI : MonoBehaviour
         Health = GameObject.Find ("Health/HealthValue").GetComponent<Slider>().value;
         Hunger = GameObject.Find ("Hunger/HungerValue").GetComponent<Slider>().value;
         Thirst = GameObject.Find ("Thirst/ThirstValue").GetComponent<Slider>().value;
-
-        // ToolEnable = GameObject.Find("ToggleToolEnable").GetComponent<toggle_switch>().isOn;
-        // GodModeEnable = GameObject.Find("ToggleGodMod").GetComponent<toggle_switch>().isOn;
-        // RandomEnable = GameObject.Find("ToggleRandomness").GetComponent<toggle_switch>().isOn;
-        // EnemyEnable = GameObject.Find("ToggleEnemy").GetComponent<toggle_switch>().isOn;
     }
 
     // Update is called once per frame

@@ -79,7 +79,9 @@ public class CharacterMoveScript : Agent
     NavMeshAgent agent;
     public float closeEnoughDistance = 3.0f;
     private float logReward, foodReward, waterReward, mineReward, campfireReward, recoverReward, benchReward, toolReward, rocketReward, launchReward;
+
     public GameObject environmentmenu, rewardmenu;
+    private bool ToolEnable, GodModeEnable, RandomEnable, EnemyEnable;
 
     public bool spawnSpider;
     void Start()
@@ -110,6 +112,11 @@ public class CharacterMoveScript : Agent
         animator.SetBool("eating", false);
         animator.SetBool("waving", false);
         animator.SetFloat("speed", 0);
+
+        ToolEnable = environmentmenu.transform.Find("ToggleToolEnable").GetComponent<toggle_switch>().isOn;
+        GodModeEnable = environmentmenu.transform.Find("ToggleGodMod").GetComponent<toggle_switch>().isOn;
+        RandomEnable = environmentmenu.transform.Find("ToggleRandomness").GetComponent<toggle_switch>().isOn;
+        EnemyEnable = environmentmenu.transform.Find("ToggleEnemy").GetComponent<toggle_switch>().isOn;
 
         transform.position = new Vector3(150, 1.36f, 25);
         target = transform.position;
@@ -703,28 +710,28 @@ public class CharacterMoveScript : Agent
             }
             if (vetcaction.DiscreteActions[0] == 5)
             {
-                if (!benchbuilt && inventory[0] >= benchbuildmats[0] && inventory[5] >= benchbuildmats[5] && inventory[6] >= benchbuildmats[6] && inventory[7] >= benchbuildmats[7])
+                if (ToolEnable && !benchbuilt && inventory[0] >= benchbuildmats[0] && inventory[5] >= benchbuildmats[5] && inventory[6] >= benchbuildmats[6] && inventory[7] >= benchbuildmats[7])
                 {
                     AddReward(benchReward);
                     reward = benchReward;
                     needtomove(benchlocation);
                     StartCoroutine(WaitForMove(BuildBench()));
                 }
-                else if (benchbuilt && !axebuilt && inventory[0] >= axebuildmats[0] && inventory[5] >= axebuildmats[5])
+                else if (ToolEnable && benchbuilt && !axebuilt && inventory[0] >= axebuildmats[0] && inventory[5] >= axebuildmats[5])
                 {  
                     AddReward(toolReward);
                     reward = toolReward;
                     needtomove(benchlocation);
                     StartCoroutine(WaitForMove(BuildAxe()));  
                 }
-                else if (benchbuilt && axebuilt & !scythebuilt && inventory[0] >= scythebuildmats[0] && inventory[6] >= scythebuildmats[6])
+                else if (ToolEnable && benchbuilt && axebuilt & !scythebuilt && inventory[0] >= scythebuildmats[0] && inventory[6] >= scythebuildmats[6])
                 {
                     AddReward(toolReward);
                     reward = toolReward;
                     needtomove(benchlocation);
                     StartCoroutine(WaitForMove(BuildScythe()));  
                 }
-                else if (benchbuilt && axebuilt & scythebuilt && !pickaxebuilt && inventory[0] >= pickaxebuildmats[0] && inventory[7] >= pickaxebuildmats[7])
+                else if (ToolEnable && benchbuilt && axebuilt & scythebuilt && !pickaxebuilt && inventory[0] >= pickaxebuildmats[0] && inventory[7] >= pickaxebuildmats[7])
                 {
                     AddReward(toolReward);
                     reward = toolReward;
@@ -917,23 +924,23 @@ public class CharacterMoveScript : Agent
         HealthSlider.value = Health / MaxHealth;
         HungerSlider.value = Hunger / MaxHunger;
         ThirstSlider.value = Thirst / MaxThirst;
-        if (Hunger > 0)
+        if (!GodModeEnable & Hunger > 0)
         {
             Hunger = Hunger - BarSpeedMulti * Time.deltaTime;
         }
-        if (Thirst > 0)
+        if (!GodModeEnable & Thirst > 0)
         {
             Thirst = Thirst - BarSpeedMulti * Time.deltaTime;
         }
-        if (Health > 0 && HungerSlider.value == 0)
+        if (!GodModeEnable & Health > 0 && HungerSlider.value == 0)
         {
             Health = Health - BarSpeedMulti * Time.deltaTime;
         }
-        if (Health > 0 && ThirstSlider.value == 0)
+        if (!GodModeEnable & Health > 0 && ThirstSlider.value == 0)
         {
             Health = Health - BarSpeedMulti * Time.deltaTime;
         }
-        if (Health < 0 && alive)
+        if (!GodModeEnable & Health < 0 && alive)
         {
             alive = false;
             AddReward(-5);

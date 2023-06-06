@@ -10,25 +10,11 @@ using Unity.VisualScripting;
 
 public class Envrionment_UI : MonoBehaviour
 {
-    private TMP_InputField LogNum, AppleNum, MeatNum, OilNum, WaterNum, IronNum, GoldNum, DimondNum;
-    public TMP_Text log_t, apple_t, meat_t, oil_t, water_t, iron_t, gold_t, diamond_t;
     public GameObject startMenu, optionMenu;
-    public Slider HealthSlider, HungerSlider, ThirstSlider;
-    private float Health, Hunger, Thirst;
-    private float Health_saved, Hunger_saved, Thirst_saved;
-    private bool ToolEnable, GodModeEnable, RandomEnable, EnemyEnable;
-    private bool ToolEnable_saved, GodModeEnable_saved, RandomEnable_saved, EnemyEnable_saved;
-    // Start is called before the first frame update
-    private void Start()
-    {
-        ToolEnable_saved = false;
-        GodModeEnable_saved = false;
-        RandomEnable_saved = false;
 
-        Health_saved = 100;
-        Hunger_saved = 100;
-        Thirst_saved = 100;
-    }
+    private TMP_InputField LogNum, AppleNum, MeatNum, OilNum, WaterNum, IronNum, GoldNum, DimondNum;
+    public int log, apple, meat, oil, water, iron, gold, diamond;
+    private float Health, Hunger, Thirst;
 
     private void Awake()
     {
@@ -41,31 +27,20 @@ public class Envrionment_UI : MonoBehaviour
         GoldNum = transform.Find("Gold/GoldNum").GetComponent<TMP_InputField>();
         DimondNum = transform.Find("Dimond/DimondNum").GetComponent<TMP_InputField>();
 
-        LogNum.text = log_t.text.Split('x')[1];
-        AppleNum.text = apple_t.text.Split('x')[1];
-        MeatNum.text = meat_t.text.Split('x')[1];
-        OilNum.text = oil_t.text.Split('x')[1];
-        WaterNum.text = water_t.text.Split('x')[1];
-        IronNum.text = iron_t.text.Split('x')[1];
-        GoldNum.text = gold_t.text.Split('x')[1];
-        DimondNum.text = diamond_t.text.Split('x')[1];
+        Health = GameObject.Find ("Health/HealthValue").GetComponent<Slider>().value;
+        Hunger = GameObject.Find ("Hunger/HungerValue").GetComponent<Slider>().value;
+        Thirst = GameObject.Find ("Thirst/ThirstValue").GetComponent<Slider>().value;
 
-        GameObject.Find("ToggleToolEnable").GetComponent<toggle_switch>().isOn = ToolEnable_saved;
-        GameObject.Find("ToggleGodMod").GetComponent<toggle_switch>().isOn = GodModeEnable_saved;
-        GameObject.Find("ToggleRandomness").GetComponent<toggle_switch>().isOn = RandomEnable_saved;
-        GameObject.Find("ToggleEnemy").GetComponent<toggle_switch>().isOn = EnemyEnable_saved;
-
-        Health = Health_saved;
-        Hunger = Hunger_saved;
-        Thirst = Thirst_saved;
+        // ToolEnable = GameObject.Find("ToggleToolEnable").GetComponent<toggle_switch>().isOn;
+        // GodModeEnable = GameObject.Find("ToggleGodMod").GetComponent<toggle_switch>().isOn;
+        // RandomEnable = GameObject.Find("ToggleRandomness").GetComponent<toggle_switch>().isOn;
+        // EnemyEnable = GameObject.Find("ToggleEnemy").GetComponent<toggle_switch>().isOn;
     }
 
     // Update is called once per frame
-    private void Update()
+    private void Start()
     {
         Show();
-        SliderUpdate();
-        ToggleUpdate();
     }
 
     public void Show()
@@ -103,21 +78,6 @@ public class Envrionment_UI : MonoBehaviour
             return ValidateChar("0123456789", addedChar);
         };
     }
-    
-    public void SliderUpdate()
-    {
-        Health = HealthSlider.value;
-        Hunger = HungerSlider.value;
-        Thirst = ThirstSlider.value;
-    }
-
-    public void ToggleUpdate()
-    {
-        ToolEnable = GameObject.Find("ToggleToolEnable").GetComponent<toggle_switch>().isOn;
-        GodModeEnable = GameObject.Find("ToggleGodMod").GetComponent<toggle_switch>().isOn;
-        RandomEnable = GameObject.Find("ToggleRandomness").GetComponent<toggle_switch>().isOn;
-        EnemyEnable = GameObject.Find("ToggleEnemy").GetComponent<toggle_switch>().isOn;
-    }
 
     private char ValidateChar(string validCharacters, char addedChar)
     {
@@ -133,36 +93,20 @@ public class Envrionment_UI : MonoBehaviour
         
     }
 
-    public void BackToMenu()
-    {
-        optionMenu.SetActive(false);
-        /*SceneManager.LoadScene("MainMenu");*/
-        startMenu.SetActive(true);
-    }
-
     public void Confirm()
     {
-        log_t.text = "x" + LogNum.text;
-        apple_t.text = "x" + AppleNum.text;
-        meat_t.text = "x" + MeatNum.text;
-        oil_t.text = "x" + OilNum.text;
-        water_t.text = "x" + WaterNum.text;
-        iron_t.text = "x" + IronNum.text;
-        gold_t.text = "x" + GoldNum.text;
-        diamond_t.text = "x" + DimondNum.text;
+        log = int.Parse(LogNum.text);
+        apple = int.Parse(AppleNum.text);
+        meat = int.Parse(MeatNum.text);
+        oil = int.Parse(OilNum.text);
+        water = int.Parse(WaterNum.text);
+        iron = int.Parse(IronNum.text);
+        gold = int.Parse(GoldNum.text);
+        diamond = int.Parse(DimondNum.text);
 
-        HealthSlider.value = Health;
-        HungerSlider.value = Hunger;
-        ThirstSlider.value = Thirst;
-
-        ToolEnable_saved = ToolEnable;
-        GodModeEnable_saved = GodModeEnable;
-        RandomEnable_saved = RandomEnable;
-        EnemyEnable_saved = EnemyEnable;
-
-        Health_saved = Health;
-        Hunger_saved = Hunger;
-        Thirst_saved = Thirst;
+        Health = GameObject.Find ("Health/HealthValue").GetComponent<Slider>().value;
+        Hunger = GameObject.Find ("Hunger/HungerValue").GetComponent<Slider>().value;
+        Thirst = GameObject.Find ("Thirst/ThirstValue").GetComponent<Slider>().value;
 
         optionMenu.SetActive(false);
         startMenu.SetActive(true);
@@ -170,6 +114,19 @@ public class Envrionment_UI : MonoBehaviour
 
     public void Cancel()
     {
+        LogNum.text = log.ToString();
+        AppleNum.text = apple.ToString();
+        MeatNum.text = meat.ToString();
+        OilNum.text = oil.ToString();
+        WaterNum.text =  water.ToString();
+        IronNum.text = iron.ToString();
+        GoldNum.text = gold.ToString();
+        DimondNum.text = diamond.ToString();
+
+        Health = GameObject.Find ("Health/HealthValue").GetComponent<Slider>().value = Health;
+        Hunger = GameObject.Find ("Hunger/HungerValue").GetComponent<Slider>().value = Hunger;
+        Thirst = GameObject.Find ("Thirst/ThirstValue").GetComponent<Slider>().value = Thirst;
+
         optionMenu.SetActive(false);
         startMenu.SetActive(true);
     }

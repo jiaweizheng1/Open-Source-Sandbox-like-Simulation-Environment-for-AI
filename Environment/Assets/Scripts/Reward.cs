@@ -11,11 +11,6 @@ public class Reward : MonoBehaviour
     public float logReward, foodReward, waterReward, mineReward, campfireReward, recoverReward, benchReward, toolReward, rocketReward, launchReward;
     private TMP_InputField logNum, foodNum, waterNum, mineNum, campfireNum, recoverNum, benchNum, toolNum, rocketNum, launchNum;
     public GameObject startMenu, rewardMenu;
-    // Update is called once per frame
-    void Update()
-    {
-        Show();
-    }
 
     private void Awake()
     {
@@ -29,17 +24,12 @@ public class Reward : MonoBehaviour
         toolNum = transform.Find("Tool/ToolReward").GetComponent<TMP_InputField>();
         rocketNum = transform.Find("Rocket/RocketReward").GetComponent<TMP_InputField>();
         launchNum = transform.Find("Launch/LaunchReward").GetComponent<TMP_InputField>();
+    }
 
-        logNum.text = logReward.ToString();
-        foodNum.text = foodReward.ToString();
-        waterNum.text = waterReward.ToString();
-        mineNum.text = mineReward.ToString();
-        campfireNum.text = campfireReward.ToString();
-        recoverNum.text = recoverReward.ToString();
-        benchNum.text = benchReward.ToString();
-        toolNum.text = toolReward.ToString();
-        rocketNum.text = rocketReward.ToString();
-        launchNum.text = launchReward.ToString();
+    // Update is called once per frame
+    void Start()
+    {
+        Show();
     }
 
     public void Show()

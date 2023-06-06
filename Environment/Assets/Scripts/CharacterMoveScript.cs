@@ -808,23 +808,23 @@ public class CharacterMoveScript : Agent
         HealthSlider.value = Health / MaxHealth;
         HungerSlider.value = Hunger / MaxHunger;
         ThirstSlider.value = Thirst / MaxThirst;
-        if (Hunger > 0)
+        if (!GodModeEnable & Hunger > 0)
         {
             Hunger = Hunger - BarSpeedMulti * Time.deltaTime;
         }
-        if (Thirst > 0)
+        if (!GodModeEnable & Thirst > 0)
         {
             Thirst = Thirst - BarSpeedMulti * Time.deltaTime;
         }
-        if (Health > 0 && HungerSlider.value == 0)
+        if (!GodModeEnable & Health > 0 && HungerSlider.value == 0)
         {
             Health = Health - BarSpeedMulti * Time.deltaTime;
         }
-        if (Health > 0 && ThirstSlider.value == 0)
+        if (!GodModeEnable & Health > 0 && ThirstSlider.value == 0)
         {
             Health = Health - BarSpeedMulti * Time.deltaTime;
         }
-        if (Health < 0 && alive)
+        if (!GodModeEnable & Health < 0 && alive)
         {
             alive = false;
             AddReward(-5);

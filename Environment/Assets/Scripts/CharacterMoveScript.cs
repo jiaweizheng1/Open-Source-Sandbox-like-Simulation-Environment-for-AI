@@ -560,8 +560,8 @@ public class CharacterMoveScript : Agent
 
     IEnumerator Destroy_camp()
     {
-        debug_count++;
-        Debug.Log(debug_count);
+        // debug_count++;
+        // Debug.Log(debug_count);
         if(spider!=null && campfirebuilt){
             animator_spider.SetBool("attack", true);
         }
@@ -880,7 +880,7 @@ public class CharacterMoveScript : Agent
         }
         if(alive && !moving && !busy)
         {
-            Debug.Log("Reward: " + reward);
+            // Debug.Log("Reward: " + reward);
             RequestDecision();
         }
         if (moving && !busy)

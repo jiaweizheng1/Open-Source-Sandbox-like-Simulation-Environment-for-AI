@@ -63,7 +63,7 @@ public class CharacterMoveScript : Agent
     public Transform Target;
     public Transform Escape;
     Coroutine myCoroutine;
-
+    int debug_count = 0;
     private bool benchbuilt, campfirebuilt, rocketbuilt, axebuilt, scythebuilt, pickaxebuilt;
     public GameObject tools;
     public GameObject bench, fire, rocket, toolblueprints;
@@ -543,6 +543,8 @@ public class CharacterMoveScript : Agent
 
     IEnumerator Destroy_camp()
     {
+        debug_count++;
+        Debug.Log(debug_count);
         if(spider!=null && campfirebuilt){
             animator_spider.SetBool("attack", true);
         }
@@ -807,16 +809,12 @@ public class CharacterMoveScript : Agent
     {
         int current_hour = time.Hour;
         int random_offset = Random.Range(0, 7);
-        if(spider_health == 0 && spider!= null){
-            
-            spider_count = 0;
-            if (myCoroutine != null) {
-                StopCoroutine(myCoroutine);
-                myCoroutine = null;
-            }
+
+        if (myCoroutine != null && (!campfirebuilt || spider_count == 0)) {
+            StopCoroutine(myCoroutine);
+            myCoroutine = null;
             Destroy(spider);
         }
-
         Quaternion rotation = Quaternion.Euler(rotationAngles);
         if(current_hour == random_nighttime_hour)
         {
@@ -851,11 +849,19 @@ public class CharacterMoveScript : Agent
                 
             }
         }
-
-        if (myCoroutine != null && (!campfirebuilt || spider_count == 0)) {
-            StopCoroutine(myCoroutine);
-            myCoroutine = null;
+        if(spider_health == 0 && spider!= null){
+            spider_count = 0;
+            if (myCoroutine != null) {
+                StopCoroutine(myCoroutine);
+                myCoroutine = null;
+            }
             Destroy(spider);
+        }
+        if(!campfirebuilt){
+            if (myCoroutine != null) {
+                StopCoroutine(myCoroutine);
+                myCoroutine = null;
+            }
         }
         if(alive && !moving && !busy)
         {

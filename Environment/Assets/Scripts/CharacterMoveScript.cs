@@ -689,7 +689,12 @@ public class CharacterMoveScript : Agent
             }
             if (vetcaction.DiscreteActions[0] == 4)
             {
-                if (!campfirebuilt && inventory[0] >= firebuildmats[0] && inventory[5] >= firebuildmats[5])
+                if(spider_count == 1 && spider_health >0){
+                    Transform spiderlocation = spider.transform;
+                    needtomove(spiderlocation);
+                    StartCoroutine(WaitForMove(Attack()));
+                }
+                else if (!campfirebuilt && inventory[0] >= firebuildmats[0] && inventory[5] >= firebuildmats[5])
                 {
                     AddReward(campfireReward);
                     reward = campfireReward;
@@ -768,18 +773,7 @@ public class CharacterMoveScript : Agent
                     StartCoroutine(WaitForMove(LaunchRocket()));
                 }
             }
-            if (vetcaction.DiscreteActions[0] == 7)
-                {
-                    if(spider_count == 1 && spider_health >0){
-                        Transform spiderlocation = spider.transform;
-                        needtomove(spiderlocation);
-                        StartCoroutine(WaitForMove(Attack()));
-                    }
-                }
-            else
-                {
-                    reward = 0;
-                }
+
         }
     }
 
@@ -894,7 +888,7 @@ public class CharacterMoveScript : Agent
         }
         if(alive && !moving && !busy)
         {
-            // Debug.Log("Reward: " + reward);
+            Debug.Log("Reward: " + reward);
             RequestDecision();
         }
         if (moving && !busy)

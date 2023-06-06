@@ -1,4 +1,4 @@
-Unity Editor version:    2021.3.18f1 (3129e69bc0c7)
+Unity Editor version:    2021.3.22f1 (b6c551784ba3)
 Branch:                  2021.3/staging
 Build type:              Release
 Batch mode:              YES
@@ -11,18 +11,22 @@ Using pre-set license
 Pro License: YES
 
 COMMAND LINE ARGUMENTS:
-/Applications/Unity/Hub/Editor/2021.3.18f1/Unity.app/Contents/MacOS/Unity
+/Applications/Unity/Hub/Editor/2021.3.22f1/Unity.app/Contents/MacOS/Unity
 -adb2
 -batchMode
 -noUpm
 -name
-AssetImportWorker0
+AssetImportWorker2
 -projectPath
 /Users/a./ecs193_git/Open-Source-Minecraft-like-Simulation-Environment-for-AI/Environment
 -logFile
-Logs/AssetImportWorker0.log
+Logs/AssetImportWorker2.log
 -srvPort
+<<<<<<< HEAD:Environment/Logs/AssetImportWorker0-prev.log
 61792
+=======
+55304
+>>>>>>> spider_tmp:Environment/Logs/AssetImportWorker2.log
 Successfully changed project path to: /Users/a./ecs193_git/Open-Source-Minecraft-like-Simulation-Environment-for-AI/Environment
 /Users/a./ecs193_git/Open-Source-Minecraft-like-Simulation-Environment-for-AI/Environment
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -54,14 +58,22 @@ Successfully changed project path to: /Users/a./ecs193_git/Open-Source-Minecraft
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
+<<<<<<< HEAD:Environment/Logs/AssetImportWorker0-prev.log
 Player connection [8562812160] Host "[IP] 10.0.0.121 [Port] 0 [Flags] 2 [Guid] 524486143 [EditorId] 524486143 [Version] 1048832 [Id] OSXEditor(0,MacBook-Pro-175.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
 Player connection [8562812160] Host "[IP] 10.0.0.121 [Port] 0 [Flags] 2 [Guid] 524486143 [EditorId] 524486143 [Version] 1048832 [Id] OSXEditor(0,MacBook-Pro-175.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
 Refreshing native plugins compatible for Editor in 71.80 ms, found 3 plugins.
+=======
+Player connection [8562812160] Host "[IP] 10.0.0.121 [Port] 0 [Flags] 2 [Guid] 2645819608 [EditorId] 2645819608 [Version] 1048832 [Id] OSXEditor(0,MacBook-Pro-175.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [8562812160] Host "[IP] 10.0.0.121 [Port] 0 [Flags] 2 [Guid] 2645819608 [EditorId] 2645819608 [Version] 1048832 [Id] OSXEditor(0,MacBook-Pro-175.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+Refreshing native plugins compatible for Editor in 64.84 ms, found 3 plugins.
+>>>>>>> spider_tmp:Environment/Logs/AssetImportWorker2.log
 Preloading 0 native plugins for Editor in 0.00 ms.
-Initialize engine version: 2021.3.18f1 (3129e69bc0c7)
-[Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/2021.3.18f1/Unity.app/Contents/Resources/UnitySubsystems
+Initialize engine version: 2021.3.22f1 (b6c551784ba3)
+[Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/2021.3.22f1/Unity.app/Contents/Resources/UnitySubsystems
 [Subsystems] Discovering subsystems at path /Users/a./ecs193_git/Open-Source-Minecraft-like-Simulation-Environment-for-AI/Environment/Assets
 GfxDevice: creating device client; threaded=0; jobified=0
  preferred device: Apple M2 Pro (high power)
@@ -70,6 +82,7 @@ Metal devices available: 1
 Using device Apple M2 Pro (high power)
 Initializing Metal device caps: Apple M2 Pro
 Initialize mono
+<<<<<<< HEAD:Environment/Logs/AssetImportWorker0-prev.log
 Mono path[0] = '/Applications/Unity/Hub/Editor/2021.3.18f1/Unity.app/Contents/Managed'
 Mono path[1] = '/Applications/Unity/Hub/Editor/2021.3.18f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityjit-macos'
 Mono config path = '/Applications/Unity/Hub/Editor/2021.3.18f1/Unity.app/Contents/MonoBleedingEdge/etc'
@@ -82,17 +95,35 @@ Registered in 0.001103 seconds.
 Native extension for OSXStandalone target not found
 Native extension for WebGL target not found
 Refreshing native plugins compatible for Editor in 65.94 ms, found 3 plugins.
+=======
+Mono path[0] = '/Applications/Unity/Hub/Editor/2021.3.22f1/Unity.app/Contents/Managed'
+Mono path[1] = '/Applications/Unity/Hub/Editor/2021.3.22f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityjit-macos'
+Mono config path = '/Applications/Unity/Hub/Editor/2021.3.22f1/Unity.app/Contents/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56132
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: /Applications/Unity/Hub/Editor/2021.3.22f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
+Registered in 0.001328 seconds.
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 66.91 ms, found 3 plugins.
+>>>>>>> spider_tmp:Environment/Logs/AssetImportWorker2.log
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
 - Completed reload, in  0.403 seconds
 Domain Reload Profiling:
+<<<<<<< HEAD:Environment/Logs/AssetImportWorker0-prev.log
 	ReloadAssembly (403ms)
 		BeginReloadAssembly (68ms)
+=======
+	ReloadAssembly (404ms)
+		BeginReloadAssembly (72ms)
+>>>>>>> spider_tmp:Environment/Logs/AssetImportWorker2.log
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (0ms)
+<<<<<<< HEAD:Environment/Logs/AssetImportWorker0-prev.log
 		EndReloadAssembly (273ms)
 			LoadAssemblies (68ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
@@ -100,24 +131,43 @@ Domain Reload Profiling:
 			ReleaseScriptCaches (0ms)
 			RebuildScriptCaches (19ms)
 			SetupLoadedEditorAssemblies (165ms)
+=======
+		EndReloadAssembly (279ms)
+			LoadAssemblies (72ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (63ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (18ms)
+			SetupLoadedEditorAssemblies (173ms)
+>>>>>>> spider_tmp:Environment/Logs/AssetImportWorker2.log
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (4ms)
+				InitializePlatformSupportModulesInManaged (3ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (66ms)
+				RefreshPlugins (67ms)
 				BeforeProcessingInitializeOnLoad (1ms)
+<<<<<<< HEAD:Environment/Logs/AssetImportWorker0-prev.log
 				ProcessInitializeOnLoadAttributes (71ms)
 				ProcessInitializeOnLoadMethodAttributes (23ms)
+=======
+				ProcessInitializeOnLoadAttributes (77ms)
+				ProcessInitializeOnLoadMethodAttributes (24ms)
+>>>>>>> spider_tmp:Environment/Logs/AssetImportWorker2.log
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
+<<<<<<< HEAD:Environment/Logs/AssetImportWorker0-prev.log
 Registered in 0.002857 seconds.
+=======
+Registered in 0.003531 seconds.
+>>>>>>> spider_tmp:Environment/Logs/AssetImportWorker2.log
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image /Users/a./ecs193_git/Open-Source-Minecraft-like-Simulation-Environment-for-AI/Environment/Library/PackageCache/com.unity.visualscripting@1.8.0/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image /Users/a./ecs193_git/Open-Source-Minecraft-like-Simulation-Environment-for-AI/Environment/Library/PackageCache/com.unity.visualscripting@1.8.0/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
 Native extension for OSXStandalone target not found
+<<<<<<< HEAD:Environment/Logs/AssetImportWorker0-prev.log
 Native extension for WebGL target not found
 Refreshing native plugins compatible for Editor in 63.75 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
@@ -126,10 +176,20 @@ Mono: successfully reloaded assembly
 Domain Reload Profiling:
 	ReloadAssembly (721ms)
 		BeginReloadAssembly (48ms)
+=======
+Refreshing native plugins compatible for Editor in 64.63 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.755 seconds
+Domain Reload Profiling:
+	ReloadAssembly (755ms)
+		BeginReloadAssembly (63ms)
+>>>>>>> spider_tmp:Environment/Logs/AssetImportWorker2.log
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (3ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
+<<<<<<< HEAD:Environment/Logs/AssetImportWorker0-prev.log
 			CreateAndSetChildDomain (14ms)
 		EndReloadAssembly (610ms)
 			LoadAssemblies (56ms)
@@ -145,6 +205,23 @@ Domain Reload Profiling:
 				BeforeProcessingInitializeOnLoad (55ms)
 				ProcessInitializeOnLoadAttributes (172ms)
 				ProcessInitializeOnLoadMethodAttributes (10ms)
+=======
+			CreateAndSetChildDomain (13ms)
+		EndReloadAssembly (630ms)
+			LoadAssemblies (81ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (184ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (37ms)
+			SetupLoadedEditorAssemblies (312ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (2ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (65ms)
+				BeforeProcessingInitializeOnLoad (55ms)
+				ProcessInitializeOnLoadAttributes (180ms)
+				ProcessInitializeOnLoadMethodAttributes (9ms)
+>>>>>>> spider_tmp:Environment/Logs/AssetImportWorker2.log
 				AfterProcessingInitializeOnLoad (1ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
@@ -152,6 +229,7 @@ Domain Reload Profiling:
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
+<<<<<<< HEAD:Environment/Logs/AssetImportWorker0-prev.log
 Launching external process: /Applications/Unity/Hub/Editor/2021.3.18f1/Unity.app/Contents/Tools/UnityShaderCompiler
 Launched and connected shader compiler UnityShaderCompiler after 0.04 seconds
 Refreshing native plugins compatible for Editor in 0.53 ms, found 3 plugins.
@@ -1784,6 +1862,16 @@ Unloading 4137 Unused Serialized files (Serialized files now loaded: 0)
 Unloading 83 unused Assets / (23.6 MB). Loaded Objects now: 4778.
 Memory consumption went from 290.7 MB to 267.2 MB.
 Total: 4.157709 ms (FindLiveObjects: 0.169458 ms CreateObjectMapping: 0.072084 ms MarkObjects: 2.222750 ms  DeleteObjects: 1.692792 ms)
+=======
+Launching external process: /Applications/Unity/Hub/Editor/2021.3.22f1/Unity.app/Contents/Tools/UnityShaderCompiler
+Launched and connected shader compiler UnityShaderCompiler after 0.06 seconds
+Refreshing native plugins compatible for Editor in 0.48 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4233 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 101 unused Assets / (23.6 MB). Loaded Objects now: 4665.
+Memory consumption went from 300.0 MB to 276.4 MB.
+Total: 12.340125 ms (FindLiveObjects: 0.116542 ms CreateObjectMapping: 0.058083 ms MarkObjects: 2.107625 ms  DeleteObjects: 10.057375 ms)
+>>>>>>> spider_tmp:Environment/Logs/AssetImportWorker2.log
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 

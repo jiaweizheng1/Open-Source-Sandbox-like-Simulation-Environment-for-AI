@@ -61,9 +61,10 @@ public class CharacterMoveScript : Agent
     private float[] axebuildmats = {2, 0, 0, 0, 0, 3, 0, 0};
     private float[] scythebuildmats = {2, 0, 0, 0, 0, 0, 3, 0};
     private float[] pickaxebuildmats = {2, 0, 0, 0, 0, 0, 0, 3};
-    
-    private float logReward, foodReward, waterReward, mineReward, campfireReward, recoverReward, benchReward, toolReward, rocketReward, launchReward;
+
     public GameObject environmentmenu, rewardmenu;
+    private float logReward, foodReward, waterReward, mineReward, campfireReward, recoverReward, benchReward, toolReward, rocketReward, launchReward;
+    private bool ToolEnable, GodModeEnable, RandomEnable, EnemyEnable;
 
     void Start()
     {
@@ -93,6 +94,11 @@ public class CharacterMoveScript : Agent
         animator.SetBool("eating", false);
         animator.SetBool("waving", false);
         animator.SetFloat("speed", 0);
+
+        ToolEnable = environmentmenu.transform.Find("ToggleToolEnable").GetComponent<toggle_switch>().isOn;
+        GodModeEnable = environmentmenu.transform.Find("ToggleGodMod").GetComponent<toggle_switch>().isOn;
+        RandomEnable = environmentmenu.transform.Find("ToggleRandomness").GetComponent<toggle_switch>().isOn;
+        EnemyEnable = environmentmenu.transform.Find("ToggleEnemy").GetComponent<toggle_switch>().isOn;
 
         transform.position = new Vector3(150, 1.36f, 25);
         target = transform.position;
@@ -656,28 +662,28 @@ public class CharacterMoveScript : Agent
             }
             if (vetcaction.DiscreteActions[0] == 5)
             {
-                if (!benchbuilt && inventory[0] >= benchbuildmats[0] && inventory[5] >= benchbuildmats[5] && inventory[6] >= benchbuildmats[6] && inventory[7] >= benchbuildmats[7])
+                if (ToolEnable && !benchbuilt && inventory[0] >= benchbuildmats[0] && inventory[5] >= benchbuildmats[5] && inventory[6] >= benchbuildmats[6] && inventory[7] >= benchbuildmats[7])
                 {
                     AddReward(benchReward);
                     reward = benchReward;
                     needtomove(benchlocation);
                     StartCoroutine(WaitForMove(BuildBench()));
                 }
-                else if (benchbuilt && !axebuilt && inventory[0] >= axebuildmats[0] && inventory[5] >= axebuildmats[5])
+                else if (ToolEnable && benchbuilt && !axebuilt && inventory[0] >= axebuildmats[0] && inventory[5] >= axebuildmats[5])
                 {  
                     AddReward(toolReward);
                     reward = toolReward;
                     needtomove(benchlocation);
                     StartCoroutine(WaitForMove(BuildAxe()));  
                 }
-                else if (benchbuilt && axebuilt & !scythebuilt && inventory[0] >= scythebuildmats[0] && inventory[6] >= scythebuildmats[6])
+                else if (ToolEnable && benchbuilt && axebuilt & !scythebuilt && inventory[0] >= scythebuildmats[0] && inventory[6] >= scythebuildmats[6])
                 {
                     AddReward(toolReward);
                     reward = toolReward;
                     needtomove(benchlocation);
                     StartCoroutine(WaitForMove(BuildScythe()));  
                 }
-                else if (benchbuilt && axebuilt & scythebuilt && !pickaxebuilt && inventory[0] >= pickaxebuildmats[0] && inventory[7] >= pickaxebuildmats[7])
+                else if (ToolEnable && benchbuilt && axebuilt & scythebuilt && !pickaxebuilt && inventory[0] >= pickaxebuildmats[0] && inventory[7] >= pickaxebuildmats[7])
                 {
                     AddReward(toolReward);
                     reward = toolReward;

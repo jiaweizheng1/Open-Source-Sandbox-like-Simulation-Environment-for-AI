@@ -138,7 +138,7 @@ We trained two PPO models, one using Unity Machine Learning Agents and one using
 
 With unity editor opened, select **Robot** gameobject, go to ***Behavior Parameters/Behavior Type*** on the inspector window, and change it from ***Heuristic Only*** to ***Inference Only***. Click play and you should see our PPO model trained using UMLA playing the game.
 
-With `test.py` open in vscode, start the application and immediately change the main window to the game opened in the unity editor or in the executable. You should see your PPO model trained using `PPO.py` playing the game.
+With `test.py` open in vscode, start the application and immediately change the main window to the game opened in the unity editor or in the executable. You should see our PPO model trained using `PPO.py` playing the game.
 
 # Additional Information
 ## Troubleshooting

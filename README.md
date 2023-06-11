@@ -4,16 +4,16 @@
 - Introduction
     - [Preface](#Preface)
     - [Project Overview](#Project-Overview)
-    - [Installation/Dependencies](#Installation/Dependencies)
+    - [Installation/Dependencies](#InstallationDependencies)
 - Game
     - [Environment Settings Menu](#Environment-Settings-Menu)
     - [Reward Settings Menu](#Reward-Settings-Menu)
     - [Action Shape and Observation Shape](#Action-Shape-and-Observation-Shape)
 - API
-    - [observations.txt](#observations.txt)
-    - [utils.py](#utils.py)
+    - [observations.txt](#observationstxt)
+    - [utils.py](#utilspy)
 - AI
-    - [Proximal Policy Optimization (PPO clip variant)](#Proximal-Policy-Optimization-(PPO-clip-variant))
+    - [Proximal Policy Optimization (Clip Variant)](#Proximal-Policy-Optimization-Clip-Variant)
     - [Trained Models](#Trained-Models)
 - Additional Information
     - [Troubleshooting](#Troubleshooting)
@@ -126,7 +126,7 @@ The `env_step()` function facilitates AI progression through the game. Your AI s
 On the other hand, the `env_reset()` function resets the game and prepares it for a new training episode. Then, we return the new `observation_space` to you so you can feed it to your AI. Note: We do not need to return `reward` and `done` variables because it is a brand new episode (no actions has been made yet and the rocket has not been launched).
 
 # AI
-## Proximal Policy Optimization (PPO clip variant)
+## Proximal Policy Optimization (Clip Variant)
 Background: Reinforcement Learning is basically a continuous cycle where first, the AI observes and gather data from its environment. Then, it makes a decision based on the data it has. The decision it makes corresponds to an action in the game. Then, depending on the action, it can either get a penalty or a reward. Finally, because of the AI’s action, the state of the game changes so the AI has made a new observation, and the cycle continues. Note that as the AI goes through this cycle, it builds upon its own neural network, and caters more and more to action patterns that maximize the rewards it gets.
 
 ![](https://www.researchgate.net/publication/359450568/figure/fig3/AS:1137356421763073@1648178310443/PPO-with-Actor-Critic-style.ppm)  

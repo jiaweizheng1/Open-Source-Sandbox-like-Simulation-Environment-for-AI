@@ -160,14 +160,14 @@ With `train.py` open in vscode, start the application and immediately change the
 
 <details>
     <summary><strong>
-        Question 3: [How do I play the game myself?]
+        Question 2: [How do I play the game myself?]
     </strong></summary>
     You can open the project executable and press the keys (q, w, e, r, t, y, u). The first four keys are used for basic resource gathering, while the later three keys provide access to crafting bench, campfire, and rocket. Have fun!
 </details>
 
 <details>
     <summary><strong>
-        Question 2: [Why choose PPO out of all reinforcement learning algorithms?]
+        Question 3: [Why choose PPO out of all reinforcement learning algorithms?]
     </strong></summary>
     Early on in our development, we were using Unity Machine Learning Agents (UMLA) because we did not have the full foundation at the time to fully understand Reinforcement Learning. By the midpoint in the development process after we had successfully built a functional sandbox and tested it with UMLA, we discovered that UMLA was built around PPO which enabled us to explore concepts around how Reinforcement Learning and PPO functioned. It was a system that we knew would work if we used it again but this time, for training an external AI (other than UMLA) on the game. Further, PPO threw away away the second order functions from predecessor reinforcement learning algorithm so it was one of the much easier ones to understand and implement.
 </details>

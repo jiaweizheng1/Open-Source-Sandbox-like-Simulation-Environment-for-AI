@@ -190,15 +190,23 @@ The ultimate goal of our project is to assist AI researchers in testing their mo
 
 # Contact Information
 Yihong He: yihonghe0@gmail.com
+
 Matthew Tom: mattom12@yahoo.com
+
 Chonghan Wang: cwang942@usc.edu
+
 Jiawei Zheng: jiaweizheng416528@gmail.com
 
 # References
 > [Unity ML Agents Hyperparameters Tuning Guide](https://github.com/miyamotok0105/unity-ml-agents/blob/master/docs/Training-PPO.md)
+> 
 > [OpenAI's official PPO documentation](https://spinningup.openai.com/en/latest/algorithms/ppo.html)
+> 
 > [PPO Python implementation](https://github.com/nikhilbarhate99/PPO-PyTorch)
 > [Diagram for PPO-clip](https://www.researchgate.net/figure/PPO-with-Actor-Critic-style_fig3_359450568)
+> 
 > [Character Physics and Smooth Rotation](https://www.youtube.com/watch?v=xHoRkZR61JQ)
+> 
 > [Resource Gathering Game Inspiration](https://www.youtube.com/watch?v=OE4FG9apSB0)
+> 
 > [Additional Free Game Assets](https://quaternius.com/)

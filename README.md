@@ -129,7 +129,7 @@ On the other hand, the `env_reset()` function resets the game and prepares it fo
 ## Proximal Policy Optimization (Clip Variant)
 Background: Reinforcement Learning is basically a continuous cycle where first, the AI observes and gather data from its environment. Then, it makes a decision based on the data it has. The decision it makes corresponds to an action in the game. Then, depending on the action, it can either get a penalty or a reward. Finally, because of the AI’s action, the state of the game changes so the AI has made a new observation, and the cycle continues. Note that as the AI goes through this cycle, it builds upon its own neural network, and caters more and more to action patterns that maximize the rewards it gets.
 
-![Imgur Image](https://i.imgur.com/sthC6Uy.jpg)  
+![](https://github.com/jiaweizheng1/Open-Source-Sandbox-like-Simulation-Environment-for-AI/blob/Master/PPO-with-Actor-Critic-style.jpeg)  
 PPO is OpenAI's latest reinforcement learning algorithm.  The main idea behind this algorithm is to introduce a new hyperparameter called epislon, $\epsilon$. Once a feed forward pass in the neural network is completed and we compute a new, possibly better set of parameters to activation functions in the neural network, we do not immediately update that new set back into the neural network. Instead, we compute the ratios of change between that new set of parameters and old set of parameters, and clip that into a limited range based on the value of $\epsilon$. Then, we do backprogation with the new clipped set of parameters to update weights. This process basically ensures that the new policy does not get too far from the old policy and the model slowly converges to a optimal solution. 
 
 ## Trained Models

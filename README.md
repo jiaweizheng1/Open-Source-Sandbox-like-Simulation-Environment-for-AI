@@ -31,7 +31,9 @@ Our target audience is anyone who is interested in Unity Game Development or rei
 We also want our project to foster unique and healthy competition between different AI models through our sandbox environment in order to drive innovation within the AI community.
 
 ## Project Overview
+
 ![](https://i.imgur.com/ibIlB9Y.gif)
+
 ### Game
 When the player spawns, they start with a full status bar (health, hunger, and thirst) and zero materials in their inventory. They have to travel to areas and harvest to gather the corresponding resource of that area (forest to get wood, for example). Once they meet the resource requirments displayed at the top of the crafting bench, campfire, and rocket, they can go to those areas and construct them. The campfire is necessary to replenish health, hunger, and thirst through cooking. The tools, made in the crafting bench, helps increase harvesting efficency. Finally, the "winning" condition is they have to construct the rocket and launch it.
 

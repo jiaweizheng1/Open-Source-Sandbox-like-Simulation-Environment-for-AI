@@ -4,7 +4,7 @@
 - Introduction
     - [Preface](#Preface)
     - [Project Overview](#Project-Overview)
-    - [Installation](#Installation)
+    - [Installation/Dependencies](#InstallationDependencies)
 - Game
     - [Environment Settings Menu](#Environment-Settings-Menu)
     - [Reward Settings Menu](#Reward-Settings-Menu)
@@ -13,7 +13,7 @@
     - [observations.txt](#observationstxt)
     - [utils.py](#utilspy)
 - AI
-    - [Proximal Policy Optimization Clip Variant](#Proximal-Policy-Optimization-Clip-Variant)
+    - [Proximal Policy Optimization (Clip Variant)](#Proximal-Policy-Optimization-Clip-Variant)
     - [Trained Models](#Trained-Models)
 - Additional Information
     - [Troubleshooting](#Troubleshooting)
@@ -31,9 +31,7 @@ Our target audience is anyone who is interested in Unity Game Development or rei
 We also want our project to foster unique and healthy competition between different AI models through our sandbox environment in order to drive innovation within the AI community.
 
 ## Project Overview
-
-![](https://i.imgur.com/ibIlB9Y.gif)
-
+![](https://i.imgur.com/msCW9Z8.gif)
 ### Game
 When the player spawns, they start with a full status bar (health, hunger, and thirst) and zero materials in their inventory. They have to travel to areas and harvest to gather the corresponding resource of that area (forest to get wood, for example). Once they meet the resource requirments displayed at the top of the crafting bench, campfire, and rocket, they can go to those areas and construct them. The campfire is necessary to replenish health, hunger, and thirst through cooking. The tools, made in the crafting bench, helps increase harvesting efficency. Finally, the "winning" condition is they have to construct the rocket and launch it.
 
@@ -43,7 +41,7 @@ From the Unity side, in the main game script, we use system IO to periodically o
 ### AI
 Initially, after we finish making the game, we took Unity Machine Learning Agents for granted. With careful tuning of action rewards and some hyperparameters, we manage to train an PPO model that could finish the game in about 3-5 days. In the second quarter, we started learning about PPO, we implemented our own in Python, and we once again trained another PPO model that could finish the game in 3-5 days (but this time, with our `observations.txt` and `utils.py` API).
 
-## Installation
+## Installation/Dependencies
 - **Unity Game Editor 2022.3.0f1** (Optional because we provide a standalone executable for the testing environment, however, this is necessary if you want to make dramatic changes to our testing environment.)
 - **Python 3.9.13** (We strongly recommend this version because this is the version we used and mlagents has very strict version requirements for Python)
 - Python libraries installed via `pip install`
@@ -128,7 +126,7 @@ The `env_step()` function facilitates AI progression through the game. Your AI s
 On the other hand, the `env_reset()` function resets the game and prepares it for a new training episode. Then, we return the new `observation_space` to you so you can feed it to your AI. Note: We do not need to return `reward` and `done` variables because it is a brand new episode (no actions has been made yet and the rocket has not been launched).
 
 # AI
-## Proximal Policy Optimization Clip Variant
+## Proximal Policy Optimization (Clip Variant)
 Background: Reinforcement Learning is basically a continuous cycle where first, the AI observes and gather data from its environment. Then, it makes a decision based on the data it has. The decision it makes corresponds to an action in the game. Then, depending on the action, it can either get a penalty or a reward. Finally, because of the AI’s action, the state of the game changes so the AI has made a new observation, and the cycle continues. Note that as the AI goes through this cycle, it builds upon its own neural network, and caters more and more to action patterns that maximize the rewards it gets.
 
 ![](https://www.researchgate.net/publication/359450568/figure/fig3/AS:1137356421763073@1648178310443/PPO-with-Actor-Critic-style.ppm)  

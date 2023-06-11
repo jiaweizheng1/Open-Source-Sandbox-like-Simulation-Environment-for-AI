@@ -4,7 +4,7 @@
 - Introduction
     - [Preface](#Preface)
     - [Project Overview](#Project-Overview)
-    - [Installation/Dependencies](#InstallationDependencies)
+    - [Installation](#Installation)
 - Game
     - [Environment Settings Menu](#Environment-Settings-Menu)
     - [Reward Settings Menu](#Reward-Settings-Menu)
@@ -13,7 +13,7 @@
     - [observations.txt](#observationstxt)
     - [utils.py](#utilspy)
 - AI
-    - [Proximal Policy Optimization (Clip Variant)](#Proximal-Policy-Optimization-Clip-Variant)
+    - [Proximal Policy Optimization Clip Variant](#Proximal-Policy-Optimization-Clip-Variant)
     - [Trained Models](#Trained-Models)
 - Additional Information
     - [Troubleshooting](#Troubleshooting)
@@ -43,7 +43,7 @@ From the Unity side, in the main game script, we use system IO to periodically o
 ### AI
 Initially, after we finish making the game, we took Unity Machine Learning Agents for granted. With careful tuning of action rewards and some hyperparameters, we manage to train an PPO model that could finish the game in about 3-5 days. In the second quarter, we started learning about PPO, we implemented our own in Python, and we once again trained another PPO model that could finish the game in 3-5 days (but this time, with our `observations.txt` and `utils.py` API).
 
-## Installation/Dependencies
+## Installation
 - **Unity Game Editor 2022.3.0f1** (Optional because we provide a standalone executable for the testing environment, however, this is necessary if you want to make dramatic changes to our testing environment.)
 - **Python 3.9.13** (We strongly recommend this version because this is the version we used and mlagents has very strict version requirements for Python)
 - Python libraries installed via `pip install`
@@ -128,7 +128,7 @@ The `env_step()` function facilitates AI progression through the game. Your AI s
 On the other hand, the `env_reset()` function resets the game and prepares it for a new training episode. Then, we return the new `observation_space` to you so you can feed it to your AI. Note: We do not need to return `reward` and `done` variables because it is a brand new episode (no actions has been made yet and the rocket has not been launched).
 
 # AI
-## Proximal Policy Optimization (Clip Variant)
+## Proximal Policy Optimization Clip Variant
 Background: Reinforcement Learning is basically a continuous cycle where first, the AI observes and gather data from its environment. Then, it makes a decision based on the data it has. The decision it makes corresponds to an action in the game. Then, depending on the action, it can either get a penalty or a reward. Finally, because of the AI’s action, the state of the game changes so the AI has made a new observation, and the cycle continues. Note that as the AI goes through this cycle, it builds upon its own neural network, and caters more and more to action patterns that maximize the rewards it gets.
 
 ![](https://www.researchgate.net/publication/359450568/figure/fig3/AS:1137356421763073@1648178310443/PPO-with-Actor-Critic-style.ppm)  
@@ -162,14 +162,14 @@ With `train.py` open in vscode, start the application and immediately change the
 
 <details>
     <summary><strong>
-        Question 2: [How do I play the game myself?]
+        Question 3: [How do I play the game myself?]
     </strong></summary>
     You can open the project executable and press the keys (q, w, e, r, t, y, u). The first four keys are used for basic resource gathering, while the later three keys provide access to crafting bench, campfire, and rocket. Have fun!
 </details>
 
 <details>
     <summary><strong>
-        Question 3: [Why choose PPO out of all reinforcement learning algorithms?]
+        Question 2: [Why choose PPO out of all reinforcement learning algorithms?]
     </strong></summary>
     Early on in our development, we were using Unity Machine Learning Agents (UMLA) because we did not have the full foundation at the time to fully understand Reinforcement Learning. By the midpoint in the development process after we had successfully built a functional sandbox and tested it with UMLA, we discovered that UMLA was built around PPO which enabled us to explore concepts around how Reinforcement Learning and PPO functioned. It was a system that we knew would work if we used it again but this time, for training an external AI (other than UMLA) on the game. Further, PPO threw away away the second order functions from predecessor reinforcement learning algorithm so it was one of the much easier ones to understand and implement.
 </details>

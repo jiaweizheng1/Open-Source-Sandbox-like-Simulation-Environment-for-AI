@@ -203,6 +203,7 @@ Jiawei Zheng: jiaweizheng416528@gmail.com
 > [OpenAI's official PPO documentation](https://spinningup.openai.com/en/latest/algorithms/ppo.html)
 > 
 > [PPO Python implementation](https://github.com/nikhilbarhate99/PPO-PyTorch)
+> 
 > [Diagram for PPO-clip](https://www.researchgate.net/figure/PPO-with-Actor-Critic-style_fig3_359450568)
 > 
 > [Character Physics and Smooth Rotation](https://www.youtube.com/watch?v=xHoRkZR61JQ)

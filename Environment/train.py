@@ -42,7 +42,7 @@ def train():
     print("training environment name : " + env_name)
 
     # state space dimension
-    state_dim = 16
+    state_dim = 17
 
     # action space dimension
     action_dim = 7

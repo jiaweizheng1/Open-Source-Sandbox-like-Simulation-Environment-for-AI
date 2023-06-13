@@ -108,6 +108,7 @@ observation_space = {
     "AxeBuilt": np.array([False], dtype=bool),
     "ScytheBuilt": np.array([False], dtype=bool),
     "PickaxehBuilt": np.array([False], dtype=bool),
+    "SpiderSpawned": np.array([False], dtype=bool),
 }
 
 reward = 0
@@ -156,6 +157,7 @@ def read_info():
     observation_space["AxeBuilt"] = np.array([str_to_bool(contents[9].strip().split(": ")[1])])
     observation_space["ScytheBuilt"] = np.array([str_to_bool(contents[10].strip().split(": ")[1])])
     observation_space["PickaxehBuilt"] = np.array([str_to_bool(contents[11].strip().split(": ")[1])])
+    observation_space["SpiderSpawned"] = np.array([str_to_bool(contents[12].strip().split(": ")[1])])
 
     global reward 
     reward = float(contents[13].strip().split(": ")[1])

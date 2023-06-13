@@ -666,7 +666,12 @@ public class CharacterMoveScript : Agent
         contents += "AxeBuilt: " + axebuilt + Environment.NewLine;
         contents += "ScytheBuilt: " + scythebuilt + Environment.NewLine;
         contents += "PickaxehBuilt: " + pickaxebuilt + Environment.NewLine;
-
+        if(spider_count == 0){
+            contents += "Spider: " + "False" + Environment.NewLine;
+        }
+        else{
+            contents += "Spider: " + "True" + Environment.NewLine;
+        }
         contents += Environment.NewLine;
 
         contents += "Reward: " + reward + Environment.NewLine;
@@ -675,12 +680,7 @@ public class CharacterMoveScript : Agent
 
         contents += "Done: " + done + Environment.NewLine;
 
-        if(spider_count == 0){
-            contents += "Spider: " + "False" + Environment.NewLine;
-        }
-        else{
-            contents += "Spider: " + "True" + Environment.NewLine;
-        }
+
 
         File.WriteAllText(@"observations.txt", contents);
     }

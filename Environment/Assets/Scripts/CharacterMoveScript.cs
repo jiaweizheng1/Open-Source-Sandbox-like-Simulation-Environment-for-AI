@@ -78,7 +78,7 @@ public class CharacterMoveScript : Agent
     private float[] pickaxebuildmats = {2, 0, 0, 0, 0, 0, 0, 3};
     NavMeshAgent agent;
     public float closeEnoughDistance = 3.0f;
-    private float logReward, foodReward, waterReward, mineReward, campfireReward, recoverReward, benchReward, toolReward, rocketReward, launchReward;
+    private float logReward, foodReward, waterReward, mineReward, campfireReward, recoverReward, benchReward, toolReward, rocketReward, launchReward, spiderReward;
 
     public GameObject environmentmenu, rewardmenu;
     private bool ToolEnable, GodModeEnable, RandomEnable, EnemyEnable;
@@ -102,6 +102,9 @@ public class CharacterMoveScript : Agent
         toolReward = float.Parse(rewardmenu.transform.Find("Tool/ToolReward").gameObject.transform.GetComponent<TMP_InputField>().text);
         rocketReward = float.Parse(rewardmenu.transform.Find("Rocket/RocketReward").gameObject.transform.GetComponent<TMP_InputField>().text);
         launchReward = float.Parse(rewardmenu.transform.Find("Launch/LaunchReward").gameObject.transform.GetComponent<TMP_InputField>().text);
+        spiderReward = float.Parse(rewardmenu.transform.Find("Spider/SpiderReward").gameObject.transform.GetComponent<TMP_InputField>().text);
+        Debug.Log(spiderReward);
+
         reward = 0;
         done = false;
 
@@ -672,6 +675,13 @@ public class CharacterMoveScript : Agent
 
         contents += "Done: " + done + Environment.NewLine;
 
+        if(spider_count == 0){
+            contents += "Spider: " + "False" + Environment.NewLine;
+        }
+        else{
+            contents += "Spider: " + "True" + Environment.NewLine;
+        }
+
         File.WriteAllText(@"observations.txt", contents);
     }
 
@@ -709,7 +719,9 @@ public class CharacterMoveScript : Agent
             }
             if (vetcaction.DiscreteActions[0] == actions[4])
             {
-                if(spider_count == 1 && spider_health > 0){
+                if(spider_count == 1 && spider_health > 0 && spider != null){
+                    AddReward(spiderReward);
+                    reward = spiderReward;
                     Transform spiderlocation = spider.transform;
                     needtomove(spiderlocation);
                     StartCoroutine(WaitForMove(Attack()));
@@ -828,10 +840,6 @@ public class CharacterMoveScript : Agent
         {
             discreteactions[0] = 6;
         }
-        else if (Input.GetKey(KeyCode.A))
-        {
-            discreteactions[0] = 7;
-        }
         else
         {
             discreteactions[0] = -1; //else, invalid input
@@ -852,7 +860,10 @@ public class CharacterMoveScript : Agent
     {
         int current_hour = time.Hour;
         int random_offset = Random.Range(0, 7);
-
+        if(spider == null){
+            spider_count = 0;
+            spider_health = 0;
+        }
         if (myCoroutine != null && (!campfirebuilt || spider_count == 0)) {
             StopCoroutine(myCoroutine);
             myCoroutine = null;
@@ -908,7 +919,7 @@ public class CharacterMoveScript : Agent
         }
         if(alive && !moving && !busy)
         {
-            // Debug.Log("Reward: " + reward);
+            Debug.Log("Reward: " + reward);
             RequestDecision();
         }
         if (moving && !busy)
@@ -967,7 +978,13 @@ public class CharacterMoveScript : Agent
         ManualUpdateAllText();
         if (Input.GetKey(KeyCode.I))
         {
+            if(spider != null){
+                Destroy(spider);
+                spider_count = 0;
+                spider_spawned = false;
+            }
             EndEpisode();
+
         }
     }
 

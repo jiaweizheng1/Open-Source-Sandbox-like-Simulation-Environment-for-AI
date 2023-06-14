@@ -58,7 +58,7 @@ public class CharacterMoveScript : Agent
     int nighttime_end_hour = 6;
     int random_nighttime_hour = 1;
     private GameObject spider;
-    int spider_health = 5;
+    public int spider_health = 2;
     bool spider_spawned = false;
     public Transform Target;
     public Transform Escape;

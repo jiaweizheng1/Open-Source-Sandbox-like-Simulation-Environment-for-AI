@@ -134,10 +134,10 @@ def train():
 
     # printing and logging variables
     print_running_reward = 0
-    print_running_episodes = 0
+    print_running_episodes = 1
 
     log_running_reward = 0
-    log_running_episodes = 0
+    log_running_episodes = 1
 
     time_step = 0
     i_episode = 0

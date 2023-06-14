@@ -160,10 +160,10 @@ def read_info():
     observation_space["SpiderSpawned"] = np.array([str_to_bool(contents[12].strip().split(": ")[1])])
 
     global reward 
-    reward = float(contents[13].strip().split(": ")[1])
+    reward = float(contents[14].strip().split(": ")[1])
 
     global done 
-    done = str_to_bool(contents[15].strip().split(": ")[1])
+    done = str_to_bool(contents[16].strip().split(": ")[1])
 
 
 def env_reset():
